@@ -2,7 +2,7 @@
 layout: post
 title: "Daily Work Notes"
 date: 2024-12-25
-categories: internship
+categories: facts
 tags: [internship]
 ---
 
