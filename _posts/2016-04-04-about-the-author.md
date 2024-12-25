@@ -1,10 +1,51 @@
 ---
 layout: post
-title: "About the Author"
-author: "Paul Le"
+title: "Daliy Work Notes"
+author: "ZJM"
 categories: facts
-tags: [sample]
+tags: [internship]
 image: cuba-2.jpg
 ---
 
-Hi there! I'm Paul. I’m a physics major turned programmer. Ever since I first learned how to program while taking a scientific computing for physics course, I have pursued programming as a passion, and as a career. Check out [my personal website](https://www.lenpaul.com/) for more information on my other projects (including more Jekyll themes!), as well as some of my writing.
+【BA Copilot】工作日报-赵佳明
+
+日期
+
+记录人
+
+工作内容
+
+2024/12/25
+
+赵佳明
+
+【今日工作内容】
+
+项目A || 技术文档——优先级高【工作进展】阅读Module801到餐BD智能助手方案设计文档，了解到餐BD智能助手运行原理
+
+项目B || 学习——优先级中【工作进展】完成美团基本功之"写"情境判断测验——前测完成美团基本功-【听说读写想】之【写】核心课核心课，并完成对应的学习笔记，方便后续持续学习和回顾完成美团基本功之"写"情境判断测验——后测
+
+2024/12/24
+
+赵佳明
+
+【今日工作内容】
+
+项目A || 数据处理——优先级高【工作进展】完成品牌架构数据将军令配置品牌、品类流程完成品牌架构数据mis授权流程，检查授权无误
+
+项目B || 熟悉技术文档——优先级中【工作进展】搭建完成 Java 研发环境阅读快速入门-后端服务与代码仓库使用文档了解如何查询BA Copilot Lab使用人数及提问次数
+
+项目C || 学习——优先级中【工作进展】完成美团基本功之"想"情境判断测验——前测完成美团基本功之【听说读写想】-【想】核心课，并完成对应的学习笔记，方便后续持续学习和回顾完成美团基本功之"想"情境判断测验——后测
+
+2024/12/23
+
+赵佳明
+
+【今日工作内容】
+
+项目A || 入职——优先级高【工作进展】入职手续流程进展100%，实习新手攻略手册熟悉入职首日熟悉办公软件，以及美团员工内部攻略完成“互联网+大学”通用基本功课程：美团Push内容安全必修课，信息安全意识&阳光职场行为规范实习生入职必修课
+
+项目B || BA Copilot Lab—优先级高【工作进展】熟悉BA Copilot Lab介绍和使用方法体验BA Copilot Lab的使用（上传数据，生成代码，生成图表，相关性分析）处理xlsx数据，交换index与value，使得数据能被Lab更好地处理和进一步使用
+
+其它完成Mac本地环境配置
+
