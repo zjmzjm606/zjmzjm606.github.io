@@ -14,6 +14,7 @@ theme:               jekyll-theme-minimal
 title:		           "Tomorrow's Blog"
 email:               "zjmzjm606@gmail.com   zjmzjm66@connect.hku.hk"
 url:                 "https://zjmzjm606.github.io"
+baseurl:             "/zjmzjm606.github.io"
 
 social_links:
   twitter: "https://twitter.com/your_username"
