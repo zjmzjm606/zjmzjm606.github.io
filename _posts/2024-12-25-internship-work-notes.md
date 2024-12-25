@@ -2,7 +2,7 @@
 layout: post
 title: "Daily Work Notes"
 date: 2024-12-25
-categories: [Jekyll, GitHub Pages]
+categories: internship
 tags: [internship]
 ---
 
