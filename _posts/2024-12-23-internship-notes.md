@@ -2,7 +2,7 @@
 layout: post
 title: "Daliy Work Notes"
 author: "ZJM"
-categories: facts
+categories: internship
 tags: [internship]
 image: cuba-2.jpg
 ---
