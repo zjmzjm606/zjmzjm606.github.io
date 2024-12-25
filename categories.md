@@ -2,7 +2,6 @@
 layout: default
 title: Categories
 ---
-
 <h1>Categories</h1>
 <ul>
   {% for category in site.categories %}
