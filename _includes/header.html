@@ -1,24 +1,61 @@
-<header class="site-header">
-  <h3 class="site-title">
-    <a href="{{ site.github.url }}/">{{ site.title }}</a>
-  </h3>
-  <nav class="menu-list">
-    {% for item in site.data.settings.menu %}
-      <a href="{{ site.github.url }}/{{ item.url }}" class="menu-link">{{ item.name }}</a>
-    {% endfor %}
-    {% for item in site.data.settings.social %}
-      <a href="{{ item.link }}" class="menu-link" target="_blank"><i class="fa fa-{{ item.icon }}" aria-hidden="true"></i></a>
-    {% endfor %}
-  </nav>
-  <div class="dropdown">
-    <button class="dropbtn"><i class="fa fa-bars" aria-hidden="true"></i></button>
-    <div class="dropdown-content">
-      {% for item in site.data.settings.menu %}
-        <a href="{{ site.github.url }}/{{ item.url }}" class="menu-link">{{ item.name }}</a>
-      {% endfor %}
-      {% for item in site.data.settings.social %}
-        <a href="{{ item.link }}" class="menu-link" target="_blank"><i class="fa fa-{{ item.icon }}" aria-hidden="true"></i></a>
-      {% endfor %}
-    </div>
-  </div>
-</header>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2487.6">
+  <style type="text/css">
+    span.s1 {text-decoration: underline ; font-kerning: none}
+  </style>
+</head>
+<body>
+<h3 style="margin: 0.0px 0.0px 14.0px 0.0px; font: 14.0px Times; color: #0000e9; -webkit-text-stroke: #0000e9"><span class="s1"><a href="file:///Users/zhaojiaming/myblog/_includes/%7B%7B%20site.github.url%20%7D%7D/"><b>&lt;!DOCTYPE html&gt;</b></a></span></h3>
+<h3 style="margin: 0.0px 0.0px 14.0px 0.0px; font: 14.0px Times; color: #0000e9; -webkit-text-stroke: #0000e9"><span class="s1"><a href="file:///Users/zhaojiaming/myblog/_includes/%7B%7B%20site.github.url%20%7D%7D/"><b>&lt;html lang="en"&gt;</b></a></span></h3>
+<h3 style="margin: 0.0px 0.0px 14.0px 0.0px; font: 14.0px Times; color: #0000e9; -webkit-text-stroke: #0000e9"><span class="s1"><a href="file:///Users/zhaojiaming/myblog/_includes/%7B%7B%20site.github.url%20%7D%7D/"><b>&lt;head&gt;</b></a></span></h3>
+<h3 style="margin: 0.0px 0.0px 14.0px 0.0px; font: 14.0px Times; color: #0000e9; -webkit-text-stroke: #0000e9"><span class="s1"><a href="file:///Users/zhaojiaming/myblog/_includes/%7B%7B%20site.github.url%20%7D%7D/"><b><span class="Apple-converted-space">  </span>&lt;meta charset="UTF-8"&gt;</b></a></span></h3>
+<h3 style="margin: 0.0px 0.0px 14.0px 0.0px; font: 14.0px Times; color: #0000e9; -webkit-text-stroke: #0000e9"><span class="s1"><a href="file:///Users/zhaojiaming/myblog/_includes/%7B%7B%20site.github.url%20%7D%7D/"><b><span class="Apple-converted-space">  </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</b></a></span></h3>
+<h3 style="margin: 0.0px 0.0px 14.0px 0.0px; font: 14.0px Times; color: #0000e9; -webkit-text-stroke: #0000e9"><span class="s1"><a href="file:///Users/zhaojiaming/myblog/_includes/%7B%7B%20site.github.url%20%7D%7D/"><b><span class="Apple-converted-space">  </span>&lt;title&gt;{{ site.title }}&lt;/title&gt;</b></a></span></h3>
+<h3 style="margin: 0.0px 0.0px 14.0px 0.0px; font: 14.0px Times; color: #0000e9; -webkit-text-stroke: #0000e9"><span class="s1"><a href="file:///Users/zhaojiaming/myblog/_includes/%7B%7B%20site.github.url%20%7D%7D/"><b><span class="Apple-converted-space">  </span>&lt;link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}"&gt;</b></a></span></h3>
+<h3 style="margin: 0.0px 0.0px 14.0px 0.0px; font: 14.0px Times; color: #0000e9; -webkit-text-stroke: #0000e9"><span class="s1"><a href="file:///Users/zhaojiaming/myblog/_includes/%7B%7B%20site.github.url%20%7D%7D/"><b>&lt;/head&gt;</b></a></span></h3>
+<h3 style="margin: 0.0px 0.0px 14.0px 0.0px; font: 14.0px Times; color: #0000e9; -webkit-text-stroke: #0000e9"><span class="s1"><a href="file:///Users/zhaojiaming/myblog/_includes/%7B%7B%20site.github.url%20%7D%7D/"><b>&lt;body&gt;</b></a></span></h3>
+<h3 style="margin: 0.0px 0.0px 14.0px 0.0px; font: 14.0px Times; color: #0000e9; -webkit-text-stroke: #0000e9; min-height: 18.0px"><span class="s1"><a href="file:///Users/zhaojiaming/myblog/_includes/%7B%7B%20site.github.url%20%7D%7D/"><b></b></a></span><br></h3>
+<h3 style="margin: 0.0px 0.0px 14.0px 0.0px; font: 14.0px Times; color: #0000e9; -webkit-text-stroke: #0000e9"><span class="s1"><a href="file:///Users/zhaojiaming/myblog/_includes/%7B%7B%20site.github.url%20%7D%7D/"><b><span class="Apple-converted-space">  </span>&lt;!-- 背景视频 --&gt;</b></a></span></h3>
+<h3 style="margin: 0.0px 0.0px 14.0px 0.0px; font: 14.0px Times; color: #0000e9; -webkit-text-stroke: #0000e9"><span class="s1"><a href="file:///Users/zhaojiaming/myblog/_includes/%7B%7B%20site.github.url%20%7D%7D/"><b><span class="Apple-converted-space">  </span>&lt;video autoplay muted loop id="background-video"&gt;</b></a></span></h3>
+<h3 style="margin: 0.0px 0.0px 14.0px 0.0px; font: 14.0px Times; color: #0000e9; -webkit-text-stroke: #0000e9"><span class="s1"><a href="file:///Users/zhaojiaming/myblog/_includes/%7B%7B%20site.github.url%20%7D%7D/"><b><span class="Apple-converted-space">    </span>&lt;source src="{{ '/assets/videos/background.mp4' | relative_url }}" type="video/mp4"&gt;</b></a></span></h3>
+<h3 style="margin: 0.0px 0.0px 14.0px 0.0px; font: 14.0px Times; color: #0000e9; -webkit-text-stroke: #0000e9"><span class="s1"><a href="file:///Users/zhaojiaming/myblog/_includes/%7B%7B%20site.github.url%20%7D%7D/"><b><span class="Apple-converted-space">    </span>&lt;source src="{{ '/assets/videos/background.webm' | relative_url }}" type="video/webm"&gt;</b></a></span></h3>
+<h3 style="margin: 0.0px 0.0px 14.0px 0.0px; font: 14.0px Times; color: #0000e9; -webkit-text-stroke: #0000e9"><span class="s1"><a href="file:///Users/zhaojiaming/myblog/_includes/%7B%7B%20site.github.url%20%7D%7D/"><b><span class="Apple-converted-space">    </span>&lt;source src="{{ '/assets/videos/background.ogv' | relative_url }}" type="video/ogg"&gt;</b></a></span></h3>
+<h3 style="margin: 0.0px 0.0px 14.0px 0.0px; font: 14.0px Times; color: #0000e9; -webkit-text-stroke: #0000e9"><span class="s1"><a href="file:///Users/zhaojiaming/myblog/_includes/%7B%7B%20site.github.url%20%7D%7D/"><b><span class="Apple-converted-space">    </span>Your browser does not support the video tag.</b></a></span></h3>
+<h3 style="margin: 0.0px 0.0px 14.0px 0.0px; font: 14.0px Times; color: #0000e9; -webkit-text-stroke: #0000e9"><span class="s1"><a href="file:///Users/zhaojiaming/myblog/_includes/%7B%7B%20site.github.url%20%7D%7D/"><b><span class="Apple-converted-space">  </span>&lt;/video&gt;</b></a></span></h3>
+<h3 style="margin: 0.0px 0.0px 14.0px 0.0px; font: 14.0px Times; color: #0000e9; -webkit-text-stroke: #0000e9; min-height: 18.0px"><span class="s1"><a href="file:///Users/zhaojiaming/myblog/_includes/%7B%7B%20site.github.url%20%7D%7D/"><b></b></a></span><br></h3>
+<h3 style="margin: 0.0px 0.0px 14.0px 0.0px; font: 14.0px Times; color: #0000e9; -webkit-text-stroke: #0000e9"><span class="s1"><a href="file:///Users/zhaojiaming/myblog/_includes/%7B%7B%20site.github.url%20%7D%7D/"><b><span class="Apple-converted-space">  </span>&lt;!-- 页面内容 --&gt;</b></a></span></h3>
+<h3 style="margin: 0.0px 0.0px 14.0px 0.0px; font: 14.0px Times; color: #0000e9; -webkit-text-stroke: #0000e9"><span class="s1"><a href="file:///Users/zhaojiaming/myblog/_includes/%7B%7B%20site.github.url%20%7D%7D/"><b><span class="Apple-converted-space">  </span>&lt;header&gt;</b></a></span></h3>
+<h3 style="margin: 0.0px 0.0px 14.0px 0.0px; font: 14.0px Times; color: #0000e9; -webkit-text-stroke: #0000e9"><span class="s1"><a href="file:///Users/zhaojiaming/myblog/_includes/%7B%7B%20site.github.url%20%7D%7D/"><b><span class="Apple-converted-space">    </span>&lt;h1&gt;{{ site.title }}&lt;/h1&gt;</b></a></span></h3>
+<h3 style="margin: 0.0px 0.0px 14.0px 0.0px; font: 14.0px Times; color: #0000e9; -webkit-text-stroke: #0000e9; min-height: 18.0px"><span class="s1"><a href="file:///Users/zhaojiaming/myblog/_includes/%7B%7B%20site.github.url%20%7D%7D/"><b></b></a></span><br></h3>
+<h3 style="margin: 0.0px 0.0px 14.0px 0.0px; font: 14.0px Times; color: #0000e9; -webkit-text-stroke: #0000e9"><span class="s1"><a href="file:///Users/zhaojiaming/myblog/_includes/%7B%7B%20site.github.url%20%7D%7D/"><b><span class="Apple-converted-space">    </span>&lt;!-- 导航菜单 --&gt;</b></a></span></h3>
+<h3 style="margin: 0.0px 0.0px 14.0px 0.0px; font: 14.0px Times; color: #0000e9; -webkit-text-stroke: #0000e9"><span class="s1"><a href="file:///Users/zhaojiaming/myblog/_includes/%7B%7B%20site.github.url%20%7D%7D/"><b><span class="Apple-converted-space">    </span>&lt;nav&gt;</b></a></span></h3>
+<h3 style="margin: 0.0px 0.0px 14.0px 0.0px; font: 14.0px Times; color: #0000e9; -webkit-text-stroke: #0000e9"><span class="s1"><a href="file:///Users/zhaojiaming/myblog/_includes/%7B%7B%20site.github.url%20%7D%7D/"><b><span class="Apple-converted-space">      </span>&lt;ul&gt;</b></a></span></h3>
+<h3 style="margin: 0.0px 0.0px 14.0px 0.0px; font: 14.0px Times; color: #0000e9; -webkit-text-stroke: #0000e9"><span class="s1"><a href="file:///Users/zhaojiaming/myblog/_includes/%7B%7B%20site.github.url%20%7D%7D/"><b><span class="Apple-converted-space">        </span>{% for item in site.data.settings.menu %}</b></a></span></h3>
+<h3 style="margin: 0.0px 0.0px 14.0px 0.0px; font: 14.0px Times; color: #0000e9; -webkit-text-stroke: #0000e9"><span class="s1"><a href="file:///Users/zhaojiaming/myblog/_includes/%7B%7B%20site.github.url%20%7D%7D/"><b><span class="Apple-converted-space">          </span>&lt;li&gt;&lt;a href="{{ item.url }}"&gt;{{ item.name }}&lt;/a&gt;&lt;/li&gt;</b></a></span></h3>
+<h3 style="margin: 0.0px 0.0px 14.0px 0.0px; font: 14.0px Times; color: #0000e9; -webkit-text-stroke: #0000e9"><span class="s1"><a href="file:///Users/zhaojiaming/myblog/_includes/%7B%7B%20site.github.url%20%7D%7D/"><b><span class="Apple-converted-space">        </span>{% endfor %}</b></a></span></h3>
+<h3 style="margin: 0.0px 0.0px 14.0px 0.0px; font: 14.0px Times; color: #0000e9; -webkit-text-stroke: #0000e9"><span class="s1"><a href="file:///Users/zhaojiaming/myblog/_includes/%7B%7B%20site.github.url%20%7D%7D/"><b><span class="Apple-converted-space">      </span>&lt;/ul&gt;</b></a></span></h3>
+<h3 style="margin: 0.0px 0.0px 14.0px 0.0px; font: 14.0px Times; color: #0000e9; -webkit-text-stroke: #0000e9"><span class="s1"><a href="file:///Users/zhaojiaming/myblog/_includes/%7B%7B%20site.github.url%20%7D%7D/"><b><span class="Apple-converted-space">    </span>&lt;/nav&gt;</b></a></span></h3>
+<h3 style="margin: 0.0px 0.0px 14.0px 0.0px; font: 14.0px Times; color: #0000e9; -webkit-text-stroke: #0000e9; min-height: 18.0px"><span class="s1"><a href="file:///Users/zhaojiaming/myblog/_includes/%7B%7B%20site.github.url%20%7D%7D/"><b></b></a></span><br></h3>
+<h3 style="margin: 0.0px 0.0px 14.0px 0.0px; font: 14.0px Times; color: #0000e9; -webkit-text-stroke: #0000e9"><span class="s1"><a href="file:///Users/zhaojiaming/myblog/_includes/%7B%7B%20site.github.url%20%7D%7D/"><b><span class="Apple-converted-space">    </span>&lt;!-- 社交媒体链接 --&gt;</b></a></span></h3>
+<h3 style="margin: 0.0px 0.0px 14.0px 0.0px; font: 14.0px Times; color: #0000e9; -webkit-text-stroke: #0000e9"><span class="s1"><a href="file:///Users/zhaojiaming/myblog/_includes/%7B%7B%20site.github.url%20%7D%7D/"><b><span class="Apple-converted-space">    </span>&lt;div class="social-links"&gt;</b></a></span></h3>
+<h3 style="margin: 0.0px 0.0px 14.0px 0.0px; font: 14.0px Times; color: #0000e9; -webkit-text-stroke: #0000e9"><span class="s1"><a href="file:///Users/zhaojiaming/myblog/_includes/%7B%7B%20site.github.url%20%7D%7D/"><b><span class="Apple-converted-space">      </span>{% for item in site.data.settings.social %}</b></a></span></h3>
+<h3 style="margin: 0.0px 0.0px 14.0px 0.0px; font: 14.0px Times; color: #0000e9; -webkit-text-stroke: #0000e9"><span class="s1"><a href="file:///Users/zhaojiaming/myblog/_includes/%7B%7B%20site.github.url%20%7D%7D/"><b><span class="Apple-converted-space">        </span>&lt;a href="{{ item.url }}" target="_blank"&gt;{{ item.name }}&lt;/a&gt;</b></a></span></h3>
+<h3 style="margin: 0.0px 0.0px 14.0px 0.0px; font: 14.0px Times; color: #0000e9; -webkit-text-stroke: #0000e9"><span class="s1"><a href="file:///Users/zhaojiaming/myblog/_includes/%7B%7B%20site.github.url%20%7D%7D/"><b><span class="Apple-converted-space">      </span>{% endfor %}</b></a></span></h3>
+<h3 style="margin: 0.0px 0.0px 14.0px 0.0px; font: 14.0px Times; color: #0000e9; -webkit-text-stroke: #0000e9"><span class="s1"><a href="file:///Users/zhaojiaming/myblog/_includes/%7B%7B%20site.github.url%20%7D%7D/"><b><span class="Apple-converted-space">    </span>&lt;/div&gt;</b></a></span></h3>
+<h3 style="margin: 0.0px 0.0px 14.0px 0.0px; font: 14.0px Times; color: #0000e9; -webkit-text-stroke: #0000e9"><span class="s1"><a href="file:///Users/zhaojiaming/myblog/_includes/%7B%7B%20site.github.url%20%7D%7D/"><b><span class="Apple-converted-space">  </span>&lt;/header&gt;</b></a></span></h3>
+<h3 style="margin: 0.0px 0.0px 14.0px 0.0px; font: 14.0px Times; color: #0000e9; -webkit-text-stroke: #0000e9; min-height: 18.0px"><span class="s1"><a href="file:///Users/zhaojiaming/myblog/_includes/%7B%7B%20site.github.url%20%7D%7D/"><b></b></a></span><br></h3>
+<h3 style="margin: 0.0px 0.0px 14.0px 0.0px; font: 14.0px Times; color: #0000e9; -webkit-text-stroke: #0000e9"><span class="s1"><a href="file:///Users/zhaojiaming/myblog/_includes/%7B%7B%20site.github.url%20%7D%7D/"><b><span class="Apple-converted-space">  </span>&lt;!-- 其余页面内容 --&gt;</b></a></span></h3>
+<h3 style="margin: 0.0px 0.0px 14.0px 0.0px; font: 14.0px Times; color: #0000e9; -webkit-text-stroke: #0000e9"><span class="s1"><a href="file:///Users/zhaojiaming/myblog/_includes/%7B%7B%20site.github.url%20%7D%7D/"><b><span class="Apple-converted-space">  </span>&lt;main&gt;</b></a></span></h3>
+<h3 style="margin: 0.0px 0.0px 14.0px 0.0px; font: 14.0px Times; color: #0000e9; -webkit-text-stroke: #0000e9"><span class="s1"><a href="file:///Users/zhaojiaming/myblog/_includes/%7B%7B%20site.github.url%20%7D%7D/"><b><span class="Apple-converted-space">    </span>{{ content }}</b></a></span></h3>
+<h3 style="margin: 0.0px 0.0px 14.0px 0.0px; font: 14.0px Times; color: #0000e9; -webkit-text-stroke: #0000e9"><span class="s1"><a href="file:///Users/zhaojiaming/myblog/_includes/%7B%7B%20site.github.url%20%7D%7D/"><b><span class="Apple-converted-space">  </span>&lt;/main&gt;</b></a></span></h3>
+<h3 style="margin: 0.0px 0.0px 14.0px 0.0px; font: 14.0px Times; color: #0000e9; -webkit-text-stroke: #0000e9; min-height: 18.0px"><span class="s1"><a href="file:///Users/zhaojiaming/myblog/_includes/%7B%7B%20site.github.url%20%7D%7D/"><b></b></a></span><br></h3>
+<h3 style="margin: 0.0px 0.0px 14.0px 0.0px; font: 14.0px Times; color: #0000e9; -webkit-text-stroke: #0000e9"><span class="s1"><a href="file:///Users/zhaojiaming/myblog/_includes/%7B%7B%20site.github.url%20%7D%7D/"><b>&lt;/body&gt;</b></a></span></h3>
+<h3 style="margin: 0.0px 0.0px 14.0px 0.0px; font: 14.0px Times; color: #0000e9; -webkit-text-stroke: #0000e9"><span class="s1"><a href="file:///Users/zhaojiaming/myblog/_includes/%7B%7B%20site.github.url%20%7D%7D/"><b>&lt;/html&gt;</b></a></span></h3>
+</body>
+</html>
