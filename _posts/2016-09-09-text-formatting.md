@@ -2,7 +2,7 @@
 layout: post
 title: "Text Formatting"
 author: "Paul Le"
-categories: project
+categories: temp
 tags: [sample]
 image: arctic-1.jpg
 ---
