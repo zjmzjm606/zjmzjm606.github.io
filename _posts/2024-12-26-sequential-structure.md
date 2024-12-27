@@ -1,8 +1,10 @@
 ---
-layout: post
-title: "P1001 A+B Problem"
+layout: null
+title: "Redirecting..."
 author: "ZJM"
 categories: code
 tags: [Code]
 image: code-cover-1.png
 ---
+<meta http-equiv="refresh" content="0; url=/code/sequential-structure/" />
+<p>If you are not redirected, <a href="/code/sequential-structure/">click here</a>.</p>
