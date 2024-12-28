@@ -4,14 +4,39 @@ title: "Daliy Work Notes"
 author: "ZJM"
 categories: internship
 tags: [internship]
-image: cuba-2.jpg
+image: internship-cover-1.png
 ---
 
 ## 【BA Copilot】工作日报-赵佳明
 
-### ** 2024/12/26**
+### 2024/12/27
 
-###### 记录人：赵佳明
+##### 记录人：赵佳明
+
+#### 【今日工作内容】
+
+#####  <span style="color:#00BFFF;">项目A || 阅读技术文档——优先级高</span>
+
+###### 【工作进展】
+
+阅读801module的用户运营数据sql交接SOP文档，了解如何调取运营及调用数据
+
+熟悉RDS数据库的使用
+
+
+#####  <span style="color:#00BFFF;">项目B || 学习——优先级中</span>
+
+###### 【工作进展】
+
+完成美团基本功之"听说"情境判断测验——前测
+
+完成美团基本功-【听说读写想】之【听说】核心课，并完成对应的学习笔记，方便后续持续学习和回顾
+
+完成美团基本功之"听说"情境判断测验——后测
+
+### 2024/12/26
+
+##### 记录人：赵佳明
 
 #### 【今日工作内容】
 
@@ -20,6 +45,8 @@ image: cuba-2.jpg
 ###### 【工作进展】
 
 阅读BA Copilot-Labs试用（以冬至售卖情况分析为例）文档，了解BA Copilot-Labs存在的问题
+
+完成BA Copilot-Labs-优化体验产品需求文档的书写 [BA Copilot-Labs-优化体验](https://km.sankuai.com/collabpage/2666052969)
 
 
 #####  <span style="color:#00BFFF;">项目B || 学习——优先级中</span>
