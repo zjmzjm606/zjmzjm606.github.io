@@ -1,12 +1,14 @@
 .post-content {
-  width: 600px;
+  width: 800px;
   display: block;
-  margin: 10px auto 10px;
+  padding: 0 50px; 
+  margin: 10px auto;
+  background: rgba(255, 255, 255, 0.66);
 }
 .post-date {
   display: block;
   margin-bottom: 1rem;
-  color: #9a9a9a;
+  color: #646464;
   font-size:0.8rem;
 }
 .featured-image img {
