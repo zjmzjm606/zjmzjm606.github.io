@@ -44,12 +44,12 @@
 <meta property="og:site_name" content="Tomorrow’s Blog" />
 <meta property="og:image" content="http://localhost:4000/code-cover-6.png" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2024-12-26T00:00:00+08:00" />
+<meta property="article:published_time" content="2024-12-26T00:00:00-08:00" />
 <meta name="twitter:card" content="summary_large_image" />
 <meta property="twitter:image" content="http://localhost:4000/code-cover-6.png" />
 <meta property="twitter:title" content="P1980 [NOIP2013 普及组] 计数问题" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"ZJM"},"dateModified":"2024-12-26T00:00:00+08:00","datePublished":"2024-12-26T00:00:00+08:00","description":"#include&lt;bits/stdc++.h&gt; using namespace std; int main() { int n,m,ans=0; cin&gt;&gt;n&gt;&gt;m; for(int i=0;i&lt;=n;i++) { int t=0,tmp=i; while(i) { if(tmp==0) { break; } tmp=tmp/10; t++; } int a[8]; a[1]=i%10; a[2]=i/10%10; a[3]=i/100%10; a[4]=i/1000%10; a[5]=i/10000%10; a[6]=i/100000%10; a[7]=i/1000000%10; for(int j=1;j&lt;=t;j++) { if(a[j]==m) { ans++; } } } cout&lt;&lt;ans; return 0; }","headline":"P1980 [NOIP2013 普及组] 计数问题","image":"http://localhost:4000/code-cover-6.png","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/code/luogu/loop-structure/2024/12/26/P1980-NOIP2013-%E6%99%AE%E5%8F%8A%E7%BB%84-%E8%AE%A1%E6%95%B0%E9%97%AE%E9%A2%98/"},"url":"http://localhost:4000/code/luogu/loop-structure/2024/12/26/P1980-NOIP2013-%E6%99%AE%E5%8F%8A%E7%BB%84-%E8%AE%A1%E6%95%B0%E9%97%AE%E9%A2%98/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"ZJM"},"dateModified":"2024-12-26T00:00:00-08:00","datePublished":"2024-12-26T00:00:00-08:00","description":"#include&lt;bits/stdc++.h&gt; using namespace std; int main() { int n,m,ans=0; cin&gt;&gt;n&gt;&gt;m; for(int i=0;i&lt;=n;i++) { int t=0,tmp=i; while(i) { if(tmp==0) { break; } tmp=tmp/10; t++; } int a[8]; a[1]=i%10; a[2]=i/10%10; a[3]=i/100%10; a[4]=i/1000%10; a[5]=i/10000%10; a[6]=i/100000%10; a[7]=i/1000000%10; for(int j=1;j&lt;=t;j++) { if(a[j]==m) { ans++; } } } cout&lt;&lt;ans; return 0; }","headline":"P1980 [NOIP2013 普及组] 计数问题","image":"http://localhost:4000/code-cover-6.png","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/code/luogu/loop-structure/2024/12/26/P1980-NOIP2013-%E6%99%AE%E5%8F%8A%E7%BB%84-%E8%AE%A1%E6%95%B0%E9%97%AE%E9%A2%98/"},"url":"http://localhost:4000/code/luogu/loop-structure/2024/12/26/P1980-NOIP2013-%E6%99%AE%E5%8F%8A%E7%BB%84-%E8%AE%A1%E6%95%B0%E9%97%AE%E9%A2%98/"}</script>
 <!-- End Jekyll SEO tag -->
 
 </head>
