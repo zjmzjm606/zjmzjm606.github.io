@@ -393,6 +393,9 @@
 <loc>http://localhost:4000/</loc>
 </url>
 <url>
+<loc>http://localhost:4000/internship/confidential</loc>
+</url>
+<url>
 <loc>http://localhost:4000/internship</loc>
 </url>
 <url>
