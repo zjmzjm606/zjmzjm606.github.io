@@ -3,7 +3,7 @@ layout: post
 title: "BA Copilot项目进展汇报材料及【外部对标案例】思研学习心得"
 author: "ZJM"
 draft: true
-categories: internship
+categories: internship/confidential
 tags: [internship]
 image: internship-cover-3.png
 

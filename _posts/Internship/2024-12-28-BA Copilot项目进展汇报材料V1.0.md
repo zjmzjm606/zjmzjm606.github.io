@@ -2,8 +2,7 @@
 layout: post
 title: "BA Copilot项目进展汇报材料V1.0（20241022更新）"
 author: "沈亮"
-draft: true
-categories: internship
+categories: internship/confidential
 tags: [internship]
 image: internship-cover-2.png
 
