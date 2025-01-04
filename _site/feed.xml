@@ -1,290 +1,588 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-12-31T11:08:02-08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Tomorrow’s Blog</title><entry><title type="html">P5731 【深基5.习6】蛇形方阵</title><link href="http://localhost:4000/code/luogu/arrays/2024/12/29/P5731-%E6%B7%B1%E5%9F%BA5.%E4%B9%A06-%E8%9B%87%E5%BD%A2%E6%96%B9%E9%98%B5/" rel="alternate" type="text/html" title="P5731 【深基5.习6】蛇形方阵" /><published>2024-12-29T00:00:00-08:00</published><updated>2024-12-29T00:00:00-08:00</updated><id>http://localhost:4000/code/luogu/arrays/2024/12/29/P5731%20%E3%80%90%E6%B7%B1%E5%9F%BA5.%E4%B9%A06%E3%80%91%E8%9B%87%E5%BD%A2%E6%96%B9%E9%98%B5</id><content type="html" xml:base="http://localhost:4000/code/luogu/arrays/2024/12/29/P5731-%E6%B7%B1%E5%9F%BA5.%E4%B9%A06-%E8%9B%87%E5%BD%A2%E6%96%B9%E9%98%B5/"><![CDATA[<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include</span><span class="cpf">&lt;iostream&gt;</span><span class="cp">
-#include</span><span class="cpf">&lt;cmath&gt;</span><span class="cp">
-#include</span><span class="cpf">&lt;string&gt;</span><span class="cp">
-</span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
-<span class="kt">int</span> <span class="n">a</span><span class="p">[</span><span class="mi">10</span><span class="p">][</span><span class="mi">10</span><span class="p">];</span>
-<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-01-03T16:37:06-08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Tomorrow’s Blog</title><entry><title type="html">Basic Knowledge</title><link href="http://localhost:4000/code/algorithm/2025/01/03/basic-knowledge/" rel="alternate" type="text/html" title="Basic Knowledge" /><published>2025-01-03T00:00:00-08:00</published><updated>2025-01-03T00:00:00-08:00</updated><id>http://localhost:4000/code/algorithm/2025/01/03/basic-knowledge</id><content type="html" xml:base="http://localhost:4000/code/algorithm/2025/01/03/basic-knowledge/"><![CDATA[<meta http-equiv="refresh" content="0; url=/code/algorithm/basic-knowledge" />
+
+<p>If you are not redirected, <a href="/code/algorithm/basic-knowledge">click here</a>.</p>]]></content><author><name>ZJM</name></author><category term="code/algorithm" /><category term="Code" /><summary type="html"><![CDATA[If you are not redirected, click here.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/luogu-cover-2.png" /><media:content medium="image" url="http://localhost:4000/luogu-cover-2.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Grammar&amp;amp;Intro</title><link href="http://localhost:4000/code/algorithm/basic-knowledge/2025/01/03/Grammar&Intro/" rel="alternate" type="text/html" title="Grammar&amp;amp;Intro" /><published>2025-01-03T00:00:00-08:00</published><updated>2025-01-03T00:00:00-08:00</updated><id>http://localhost:4000/code/algorithm/basic-knowledge/2025/01/03/Grammar&amp;Intro</id><content type="html" xml:base="http://localhost:4000/code/algorithm/basic-knowledge/2025/01/03/Grammar&amp;Intro/"><![CDATA[<h3 id="1-基本结构"><span style="color: rgb(0,191,255);">1. <strong>基本结构</strong></span></h3>
+
+<p>一个简单的 C++ 程序结构如下：</p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="c1">  // 引入标准输入输出库</span><span class="cp">
+</span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>  <span class="c1">// 使用标准命名空间</span>
+<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> 
+<span class="p">{</span>  <span class="c1">// 主函数</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Hello, World!"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>  <span class="c1">// 输出内容</span>
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>  <span class="c1">// 返回值</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h3 id="2-数据类型"><span style="color: rgb(0,191,255);">2. <strong>数据类型</strong></span></h3>
+
+<p>C++ 提供了多种基本数据类型：</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">int</code>：整数类型</li>
+  <li><code class="language-plaintext highlighter-rouge">float</code>：单精度浮点数</li>
+  <li><code class="language-plaintext highlighter-rouge">double</code>：双精度浮点数</li>
+  <li><code class="language-plaintext highlighter-rouge">char</code>：字符类型</li>
+  <li><code class="language-plaintext highlighter-rouge">bool</code>：布尔类型（<code class="language-plaintext highlighter-rouge">true</code> 或 <code class="language-plaintext highlighter-rouge">false</code>）</li>
+  <li><code class="language-plaintext highlighter-rouge">void</code>：无类型</li>
+</ul>
+
+<h3 id="3-变量声明"><span style="color: rgb(0,191,255);">3. <strong>变量声明</strong></span></h3>
+
+<p>变量在使用之前需要声明，可以指定初始值：</p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">int</span> <span class="n">a</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
+<span class="kt">float</span> <span class="n">b</span> <span class="o">=</span> <span class="mf">3.14</span><span class="p">;</span>
+<span class="kt">char</span> <span class="n">c</span> <span class="o">=</span> <span class="sc">'A'</span><span class="p">;</span>
+</code></pre></div></div>
+
+<h3 id="4-控制结构"><span style="color: rgb(0,191,255);">4. <strong>控制结构</strong></span></h3>
+
+<ul>
+  <li>
+    <p><strong>条件语句</strong>：</p>
+
+    <div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">if</span> <span class="p">(</span><span class="n">a</span> <span class="o">&gt;</span> <span class="n">b</span><span class="p">)</span> 
 <span class="p">{</span>
-    <span class="kt">int</span> <span class="n">n</span><span class="p">;</span>
-    <span class="n">cin</span><span class="o">&gt;&gt;</span><span class="n">n</span><span class="p">;</span>
-    <span class="kt">int</span> <span class="n">direct</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span>
-    <span class="kt">int</span> <span class="n">x</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span><span class="n">y</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span>
-    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span><span class="n">i</span><span class="o">&lt;=</span><span class="n">n</span><span class="o">*</span><span class="n">n</span><span class="p">;</span><span class="n">i</span><span class="o">++</span><span class="p">)</span>
-    <span class="p">{</span>
-        <span class="n">a</span><span class="p">[</span><span class="n">x</span><span class="p">][</span><span class="n">y</span><span class="p">]</span><span class="o">=</span><span class="n">i</span><span class="p">;</span>
-        <span class="kt">int</span> <span class="n">tx</span><span class="o">=</span><span class="n">x</span><span class="p">,</span><span class="n">ty</span><span class="o">=</span><span class="n">y</span><span class="p">;</span>
-        <span class="k">if</span><span class="p">(</span><span class="n">direct</span><span class="o">==</span><span class="mi">0</span><span class="p">)</span>
-            <span class="n">ty</span><span class="o">+=</span><span class="mi">1</span><span class="p">;</span>
-        <span class="k">if</span><span class="p">(</span><span class="n">direct</span><span class="o">==</span><span class="mi">1</span><span class="p">)</span>
-            <span class="n">tx</span><span class="o">+=</span><span class="mi">1</span><span class="p">;</span>
-        <span class="k">if</span><span class="p">(</span><span class="n">direct</span><span class="o">==</span><span class="mi">2</span><span class="p">)</span>
-            <span class="n">ty</span><span class="o">-=</span><span class="mi">1</span><span class="p">;</span>
-        <span class="k">if</span><span class="p">(</span><span class="n">direct</span><span class="o">==</span><span class="mi">3</span><span class="p">)</span>
-            <span class="n">tx</span><span class="o">-=</span><span class="mi">1</span><span class="p">;</span>
-        <span class="k">if</span><span class="p">(</span><span class="n">a</span><span class="p">[</span><span class="n">tx</span><span class="p">][</span><span class="n">ty</span><span class="p">]</span><span class="o">!=</span><span class="mi">0</span><span class="o">||</span><span class="n">tx</span><span class="o">&gt;</span><span class="n">n</span><span class="o">||</span><span class="n">ty</span><span class="o">&gt;</span><span class="n">n</span><span class="o">||</span><span class="n">tx</span><span class="o">==</span><span class="mi">0</span><span class="o">||</span><span class="n">ty</span><span class="o">==</span><span class="mi">0</span><span class="p">)</span>
-            <span class="n">direct</span><span class="o">=</span><span class="p">(</span><span class="n">direct</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span><span class="o">%</span><span class="mi">4</span><span class="p">;</span>
-        <span class="k">if</span><span class="p">(</span><span class="n">direct</span><span class="o">==</span><span class="mi">0</span><span class="p">)</span>
-            <span class="n">y</span><span class="o">+=</span><span class="mi">1</span><span class="p">;</span>
-        <span class="k">if</span><span class="p">(</span><span class="n">direct</span><span class="o">==</span><span class="mi">1</span><span class="p">)</span>
-            <span class="n">x</span><span class="o">+=</span><span class="mi">1</span><span class="p">;</span>
-        <span class="k">if</span><span class="p">(</span><span class="n">direct</span><span class="o">==</span><span class="mi">2</span><span class="p">)</span>
-            <span class="n">y</span><span class="o">-=</span><span class="mi">1</span><span class="p">;</span>
-        <span class="k">if</span><span class="p">(</span><span class="n">direct</span><span class="o">==</span><span class="mi">3</span><span class="p">)</span>
-            <span class="n">x</span><span class="o">-=</span><span class="mi">1</span><span class="p">;</span>
-    <span class="p">}</span>
-    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span><span class="n">i</span><span class="o">&lt;=</span><span class="n">n</span><span class="p">;</span><span class="n">i</span><span class="o">++</span><span class="p">)</span>
-    <span class="p">{</span>
-        <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">j</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span><span class="n">j</span><span class="o">&lt;=</span><span class="n">n</span><span class="p">;</span><span class="n">j</span><span class="o">++</span><span class="p">)</span>
-        <span class="p">{</span>
-            <span class="k">if</span><span class="p">(</span><span class="n">a</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span><span class="o">&lt;</span><span class="mi">10</span><span class="p">)</span>
-                <span class="n">cout</span><span class="o">&lt;&lt;</span><span class="s">"  "</span><span class="o">&lt;&lt;</span><span class="n">a</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">];</span>
-            <span class="k">else</span>
-                <span class="n">cout</span><span class="o">&lt;&lt;</span><span class="sc">' '</span><span class="o">&lt;&lt;</span><span class="n">a</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">];</span>
-        <span class="p">}</span>
-        <span class="n">cout</span><span class="o">&lt;&lt;</span><span class="n">endl</span><span class="p">;</span>
-    <span class="p">}</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"a is greater than b"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+<span class="p">}</span> 
+<span class="k">else</span> 
+<span class="p">{</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"b is greater than or equal to a"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p><strong>循环语句</strong>：</p>
+
+    <div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// for 循环</span>
+<span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">5</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> 
+<span class="p">{</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">i</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="c1">// while 循环</span>
+<span class="kt">int</span> <span class="n">j</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+<span class="k">while</span> <span class="p">(</span><span class="n">j</span> <span class="o">&lt;</span> <span class="mi">5</span><span class="p">)</span> 
+<span class="p">{</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">j</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="n">j</span><span class="o">++</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="c1">// do-while 循环</span>
+<span class="kt">int</span> <span class="n">k</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+<span class="k">do</span> <span class="p">{</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">k</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="n">k</span><span class="o">++</span><span class="p">;</span>
+<span class="p">}</span> <span class="k">while</span> <span class="p">(</span><span class="n">k</span> <span class="o">&lt;</span> <span class="mi">5</span><span class="p">);</span>
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<h3 id="5-函数"><span style="color: rgb(0,191,255);">5. <strong>函数</strong></span></h3>
+
+<p>函数用于封装代码块，方便复用：</p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">int</span> <span class="nf">add</span><span class="p">(</span><span class="kt">int</span> <span class="n">a</span><span class="p">,</span> <span class="kt">int</span> <span class="n">b</span><span class="p">)</span> 
+<span class="p">{</span>
+    <span class="k">return</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> 
+<span class="p">{</span>
+    <span class="kt">int</span> <span class="n">result</span> <span class="o">=</span> <span class="n">add</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">);</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Sum is: "</span> <span class="o">&lt;&lt;</span> <span class="n">result</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
     <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
-</code></pre></div></div>]]></content><author><name>ZJM</name></author><category term="code/luogu/arrays" /><category term="Code" /><summary type="html"><![CDATA[#include&lt;iostream&gt; #include&lt;cmath&gt; #include&lt;string&gt; using namespace std; int a[10][10]; int main() { int n; cin&gt;&gt;n; int direct=0; int x=1,y=1; for(int i=1;i&lt;=n*n;i++) { a[x][y]=i; int tx=x,ty=y; if(direct==0) ty+=1; if(direct==1) tx+=1; if(direct==2) ty-=1; if(direct==3) tx-=1; if(a[tx][ty]!=0||tx&gt;n||ty&gt;n||tx==0||ty==0) direct=(direct+1)%4; if(direct==0) y+=1; if(direct==1) x+=1; if(direct==2) y-=1; if(direct==3) x-=1; } for(int i=1;i&lt;=n;i++) { for(int j=1;j&lt;=n;j++) { if(a[i][j]&lt;10) cout&lt;&lt;" "&lt;&lt;a[i][j]; else cout&lt;&lt;' '&lt;&lt;a[i][j]; } cout&lt;&lt;endl; } return 0; }]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/code-cover-15.png" /><media:content medium="image" url="http://localhost:4000/code-cover-15.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">P5730 【深基5.例10】显示屏</title><link href="http://localhost:4000/code/luogu/arrays/2024/12/29/P5730-%E6%B7%B1%E5%9F%BA5.%E4%BE%8B10-%E6%98%BE%E7%A4%BA%E5%B1%8F/" rel="alternate" type="text/html" title="P5730 【深基5.例10】显示屏" /><published>2024-12-29T00:00:00-08:00</published><updated>2024-12-29T00:00:00-08:00</updated><id>http://localhost:4000/code/luogu/arrays/2024/12/29/P5730%20%E3%80%90%E6%B7%B1%E5%9F%BA5.%E4%BE%8B10%E3%80%91%E6%98%BE%E7%A4%BA%E5%B1%8F</id><content type="html" xml:base="http://localhost:4000/code/luogu/arrays/2024/12/29/P5730-%E6%B7%B1%E5%9F%BA5.%E4%BE%8B10-%E6%98%BE%E7%A4%BA%E5%B1%8F/"><![CDATA[<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include</span><span class="cpf">&lt;iostream&gt;</span><span class="cp">
-#include</span><span class="cpf">&lt;cmath&gt;</span><span class="cp">
-#include</span><span class="cpf">&lt;string&gt;</span><span class="cp">
-</span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
-<span class="kt">bool</span> <span class="n">a</span><span class="p">[</span><span class="mi">11</span><span class="p">][</span><span class="mi">6</span><span class="p">][</span><span class="mi">4</span><span class="p">];</span>
-<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
+</code></pre></div></div>
+
+<h3 id="6-数组"><span style="color: rgb(0,191,255);">6. <strong>数组</strong></span></h3>
+
+<p>数组用于存储多个相同类型的元素：</p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">int</span> <span class="n">arr</span><span class="p">[</span><span class="mi">5</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">};</span>
+<span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">arr</span><span class="p">[</span><span class="mi">0</span><span class="p">];</span>  <span class="c1">// 输出数组的第一个元素</span>
+</code></pre></div></div>
+
+<h3 id="7-指针"><span style="color: rgb(0,191,255);">7. <strong>指针</strong></span></h3>
+
+<p>指针存储变量的内存地址：</p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">int</span> <span class="n">a</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
+<span class="kt">int</span> <span class="o">*</span><span class="n">ptr</span> <span class="o">=</span> <span class="o">&amp;</span><span class="n">a</span><span class="p">;</span>  <span class="c1">// 指针 ptr 存储 a 的地址</span>
+<span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="o">*</span><span class="n">ptr</span><span class="p">;</span>  <span class="c1">// 解引用，输出 a 的值</span>
+</code></pre></div></div>
+
+<h3 id="8-面向对象"><span style="color: rgb(0,191,255);">8. <strong>面向对象</strong></span></h3>
+
+<p>C++ 支持面向对象编程，基本概念包括类、对象、继承、封装和多态。</p>
+
+<ul>
+  <li>类和对象：
+    <div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">class</span> <span class="nc">Car</span> 
 <span class="p">{</span>
-    <span class="kt">int</span> <span class="n">n</span><span class="p">;</span>
-    <span class="n">cin</span><span class="o">&gt;&gt;</span><span class="n">n</span><span class="p">;</span>
-    <span class="n">a</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">1</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span><span class="o">=</span><span class="nb">true</span><span class="p">;</span>
-    <span class="n">a</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">1</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span><span class="o">=</span><span class="nb">true</span><span class="p">;</span>
-    <span class="n">a</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">1</span><span class="p">][</span><span class="mi">3</span><span class="p">]</span><span class="o">=</span><span class="nb">true</span><span class="p">;</span>
-    <span class="n">a</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">2</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span><span class="o">=</span><span class="nb">true</span><span class="p">;</span>
-    <span class="n">a</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">2</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span><span class="o">=</span><span class="nb">false</span><span class="p">;</span>
-    <span class="n">a</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">2</span><span class="p">][</span><span class="mi">3</span><span class="p">]</span><span class="o">=</span><span class="nb">true</span><span class="p">;</span>
-    <span class="n">a</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">3</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span><span class="o">=</span><span class="nb">true</span><span class="p">;</span>
-    <span class="n">a</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">3</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span><span class="o">=</span><span class="nb">false</span><span class="p">;</span>
-    <span class="n">a</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">3</span><span class="p">][</span><span class="mi">3</span><span class="p">]</span><span class="o">=</span><span class="nb">true</span><span class="p">;</span>
-    <span class="n">a</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">4</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span><span class="o">=</span><span class="nb">true</span><span class="p">;</span>
-    <span class="n">a</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">4</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span><span class="o">=</span><span class="nb">false</span><span class="p">;</span>
-    <span class="n">a</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">4</span><span class="p">][</span><span class="mi">3</span><span class="p">]</span><span class="o">=</span><span class="nb">true</span><span class="p">;</span>
-    <span class="n">a</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">5</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span><span class="o">=</span><span class="nb">true</span><span class="p">;</span>
-    <span class="n">a</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">5</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span><span class="o">=</span><span class="nb">true</span><span class="p">;</span>
-    <span class="n">a</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">5</span><span class="p">][</span><span class="mi">3</span><span class="p">]</span><span class="o">=</span><span class="nb">true</span><span class="p">;</span>
-    
-    <span class="n">a</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">1</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span><span class="o">=</span><span class="nb">false</span><span class="p">;</span>
-    <span class="n">a</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">1</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span><span class="o">=</span><span class="nb">false</span><span class="p">;</span>
-    <span class="n">a</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">1</span><span class="p">][</span><span class="mi">3</span><span class="p">]</span><span class="o">=</span><span class="nb">true</span><span class="p">;</span>
-    <span class="n">a</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">2</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span><span class="o">=</span><span class="nb">false</span><span class="p">;</span>
-    <span class="n">a</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">2</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span><span class="o">=</span><span class="nb">false</span><span class="p">;</span>
-    <span class="n">a</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">2</span><span class="p">][</span><span class="mi">3</span><span class="p">]</span><span class="o">=</span><span class="nb">true</span><span class="p">;</span>
-    <span class="n">a</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">3</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span><span class="o">=</span><span class="nb">false</span><span class="p">;</span>
-    <span class="n">a</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">3</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span><span class="o">=</span><span class="nb">false</span><span class="p">;</span>
-    <span class="n">a</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">3</span><span class="p">][</span><span class="mi">3</span><span class="p">]</span><span class="o">=</span><span class="nb">true</span><span class="p">;</span>
-    <span class="n">a</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">4</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span><span class="o">=</span><span class="nb">false</span><span class="p">;</span>
-    <span class="n">a</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">4</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span><span class="o">=</span><span class="nb">false</span><span class="p">;</span>
-    <span class="n">a</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">4</span><span class="p">][</span><span class="mi">3</span><span class="p">]</span><span class="o">=</span><span class="nb">true</span><span class="p">;</span>
-    <span class="n">a</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">5</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span><span class="o">=</span><span class="nb">false</span><span class="p">;</span>
-    <span class="n">a</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">5</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span><span class="o">=</span><span class="nb">false</span><span class="p">;</span>
-    <span class="n">a</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">5</span><span class="p">][</span><span class="mi">3</span><span class="p">]</span><span class="o">=</span><span class="nb">true</span><span class="p">;</span>
-    
-    <span class="n">a</span><span class="p">[</span><span class="mi">2</span><span class="p">][</span><span class="mi">1</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span><span class="o">=</span><span class="nb">true</span><span class="p">;</span>
-    <span class="n">a</span><span class="p">[</span><span class="mi">2</span><span class="p">][</span><span class="mi">1</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span><span class="o">=</span><span class="nb">true</span><span class="p">;</span>
-    <span class="n">a</span><span class="p">[</span><span class="mi">2</span><span class="p">][</span><span class="mi">1</span><span class="p">][</span><span class="mi">3</span><span class="p">]</span><span class="o">=</span><span class="nb">true</span><span class="p">;</span>
-    <span class="n">a</span><span class="p">[</span><span class="mi">2</span><span class="p">][</span><span class="mi">2</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span><span class="o">=</span><span class="nb">false</span><span class="p">;</span>
-    <span class="n">a</span><span class="p">[</span><span class="mi">2</span><span class="p">][</span><span class="mi">2</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span><span class="o">=</span><span class="nb">false</span><span class="p">;</span>
-    <span class="n">a</span><span class="p">[</span><span class="mi">2</span><span class="p">][</span><span class="mi">2</span><span class="p">][</span><span class="mi">3</span><span class="p">]</span><span class="o">=</span><span class="nb">true</span><span class="p">;</span>
-    <span class="n">a</span><span class="p">[</span><span class="mi">2</span><span class="p">][</span><span class="mi">3</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span><span class="o">=</span><span class="nb">true</span><span class="p">;</span>
-    <span class="n">a</span><span class="p">[</span><span class="mi">2</span><span class="p">][</span><span class="mi">3</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span><span class="o">=</span><span class="nb">true</span><span class="p">;</span>
-    <span class="n">a</span><span class="p">[</span><span class="mi">2</span><span class="p">][</span><span class="mi">3</span><span class="p">][</span><span class="mi">3</span><span class="p">]</span><span class="o">=</span><span class="nb">true</span><span class="p">;</span>
-    <span class="n">a</span><span class="p">[</span><span class="mi">2</span><span class="p">][</span><span class="mi">4</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span><span class="o">=</span><span class="nb">true</span><span class="p">;</span>
-    <span class="n">a</span><span class="p">[</span><span class="mi">2</span><span class="p">][</span><span class="mi">4</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span><span class="o">=</span><span class="nb">false</span><span class="p">;</span>
-    <span class="n">a</span><span class="p">[</span><span class="mi">2</span><span class="p">][</span><span class="mi">4</span><span class="p">][</span><span class="mi">3</span><span class="p">]</span><span class="o">=</span><span class="nb">false</span><span class="p">;</span>
-    <span class="n">a</span><span class="p">[</span><span class="mi">2</span><span class="p">][</span><span class="mi">5</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span><span class="o">=</span><span class="nb">true</span><span class="p">;</span>
-    <span class="n">a</span><span class="p">[</span><span class="mi">2</span><span class="p">][</span><span class="mi">5</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span><span class="o">=</span><span class="nb">true</span><span class="p">;</span>
-    <span class="n">a</span><span class="p">[</span><span class="mi">2</span><span class="p">][</span><span class="mi">5</span><span class="p">][</span><span class="mi">3</span><span class="p">]</span><span class="o">=</span><span class="nb">true</span><span class="p">;</span>
-
-    <span class="n">a</span><span class="p">[</span><span class="mi">3</span><span class="p">][</span><span class="mi">1</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span><span class="o">=</span><span class="nb">true</span><span class="p">;</span>
-    <span class="n">a</span><span class="p">[</span><span class="mi">3</span><span class="p">][</span><span class="mi">1</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span><span class="o">=</span><span class="nb">true</span><span class="p">;</span>
-    <span class="n">a</span><span class="p">[</span><span class="mi">3</span><span class="p">][</span><span class="mi">1</span><span class="p">][</span><span class="mi">3</span><span class="p">]</span><span class="o">=</span><span class="nb">true</span><span class="p">;</span>
-    <span class="n">a</span><span class="p">[</span><span class="mi">3</span><span class="p">][</span><span class="mi">2</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span><span class="o">=</span><span class="nb">false</span><span class="p">;</span>
-    <span class="n">a</span><span class="p">[</span><span class="mi">3</span><span class="p">][</span><span class="mi">2</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span><span class="o">=</span><span class="nb">false</span><span class="p">;</span>
-    <span class="n">a</span><span class="p">[</span><span class="mi">3</span><span class="p">][</span><span class="mi">2</span><span class="p">][</span><span class="mi">3</span><span class="p">]</span><span class="o">=</span><span class="nb">true</span><span class="p">;</span>
-    <span class="n">a</span><span class="p">[</span><span class="mi">3</span><span class="p">][</span><span class="mi">3</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span><span class="o">=</span><span class="nb">true</span><span class="p">;</span>
-    <span class="n">a</span><span class="p">[</span><span class="mi">3</span><span class="p">][</span><span class="mi">3</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span><span class="o">=</span><span class="nb">true</span><span class="p">;</span>
-    <span class="n">a</span><span class="p">[</span><span class="mi">3</span><span class="p">][</span><span class="mi">3</span><span class="p">][</span><span class="mi">3</span><span class="p">]</span><span class="o">=</span><span class="nb">true</span><span class="p">;</span>
-    <span class="n">a</span><span class="p">[</span><span class="mi">3</span><span class="p">][</span><span class="mi">4</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span><span class="o">=</span><span class="nb">false</span><span class="p">;</span>
-    <span class="n">a</span><span class="p">[</span><span class="mi">3</span><span class="p">][</span><span class="mi">4</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span><span class="o">=</span><span class="nb">false</span><span class="p">;</span>
-    <span class="n">a</span><span class="p">[</span><span class="mi">3</span><span class="p">][</span><span class="mi">4</span><span class="p">][</span><span class="mi">3</span><span class="p">]</span><span class="o">=</span><span class="nb">true</span><span class="p">;</span>
-    <span class="n">a</span><span class="p">[</span><span class="mi">3</span><span class="p">][</span><span class="mi">5</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span><span class="o">=</span><span class="nb">true</span><span class="p">;</span>
-    <span class="n">a</span><span class="p">[</span><span class="mi">3</span><span class="p">][</span><span class="mi">5</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span><span class="o">=</span><span class="nb">true</span><span class="p">;</span>
-    <span class="n">a</span><span class="p">[</span><span class="mi">3</span><span class="p">][</span><span class="mi">5</span><span class="p">][</span><span class="mi">3</span><span class="p">]</span><span class="o">=</span><span class="nb">true</span><span class="p">;</span>
-
-    <span class="n">a</span><span class="p">[</span><span class="mi">4</span><span class="p">][</span><span class="mi">1</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span><span class="o">=</span><span class="nb">true</span><span class="p">;</span>
-    <span class="n">a</span><span class="p">[</span><span class="mi">4</span><span class="p">][</span><span class="mi">1</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span><span class="o">=</span><span class="nb">false</span><span class="p">;</span>
-    <span class="n">a</span><span class="p">[</span><span class="mi">4</span><span class="p">][</span><span class="mi">1</span><span class="p">][</span><span class="mi">3</span><span class="p">]</span><span class="o">=</span><span class="nb">true</span><span class="p">;</span>
-    <span class="n">a</span><span class="p">[</span><span class="mi">4</span><span class="p">][</span><span class="mi">2</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span><span class="o">=</span><span class="nb">true</span><span class="p">;</span>
-    <span class="n">a</span><span class="p">[</span><span class="mi">4</span><span class="p">][</span><span class="mi">2</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span><span class="o">=</span><span class="nb">false</span><span class="p">;</span>
-    <span class="n">a</span><span class="p">[</span><span class="mi">4</span><span class="p">][</span><span class="mi">2</span><span class="p">][</span><span class="mi">3</span><span class="p">]</span><span class="o">=</span><span class="nb">true</span><span class="p">;</span>
-    <span class="n">a</span><span class="p">[</span><span class="mi">4</span><span class="p">][</span><span class="mi">3</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span><span class="o">=</span><span class="nb">true</span><span class="p">;</span>
-    <span class="n">a</span><span class="p">[</span><span class="mi">4</span><span class="p">][</span><span class="mi">3</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span><span class="o">=</span><span class="nb">true</span><span class="p">;</span>
-    <span class="n">a</span><span class="p">[</span><span class="mi">4</span><span class="p">][</span><span class="mi">3</span><span class="p">][</span><span class="mi">3</span><span class="p">]</span><span class="o">=</span><span class="nb">true</span><span class="p">;</span>
-    <span class="n">a</span><span class="p">[</span><span class="mi">4</span><span class="p">][</span><span class="mi">4</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span><span class="o">=</span><span class="nb">false</span><span class="p">;</span>
-    <span class="n">a</span><span class="p">[</span><span class="mi">4</span><span class="p">][</span><span class="mi">4</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span><span class="o">=</span><span class="nb">false</span><span class="p">;</span>
-    <span class="n">a</span><span class="p">[</span><span class="mi">4</span><span class="p">][</span><span class="mi">4</span><span class="p">][</span><span class="mi">3</span><span class="p">]</span><span class="o">=</span><span class="nb">true</span><span class="p">;</span>
-    <span class="n">a</span><span class="p">[</span><span class="mi">4</span><span class="p">][</span><span class="mi">5</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span><span class="o">=</span><span class="nb">false</span><span class="p">;</span>
-    <span class="n">a</span><span class="p">[</span><span class="mi">4</span><span class="p">][</span><span class="mi">5</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span><span class="o">=</span><span class="nb">false</span><span class="p">;</span>
-    <span class="n">a</span><span class="p">[</span><span class="mi">4</span><span class="p">][</span><span class="mi">5</span><span class="p">][</span><span class="mi">3</span><span class="p">]</span><span class="o">=</span><span class="nb">true</span><span class="p">;</span>
-
-    <span class="n">a</span><span class="p">[</span><span class="mi">5</span><span class="p">][</span><span class="mi">1</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span><span class="o">=</span><span class="nb">true</span><span class="p">;</span>
-    <span class="n">a</span><span class="p">[</span><span class="mi">5</span><span class="p">][</span><span class="mi">1</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span><span class="o">=</span><span class="nb">true</span><span class="p">;</span>
-    <span class="n">a</span><span class="p">[</span><span class="mi">5</span><span class="p">][</span><span class="mi">1</span><span class="p">][</span><span class="mi">3</span><span class="p">]</span><span class="o">=</span><span class="nb">true</span><span class="p">;</span>
-    <span class="n">a</span><span class="p">[</span><span class="mi">5</span><span class="p">][</span><span class="mi">2</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span><span class="o">=</span><span class="nb">true</span><span class="p">;</span>
-    <span class="n">a</span><span class="p">[</span><span class="mi">5</span><span class="p">][</span><span class="mi">2</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span><span class="o">=</span><span class="nb">false</span><span class="p">;</span>
-    <span class="n">a</span><span class="p">[</span><span class="mi">5</span><span class="p">][</span><span class="mi">2</span><span class="p">][</span><span class="mi">3</span><span class="p">]</span><span class="o">=</span><span class="nb">false</span><span class="p">;</span>
-    <span class="n">a</span><span class="p">[</span><span class="mi">5</span><span class="p">][</span><span class="mi">3</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span><span class="o">=</span><span class="nb">true</span><span class="p">;</span>
-    <span class="n">a</span><span class="p">[</span><span class="mi">5</span><span class="p">][</span><span class="mi">3</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span><span class="o">=</span><span class="nb">true</span><span class="p">;</span>
-    <span class="n">a</span><span class="p">[</span><span class="mi">5</span><span class="p">][</span><span class="mi">3</span><span class="p">][</span><span class="mi">3</span><span class="p">]</span><span class="o">=</span><span class="nb">true</span><span class="p">;</span>
-    <span class="n">a</span><span class="p">[</span><span class="mi">5</span><span class="p">][</span><span class="mi">4</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span><span class="o">=</span><span class="nb">false</span><span class="p">;</span>
-    <span class="n">a</span><span class="p">[</span><span class="mi">5</span><span class="p">][</span><span class="mi">4</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span><span class="o">=</span><span class="nb">false</span><span class="p">;</span>
-    <span class="n">a</span><span class="p">[</span><span class="mi">5</span><span class="p">][</span><span class="mi">4</span><span class="p">][</span><span class="mi">3</span><span class="p">]</span><span class="o">=</span><span class="nb">true</span><span class="p">;</span>
-    <span class="n">a</span><span class="p">[</span><span class="mi">5</span><span class="p">][</span><span class="mi">5</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span><span class="o">=</span><span class="nb">true</span><span class="p">;</span>
-    <span class="n">a</span><span class="p">[</span><span class="mi">5</span><span class="p">][</span><span class="mi">5</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span><span class="o">=</span><span class="nb">true</span><span class="p">;</span>
-    <span class="n">a</span><span class="p">[</span><span class="mi">5</span><span class="p">][</span><span class="mi">5</span><span class="p">][</span><span class="mi">3</span><span class="p">]</span><span class="o">=</span><span class="nb">true</span><span class="p">;</span>
-
-    <span class="n">a</span><span class="p">[</span><span class="mi">6</span><span class="p">][</span><span class="mi">1</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span><span class="o">=</span><span class="nb">true</span><span class="p">;</span>
-    <span class="n">a</span><span class="p">[</span><span class="mi">6</span><span class="p">][</span><span class="mi">1</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span><span class="o">=</span><span class="nb">true</span><span class="p">;</span>
-    <span class="n">a</span><span class="p">[</span><span class="mi">6</span><span class="p">][</span><span class="mi">1</span><span class="p">][</span><span class="mi">3</span><span class="p">]</span><span class="o">=</span><span class="nb">true</span><span class="p">;</span>
-    <span class="n">a</span><span class="p">[</span><span class="mi">6</span><span class="p">][</span><span class="mi">2</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span><span class="o">=</span><span class="nb">true</span><span class="p">;</span>
-    <span class="n">a</span><span class="p">[</span><span class="mi">6</span><span class="p">][</span><span class="mi">2</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span><span class="o">=</span><span class="nb">false</span><span class="p">;</span>
-    <span class="n">a</span><span class="p">[</span><span class="mi">6</span><span class="p">][</span><span class="mi">2</span><span class="p">][</span><span class="mi">3</span><span class="p">]</span><span class="o">=</span><span class="nb">false</span><span class="p">;</span>
-    <span class="n">a</span><span class="p">[</span><span class="mi">6</span><span class="p">][</span><span class="mi">3</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span><span class="o">=</span><span class="nb">true</span><span class="p">;</span>
-    <span class="n">a</span><span class="p">[</span><span class="mi">6</span><span class="p">][</span><span class="mi">3</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span><span class="o">=</span><span class="nb">true</span><span class="p">;</span>
-    <span class="n">a</span><span class="p">[</span><span class="mi">6</span><span class="p">][</span><span class="mi">3</span><span class="p">][</span><span class="mi">3</span><span class="p">]</span><span class="o">=</span><span class="nb">true</span><span class="p">;</span>
-    <span class="n">a</span><span class="p">[</span><span class="mi">6</span><span class="p">][</span><span class="mi">4</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span><span class="o">=</span><span class="nb">true</span><span class="p">;</span>
-    <span class="n">a</span><span class="p">[</span><span class="mi">6</span><span class="p">][</span><span class="mi">4</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span><span class="o">=</span><span class="nb">false</span><span class="p">;</span>
-    <span class="n">a</span><span class="p">[</span><span class="mi">6</span><span class="p">][</span><span class="mi">4</span><span class="p">][</span><span class="mi">3</span><span class="p">]</span><span class="o">=</span><span class="nb">true</span><span class="p">;</span>
-    <span class="n">a</span><span class="p">[</span><span class="mi">6</span><span class="p">][</span><span class="mi">5</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span><span class="o">=</span><span class="nb">true</span><span class="p">;</span>
-    <span class="n">a</span><span class="p">[</span><span class="mi">6</span><span class="p">][</span><span class="mi">5</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span><span class="o">=</span><span class="nb">true</span><span class="p">;</span>
-    <span class="n">a</span><span class="p">[</span><span class="mi">6</span><span class="p">][</span><span class="mi">5</span><span class="p">][</span><span class="mi">3</span><span class="p">]</span><span class="o">=</span><span class="nb">true</span><span class="p">;</span>
-
-    <span class="n">a</span><span class="p">[</span><span class="mi">7</span><span class="p">][</span><span class="mi">1</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span><span class="o">=</span><span class="nb">true</span><span class="p">;</span>
-    <span class="n">a</span><span class="p">[</span><span class="mi">7</span><span class="p">][</span><span class="mi">1</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span><span class="o">=</span><span class="nb">true</span><span class="p">;</span>
-    <span class="n">a</span><span class="p">[</span><span class="mi">7</span><span class="p">][</span><span class="mi">1</span><span class="p">][</span><span class="mi">3</span><span class="p">]</span><span class="o">=</span><span class="nb">true</span><span class="p">;</span>
-    <span class="n">a</span><span class="p">[</span><span class="mi">7</span><span class="p">][</span><span class="mi">2</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span><span class="o">=</span><span class="nb">false</span><span class="p">;</span>
-    <span class="n">a</span><span class="p">[</span><span class="mi">7</span><span class="p">][</span><span class="mi">2</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span><span class="o">=</span><span class="nb">false</span><span class="p">;</span>
-    <span class="n">a</span><span class="p">[</span><span class="mi">7</span><span class="p">][</span><span class="mi">2</span><span class="p">][</span><span class="mi">3</span><span class="p">]</span><span class="o">=</span><span class="nb">true</span><span class="p">;</span>
-    <span class="n">a</span><span class="p">[</span><span class="mi">7</span><span class="p">][</span><span class="mi">3</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span><span class="o">=</span><span class="nb">false</span><span class="p">;</span>
-    <span class="n">a</span><span class="p">[</span><span class="mi">7</span><span class="p">][</span><span class="mi">3</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span><span class="o">=</span><span class="nb">false</span><span class="p">;</span>
-    <span class="n">a</span><span class="p">[</span><span class="mi">7</span><span class="p">][</span><span class="mi">3</span><span class="p">][</span><span class="mi">3</span><span class="p">]</span><span class="o">=</span><span class="nb">true</span><span class="p">;</span>
-    <span class="n">a</span><span class="p">[</span><span class="mi">7</span><span class="p">][</span><span class="mi">4</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span><span class="o">=</span><span class="nb">false</span><span class="p">;</span>
-    <span class="n">a</span><span class="p">[</span><span class="mi">7</span><span class="p">][</span><span class="mi">4</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span><span class="o">=</span><span class="nb">false</span><span class="p">;</span>
-    <span class="n">a</span><span class="p">[</span><span class="mi">7</span><span class="p">][</span><span class="mi">4</span><span class="p">][</span><span class="mi">3</span><span class="p">]</span><span class="o">=</span><span class="nb">true</span><span class="p">;</span>
-    <span class="n">a</span><span class="p">[</span><span class="mi">7</span><span class="p">][</span><span class="mi">5</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span><span class="o">=</span><span class="nb">false</span><span class="p">;</span>
-    <span class="n">a</span><span class="p">[</span><span class="mi">7</span><span class="p">][</span><span class="mi">5</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span><span class="o">=</span><span class="nb">false</span><span class="p">;</span>
-    <span class="n">a</span><span class="p">[</span><span class="mi">7</span><span class="p">][</span><span class="mi">5</span><span class="p">][</span><span class="mi">3</span><span class="p">]</span><span class="o">=</span><span class="nb">true</span><span class="p">;</span>
-
-    <span class="n">a</span><span class="p">[</span><span class="mi">8</span><span class="p">][</span><span class="mi">1</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span><span class="o">=</span><span class="nb">true</span><span class="p">;</span>
-    <span class="n">a</span><span class="p">[</span><span class="mi">8</span><span class="p">][</span><span class="mi">1</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span><span class="o">=</span><span class="nb">true</span><span class="p">;</span>
-    <span class="n">a</span><span class="p">[</span><span class="mi">8</span><span class="p">][</span><span class="mi">1</span><span class="p">][</span><span class="mi">3</span><span class="p">]</span><span class="o">=</span><span class="nb">true</span><span class="p">;</span>
-    <span class="n">a</span><span class="p">[</span><span class="mi">8</span><span class="p">][</span><span class="mi">2</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span><span class="o">=</span><span class="nb">true</span><span class="p">;</span>
-    <span class="n">a</span><span class="p">[</span><span class="mi">8</span><span class="p">][</span><span class="mi">2</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span><span class="o">=</span><span class="nb">false</span><span class="p">;</span>
-    <span class="n">a</span><span class="p">[</span><span class="mi">8</span><span class="p">][</span><span class="mi">2</span><span class="p">][</span><span class="mi">3</span><span class="p">]</span><span class="o">=</span><span class="nb">true</span><span class="p">;</span>
-    <span class="n">a</span><span class="p">[</span><span class="mi">8</span><span class="p">][</span><span class="mi">3</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span><span class="o">=</span><span class="nb">true</span><span class="p">;</span>
-    <span class="n">a</span><span class="p">[</span><span class="mi">8</span><span class="p">][</span><span class="mi">3</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span><span class="o">=</span><span class="nb">true</span><span class="p">;</span>
-    <span class="n">a</span><span class="p">[</span><span class="mi">8</span><span class="p">][</span><span class="mi">3</span><span class="p">][</span><span class="mi">3</span><span class="p">]</span><span class="o">=</span><span class="nb">true</span><span class="p">;</span>
-    <span class="n">a</span><span class="p">[</span><span class="mi">8</span><span class="p">][</span><span class="mi">4</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span><span class="o">=</span><span class="nb">true</span><span class="p">;</span>
-    <span class="n">a</span><span class="p">[</span><span class="mi">8</span><span class="p">][</span><span class="mi">4</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span><span class="o">=</span><span class="nb">false</span><span class="p">;</span>
-    <span class="n">a</span><span class="p">[</span><span class="mi">8</span><span class="p">][</span><span class="mi">4</span><span class="p">][</span><span class="mi">3</span><span class="p">]</span><span class="o">=</span><span class="nb">true</span><span class="p">;</span>
-    <span class="n">a</span><span class="p">[</span><span class="mi">8</span><span class="p">][</span><span class="mi">5</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span><span class="o">=</span><span class="nb">true</span><span class="p">;</span>
-    <span class="n">a</span><span class="p">[</span><span class="mi">8</span><span class="p">][</span><span class="mi">5</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span><span class="o">=</span><span class="nb">true</span><span class="p">;</span>
-    <span class="n">a</span><span class="p">[</span><span class="mi">8</span><span class="p">][</span><span class="mi">5</span><span class="p">][</span><span class="mi">3</span><span class="p">]</span><span class="o">=</span><span class="nb">true</span><span class="p">;</span>
-
-    <span class="n">a</span><span class="p">[</span><span class="mi">9</span><span class="p">][</span><span class="mi">1</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span><span class="o">=</span><span class="nb">true</span><span class="p">;</span>
-    <span class="n">a</span><span class="p">[</span><span class="mi">9</span><span class="p">][</span><span class="mi">1</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span><span class="o">=</span><span class="nb">true</span><span class="p">;</span>
-    <span class="n">a</span><span class="p">[</span><span class="mi">9</span><span class="p">][</span><span class="mi">1</span><span class="p">][</span><span class="mi">3</span><span class="p">]</span><span class="o">=</span><span class="nb">true</span><span class="p">;</span>
-    <span class="n">a</span><span class="p">[</span><span class="mi">9</span><span class="p">][</span><span class="mi">2</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span><span class="o">=</span><span class="nb">true</span><span class="p">;</span>
-    <span class="n">a</span><span class="p">[</span><span class="mi">9</span><span class="p">][</span><span class="mi">2</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span><span class="o">=</span><span class="nb">false</span><span class="p">;</span>
-    <span class="n">a</span><span class="p">[</span><span class="mi">9</span><span class="p">][</span><span class="mi">2</span><span class="p">][</span><span class="mi">3</span><span class="p">]</span><span class="o">=</span><span class="nb">true</span><span class="p">;</span>
-    <span class="n">a</span><span class="p">[</span><span class="mi">9</span><span class="p">][</span><span class="mi">3</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span><span class="o">=</span><span class="nb">true</span><span class="p">;</span>
-    <span class="n">a</span><span class="p">[</span><span class="mi">9</span><span class="p">][</span><span class="mi">3</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span><span class="o">=</span><span class="nb">true</span><span class="p">;</span>
-    <span class="n">a</span><span class="p">[</span><span class="mi">9</span><span class="p">][</span><span class="mi">3</span><span class="p">][</span><span class="mi">3</span><span class="p">]</span><span class="o">=</span><span class="nb">true</span><span class="p">;</span>
-    <span class="n">a</span><span class="p">[</span><span class="mi">9</span><span class="p">][</span><span class="mi">4</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span><span class="o">=</span><span class="nb">false</span><span class="p">;</span>
-    <span class="n">a</span><span class="p">[</span><span class="mi">9</span><span class="p">][</span><span class="mi">4</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span><span class="o">=</span><span class="nb">false</span><span class="p">;</span>
-    <span class="n">a</span><span class="p">[</span><span class="mi">9</span><span class="p">][</span><span class="mi">4</span><span class="p">][</span><span class="mi">3</span><span class="p">]</span><span class="o">=</span><span class="nb">true</span><span class="p">;</span>
-    <span class="n">a</span><span class="p">[</span><span class="mi">9</span><span class="p">][</span><span class="mi">5</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span><span class="o">=</span><span class="nb">true</span><span class="p">;</span>
-    <span class="n">a</span><span class="p">[</span><span class="mi">9</span><span class="p">][</span><span class="mi">5</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span><span class="o">=</span><span class="nb">true</span><span class="p">;</span>
-    <span class="n">a</span><span class="p">[</span><span class="mi">9</span><span class="p">][</span><span class="mi">5</span><span class="p">][</span><span class="mi">3</span><span class="p">]</span><span class="o">=</span><span class="nb">true</span><span class="p">;</span>
-    <span class="n">string</span> <span class="n">s</span><span class="p">;</span>
-    <span class="n">cin</span><span class="o">&gt;&gt;</span><span class="n">s</span><span class="p">;</span>
-    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span><span class="n">i</span><span class="o">&lt;=</span><span class="mi">5</span><span class="p">;</span><span class="n">i</span><span class="o">++</span><span class="p">)</span>
+	<span class="nl">public:</span>
+    <span class="n">string</span> <span class="n">model</span><span class="p">;</span>
+    <span class="kt">int</span> <span class="n">year</span><span class="p">;</span>
+    <span class="kt">void</span> <span class="n">display</span><span class="p">()</span> 
     <span class="p">{</span>
-        <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">j</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span><span class="n">j</span><span class="o">&lt;=</span><span class="n">n</span><span class="p">;</span><span class="n">j</span><span class="o">++</span><span class="p">)</span>
-        <span class="p">{</span>
-            <span class="kt">int</span> <span class="n">x</span><span class="o">=</span><span class="kt">int</span><span class="p">(</span><span class="n">s</span><span class="p">[</span><span class="n">j</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span><span class="o">-</span><span class="kt">int</span><span class="p">(</span><span class="sc">'0'</span><span class="p">);</span>
-            <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">k</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span><span class="n">k</span><span class="o">&lt;=</span><span class="mi">3</span><span class="p">;</span><span class="n">k</span><span class="o">++</span><span class="p">)</span>
-            <span class="p">{</span>
-                <span class="k">if</span><span class="p">(</span><span class="n">a</span><span class="p">[</span><span class="n">x</span><span class="p">][</span><span class="n">i</span><span class="p">][</span><span class="n">k</span><span class="p">])</span>
-                    <span class="n">cout</span><span class="o">&lt;&lt;</span><span class="s">"X"</span><span class="p">;</span>
-                <span class="k">else</span>    
-                    <span class="n">cout</span><span class="o">&lt;&lt;</span><span class="s">"."</span><span class="p">;</span>
-            <span class="p">}</span>
-            <span class="k">if</span><span class="p">(</span><span class="n">j</span><span class="o">!=</span><span class="n">n</span><span class="p">)</span>
-                <span class="n">cout</span><span class="o">&lt;&lt;</span><span class="s">"."</span><span class="p">;</span>
-        <span class="p">}</span>
-        <span class="n">cout</span><span class="o">&lt;&lt;</span><span class="n">endl</span><span class="p">;</span>
+        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Model: "</span> <span class="o">&lt;&lt;</span> <span class="n">model</span> <span class="o">&lt;&lt;</span> <span class="s">", Year: "</span> <span class="o">&lt;&lt;</span> <span class="n">year</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
     <span class="p">}</span>
+<span class="p">};</span>
+<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> 
+<span class="p">{</span>
+    <span class="n">Car</span> <span class="n">myCar</span><span class="p">;</span>
+    <span class="n">myCar</span><span class="p">.</span><span class="n">model</span> <span class="o">=</span> <span class="s">"Toyota"</span><span class="p">;</span>
+    <span class="n">myCar</span><span class="p">.</span><span class="n">year</span> <span class="o">=</span> <span class="mi">2020</span><span class="p">;</span>
+    <span class="n">myCar</span><span class="p">.</span><span class="n">display</span><span class="p">();</span>  <span class="c1">// 输出：Model: Toyota, Year: 2020</span>
     <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
-</code></pre></div></div>]]></content><author><name>ZJM</name></author><category term="code/luogu/arrays" /><category term="Code" /><summary type="html"><![CDATA[```cpp #include #include #include using namespace std; bool a[11][6][4]; int main() { int n; cin&gt;&gt;n; a[0][1][1]=true; a[0][1][2]=true; a[0][1][3]=true; a[0][2][1]=true; a[0][2][2]=false; a[0][2][3]=true; a[0][3][1]=true; a[0][3][2]=false; a[0][3][3]=true; a[0][4][1]=true; a[0][4][2]=false; a[0][4][3]=true; a[0][5][1]=true; a[0][5][2]=true; a[0][5][3]=true; a[1][1][1]=false; a[1][1][2]=false; a[1][1][3]=true; a[1][2][1]=false; a[1][2][2]=false; a[1][2][3]=true; a[1][3][1]=false; a[1][3][2]=false; a[1][3][3]=true; a[1][4][1]=false; a[1][4][2]=false; a[1][4][3]=true; a[1][5][1]=false; a[1][5][2]=false; a[1][5][3]=true; a[2][1][1]=true; a[2][1][2]=true; a[2][1][3]=true; a[2][2][1]=false; a[2][2][2]=false; a[2][2][3]=true; a[2][3][1]=true; a[2][3][2]=true; a[2][3][3]=true; a[2][4][1]=true; a[2][4][2]=false; a[2][4][3]=false; a[2][5][1]=true; a[2][5][2]=true; a[2][5][3]=true;]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/code-cover-9.png" /><media:content medium="image" url="http://localhost:4000/code-cover-9.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">P5732 【深基5.习7】杨辉三角</title><link href="http://localhost:4000/code/luogu/arrays/2024/12/29/P5732-%E6%B7%B1%E5%9F%BA5.%E4%B9%A07-%E6%9D%A8%E8%BE%89%E4%B8%89%E8%A7%92/" rel="alternate" type="text/html" title="P5732 【深基5.习7】杨辉三角" /><published>2024-12-29T00:00:00-08:00</published><updated>2024-12-29T00:00:00-08:00</updated><id>http://localhost:4000/code/luogu/arrays/2024/12/29/P5732%20%E3%80%90%E6%B7%B1%E5%9F%BA5.%E4%B9%A07%E3%80%91%E6%9D%A8%E8%BE%89%E4%B8%89%E8%A7%92</id><content type="html" xml:base="http://localhost:4000/code/luogu/arrays/2024/12/29/P5732-%E6%B7%B1%E5%9F%BA5.%E4%B9%A07-%E6%9D%A8%E8%BE%89%E4%B8%89%E8%A7%92/"><![CDATA[<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include</span><span class="cpf">&lt;iostream&gt;</span><span class="cp">
-#include</span><span class="cpf">&lt;cmath&gt;</span><span class="cp">
-#include</span><span class="cpf">&lt;string&gt;</span><span class="cp">
-</span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
-<span class="kt">int</span> <span class="n">a</span><span class="p">[</span><span class="mi">101</span><span class="p">][</span><span class="mi">101</span><span class="p">];</span>
-<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
-<span class="p">{</span>
-    <span class="kt">int</span> <span class="n">n</span><span class="p">;</span>
-    <span class="n">cin</span><span class="o">&gt;&gt;</span><span class="n">n</span><span class="p">;</span>
-    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span><span class="n">i</span><span class="o">&lt;=</span><span class="n">n</span><span class="p">;</span><span class="n">i</span><span class="o">++</span><span class="p">)</span>
-        <span class="n">a</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span><span class="n">a</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">i</span><span class="p">]</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span>
-    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">3</span><span class="p">;</span><span class="n">i</span><span class="o">&lt;=</span><span class="n">n</span><span class="p">;</span><span class="n">i</span><span class="o">++</span><span class="p">)</span>
-        <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">j</span><span class="o">=</span><span class="mi">2</span><span class="p">;</span><span class="n">j</span><span class="o">&lt;=</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">;</span><span class="n">j</span><span class="o">++</span><span class="p">)</span>
-            <span class="n">a</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span><span class="o">=</span><span class="n">a</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">][</span><span class="n">j</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">+</span><span class="n">a</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">][</span><span class="n">j</span><span class="p">];</span>
-    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span><span class="n">i</span><span class="o">&lt;=</span><span class="n">n</span><span class="p">;</span><span class="n">i</span><span class="o">++</span><span class="p">)</span>
-    <span class="p">{</span>
-        <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">j</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span><span class="n">j</span><span class="o">&lt;=</span><span class="n">i</span><span class="p">;</span><span class="n">j</span><span class="o">++</span><span class="p">)</span>
-        <span class="p">{</span>
-            <span class="n">cout</span><span class="o">&lt;&lt;</span><span class="n">a</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span><span class="o">&lt;&lt;</span><span class="s">" "</span><span class="p">;</span>
-        <span class="p">}</span>
-        <span class="n">cout</span><span class="o">&lt;&lt;</span><span class="n">endl</span><span class="p">;</span>
-    <span class="p">}</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre></div></div>]]></content><author><name>ZJM</name></author><category term="code/luogu/arrays" /><category term="Code" /><summary type="html"><![CDATA[#include&lt;iostream&gt; #include&lt;cmath&gt; #include&lt;string&gt; using namespace std; int a[101][101]; int main() { int n; cin&gt;&gt;n; for(int i=1;i&lt;=n;i++) a[i][1]=1,a[i][i]=1; for(int i=3;i&lt;=n;i++) for(int j=2;j&lt;=i-1;j++) a[i][j]=a[i-1][j-1]+a[i-1][j]; for(int i=1;i&lt;=n;i++) { for(int j=1;j&lt;=i;j++) { cout&lt;&lt;a[i][j]&lt;&lt;" "; } cout&lt;&lt;endl; } return 0; }]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/code-cover-16.png" /><media:content medium="image" url="http://localhost:4000/code-cover-16.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">P1047 [NOIP2005 普及组] 校门外的树</title><link href="http://localhost:4000/code/luogu/arrays/2024/12/29/P1047-NOIP2005-%E6%99%AE%E5%8F%8A%E7%BB%84-%E6%A0%A1%E9%97%A8%E5%A4%96%E7%9A%84%E6%A0%91/" rel="alternate" type="text/html" title="P1047 [NOIP2005 普及组] 校门外的树" /><published>2024-12-29T00:00:00-08:00</published><updated>2024-12-29T00:00:00-08:00</updated><id>http://localhost:4000/code/luogu/arrays/2024/12/29/P1047%20%5BNOIP2005%20%E6%99%AE%E5%8F%8A%E7%BB%84%5D%20%E6%A0%A1%E9%97%A8%E5%A4%96%E7%9A%84%E6%A0%91</id><content type="html" xml:base="http://localhost:4000/code/luogu/arrays/2024/12/29/P1047-NOIP2005-%E6%99%AE%E5%8F%8A%E7%BB%84-%E6%A0%A1%E9%97%A8%E5%A4%96%E7%9A%84%E6%A0%91/"><![CDATA[<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">def</span> <span class="n">INT</span><span class="p">(</span><span class="n">l</span><span class="p">)</span><span class="o">:</span>
-    <span class="n">m</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="n">n</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="n">x</span><span class="o">=</span><span class="mi">0</span>
-    <span class="k">for</span> <span class="n">i</span> <span class="n">in</span> <span class="n">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="n">len</span><span class="p">(</span><span class="n">l</span><span class="p">))</span><span class="o">:</span>
-        <span class="k">if</span> <span class="n">l</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">==</span><span class="sc">' '</span><span class="o">:</span>
-            <span class="n">x</span><span class="o">=</span><span class="n">i</span>
-            <span class="k">break</span>
-    <span class="n">m</span><span class="o">=</span><span class="n">l</span><span class="p">[</span><span class="mi">0</span><span class="o">:</span><span class="n">x</span><span class="p">]</span>
-    <span class="n">m</span><span class="o">=</span><span class="kt">int</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
-    <span class="n">n</span><span class="o">=</span><span class="n">l</span><span class="p">[</span><span class="n">x</span><span class="o">+</span><span class="mi">1</span><span class="o">:</span><span class="n">len</span><span class="p">(</span><span class="n">l</span><span class="p">)]</span>
-    <span class="n">n</span><span class="o">=</span><span class="kt">int</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
-    <span class="k">return</span>  <span class="n">m</span><span class="p">,</span><span class="n">n</span>
-<span class="n">a</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">*</span><span class="mi">10001</span>
-<span class="n">l</span><span class="o">=</span><span class="n">input</span><span class="p">()</span>
-<span class="n">n</span><span class="p">,</span><span class="n">m</span><span class="o">=</span><span class="n">INT</span><span class="p">(</span><span class="n">l</span><span class="p">)</span>
-<span class="k">for</span>  <span class="n">i</span> <span class="n">in</span> <span class="n">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">m</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span><span class="o">:</span>
-    <span class="n">c</span><span class="o">=</span><span class="n">input</span><span class="p">()</span>
-    <span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="o">=</span><span class="n">INT</span><span class="p">(</span><span class="n">c</span><span class="p">)</span>
-    <span class="k">for</span> <span class="n">j</span> <span class="n">in</span> <span class="n">range</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span><span class="o">:</span>
-        <span class="n">a</span><span class="p">[</span><span class="n">j</span><span class="p">]</span><span class="o">=</span><span class="mi">1</span>
-<span class="n">ans</span><span class="o">=</span><span class="mi">0</span>
-<span class="k">for</span> <span class="n">i</span> <span class="n">in</span> <span class="n">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="n">n</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span><span class="o">:</span>
-    <span class="k">if</span> <span class="n">a</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">==</span><span class="mi">1</span><span class="o">:</span>
-        <span class="n">ans</span><span class="o">+=</span><span class="mi">1</span>
-<span class="n">answer</span><span class="o">=</span><span class="n">n</span><span class="o">+</span><span class="mi">1</span><span class="o">-</span><span class="n">ans</span>
-<span class="n">print</span><span class="p">(</span><span class="n">answer</span><span class="p">)</span>
+</code></pre></div>    </div>
+  </li>
+</ul>
 
-</code></pre></div></div>]]></content><author><name>ZJM</name></author><category term="code/luogu/arrays" /><category term="Code" /><summary type="html"><![CDATA[```cpp def INT(l): m=0;n=0;x=0 for i in range(0,len(l)): if l[i]==’ ‘: x=i break m=l[0:x] m=int(m) n=l[x+1:len(l)] n=int(n) return m,n a=[0]*10001 l=input() n,m=INT(l) for i in range(1,m+1): c=input() x,y=INT(c) for j in range(x,y+1): a[j]=1 ans=0 for i in range(0,n+1): if a[i]==1: ans+=1 answer=n+1-ans print(answer)]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/code-cover-4.png" /><media:content medium="image" url="http://localhost:4000/code-cover-4.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">P1161 开灯</title><link href="http://localhost:4000/code/luogu/arrays/2024/12/29/P1161-%E5%BC%80%E7%81%AF/" rel="alternate" type="text/html" title="P1161 开灯" /><published>2024-12-29T00:00:00-08:00</published><updated>2024-12-29T00:00:00-08:00</updated><id>http://localhost:4000/code/luogu/arrays/2024/12/29/P1161%20%E5%BC%80%E7%81%AF</id><content type="html" xml:base="http://localhost:4000/code/luogu/arrays/2024/12/29/P1161-%E5%BC%80%E7%81%AF/"><![CDATA[<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include</span><span class="cpf">&lt;bits/stdc++.h&gt;</span><span class="cp">
+<h3 id="9-输入输出"><span style="color: rgb(0,191,255);">9. <strong>输入输出</strong></span></h3>
+
+<ul>
+  <li>标准输入输出：
+    <div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">int</span> <span class="n">x</span><span class="p">;</span>
+<span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Enter a number: "</span><span class="p">;</span>
+<span class="n">cin</span> <span class="o">&gt;&gt;</span> <span class="n">x</span><span class="p">;</span>
+<span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"You entered: "</span> <span class="o">&lt;&lt;</span> <span class="n">x</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<h3 id="10-常量"><span style="color: rgb(0,191,255);">10. <strong>常量</strong></span></h3>
+
+<p>常量是不可改变的变量，使用 <code class="language-plaintext highlighter-rouge">const</code> 关键字声明：</p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">const</span> <span class="kt">float</span> <span class="n">PI</span> <span class="o">=</span> <span class="mf">3.14</span><span class="p">;</span>
+</code></pre></div></div>
+
+<h3 id="11-命名空间"><span style="color: rgb(0,191,255);">11. <strong>命名空间</strong></span></h3>
+
+<p>C++ 使用命名空间来避免名称冲突，常见的是 <code class="language-plaintext highlighter-rouge">std</code>（标准命名空间）：</p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
+</code></pre></div></div>]]></content><author><name>ZJM</name></author><category term="code/algorithm/basic-knowledge" /><category term="Code" /><summary type="html"><![CDATA[1. 基本结构]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/code-cover-3.png" /><media:content medium="image" url="http://localhost:4000/code-cover-3.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Annotation</title><link href="http://localhost:4000/code/algorithm/basic-knowledge/2025/01/03/Annotation/" rel="alternate" type="text/html" title="Annotation" /><published>2025-01-03T00:00:00-08:00</published><updated>2025-01-03T00:00:00-08:00</updated><id>http://localhost:4000/code/algorithm/basic-knowledge/2025/01/03/Annotation</id><content type="html" xml:base="http://localhost:4000/code/algorithm/basic-knowledge/2025/01/03/Annotation/"><![CDATA[<h3 id="c-注释"><span style="color: rgb(0,191,255);"><strong>C++ 注释</strong></span></h3>
+<p>程序中的注释是用于解释代码的语句，可以帮助提高源代码的可读性。所有编程语言都支持某种形式的注释，以便开发者更容易理解代码的意图和功能。</p>
+
+<p>C++ 支持两种类型的注释：单行注释和多行注释。在 C++ 中，注释中的内容会被编译器忽略，不会对程序的执行产生任何影响。</p>
+
+<h3 id="c-注释的两种形式"><span style="color: rgb(0,191,255);"><strong>C++ 注释的两种形式：</strong></span></h3>
+
+<ul>
+  <li>
+    <p><strong>单行注释</strong>： 使用 <code class="language-plaintext highlighter-rouge">//</code> 开始，注释从 <code class="language-plaintext highlighter-rouge">//</code> 后开始直到行末。例如：</p>
+
+    <div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// 这是一个单行注释</span>
+<span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Hello World!"</span><span class="p">;</span>
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p><strong>多行注释</strong>： 使用 <code class="language-plaintext highlighter-rouge">/*</code> 开始，以 <code class="language-plaintext highlighter-rouge">*/</code> 结束，可以注释多行文本。例如：</p>
+
+    <div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cm">/* 这是一个多行注释
+   可以跨越多行
+*/</span>
+<span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Hello World!"</span><span class="p">;</span>
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<h3 id="示例代码"><span style="color: rgb(0,191,255);"><strong>示例代码</strong></span></h3>
+<ul>
+  <li><strong>单行注释</strong>
+    <div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
+</span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
+<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> 
+<span class="p">{</span>
+  <span class="c1">// 这是一个单行注释</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Hello World!"</span><span class="p">;</span>  <span class="c1">// 语句后面的注释</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<p>在上面的代码中，编译器会忽略 // 这是一个注释 和 // 语句后面的注释，输出结果为：</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Hello World!
+</code></pre></div></div>
+<ul>
+  <li><strong>多行注释</strong>
+    <div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
+</span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
+<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> 
+<span class="p">{</span>
+  <span class="cm">/* 这是一个多行注释
+     可以跨越多行 */</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Hello World!"</span><span class="p">;</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<p>在这段代码中，/* 这是一个多行注释 */ 会被编译器忽略，输出结果为：</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Hello World!
+</code></pre></div></div>
+
+<h3 id="注释嵌套"><span style="color: rgb(0,191,255);"><strong>注释嵌套</strong></span></h3>
+
+<p>虽然注释可以嵌套使用，但有一些注意事项：</p>
+
+<p><span style="color: rgb(238,130,238);"><strong>在 /* 和 */ 注释内，// 字符没有特殊的含义。</strong></span></p>
+
+<p><span style="color: rgb(238,130,238);"><strong>在 // 注释内，/* 和 */ 字符也没有特殊的含义。</strong></span></p>
+
+<p>因此，您可以在一种注释类型内使用另一种注释类型。例如：</p>
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cm">/* 用于输出 Hello World 的注释
+
+cout &lt;&lt; "Hello World"; // 输出 Hello World
+
+*/</span>
+</code></pre></div></div>
+<p>这种嵌套的注释方式是允许的。</p>]]></content><author><name>ZJM</name></author><category term="code/algorithm/basic-knowledge" /><category term="Code" /><summary type="html"><![CDATA[C++ 注释 程序中的注释是用于解释代码的语句，可以帮助提高源代码的可读性。所有编程语言都支持某种形式的注释，以便开发者更容易理解代码的意图和功能。]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/code-cover-1.png" /><media:content medium="image" url="http://localhost:4000/code-cover-1.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Algorithm</title><link href="http://localhost:4000/code/2025/01/01/algorithm/" rel="alternate" type="text/html" title="Algorithm" /><published>2025-01-01T00:00:00-08:00</published><updated>2025-01-01T00:00:00-08:00</updated><id>http://localhost:4000/code/2025/01/01/algorithm</id><content type="html" xml:base="http://localhost:4000/code/2025/01/01/algorithm/"><![CDATA[<meta http-equiv="refresh" content="0; url=/code/algorithm" />
+
+<p>If you are not redirected, <a href="/code/algorithm">click here</a>.</p>]]></content><author><name>ZJM</name></author><category term="code" /><category term="Code" /><summary type="html"><![CDATA[If you are not redirected, click here.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/algorithm-cover.png" /><media:content medium="image" url="http://localhost:4000/algorithm-cover.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">算法学习顺序</title><link href="http://localhost:4000/code/algorithm/2025/01/01/README/" rel="alternate" type="text/html" title="算法学习顺序" /><published>2025-01-01T00:00:00-08:00</published><updated>2025-01-01T00:00:00-08:00</updated><id>http://localhost:4000/code/algorithm/2025/01/01/README</id><content type="html" xml:base="http://localhost:4000/code/algorithm/2025/01/01/README/"><![CDATA[<p><strong>基础知识</strong></p>
+
+<ul>
+  <li>学习C++语言基础：语法、指针、引用、类与对象。</li>
+  <li>掌握STL（标准模板库）：vector、list、set、map等容器，算法模块。</li>
+</ul>
+
+<p><strong>数学基础</strong></p>
+
+<ul>
+  <li>数学基础：素数、最大公约数、最小公倍数、快速幂。</li>
+  <li>数学算法：筛法求素数、数论分解、组合数学。</li>
+</ul>
+
+<p><strong>排序与搜索</strong></p>
+
+<ul>
+  <li>排序算法：冒泡、选择、插入、归并、快速排序、堆排序。</li>
+  <li>搜索算法：二分查找、DFS（深度优先搜索）、BFS（广度优先搜索）。</li>
+</ul>
+
+<p><strong>基础数据结构</strong></p>
+
+<ul>
+  <li>线性结构：数组、链表、栈、队列、双端队列。</li>
+  <li>树：二叉树、二叉搜索树、堆。</li>
+  <li>图：邻接矩阵、邻接表、遍历（DFS、BFS）。</li>
+</ul>
+
+<p><strong>高级数据结构</strong></p>
+
+<ul>
+  <li>并查集。</li>
+  <li>树状数组。</li>
+  <li>线段树。</li>
+  <li>Trie（字典树）。</li>
+  <li>图的高级算法：最短路径（Dijkstra、Floyd、Bellman-Ford）、最小生成树（Prim、Kruskal）。</li>
+</ul>
+
+<p><strong>算法设计思想</strong></p>
+
+<ul>
+  <li>分治法。</li>
+  <li>动态规划（DP）：背包问题、LCS（最长公共子序列）、LIS（最长递增子序列）。</li>
+  <li>贪心算法。</li>
+  <li>回溯法。</li>
+  <li>枚举法。</li>
+</ul>
+
+<p><strong>图论与网络流</strong></p>
+
+<ul>
+  <li>图的基本算法。</li>
+  <li>拓扑排序。</li>
+  <li>网络流：最大流（Edmonds-Karp、Dinic）、最小割。</li>
+</ul>
+
+<p><strong>高级算法</strong></p>
+
+<ul>
+  <li>字符串处理：KMP算法、Rabin-Karp、Trie。</li>
+  <li>位运算技巧。</li>
+  <li>数学问题：快速傅里叶变换（FFT）、线性代数相关算法。</li>
+  <li>随机化算法与模拟退火。</li>
+</ul>]]></content><author><name>ZJM</name></author><category term="code/algorithm" /><category term="Code" /><summary type="html"><![CDATA[基础知识]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/algorithm-cover-1.png" /><media:content medium="image" url="http://localhost:4000/algorithm-cover-1.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">浅谈最小生成树</title><link href="http://localhost:4000/code/algorithm/2025/01/01/minimum-spanning-tree/" rel="alternate" type="text/html" title="浅谈最小生成树" /><published>2025-01-01T00:00:00-08:00</published><updated>2025-01-01T00:00:00-08:00</updated><id>http://localhost:4000/code/algorithm/2025/01/01/minimum-spanning-tree</id><content type="html" xml:base="http://localhost:4000/code/algorithm/2025/01/01/minimum-spanning-tree/"><![CDATA[<h2 id="浅谈最小生成树">浅谈最小生成树</h2>
+
+<h4 id="事先声明这篇文章只能给初学者稍加学习仅供参考本文主讲算法而不是代码">事先声明：这篇文章只能给初学者稍加学习，仅供参考。本文主讲算法而不是代码。</h4>
+
+<p># 浅谈最小生成树</p>
+
+<h2 id="一什么是最小生成树">一.什么是最小生成树</h2>
+
+<p>首先我们得给出一张图：</p>
+
+<p>假设我们常常去这几个地方。(<del>地图上随便找的几个点</del>)</p>
+
+<p>想象一下：自己是奇异博士的弱化版。</p>
+
+<p>这些地方之间肯定两两之间都会有传送门。</p>
+
+<p>假设在这几个点有传送门，可以传到几个固定的位置，但会有不同的费用。</p>
+
+<p>虽然我们会有很多种选择路的方式，但是我们希望选择的路的<strong>费用之和</strong>最小，且通过这些路能从<strong>任意一个地方到达另外一个地方</strong>。</p>
+
+<p>于是求这个<strong>最短长度(费用)的方法和方案</strong>就是我们今天的主题： <strong>最小生成树</strong>。</p>
+
+<h2 id="二最小生成树两大算法">二.最小生成树两大算法</h2>
+<h3 id="ⅰ前序知识">Ⅰ.前序知识</h3>
+
+<p>1.最小生成树的<strong>定义</strong>：在一个带权的物向连通图中，各边权和最小的一棵生成树即为原图的最小生成树。</p>
+
+<p><strong>***：</strong>生成树**：如果连通图 G的一个子图是一棵包含G 的所有顶点的树，则该子图称为G的生成树</p>
+
+<p>2.(1)生成树的属性(特性):</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>假设有</td>
+      <td>V</td>
+      <td>个点</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>①无环</p>
+
+<p>②连通</p>
+
+<p>③从任意一点到另一点有唯一路径(不然可以把多余的边删掉)</p>
+
+<p>④删去一条边后则不连通(理由同上)</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>⑤有</td>
+      <td>V</td>
+      <td>-1条边(由③④得出)</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>(2)最小生成树的<strong>独特特性</strong></p>
+
+<p>①<strong>最小边原则：如果图中最小的边是唯一的话，一定在最小生成树上。</strong></p>
+
+<p><strong>证明</strong>：由于最小生成树只需|V|-1条边，所以当得到了一棵生成树时，若不包含最短的边，便可将以选好的边中删去一条连接最短边上两点中的一点与其它点的边，则最短边上选取的那点便与其它点不连通，再连上最短的边，又联通了，且因为连接
+的边是最短边，所以边权之和一定比原边权之和小。</p>
+
+<p>②唯一性定理：如果图中的边权值都不同，则图中的最小生成树是唯一的。</p>
+
+<p>证明：当此生成树所连的边之和最小时，因为边权值各不相同，所以将另一边来替代此生成树中的一边，会有两种情况：1.一个边权更大的生成树； 2.各点不连通了
+	均不符合最小生成树定义。</p>
+
+<h3 id="ⅱprim算法">Ⅱ.Prim算法</h3>
+
+<p>Prim算法(Robert C. Prim)是一种贪心算法，它的方法是将所有点分成两部分。用过的和没用过的(已在生成树内的和不在的)</p>
+
+<p>①步骤：它先是任意选择一个点，以这个点作为出发点。</p>
+
+<p>再向四周扩展，找到与这个点连接的点中最近的那个，连接边。</p>
+
+<p>下一步是寻找与已联通的树最近的未使用(不在生成树内)的点并将边连接，此点标记为使用过(已在生成树中)。</p>
+
+<p>重复上一步操作直到所有点都在使用过部分(都用过了，连通了)。</p>
+
+<p>(图)</p>
+
+<p>②证明:假设当前已使用的点集为n,剩下的点集为m。</p>
+
+<p>设连接n和m的最小代价为(x,y)</p>
+
+<p>若取的是连接n,m的另外一边(P,Q),则删去(P,Q),加入(x,y),n和m也一定是连通的，且连(x,y)的话得到的当前边权和会更小，更优。所以连最小边(x,y)是保证能得到最小生成树的。算法正确。</p>
+
+<p>③代码实现(核心)(c++)(仅供参考):</p>
+
+<p>复杂度：O(N^2) 过于缓慢，容易被卡(第一个N为枚举各个点，第二个N为寻找最短的边)</p>
+
+<p>④优化:</p>
+
+<p>怎样优化?</p>
+
+<p>第一层是无法优化的,只能靠第二层了。</p>
+
+<p>优化目的:快速找到权值最小的边。</p>
+
+<p>优化方法:借助于堆排序。</p>
+
+<p>用堆来保存用过的点到没用过的点得最短边长，在访问时不断更新和维护。</p>
+
+<p>优化效果:找权值最小的边：O(logm)</p>
+
+<p>总复杂度:O((n+m)logm)</p>
+
+<p>代码实现(核心):</p>
+
+<h2 id="ⅲkruskal算法">Ⅲ.Kruskal算法</h2>
+
+<p>Kruskal算法还是一种贪心算法，它的方法是将所有的边按长度从小到大排序，从最小的边开始，若边连接的两点不连通，则连接这条边，否则就不连。</p>
+
+<p>①步骤:首先，将所有边按权值进行排序。</p>
+
+<p>按照权值从小到大选边。如果当前选的边的两点不连通，就连接这条边。否则就不连接。</p>
+
+<p>直到所有边都被枚举一遍。</p>
+
+<p>②证明:从小到大的枚举边时,保证了生成树的最小性。</p>
+
+<p>如果有一条边,由它构成的生成树比Kruskal算法的生成树的权值和更小，那么它肯定用到了比算法更短的边(可能多条),但由于Kruskal在枚举边前已经将所有的边排了序,故比算法得到生成树更短的边会排在前面而被选中或排除，故不可能有这样的边，算法的生成树肯定是最小生成树。判断两点是否连通就保证了最小生成树中无环，肯定是正确的。</p>
+
+<p>③优化：这个方法不优化实在太慢了，判断是否连通如果用暴力的话将无法想象，k肯定TLE</p>
+
+<p>于是我们用并查集来判断是否连通。</p>
+
+<p>只需要用模板并查集就可以了。</p>
+
+<p>(因为本章主讲最小生成树，并查集的内容可以通过前期的模板进行学习)</p>
+
+<p>核心代码：</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>#include&lt;iostream&gt;
+#include&lt;cstring&gt;
+#include&lt;string&gt;
+#include&lt;cstdio&gt;
+#include&lt;cstdlib&gt;
+#include&lt;algorithm&gt;
+#include&lt;cmath&gt;
+#define For(k,i,j) for(int k=i;k&lt;=j;k++)
+using namespace std;
+inline int read()
+{
+    char ch;
+    int res=1;
+    while((ch=getchar())&lt;'0'||ch&gt;'9') if(ch=='-') res=-1;
+    res*=ch-48;
+    while((ch=getchar())&gt;='0'&amp;&amp;ch&lt;='9')
+        res=res*10+ch-48;
+    return res;
+}
+struct point
+{
+	int x,y,d;
+};
+point a[200005];
+int fa[5001];
+int find(int x)
+{
+	if(fa[x]==x)
+		return x;
+	else
+		return fa[x]=find(fa[x]);
+}
+bool cmp(point f,point g)
+{
+	return f.d&lt;g.d;
+}
+int main()
+{
+    int n=read(),m=read(),k,ans=0;
+    For(i,1,n)
+		fa[i]=i;
+    For(i,1,m)
+    	a[i].x=read(),a[i].y=read(),a[i].d=read();
+    sort(a+1,a+m+1,cmp);
+    For(i,1,m)
+    {
+    	int ha=find(a[i].x);
+    	int hb=find(a[i].y);
+    	if(ha!=hb)
+    	{
+    		fa[hb]=ha;
+    		ans+=a[i].d;
+    	}
+    }
+    printf("%d",ans);
+    return 0;
+}
+</code></pre></div></div>
+
+<p>复杂度：O(mlogm+mα(n)),α(n)是一次并查集的复杂度。</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>再加一个小小的优化（也不算优化了，只是一个正常剪枝）加一个tot记录已选用的边数，如果到了</td>
+      <td>V</td>
+      <td>-1条边便可以break掉</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>核心代码：</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>#include&lt;iostream&gt;
+#include&lt;cstring&gt;
+#include&lt;string&gt;
+#include&lt;cstdio&gt;
+#include&lt;cstdlib&gt;
+#include&lt;algorithm&gt;
+#include&lt;cmath&gt;
+#define For(k,i,j) for(int k=i;k&lt;=j;k++)
+using namespace std;
+inline int read()
+{
+    char ch;
+    int res=1;
+    while((ch=getchar())&lt;'0'||ch&gt;'9') if(ch=='-') res=-1;
+    res*=ch-48;
+    while((ch=getchar())&gt;='0'&amp;&amp;ch&lt;='9')
+        res=res*10+ch-48;
+    return res;
+}
+struct point
+{
+	int x,y,d;
+};
+point a[200005];
+int fa[5001];
+int find(int x)
+{
+	if(fa[x]==x)
+		return x;
+	else
+		return fa[x]=find(fa[x]);
+}
+bool cmp(point f,point g)
+{
+	return f.d&lt;g.d;
+}
+int main()
+{
+    int n=read(),m=read(),k,ans=0;
+    For(i,1,n)
+		fa[i]=i;
+    For(i,1,m)
+    	a[i].x=read(),a[i].y=read(),a[i].d=read();
+    sort(a+1,a+m+1,cmp);
+    int tot=0;
+    For(i,1,m)
+    {
+    	int ha=find(a[i].x);
+    	int hb=find(a[i].y);
+    	if(ha!=hb)
+    	{
+    		fa[hb]=ha;
+    		ans+=a[i].d;
+    		tot++;
+    	}
+    	if(tot==n-1)
+    		break;
+    }
+    printf("%d",ans);
+    return 0;
+}
+</code></pre></div></div>
+
+<p>时间前后对比：（也就快了那么一点点）</p>
+
+<p>三.有关最小生成树的拓展
+Ⅰ.次小生成树:
+①
+②</p>]]></content><author><name>ZJM</name></author><category term="code/algorithm" /><category term="Code" /><summary type="html"><![CDATA[浅谈最小生成树]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/algorithm-cover-2.png" /><media:content medium="image" url="http://localhost:4000/algorithm-cover-2.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">P1161 开灯</title><link href="http://localhost:4000/code/luogu/arrays/2024/12/29/P1161-%E5%BC%80%E7%81%AF/" rel="alternate" type="text/html" title="P1161 开灯" /><published>2024-12-29T00:00:00-08:00</published><updated>2024-12-29T00:00:00-08:00</updated><id>http://localhost:4000/code/luogu/arrays/2024/12/29/P1161%20%E5%BC%80%E7%81%AF</id><content type="html" xml:base="http://localhost:4000/code/luogu/arrays/2024/12/29/P1161-%E5%BC%80%E7%81%AF/"><![CDATA[<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include</span><span class="cpf">&lt;bits/stdc++.h&gt;</span><span class="cp">
 </span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
 <span class="kt">bool</span> <span class="n">used</span><span class="p">[</span><span class="mi">10000001</span><span class="p">];</span>
 <span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
@@ -315,123 +613,7 @@
 		<span class="p">}</span>
     <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
-</code></pre></div></div>]]></content><author><name>ZJM</name></author><category term="code/luogu/arrays" /><category term="Code" /><summary type="html"><![CDATA[#include&lt;bits/stdc++.h&gt; using namespace std; bool used[10000001]; int main() { double n,maxx=0,maxt=0; cin&gt;&gt;n; for(int i=1;i&lt;=n;i++) { double x,t; cin&gt;&gt;x&gt;&gt;t; if(maxx&lt;x) maxx=x; if(maxt&lt;t) maxt=t; for(int j=1;j&lt;=t;j++) { if(used[int(j*x)]==1) used[int(j*x)]=0; else used[int(j*x)]=1; } } for(int i=1;i&lt;=int(maxt*maxx);i++) { if(used[i]&gt;0) { cout&lt;&lt;i; return 0; } } return 0; }]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/code-cover-14.png" /><media:content medium="image" url="http://localhost:4000/code-cover-14.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">P1205 [USACO1.2] 方块转换 Transformations</title><link href="http://localhost:4000/code/luogu/arrays/2024/12/29/P1205-USACO1.2-%E6%96%B9%E5%9D%97%E8%BD%AC%E6%8D%A2-Transformations/" rel="alternate" type="text/html" title="P1205 [USACO1.2] 方块转换 Transformations" /><published>2024-12-29T00:00:00-08:00</published><updated>2024-12-29T00:00:00-08:00</updated><id>http://localhost:4000/code/luogu/arrays/2024/12/29/P1205%20%5BUSACO1.2%5D%20%E6%96%B9%E5%9D%97%E8%BD%AC%E6%8D%A2%20Transformations</id><content type="html" xml:base="http://localhost:4000/code/luogu/arrays/2024/12/29/P1205-USACO1.2-%E6%96%B9%E5%9D%97%E8%BD%AC%E6%8D%A2-Transformations/"><![CDATA[<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include</span><span class="cpf">&lt;iostream&gt;</span><span class="cp">
-#include</span><span class="cpf">&lt;cmath&gt;</span><span class="cp">
-#include</span><span class="cpf">&lt;string&gt;</span><span class="cp">
-</span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
-<span class="kt">int</span> <span class="n">a</span><span class="p">[</span><span class="mi">11</span><span class="p">][</span><span class="mi">11</span><span class="p">],</span><span class="n">b</span><span class="p">[</span><span class="mi">11</span><span class="p">][</span><span class="mi">11</span><span class="p">],</span><span class="n">c</span><span class="p">[</span><span class="mi">11</span><span class="p">][</span><span class="mi">11</span><span class="p">],</span><span class="n">d</span><span class="p">[</span><span class="mi">11</span><span class="p">][</span><span class="mi">11</span><span class="p">];</span>
-<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
-<span class="p">{</span>
-    <span class="kt">int</span> <span class="n">n</span><span class="p">;</span>
-    <span class="n">cin</span><span class="o">&gt;&gt;</span><span class="n">n</span><span class="p">;</span>
-    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span><span class="n">i</span><span class="o">&lt;=</span><span class="n">n</span><span class="p">;</span><span class="n">i</span><span class="o">++</span><span class="p">)</span>
-        <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">j</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span><span class="n">j</span><span class="o">&lt;=</span><span class="n">n</span><span class="p">;</span><span class="n">j</span><span class="o">++</span><span class="p">)</span>
-        <span class="p">{</span>
-            <span class="kt">char</span> <span class="n">tmp</span><span class="p">;</span>
-            <span class="n">cin</span><span class="o">&gt;&gt;</span><span class="n">tmp</span><span class="p">;</span>
-            <span class="k">if</span><span class="p">(</span><span class="n">tmp</span><span class="o">==</span><span class="sc">'@'</span><span class="p">)</span>
-                <span class="n">a</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span>
-            <span class="k">else</span>    
-                <span class="n">a</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span>
-        <span class="p">}</span>
-            
-    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span><span class="n">i</span><span class="o">&lt;=</span><span class="n">n</span><span class="p">;</span><span class="n">i</span><span class="o">++</span><span class="p">)</span>
-        <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">j</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span><span class="n">j</span><span class="o">&lt;=</span><span class="n">n</span><span class="p">;</span><span class="n">j</span><span class="o">++</span><span class="p">)</span>
-        <span class="p">{</span>
-            <span class="kt">char</span> <span class="n">tmp</span><span class="p">;</span>
-            <span class="n">cin</span><span class="o">&gt;&gt;</span><span class="n">tmp</span><span class="p">;</span>
-            <span class="k">if</span><span class="p">(</span><span class="n">tmp</span><span class="o">==</span><span class="sc">'@'</span><span class="p">)</span>
-                <span class="n">b</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span>
-            <span class="k">else</span>    
-                <span class="n">b</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span>
-        <span class="p">}</span>
-    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span><span class="n">i</span><span class="o">&lt;=</span><span class="n">n</span><span class="p">;</span><span class="n">i</span><span class="o">++</span><span class="p">)</span>
-        <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">j</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span><span class="n">j</span><span class="o">&lt;=</span><span class="n">n</span><span class="p">;</span><span class="n">j</span><span class="o">++</span><span class="p">)</span>
-            <span class="n">c</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span><span class="o">=</span><span class="n">a</span><span class="p">[</span><span class="n">n</span><span class="o">-</span><span class="n">j</span><span class="o">+</span><span class="mi">1</span><span class="p">][</span><span class="n">i</span><span class="p">];</span>
-    <span class="kt">int</span> <span class="n">ans</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span>
-    <span class="kt">bool</span> <span class="n">check</span><span class="o">=</span><span class="nb">true</span><span class="p">;</span>
-    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span><span class="n">i</span><span class="o">&lt;=</span><span class="n">n</span><span class="p">;</span><span class="n">i</span><span class="o">++</span><span class="p">)</span>
-        <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">j</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span><span class="n">j</span><span class="o">&lt;=</span><span class="n">n</span><span class="p">;</span><span class="n">j</span><span class="o">++</span><span class="p">)</span>
-            <span class="k">if</span><span class="p">(</span><span class="n">b</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span><span class="o">!=</span><span class="n">c</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">])</span>
-                <span class="n">check</span><span class="o">=</span><span class="nb">false</span><span class="p">;</span>
-    <span class="k">if</span><span class="p">(</span><span class="n">ans</span><span class="o">==</span><span class="mi">0</span><span class="o">&amp;&amp;</span><span class="n">check</span><span class="p">)</span>
-        <span class="n">ans</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span>
-    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span><span class="n">i</span><span class="o">&lt;=</span><span class="n">n</span><span class="p">;</span><span class="n">i</span><span class="o">++</span><span class="p">)</span>
-        <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">j</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span><span class="n">j</span><span class="o">&lt;=</span><span class="n">n</span><span class="p">;</span><span class="n">j</span><span class="o">++</span><span class="p">)</span>
-            <span class="n">c</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span><span class="o">=</span><span class="n">a</span><span class="p">[</span><span class="n">n</span><span class="o">-</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">][</span><span class="n">n</span><span class="o">-</span><span class="n">j</span><span class="o">+</span><span class="mi">1</span><span class="p">];</span>
-    <span class="n">check</span><span class="o">=</span><span class="nb">true</span><span class="p">;</span>
-    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span><span class="n">i</span><span class="o">&lt;=</span><span class="n">n</span><span class="p">;</span><span class="n">i</span><span class="o">++</span><span class="p">)</span>
-        <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">j</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span><span class="n">j</span><span class="o">&lt;=</span><span class="n">n</span><span class="p">;</span><span class="n">j</span><span class="o">++</span><span class="p">)</span>
-            <span class="k">if</span><span class="p">(</span><span class="n">b</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span><span class="o">!=</span><span class="n">c</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">])</span>
-                <span class="n">check</span><span class="o">=</span><span class="nb">false</span><span class="p">;</span>
-    <span class="k">if</span><span class="p">(</span><span class="n">ans</span><span class="o">==</span><span class="mi">0</span><span class="o">&amp;&amp;</span><span class="n">check</span><span class="p">)</span>
-        <span class="n">ans</span><span class="o">=</span><span class="mi">2</span><span class="p">;</span>
-    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span><span class="n">i</span><span class="o">&lt;=</span><span class="n">n</span><span class="p">;</span><span class="n">i</span><span class="o">++</span><span class="p">)</span>
-        <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">j</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span><span class="n">j</span><span class="o">&lt;=</span><span class="n">n</span><span class="p">;</span><span class="n">j</span><span class="o">++</span><span class="p">)</span>
-            <span class="n">c</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span><span class="o">=</span><span class="n">a</span><span class="p">[</span><span class="n">j</span><span class="p">][</span><span class="n">n</span><span class="o">-</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">];</span>
-    <span class="n">check</span><span class="o">=</span><span class="nb">true</span><span class="p">;</span>
-    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span><span class="n">i</span><span class="o">&lt;=</span><span class="n">n</span><span class="p">;</span><span class="n">i</span><span class="o">++</span><span class="p">)</span>
-        <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">j</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span><span class="n">j</span><span class="o">&lt;=</span><span class="n">n</span><span class="p">;</span><span class="n">j</span><span class="o">++</span><span class="p">)</span>
-            <span class="k">if</span><span class="p">(</span><span class="n">b</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span><span class="o">!=</span><span class="n">c</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">])</span>
-                <span class="n">check</span><span class="o">=</span><span class="nb">false</span><span class="p">;</span>
-    <span class="k">if</span><span class="p">(</span><span class="n">ans</span><span class="o">==</span><span class="mi">0</span><span class="o">&amp;&amp;</span><span class="n">check</span><span class="p">)</span>
-        <span class="n">ans</span><span class="o">=</span><span class="mi">3</span><span class="p">;</span>
-    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span><span class="n">i</span><span class="o">&lt;=</span><span class="n">n</span><span class="p">;</span><span class="n">i</span><span class="o">++</span><span class="p">)</span>
-        <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">j</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span><span class="n">j</span><span class="o">&lt;=</span><span class="n">n</span><span class="p">;</span><span class="n">j</span><span class="o">++</span><span class="p">)</span>
-            <span class="n">c</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span><span class="o">=</span><span class="n">a</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">n</span><span class="o">-</span><span class="n">j</span><span class="o">+</span><span class="mi">1</span><span class="p">];</span>
-    <span class="n">check</span><span class="o">=</span><span class="nb">true</span><span class="p">;</span>
-    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span><span class="n">i</span><span class="o">&lt;=</span><span class="n">n</span><span class="p">;</span><span class="n">i</span><span class="o">++</span><span class="p">)</span>
-        <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">j</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span><span class="n">j</span><span class="o">&lt;=</span><span class="n">n</span><span class="p">;</span><span class="n">j</span><span class="o">++</span><span class="p">)</span>
-            <span class="k">if</span><span class="p">(</span><span class="n">b</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span><span class="o">!=</span><span class="n">c</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">])</span>
-                <span class="n">check</span><span class="o">=</span><span class="nb">false</span><span class="p">;</span>
-    <span class="k">if</span><span class="p">(</span><span class="n">ans</span><span class="o">==</span><span class="mi">0</span><span class="o">&amp;&amp;</span><span class="n">check</span><span class="p">)</span>
-        <span class="n">ans</span><span class="o">=</span><span class="mi">4</span><span class="p">;</span>
-    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span><span class="n">i</span><span class="o">&lt;=</span><span class="n">n</span><span class="p">;</span><span class="n">i</span><span class="o">++</span><span class="p">)</span>
-        <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">j</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span><span class="n">j</span><span class="o">&lt;=</span><span class="n">n</span><span class="p">;</span><span class="n">j</span><span class="o">++</span><span class="p">)</span>
-            <span class="n">d</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span><span class="o">=</span><span class="n">a</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">n</span><span class="o">-</span><span class="n">j</span><span class="o">+</span><span class="mi">1</span><span class="p">];</span>
-    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span><span class="n">i</span><span class="o">&lt;=</span><span class="n">n</span><span class="p">;</span><span class="n">i</span><span class="o">++</span><span class="p">)</span>
-        <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">j</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span><span class="n">j</span><span class="o">&lt;=</span><span class="n">n</span><span class="p">;</span><span class="n">j</span><span class="o">++</span><span class="p">)</span>
-            <span class="n">c</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span><span class="o">=</span><span class="n">d</span><span class="p">[</span><span class="n">j</span><span class="p">][</span><span class="n">n</span><span class="o">-</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">];</span>
-    <span class="n">check</span><span class="o">=</span><span class="nb">true</span><span class="p">;</span>
-    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span><span class="n">i</span><span class="o">&lt;=</span><span class="n">n</span><span class="p">;</span><span class="n">i</span><span class="o">++</span><span class="p">)</span>
-        <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">j</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span><span class="n">j</span><span class="o">&lt;=</span><span class="n">n</span><span class="p">;</span><span class="n">j</span><span class="o">++</span><span class="p">)</span>
-            <span class="k">if</span><span class="p">(</span><span class="n">b</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span><span class="o">!=</span><span class="n">c</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">])</span>
-                <span class="n">check</span><span class="o">=</span><span class="nb">false</span><span class="p">;</span>
-    <span class="k">if</span><span class="p">(</span><span class="n">ans</span><span class="o">==</span><span class="mi">0</span><span class="o">&amp;&amp;</span><span class="n">check</span><span class="p">)</span>
-        <span class="n">ans</span><span class="o">=</span><span class="mi">5</span><span class="p">;</span>
-    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span><span class="n">i</span><span class="o">&lt;=</span><span class="n">n</span><span class="p">;</span><span class="n">i</span><span class="o">++</span><span class="p">)</span>
-        <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">j</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span><span class="n">j</span><span class="o">&lt;=</span><span class="n">n</span><span class="p">;</span><span class="n">j</span><span class="o">++</span><span class="p">)</span>
-            <span class="n">c</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span><span class="o">=</span><span class="n">d</span><span class="p">[</span><span class="n">n</span><span class="o">-</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">][</span><span class="n">n</span><span class="o">-</span><span class="n">j</span><span class="o">+</span><span class="mi">1</span><span class="p">];</span>
-    <span class="n">check</span><span class="o">=</span><span class="nb">true</span><span class="p">;</span>
-    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span><span class="n">i</span><span class="o">&lt;=</span><span class="n">n</span><span class="p">;</span><span class="n">i</span><span class="o">++</span><span class="p">)</span>
-        <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">j</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span><span class="n">j</span><span class="o">&lt;=</span><span class="n">n</span><span class="p">;</span><span class="n">j</span><span class="o">++</span><span class="p">)</span>
-            <span class="k">if</span><span class="p">(</span><span class="n">b</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span><span class="o">!=</span><span class="n">c</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">])</span>
-                <span class="n">check</span><span class="o">=</span><span class="nb">false</span><span class="p">;</span>
-    <span class="k">if</span><span class="p">(</span><span class="n">ans</span><span class="o">==</span><span class="mi">0</span><span class="o">&amp;&amp;</span><span class="n">check</span><span class="p">)</span>
-        <span class="n">ans</span><span class="o">=</span><span class="mi">5</span><span class="p">;</span>
-    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span><span class="n">i</span><span class="o">&lt;=</span><span class="n">n</span><span class="p">;</span><span class="n">i</span><span class="o">++</span><span class="p">)</span>
-        <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">j</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span><span class="n">j</span><span class="o">&lt;=</span><span class="n">n</span><span class="p">;</span><span class="n">j</span><span class="o">++</span><span class="p">)</span>
-            <span class="n">c</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span><span class="o">=</span><span class="n">d</span><span class="p">[</span><span class="n">n</span><span class="o">-</span><span class="n">j</span><span class="o">+</span><span class="mi">1</span><span class="p">][</span><span class="n">i</span><span class="p">];</span>
-    <span class="n">check</span><span class="o">=</span><span class="nb">true</span><span class="p">;</span>
-    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span><span class="n">i</span><span class="o">&lt;=</span><span class="n">n</span><span class="p">;</span><span class="n">i</span><span class="o">++</span><span class="p">)</span>
-        <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">j</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span><span class="n">j</span><span class="o">&lt;=</span><span class="n">n</span><span class="p">;</span><span class="n">j</span><span class="o">++</span><span class="p">)</span>
-            <span class="k">if</span><span class="p">(</span><span class="n">b</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span><span class="o">!=</span><span class="n">c</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">])</span>
-                <span class="n">check</span><span class="o">=</span><span class="nb">false</span><span class="p">;</span>
-    <span class="k">if</span><span class="p">(</span><span class="n">ans</span><span class="o">==</span><span class="mi">0</span><span class="o">&amp;&amp;</span><span class="n">check</span><span class="p">)</span>
-        <span class="n">ans</span><span class="o">=</span><span class="mi">5</span><span class="p">;</span>
-    <span class="n">check</span><span class="o">=</span><span class="nb">true</span><span class="p">;</span>
-    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span><span class="n">i</span><span class="o">&lt;=</span><span class="n">n</span><span class="p">;</span><span class="n">i</span><span class="o">++</span><span class="p">)</span>
-        <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">j</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span><span class="n">j</span><span class="o">&lt;=</span><span class="n">n</span><span class="p">;</span><span class="n">j</span><span class="o">++</span><span class="p">)</span>
-            <span class="k">if</span><span class="p">(</span><span class="n">a</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span><span class="o">!=</span><span class="n">b</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">])</span>
-                <span class="n">check</span><span class="o">=</span><span class="nb">false</span><span class="p">;</span>
-    <span class="k">if</span><span class="p">(</span><span class="n">ans</span><span class="o">==</span><span class="mi">0</span><span class="o">&amp;&amp;</span><span class="n">check</span><span class="p">)</span>
-        <span class="n">ans</span><span class="o">=</span><span class="mi">6</span><span class="p">;</span> 
-    <span class="k">if</span><span class="p">(</span><span class="n">ans</span><span class="o">==</span><span class="mi">0</span><span class="p">)</span>
-        <span class="n">ans</span><span class="o">=</span><span class="mi">7</span><span class="p">;</span> 
-    <span class="n">cout</span><span class="o">&lt;&lt;</span><span class="n">ans</span><span class="p">;</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre></div></div>]]></content><author><name>ZJM</name></author><category term="code/luogu/arrays" /><category term="Code" /><summary type="html"><![CDATA[#include&lt;iostream&gt; #include&lt;cmath&gt; #include&lt;string&gt; using namespace std; int a[11][11],b[11][11],c[11][11],d[11][11]; int main() { int n; cin&gt;&gt;n; for(int i=1;i&lt;=n;i++) for(int j=1;j&lt;=n;j++) { char tmp; cin&gt;&gt;tmp; if(tmp=='@') a[i][j]=1; else a[i][j]=0; } for(int i=1;i&lt;=n;i++) for(int j=1;j&lt;=n;j++) { char tmp; cin&gt;&gt;tmp; if(tmp=='@') b[i][j]=1; else b[i][j]=0; } for(int i=1;i&lt;=n;i++) for(int j=1;j&lt;=n;j++) c[i][j]=a[n-j+1][i]; int ans=0; bool check=true; for(int i=1;i&lt;=n;i++) for(int j=1;j&lt;=n;j++) if(b[i][j]!=c[i][j]) check=false; if(ans==0&amp;&amp;check) ans=1; for(int i=1;i&lt;=n;i++) for(int j=1;j&lt;=n;j++) c[i][j]=a[n-i+1][n-j+1]; check=true; for(int i=1;i&lt;=n;i++) for(int j=1;j&lt;=n;j++) if(b[i][j]!=c[i][j]) check=false; if(ans==0&amp;&amp;check) ans=2; for(int i=1;i&lt;=n;i++) for(int j=1;j&lt;=n;j++) c[i][j]=a[j][n-i+1]; check=true; for(int i=1;i&lt;=n;i++) for(int j=1;j&lt;=n;j++) if(b[i][j]!=c[i][j]) check=false; if(ans==0&amp;&amp;check) ans=3; for(int i=1;i&lt;=n;i++) for(int j=1;j&lt;=n;j++) c[i][j]=a[i][n-j+1]; check=true; for(int i=1;i&lt;=n;i++) for(int j=1;j&lt;=n;j++) if(b[i][j]!=c[i][j]) check=false; if(ans==0&amp;&amp;check) ans=4; for(int i=1;i&lt;=n;i++) for(int j=1;j&lt;=n;j++) d[i][j]=a[i][n-j+1]; for(int i=1;i&lt;=n;i++) for(int j=1;j&lt;=n;j++) c[i][j]=d[j][n-i+1]; check=true; for(int i=1;i&lt;=n;i++) for(int j=1;j&lt;=n;j++) if(b[i][j]!=c[i][j]) check=false; if(ans==0&amp;&amp;check) ans=5; for(int i=1;i&lt;=n;i++) for(int j=1;j&lt;=n;j++) c[i][j]=d[n-i+1][n-j+1]; check=true; for(int i=1;i&lt;=n;i++) for(int j=1;j&lt;=n;j++) if(b[i][j]!=c[i][j]) check=false; if(ans==0&amp;&amp;check) ans=5; for(int i=1;i&lt;=n;i++) for(int j=1;j&lt;=n;j++) c[i][j]=d[n-j+1][i]; check=true; for(int i=1;i&lt;=n;i++) for(int j=1;j&lt;=n;j++) if(b[i][j]!=c[i][j]) check=false; if(ans==0&amp;&amp;check) ans=5; check=true; for(int i=1;i&lt;=n;i++) for(int j=1;j&lt;=n;j++) if(a[i][j]!=b[i][j]) check=false; if(ans==0&amp;&amp;check) ans=6; if(ans==0) ans=7; cout&lt;&lt;ans; return 0; }]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/code-cover-20.png" /><media:content medium="image" url="http://localhost:4000/code-cover-20.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">P1319 压缩技术</title><link href="http://localhost:4000/code/luogu/arrays/2024/12/29/P1319-%E5%8E%8B%E7%BC%A9%E6%8A%80%E6%9C%AF/" rel="alternate" type="text/html" title="P1319 压缩技术" /><published>2024-12-29T00:00:00-08:00</published><updated>2024-12-29T00:00:00-08:00</updated><id>http://localhost:4000/code/luogu/arrays/2024/12/29/P1319%20%E5%8E%8B%E7%BC%A9%E6%8A%80%E6%9C%AF</id><content type="html" xml:base="http://localhost:4000/code/luogu/arrays/2024/12/29/P1319-%E5%8E%8B%E7%BC%A9%E6%8A%80%E6%9C%AF/"><![CDATA[<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include</span><span class="cpf">&lt;bits/stdc++.h&gt;</span><span class="cp">
+</code></pre></div></div>]]></content><author><name>ZJM</name></author><category term="code/luogu/arrays" /><category term="Code" /><summary type="html"><![CDATA[#include&lt;bits/stdc++.h&gt; using namespace std; bool used[10000001]; int main() { double n,maxx=0,maxt=0; cin&gt;&gt;n; for(int i=1;i&lt;=n;i++) { double x,t; cin&gt;&gt;x&gt;&gt;t; if(maxx&lt;x) maxx=x; if(maxt&lt;t) maxt=t; for(int j=1;j&lt;=t;j++) { if(used[int(j*x)]==1) used[int(j*x)]=0; else used[int(j*x)]=1; } } for(int i=1;i&lt;=int(maxt*maxx);i++) { if(used[i]&gt;0) { cout&lt;&lt;i; return 0; } } return 0; }]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/code-cover-14.png" /><media:content medium="image" url="http://localhost:4000/code-cover-14.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">P1319 压缩技术</title><link href="http://localhost:4000/code/luogu/arrays/2024/12/29/P1319-%E5%8E%8B%E7%BC%A9%E6%8A%80%E6%9C%AF/" rel="alternate" type="text/html" title="P1319 压缩技术" /><published>2024-12-29T00:00:00-08:00</published><updated>2024-12-29T00:00:00-08:00</updated><id>http://localhost:4000/code/luogu/arrays/2024/12/29/P1319%20%E5%8E%8B%E7%BC%A9%E6%8A%80%E6%9C%AF</id><content type="html" xml:base="http://localhost:4000/code/luogu/arrays/2024/12/29/P1319-%E5%8E%8B%E7%BC%A9%E6%8A%80%E6%9C%AF/"><![CDATA[<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include</span><span class="cpf">&lt;bits/stdc++.h&gt;</span><span class="cp">
 </span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
 <span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
 <span class="p">{</span>
@@ -499,29 +681,4 @@
     <span class="p">}</span> 
     <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
-</code></pre></div></div>]]></content><author><name>ZJM</name></author><category term="code/luogu/arrays" /><category term="Code" /><summary type="html"><![CDATA[#include&lt;cstdio&gt; #include&lt;iostream&gt; #include&lt;cstdlib&gt; using namespace std; int a[100],top=0; int main() { do{ cin&gt;&gt;a[++top]; }while(a[top]!=0); while(top-1) { cout&lt;&lt;a[--top]&lt;&lt;" "; } return 0; }]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/code-cover-2.png" /><media:content medium="image" url="http://localhost:4000/code-cover-2.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">P1428 小鱼比可爱</title><link href="http://localhost:4000/code/luogu/arrays/2024/12/29/P1428-%E5%B0%8F%E9%B1%BC%E6%AF%94%E5%8F%AF%E7%88%B1/" rel="alternate" type="text/html" title="P1428 小鱼比可爱" /><published>2024-12-29T00:00:00-08:00</published><updated>2024-12-29T00:00:00-08:00</updated><id>http://localhost:4000/code/luogu/arrays/2024/12/29/P1428%20%E5%B0%8F%E9%B1%BC%E6%AF%94%E5%8F%AF%E7%88%B1</id><content type="html" xml:base="http://localhost:4000/code/luogu/arrays/2024/12/29/P1428-%E5%B0%8F%E9%B1%BC%E6%AF%94%E5%8F%AF%E7%88%B1/"><![CDATA[<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include</span><span class="cpf">&lt;iostream&gt;</span><span class="cp">
-#include</span><span class="cpf">&lt;cstdio&gt;</span><span class="cp">
-</span><span class="kt">int</span> <span class="n">n</span><span class="p">,</span><span class="n">a</span><span class="p">[</span><span class="mi">110</span><span class="p">],</span><span class="n">ans</span><span class="p">[</span><span class="mi">110</span><span class="p">];</span>
-<span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
-<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
-<span class="p">{</span>
-    <span class="n">scanf</span><span class="p">(</span><span class="s">"%d"</span><span class="p">,</span><span class="o">&amp;</span><span class="n">n</span><span class="p">);</span>
-    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span><span class="n">i</span><span class="o">&lt;=</span><span class="n">n</span><span class="p">;</span><span class="o">++</span><span class="n">i</span><span class="p">)</span>
-    <span class="p">{</span>
-        <span class="n">scanf</span><span class="p">(</span><span class="s">"%d"</span><span class="p">,</span><span class="o">&amp;</span><span class="n">a</span><span class="p">[</span><span class="n">i</span><span class="p">]);</span>
-<span class="p">}</span>
-
-     <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span><span class="n">i</span><span class="o">&lt;=</span><span class="n">n</span><span class="p">;</span><span class="o">++</span><span class="n">i</span><span class="p">)</span>
-     <span class="p">{</span>
-         <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">j</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span><span class="n">j</span><span class="o">&lt;=</span><span class="n">i</span><span class="p">;</span><span class="o">++</span><span class="n">j</span><span class="p">)</span>
-         <span class="p">{</span>
-             <span class="k">if</span><span class="p">(</span><span class="n">a</span><span class="p">[</span><span class="n">j</span><span class="p">]</span><span class="o">&lt;</span><span class="n">a</span><span class="p">[</span><span class="n">i</span><span class="p">])</span> <span class="n">ans</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">++</span><span class="p">;</span>
-         <span class="p">}</span>
-     <span class="p">}</span>
-     <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span> <span class="n">i</span><span class="o">&lt;=</span><span class="n">n</span><span class="p">;</span><span class="o">++</span><span class="n">i</span><span class="p">)</span>
-     <span class="p">{</span>
-         <span class="n">printf</span><span class="p">(</span><span class="s">"%d "</span><span class="p">,</span><span class="n">ans</span><span class="p">[</span><span class="n">i</span><span class="p">]);</span>
-     <span class="p">}</span>
-     <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre></div></div>]]></content><author><name>ZJM</name></author><category term="code/luogu/arrays" /><category term="Code" /><summary type="html"><![CDATA[```cpp #include #include int n,a[110],ans[110]; using namespace std; int main() { scanf("%d",&amp;n); for(int i=1;i&lt;=n;++i) { scanf("%d",&amp;a[i]); }]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/code-cover-1.png" /><media:content medium="image" url="http://localhost:4000/code-cover-1.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
+</code></pre></div></div>]]></content><author><name>ZJM</name></author><category term="code/luogu/arrays" /><category term="Code" /><summary type="html"><![CDATA[#include&lt;cstdio&gt; #include&lt;iostream&gt; #include&lt;cstdlib&gt; using namespace std; int a[100],top=0; int main() { do{ cin&gt;&gt;a[++top]; }while(a[top]!=0); while(top-1) { cout&lt;&lt;a[--top]&lt;&lt;" "; } return 0; }]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/code-cover-2.png" /><media:content medium="image" url="http://localhost:4000/code-cover-2.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
