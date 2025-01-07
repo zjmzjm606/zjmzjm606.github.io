@@ -1,7 +1,7 @@
 # Site Build Settings
 
 # jekyll-paginate configuration
-paginate: 1
+paginate: 5
 paginate_path: "/page:num/"
 
 
@@ -15,8 +15,9 @@ theme:                jekyll-theme-minimal
 
 # Customise atom feed settings (this is where Jekyll-Feed gets configuration information)
 title:		           "Tomorrow's Blog"
-email:               "zjmzjm606@gmail.com   zjmzjm66@connect.hku.hk"
+email: "zjmzjm606@gmail.com, zjmzjm66@connect.hku.hk"
 url:                 "https://zjmzjm606.github.io"
+baseurl: ""
 
 
 social_links:

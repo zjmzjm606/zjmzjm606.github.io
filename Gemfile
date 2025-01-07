@@ -8,3 +8,6 @@ gem "jekyll-feed"
 gem "jekyll-seo-tag"
 gem "webrick", "~> 1.7"  # 用于支持 Ruby 3.0+
 gem "kramdown-parser-gfm"  # 支持 GitHub Flavored Markdown
+gem 'pathutil'
+gem 'addressable'
+gem 'safe_yaml'

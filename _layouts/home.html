@@ -3,21 +3,44 @@ layout: default
 title: Home
 ---
 
-{% for post in paginator.posts %}
-  {% include featured-post.html %}
-{% endfor %}
+{% assign posts_per_page = site.paginate %}
+{% assign total_posts = site.posts | size %}
+{% assign total_pages = total_posts | divided_by: posts_per_page %}
+{% assign remainder = total_posts | modulo: posts_per_page %}
+{% if remainder > 0 %}
+  {% assign total_pages = total_pages | plus: 1 %}
+{% endif %}
 
-<!-- Pagination links -->
+
+{% assign current_page = paginator.page %}
+{% if current_page == nil %}
+  {% assign current_page = 1 %}
+{% endif %}
+
+{% assign sorted_posts = site.posts | sort: 'date' | reverse %}
+
+{% assign start_index = current_page | minus: 1 | times: posts_per_page %}
+{% assign end_index = start_index | plus: posts_per_page %}
+
+{% for post in sorted_posts %}
+  {% if forloop.index0 >= start_index and forloop.index0 < end_index %}
+    {% include featured-post.html %}
+  {% endif %}
+{% endfor %}
 <div class="pagination">
-  {% if paginator.previous_page %}
-    <a class="pagination-button pagination-active previous" href="{{ paginator.previous_page_path }}">Previous</a>
+  {% if current_page != 1 %}
+    {% if paginator.previous_page %}
+      <a class="pagination-button pagination-active previous" href="{{ paginator.previous_page_path }}">Previous</a>
+    {% else %}
+      <span class="pagination-button disabled">Previous</span>
+    {% endif %}
+    {% if paginator.next_page %}
+      <a class="pagination-button pagination-active next" href="{{ paginator.next_page_path }}">Next</a>
+    {% else and current_page != 1%}
+      <span class="pagination-button disabled">Next</span>
+    {% endif %}
   {% else %}
     <span class="pagination-button disabled">Previous</span>
-  {% endif %}
-
-  {% if paginator.next_page %}
-    <a class="pagination-button pagination-active next" href="{{ paginator.next_page_path }}">Next</a>
-  {% else %}
-    <span class="pagination-button disabled">Next</span>
+    <a class="pagination-button pagination-active next" href="http://localhost:4000/page2/">Next</a>
   {% endif %}
 </div>
