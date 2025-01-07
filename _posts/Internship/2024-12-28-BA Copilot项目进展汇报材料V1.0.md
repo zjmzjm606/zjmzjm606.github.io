@@ -4,6 +4,7 @@ title: "BA Copilot项目进展汇报材料V1.0（20241022更新）"
 author: "沈亮"
 categories: internship/confidential
 tags: [internship]
+published: false
 image: internship-cover-2.png
 
 ---

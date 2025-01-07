@@ -543,11 +543,11 @@ pre code {
 }
 .fa-envelope {
   padding: 5px;
-  -webkit-transition: 1s;
-  -o-transition: 1s;
-  -ms-transition: 1s;
-  -moz-transition: 1s;
-  transition: 1s;
+  -webkit-transition: 0.66s;
+  -o-transition: 0.66s;
+  -ms-transition: 0.66s;
+  -moz-transition: 0.66s;
+  transition: 0.66s;
 }
 .fa-envelope:hover {
   color: #f39c12;
@@ -555,11 +555,11 @@ pre code {
 
 .fa-twitter {
   padding: 5px;
-  -webkit-transition: 1s;
-  -o-transition: 1s;
-  -ms-transition: 1s;
-  -moz-transition: 1s;
-  transition: 1s;
+  -webkit-transition: 0.66s;
+  -o-transition: 0.66s;
+  -ms-transition: 0.66s;
+  -moz-transition: 0.66s;
+  transition: 0.66s;
 }
 .fa-twitter:hover {
   color: #00aced;
@@ -567,11 +567,11 @@ pre code {
 
 .fa-instagram {
   padding: 5px;
-  -webkit-transition: 1s;
-  -o-transition: 1s;
-  -ms-transition: 1s;
-  -moz-transition: 1s;
-  transition: 1s;
+  -webkit-transition: 0.66s;
+  -o-transition: 0.66s;
+  -ms-transition: 0.66s;
+  -moz-transition: 0.66s;
+  transition: 0.66s;
 }
 .fa-instagram:hover {
   color: #375989;
@@ -579,11 +579,11 @@ pre code {
 
 .fa-github {
   padding: 5px;
-  -webkit-transition: 1s;
-  -o-transition: 1s;
-  -ms-transition: 1s;
-  -moz-transition: 1s;
-  transition: 1s;
+  -webkit-transition: 0.66s;
+  -o-transition: 0.66s;
+  -ms-transition: 0.66s;
+  -moz-transition: 0.66s;
+  transition: 0.66s;
 }
 .fa-github:hover {
   color: #343434;
@@ -591,11 +591,11 @@ pre code {
 
 .fa-linkedin {
   padding: 5px;
-  -webkit-transition: 1s;
-  -o-transition: 1s;
-  -ms-transition: 1s;
-  -moz-transition: 1s;
-  transition: 1s;
+  -webkit-transition: 0.66s;
+  -o-transition: 0.66s;
+  -ms-transition: 0.66s;
+  -moz-transition: 0.66s;
+  transition: 0.66s;
 }
 .fa-linkedin:hover {
   color: #0073a4;
@@ -603,11 +603,11 @@ pre code {
 
 .fa-facebook {
   padding: 5px;
-  -webkit-transition: 1s;
-  -o-transition: 1s;
-  -ms-transition: 1s;
-  -moz-transition: 1s;
-  transition: 1s;
+  -webkit-transition: 0.66s;
+  -o-transition: 0.66s;
+  -ms-transition: 0.66s;
+  -moz-transition: 0.66s;
+  transition: 0.66s;
 }
 .fa-facebook:hover {
   color: #3d5b99;
@@ -615,11 +615,11 @@ pre code {
 
 .fa-google-plus {
   padding: 5px;
-  -webkit-transition: 1s;
-  -o-transition: 1s;
-  -ms-transition: 1s;
-  -moz-transition: 1s;
-  transition: 1s;
+  -webkit-transition: 0.66s;
+  -o-transition: 0.66s;
+  -ms-transition: 0.66s;
+  -moz-transition: 0.66s;
+  transition: 0.66s;
 }
 .fa-google-plus:hover {
   color: #e64a41;
@@ -627,11 +627,11 @@ pre code {
 
 .fa-pinterest {
   padding: 5px;
-  -webkit-transition: 1s;
-  -o-transition: 1s;
-  -ms-transition: 1s;
-  -moz-transition: 1s;
-  transition: 1s;
+  -webkit-transition: 0.66s;
+  -o-transition: 0.66s;
+  -ms-transition: 0.66s;
+  -moz-transition: 0.66s;
+  transition: 0.66s;
 }
 .fa-pinterest:hover {
   color: #bd081c;
@@ -639,11 +639,11 @@ pre code {
 
 .fa-medium {
   padding: 5px;
-  -webkit-transition: 1s;
-  -o-transition: 1s;
-  -ms-transition: 1s;
-  -moz-transition: 1s;
-  transition: 1s;
+  -webkit-transition: 0.66s;
+  -o-transition: 0.66s;
+  -ms-transition: 0.66s;
+  -moz-transition: 0.66s;
+  transition: 0.66s;
 }
 .fa-medium:hover {
   color: #00AB6C;
@@ -651,11 +651,11 @@ pre code {
 
 .fa-codepen {
   padding: 5px;
-  -webkit-transition: 1s;
-  -o-transition: 1s;
-  -ms-transition: 1s;
-  -moz-transition: 1s;
-  transition: 1s;
+  -webkit-transition: 0.66s;
+  -o-transition: 0.66s;
+  -ms-transition: 0.66s;
+  -moz-transition: 0.66s;
+  transition: 0.66s;
 }
 .fa-codepen:hover {
   color: black;
@@ -663,14 +663,26 @@ pre code {
 
 .fa-rss-square {
   padding: 5px;
-  -webkit-transition: 1s;
-  -o-transition: 1s;
-  -ms-transition: 1s;
-  -moz-transition: 1s;
-  transition: 1s;
+  -webkit-transition: 0.66s;
+  -o-transition: 0.66s;
+  -ms-transition: 0.66s;
+  -moz-transition: 0.66s;
+  transition: 0.66s;
 }
 .fa-rss-square:hover {
   color: #ff6600;
+}
+
+.fa-wechat {
+  padding: 5px;
+  -webkit-transition: 0.66s;
+  -o-transition: 0.66s;
+  -ms-transition: 0.66s;
+  -moz-transition: 0.66s;
+  transition: 0.66s;
+}
+.fa-wechat:hover {
+  color: #1aad19;
 }
 
 /*# sourceMappingURL=main.css.map */

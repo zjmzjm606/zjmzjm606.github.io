@@ -63,3 +63,7 @@
   padding: 5px;
   @include social-media-icon($rss-color, $icon-transition-time);
 }
+.fa-wechat {
+  padding: 5px;
+  @include social-media-icon($wechat-color, $icon-transition-time);
+}
