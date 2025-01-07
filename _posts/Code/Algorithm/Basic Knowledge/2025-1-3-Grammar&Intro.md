@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Grammar&Intro"
+title: "语法&介绍"
 author: "ZJM"
 categories: code/algorithm/basic-knowledge
 tags: [Code]

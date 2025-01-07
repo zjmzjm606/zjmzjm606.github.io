@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Annotation"
+title: "注释"
 author: "ZJM"
 categories: code/algorithm/basic-knowledge
 tags: [Code]
@@ -43,7 +43,7 @@ int main()
 ```
 
 在上面的代码中，编译器会忽略 // 这是一个注释 和 // 语句后面的注释，输出结果为：
-```
+```yaml
 Hello World!
 ```
 - **多行注释**
@@ -60,7 +60,7 @@ int main()
 ```
 
 在这段代码中，/* 这是一个多行注释 */ 会被编译器忽略，输出结果为：
-```
+```yaml
 Hello World!
 ```
 

@@ -1,7 +1,9 @@
 # Site Build Settings
 
 # jekyll-paginate configuration
-paginate:            5
+paginate: 1
+paginate_path: "/page:num/"
+
 
 # Build settings
 markdown:            kramdown
@@ -15,7 +17,6 @@ theme:                jekyll-theme-minimal
 title:		           "Tomorrow's Blog"
 email:               "zjmzjm606@gmail.com   zjmzjm66@connect.hku.hk"
 url:                 "https://zjmzjm606.github.io"
-baseurl: ""  
 
 
 social_links:
