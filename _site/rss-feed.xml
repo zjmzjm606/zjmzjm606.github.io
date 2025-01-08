@@ -7,12 +7,26 @@
 		<atom:link href="/rss-feed.xml" rel="self" type="application/rss+xml" />
 		
 			<item>
+				<title>常量</title>
+				
+					<dc:creator>ZJM</dc:creator>
+				
+				
+					<description>&lt;h1 id=&quot;常量&quot;&gt;&lt;span style=&quot;color: rgb(255,127,80);&quot;&gt;&lt;strong&gt;常量&lt;/strong&gt;&lt;/span&gt;&lt;/h1&gt;
+</description>
+				
+				<pubDate>Mon, 06 Jan 2025 00:00:00 -0800</pubDate>
+				<link>http://localhost:4000/code/algorithm/basic-knowledge/2025/01/06/Constant/</link>
+				<guid isPermaLink="true">http://localhost:4000/code/algorithm/basic-knowledge/2025/01/06/Constant/</guid>
+			</item>
+		
+			<item>
 				<title>基本数据类型</title>
 				
 					<dc:creator>ZJM</dc:creator>
 				
 				
-					<description>&lt;p&gt;在 C++ 中，&lt;strong&gt;变量&lt;/strong&gt;是程序中用于存储数据的命名存储区。每个变量都有一个指定的类型，类型决定了变量所占用的内存大小、数据布局及可以存储的数据值范围。&lt;/p&gt;
+					<description>&lt;h1 id=&quot;基本数据类型&quot;&gt;&lt;span style=&quot;color: rgb(255,127,80);&quot;&gt;&lt;strong&gt;基本数据类型&lt;/strong&gt;&lt;/span&gt;&lt;/h1&gt;
 </description>
 				
 				<pubDate>Sun, 05 Jan 2025 00:00:00 -0800</pubDate>
@@ -21,12 +35,27 @@
 			</item>
 		
 			<item>
+				<title>存储类</title>
+				
+					<dc:creator>ZJM</dc:creator>
+				
+				
+					<description>&lt;h1 id=&quot;存储类&quot;&gt;&lt;span style=&quot;color: rgb(255,127,80);&quot;&gt;&lt;strong&gt;存储类&lt;/strong&gt;&lt;/span&gt;&lt;/h1&gt;
+</description>
+				
+				<pubDate>Sun, 05 Jan 2025 00:00:00 -0800</pubDate>
+				<link>http://localhost:4000/code/algorithm/basic-knowledge/2025/01/05/Storage-Class/</link>
+				<guid isPermaLink="true">http://localhost:4000/code/algorithm/basic-knowledge/2025/01/05/Storage-Class/</guid>
+			</item>
+		
+			<item>
 				<title>变量的作用域</title>
 				
 					<dc:creator>ZJM</dc:creator>
 				
 				
-					<description>&lt;p&gt;在 C++ 中，变量的作用域指的是变量可以被访问的范围。通常来说，变量的作用域可以分为以下几种类型：&lt;/p&gt;
+					<description>&lt;h1 id=&quot;变量的作用域&quot;&gt;&lt;span style=&quot;color: rgb(255,127,80);&quot;&gt;&lt;strong&gt;变量的作用域&lt;/strong&gt;&lt;/span&gt;&lt;/h1&gt;
+&lt;p&gt;在 C++ 中，变量的作用域指的是变量可以被访问的范围。通常来说，变量的作用域可以分为以下几种类型：&lt;/p&gt;
 </description>
 				
 				<pubDate>Sun, 05 Jan 2025 00:00:00 -0800</pubDate>
@@ -35,120 +64,87 @@
 			</item>
 		
 			<item>
-				<title>C++ 关键字（保留字）介绍</title>
+				<title>运算符</title>
 				
 					<dc:creator>ZJM</dc:creator>
 				
 				
-					<description>&lt;h2 id=&quot;c-关键字保留字介绍&quot;&gt;&lt;span style=&quot;color: rgb(0,191,255);&quot;&gt;&lt;strong&gt;C++ 关键字（保留字）介绍&lt;/strong&gt;&lt;/span&gt;&lt;/h2&gt;
+					<description>&lt;h1 id=&quot;运算符&quot;&gt;&lt;span style=&quot;color: rgb(255,127,80);&quot;&gt;&lt;strong&gt;运算符&lt;/strong&gt;&lt;/span&gt;&lt;/h1&gt;
+</description>
+				
+				<pubDate>Sun, 05 Jan 2025 00:00:00 -0800</pubDate>
+				<link>http://localhost:4000/code/algorithm/basic-knowledge/2025/01/05/Operator/</link>
+				<guid isPermaLink="true">http://localhost:4000/code/algorithm/basic-knowledge/2025/01/05/Operator/</guid>
+			</item>
+		
+			<item>
+				<title>修饰符类型</title>
+				
+					<dc:creator>ZJM</dc:creator>
+				
+				
+					<description>&lt;h1 id=&quot;修饰符&quot;&gt;&lt;span style=&quot;color: rgb(255,127,80);&quot;&gt;&lt;strong&gt;修饰符&lt;/strong&gt;&lt;/span&gt;&lt;/h1&gt;
+</description>
+				
+				<pubDate>Sun, 05 Jan 2025 00:00:00 -0800</pubDate>
+				<link>http://localhost:4000/code/algorithm/basic-knowledge/2025/01/05/Modifier-Types/</link>
+				<guid isPermaLink="true">http://localhost:4000/code/algorithm/basic-knowledge/2025/01/05/Modifier-Types/</guid>
+			</item>
+		
+			<item>
+				<title>循环</title>
+				
+					<dc:creator>ZJM</dc:creator>
+				
+				
+					<description>&lt;h1 id=&quot;循环详解&quot;&gt;&lt;span style=&quot;color: rgb(255,127,80);&quot;&gt;&lt;strong&gt;循环详解&lt;/strong&gt;&lt;/span&gt;&lt;/h1&gt;
+</description>
+				
+				<pubDate>Sun, 05 Jan 2025 00:00:00 -0800</pubDate>
+				<link>http://localhost:4000/code/algorithm/basic-knowledge/2025/01/05/Loop/</link>
+				<guid isPermaLink="true">http://localhost:4000/code/algorithm/basic-knowledge/2025/01/05/Loop/</guid>
+			</item>
+		
+			<item>
+				<title>判断结构</title>
+				
+					<dc:creator>ZJM</dc:creator>
+				
+				
+					<description>&lt;h1 id=&quot;判断结构&quot;&gt;&lt;span style=&quot;color: rgb(255,127,80);&quot;&gt;&lt;strong&gt;判断结构&lt;/strong&gt;&lt;/span&gt;&lt;/h1&gt;
+</description>
+				
+				<pubDate>Sun, 05 Jan 2025 00:00:00 -0800</pubDate>
+				<link>http://localhost:4000/code/algorithm/basic-knowledge/2025/01/05/Judgment-Structure/</link>
+				<guid isPermaLink="true">http://localhost:4000/code/algorithm/basic-knowledge/2025/01/05/Judgment-Structure/</guid>
+			</item>
+		
+			<item>
+				<title>判断结构</title>
+				
+					<dc:creator>ZJM</dc:creator>
+				
+				
+					<description>&lt;h1 id=&quot;判断结构&quot;&gt;&lt;span style=&quot;color: rgb(255,127,80);&quot;&gt;&lt;strong&gt;判断结构&lt;/strong&gt;&lt;/span&gt;&lt;/h1&gt;
+</description>
+				
+				<pubDate>Sun, 05 Jan 2025 00:00:00 -0800</pubDate>
+				<link>http://localhost:4000/code/algorithm/basic-knowledge/2025/01/05/IF-(copy)/</link>
+				<guid isPermaLink="true">http://localhost:4000/code/algorithm/basic-knowledge/2025/01/05/IF-(copy)/</guid>
+			</item>
+		
+			<item>
+				<title>关键字（保留字）介绍</title>
+				
+					<dc:creator>ZJM</dc:creator>
+				
+				
+					<description>&lt;h1 id=&quot;关键字保留字介绍&quot;&gt;&lt;span style=&quot;color: rgb(255,127,80);&quot;&gt;&lt;strong&gt;关键字（保留字）介绍&lt;/strong&gt;&lt;/span&gt;&lt;/h1&gt;
 </description>
 				
 				<pubDate>Fri, 03 Jan 2025 00:00:00 -0800</pubDate>
-				<link>http://localhost:4000/code/algorithm/basic-knowledge/2025/01/03/Introduction-to-C++-Reserved-Words/</link>
-				<guid isPermaLink="true">http://localhost:4000/code/algorithm/basic-knowledge/2025/01/03/Introduction-to-C++-Reserved-Words/</guid>
-			</item>
-		
-			<item>
-				<title>语法&amp;介绍</title>
-				
-					<dc:creator>ZJM</dc:creator>
-				
-				
-					<description>&lt;h3 id=&quot;1-基本结构&quot;&gt;&lt;span style=&quot;color: rgb(0,191,255);&quot;&gt;1. &lt;strong&gt;基本结构&lt;/strong&gt;&lt;/span&gt;&lt;/h3&gt;
-</description>
-				
-				<pubDate>Fri, 03 Jan 2025 00:00:00 -0800</pubDate>
-				<link>http://localhost:4000/code/algorithm/basic-knowledge/2025/01/03/Grammar&Intro/</link>
-				<guid isPermaLink="true">http://localhost:4000/code/algorithm/basic-knowledge/2025/01/03/Grammar&Intro/</guid>
-			</item>
-		
-			<item>
-				<title>数据类型</title>
-				
-					<dc:creator>ZJM</dc:creator>
-				
-				
-					<description>&lt;h2 id=&quot;基本内置类型&quot;&gt;&lt;span style=&quot;color: rgb(0,191,255);&quot;&gt;&lt;strong&gt;基本内置类型&lt;/strong&gt;&lt;/span&gt;&lt;/h2&gt;
-</description>
-				
-				<pubDate>Fri, 03 Jan 2025 00:00:00 -0800</pubDate>
-				<link>http://localhost:4000/code/algorithm/basic-knowledge/2025/01/03/Data-Types/</link>
-				<guid isPermaLink="true">http://localhost:4000/code/algorithm/basic-knowledge/2025/01/03/Data-Types/</guid>
-			</item>
-		
-			<item>
-				<title>注释</title>
-				
-					<dc:creator>ZJM</dc:creator>
-				
-				
-					<description>&lt;h3 id=&quot;c-注释&quot;&gt;&lt;span style=&quot;color: rgb(0,191,255);&quot;&gt;&lt;strong&gt;C++ 注释&lt;/strong&gt;&lt;/span&gt;&lt;/h3&gt;
-&lt;p&gt;程序中的注释是用于解释代码的语句，可以帮助提高源代码的可读性。所有编程语言都支持某种形式的注释，以便开发者更容易理解代码的意图和功能。&lt;/p&gt;
-</description>
-				
-				<pubDate>Fri, 03 Jan 2025 00:00:00 -0800</pubDate>
-				<link>http://localhost:4000/code/algorithm/basic-knowledge/2025/01/03/Annotation/</link>
-				<guid isPermaLink="true">http://localhost:4000/code/algorithm/basic-knowledge/2025/01/03/Annotation/</guid>
-			</item>
-		
-			<item>
-				<title>Basic Knowledge</title>
-				
-					<dc:creator>ZJM</dc:creator>
-				
-				
-					<description>&lt;meta http-equiv=&quot;refresh&quot; content=&quot;0; url=/code/algorithm/basic-knowledge&quot; /&gt;
-
-&lt;p&gt;If you are not redirected, &lt;a href=&quot;/code/algorithm/basic-knowledge&quot;&gt;click here&lt;/a&gt;.&lt;/p&gt;
-</description>
-				
-				<pubDate>Fri, 03 Jan 2025 00:00:00 -0800</pubDate>
-				<link>http://localhost:4000/code/algorithm/2025/01/03/basic-knowledge/</link>
-				<guid isPermaLink="true">http://localhost:4000/code/algorithm/2025/01/03/basic-knowledge/</guid>
-			</item>
-		
-			<item>
-				<title>浅谈最小生成树</title>
-				
-					<dc:creator>ZJM</dc:creator>
-				
-				
-					<description>&lt;h2 id=&quot;浅谈最小生成树&quot;&gt;浅谈最小生成树&lt;/h2&gt;
-</description>
-				
-				<pubDate>Wed, 01 Jan 2025 00:00:00 -0800</pubDate>
-				<link>http://localhost:4000/code/algorithm/2025/01/01/minimum-spanning-tree/</link>
-				<guid isPermaLink="true">http://localhost:4000/code/algorithm/2025/01/01/minimum-spanning-tree/</guid>
-			</item>
-		
-			<item>
-				<title>Algorithm</title>
-				
-					<dc:creator>ZJM</dc:creator>
-				
-				
-					<description>&lt;meta http-equiv=&quot;refresh&quot; content=&quot;0; url=/code/algorithm&quot; /&gt;
-
-&lt;p&gt;If you are not redirected, &lt;a href=&quot;/code/algorithm&quot;&gt;click here&lt;/a&gt;.&lt;/p&gt;
-</description>
-				
-				<pubDate>Wed, 01 Jan 2025 00:00:00 -0800</pubDate>
-				<link>http://localhost:4000/code/2025/01/01/algorithm/</link>
-				<guid isPermaLink="true">http://localhost:4000/code/2025/01/01/algorithm/</guid>
-			</item>
-		
-			<item>
-				<title>算法学习顺序</title>
-				
-					<dc:creator>ZJM</dc:creator>
-				
-				
-					<description>&lt;p&gt;&lt;strong&gt;基础知识&lt;/strong&gt;&lt;/p&gt;
-</description>
-				
-				<pubDate>Wed, 01 Jan 2025 00:00:00 -0800</pubDate>
-				<link>http://localhost:4000/code/algorithm/2025/01/01/README/</link>
-				<guid isPermaLink="true">http://localhost:4000/code/algorithm/2025/01/01/README/</guid>
+				<link>http://localhost:4000/code/algorithm/basic-knowledge/2025/01/03/Introduction-to-Reserved-Words/</link>
+				<guid isPermaLink="true">http://localhost:4000/code/algorithm/basic-knowledge/2025/01/03/Introduction-to-Reserved-Words/</guid>
 			</item>
 		
 	</channel>

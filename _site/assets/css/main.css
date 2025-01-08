@@ -420,11 +420,11 @@ pre code {
 }
 
 .pagination-active {
-  color: black;
+  color: rgb(66, 255, 255);
 }
 
 .pagination-active:hover {
-  background-color: #e0e0e0;
+  background-color: rgb(170, 130, 255);
 }
 
 .page-content {

@@ -6,10 +6,12 @@ categories: code/algorithm/basic-knowledge
 tags: [Code]
 image: code-cover-1.png
 ---
-### <span style="color: rgb(0,191,255);">**C++ 注释**</span>
+# <span style="color: rgb(255,127,80);">**注释**</span>
 程序中的注释是用于解释代码的语句，可以帮助提高源代码的可读性。所有编程语言都支持某种形式的注释，以便开发者更容易理解代码的意图和功能。
 
 C++ 支持两种类型的注释：单行注释和多行注释。在 C++ 中，注释中的内容会被编译器忽略，不会对程序的执行产生任何影响。
+
+---
 
 ### <span style="color: rgb(0,191,255);">**C++ 注释的两种形式：**</span>
 

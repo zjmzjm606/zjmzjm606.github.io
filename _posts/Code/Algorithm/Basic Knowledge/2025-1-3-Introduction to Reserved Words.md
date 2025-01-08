@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "C++ 关键字（保留字）介绍"
+title: "关键字（保留字）介绍"
 author: "ZJM"
 categories: code/algorithm/basic-knowledge
 tags: [Code]
@@ -8,7 +8,7 @@ image: code-cover-4.png
 
 ---
 
-## <span style="color: rgb(0,191,255);">**C++ 关键字（保留字）介绍**</span> 
+# <span style="color: rgb(255,127,80);">**关键字（保留字）介绍**</span> 
 
 C++ 中的关键字（也称为保留字）是语言的预定义元素，它们已被编译器和运行环境为特定功能保留。这些关键字不能被用作为变量名或其他自定义元素。下面将全面介绍这些关键字：
 
@@ -30,6 +30,7 @@ C++ 中的关键字（也称为保留字）是语言的预定义元素，它们�
 | unsigned    | using      | virtual          | void         |
 | volatile    | wchar_t    |                  |              |
 
+---
 
 ## <span style="color: rgb(0,191,255);">**详细介绍**</span> 
 

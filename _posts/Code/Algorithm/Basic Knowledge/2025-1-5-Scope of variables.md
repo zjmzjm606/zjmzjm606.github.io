@@ -4,16 +4,18 @@ title: "变量的作用域"
 author: "ZJM"
 categories: code/algorithm/basic-knowledge
 tags: [Code]
-image: code-cover-5.png
-
+image: code-cover-6.png
 ---
 
+# <span style="color: rgb(255,127,80);">**变量的作用域**</span>
 在 C++ 中，变量的作用域指的是变量可以被访问的范围。通常来说，变量的作用域可以分为以下几种类型：
 
 - **局部作用域**：变量仅在函数或代码块内部可访问。
 - **全局作用域**：变量在整个程序中都可访问。
 - **块作用域**：变量仅在某个特定代码块（如 if 语句、循环等）内可访问。
 - **类作用域**：变量仅在类内部可访问。
+
+---
 
 ####  <span style="color: rgb(0,191,255);">**1. 变量声明位置**</span>
 

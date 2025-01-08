@@ -6,6 +6,8 @@ categories: code/algorithm/basic-knowledge
 tags: [Code]
 image: code-cover-3.png
 ---
+# <span style="color: rgb(255,127,80);">基本语法&介绍</span>
+
 ### <span style="color: rgb(0,191,255);">1. **基本结构**</span>
 
 一个简单的 C++ 程序结构如下：

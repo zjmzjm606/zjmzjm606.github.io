@@ -7,6 +7,8 @@ tags: [Code]
 image: code-cover-2.png
 ---
 
+# <span style="color: rgb(255,127,80);">**数据类型**</span>
+
 ## <span style="color: rgb(0,191,255);">**基本内置类型**</span>
 
 C++ 提供了丰富的内置数据类型供程序员使用，同时也支持用户自定义数据类型。下表列出了七种基本的 C++ 数据类型：
