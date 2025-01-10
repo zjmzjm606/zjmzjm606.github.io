@@ -78,6 +78,20 @@
 			</item>
 		
 			<item>
+				<title>数字类型</title>
+				
+					<dc:creator>ZJM</dc:creator>
+				
+				
+					<description>&lt;h1 id=&quot;数字类型&quot;&gt;&lt;span style=&quot;color: rgb(255,127,80);&quot;&gt;&lt;strong&gt;数字类型&lt;/strong&gt;&lt;/span&gt;&lt;/h1&gt;
+</description>
+				
+				<pubDate>Sun, 05 Jan 2025 00:00:00 -0800</pubDate>
+				<link>http://localhost:4000/code/algorithm/basic-knowledge/2025/01/05/Number-Type/</link>
+				<guid isPermaLink="true">http://localhost:4000/code/algorithm/basic-knowledge/2025/01/05/Number-Type/</guid>
+			</item>
+		
+			<item>
 				<title>修饰符类型</title>
 				
 					<dc:creator>ZJM</dc:creator>
@@ -120,31 +134,17 @@
 			</item>
 		
 			<item>
-				<title>判断结构</title>
+				<title>函数</title>
 				
 					<dc:creator>ZJM</dc:creator>
 				
 				
-					<description>&lt;h1 id=&quot;判断结构&quot;&gt;&lt;span style=&quot;color: rgb(255,127,80);&quot;&gt;&lt;strong&gt;判断结构&lt;/strong&gt;&lt;/span&gt;&lt;/h1&gt;
+					<description>&lt;h1 id=&quot;函数&quot;&gt;&lt;span style=&quot;color: rgb(255,127,80);&quot;&gt;&lt;strong&gt;函数&lt;/strong&gt;&lt;/span&gt;&lt;/h1&gt;
 </description>
 				
 				<pubDate>Sun, 05 Jan 2025 00:00:00 -0800</pubDate>
-				<link>http://localhost:4000/code/algorithm/basic-knowledge/2025/01/05/IF-(copy)/</link>
-				<guid isPermaLink="true">http://localhost:4000/code/algorithm/basic-knowledge/2025/01/05/IF-(copy)/</guid>
-			</item>
-		
-			<item>
-				<title>关键字（保留字）介绍</title>
-				
-					<dc:creator>ZJM</dc:creator>
-				
-				
-					<description>&lt;h1 id=&quot;关键字保留字介绍&quot;&gt;&lt;span style=&quot;color: rgb(255,127,80);&quot;&gt;&lt;strong&gt;关键字（保留字）介绍&lt;/strong&gt;&lt;/span&gt;&lt;/h1&gt;
-</description>
-				
-				<pubDate>Fri, 03 Jan 2025 00:00:00 -0800</pubDate>
-				<link>http://localhost:4000/code/algorithm/basic-knowledge/2025/01/03/Introduction-to-Reserved-Words/</link>
-				<guid isPermaLink="true">http://localhost:4000/code/algorithm/basic-knowledge/2025/01/03/Introduction-to-Reserved-Words/</guid>
+				<link>http://localhost:4000/code/algorithm/basic-knowledge/2025/01/05/Function/</link>
+				<guid isPermaLink="true">http://localhost:4000/code/algorithm/basic-knowledge/2025/01/05/Function/</guid>
 			</item>
 		
 	</channel>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-01-08T18:55:52+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Tomorrow’s Blog</title><entry><title type="html">常量</title><link href="http://localhost:4000/code/algorithm/basic-knowledge/2025/01/06/Constant/" rel="alternate" type="text/html" title="常量" /><published>2025-01-06T00:00:00-08:00</published><updated>2025-01-06T00:00:00-08:00</updated><id>http://localhost:4000/code/algorithm/basic-knowledge/2025/01/06/Constant</id><content type="html" xml:base="http://localhost:4000/code/algorithm/basic-knowledge/2025/01/06/Constant/"><![CDATA[<h1 id="常量"><span style="color: rgb(255,127,80);"><strong>常量</strong></span></h1>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-01-10T22:24:06+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Tomorrow’s Blog</title><entry><title type="html">常量</title><link href="http://localhost:4000/code/algorithm/basic-knowledge/2025/01/06/Constant/" rel="alternate" type="text/html" title="常量" /><published>2025-01-06T00:00:00-08:00</published><updated>2025-01-06T00:00:00-08:00</updated><id>http://localhost:4000/code/algorithm/basic-knowledge/2025/01/06/Constant</id><content type="html" xml:base="http://localhost:4000/code/algorithm/basic-knowledge/2025/01/06/Constant/"><![CDATA[<h1 id="常量"><span style="color: rgb(255,127,80);"><strong>常量</strong></span></h1>
 
 <p>常量是指在程序执行期间固定不变的值。常量也称为字面量，其值在定义后不能修改。常量可以是任何基本数据类型，如整数、浮点数、字符、字符串和布尔值。常量与变量类似，只是其值在定义后不可改变。</p>
 
@@ -232,207 +232,221 @@
 
 <h4 id="输出-3"><span style="color: rgb(238,130,238);"><strong>输出：</strong></span></h4>
 <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="m">50</span>
-</code></pre></div></div>]]></content><author><name>ZJM</name></author><category term="code/algorithm/basic-knowledge" /><category term="Code" /><summary type="html"><![CDATA[常量]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/code-cover-10.png" /><media:content medium="image" url="http://localhost:4000/code-cover-10.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">修饰符类型</title><link href="http://localhost:4000/code/algorithm/basic-knowledge/2025/01/05/Modifier-Types/" rel="alternate" type="text/html" title="修饰符类型" /><published>2025-01-05T00:00:00-08:00</published><updated>2025-01-05T00:00:00-08:00</updated><id>http://localhost:4000/code/algorithm/basic-knowledge/2025/01/05/Modifier%20Types</id><content type="html" xml:base="http://localhost:4000/code/algorithm/basic-knowledge/2025/01/05/Modifier-Types/"><![CDATA[<h1 id="修饰符"><span style="color: rgb(255,127,80);"><strong>修饰符</strong></span></h1>
+</code></pre></div></div>]]></content><author><name>ZJM</name></author><category term="code/algorithm/basic-knowledge" /><category term="Code" /><summary type="html"><![CDATA[常量]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/code-cover-10.png" /><media:content medium="image" url="http://localhost:4000/code-cover-10.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">数字类型</title><link href="http://localhost:4000/code/algorithm/basic-knowledge/2025/01/05/Number-Type/" rel="alternate" type="text/html" title="数字类型" /><published>2025-01-05T00:00:00-08:00</published><updated>2025-01-05T00:00:00-08:00</updated><id>http://localhost:4000/code/algorithm/basic-knowledge/2025/01/05/Number%20Type</id><content type="html" xml:base="http://localhost:4000/code/algorithm/basic-knowledge/2025/01/05/Number-Type/"><![CDATA[<h1 id="数字类型"><span style="color: rgb(255,127,80);"><strong>数字类型</strong></span></h1>
 
-<p>C++ 允许在基本数据类型（如 <code class="language-plaintext highlighter-rouge">char</code>、<code class="language-plaintext highlighter-rouge">int</code> 和 <code class="language-plaintext highlighter-rouge">double</code>）前使用修饰符，这些修饰符用于改变变量的行为，以满足不同的需求。修饰符提供了更多的灵活性和可定制性。</p>
+<p>在 C++ 中，我们可以使用多种数据类型来表示数字。常见的数字类型包括 <code class="language-plaintext highlighter-rouge">int</code>、<code class="language-plaintext highlighter-rouge">short</code>、<code class="language-plaintext highlighter-rouge">long</code>、<code class="language-plaintext highlighter-rouge">float</code> 和 <code class="language-plaintext highlighter-rouge">double</code>。这些数据类型在存储数字时具有不同的精度和范围，具体信息可以参考 C++ 数据类型一章。</p>
 
-<h2 id="常见的-c-数据类型修饰符"><span style="color: rgb(0,191,255);"><strong>常见的 C++ 数据类型修饰符</strong></span></h2>
+<h3 id="数字的定义"><span style="color: rgb(0,191,255);"><strong>数字的定义</strong></span></h3>
 
-<h3 id="1-signed"><span style="color: rgb(32,178,170);"><strong>1. <code class="language-plaintext highlighter-rouge">signed</code></strong></span></h3>
-<ul>
-  <li>表示变量可以存储负数。</li>
-  <li>对于整型变量来说，<code class="language-plaintext highlighter-rouge">signed</code> 是默认值，因此通常可以省略。</li>
-</ul>
+<p>在 C++ 中，我们可以定义不同类型的数字变量，并赋予它们数值。以下是一个例子，展示了如何定义和初始化多种数字类型：</p>
 
-<h3 id="2-unsigned"><span style="color: rgb(32,178,170);"><strong>2. <code class="language-plaintext highlighter-rouge">unsigned</code></strong></span></h3>
-<ul>
-  <li>表示变量不能存储负数。</li>
-  <li>对于整型变量，<code class="language-plaintext highlighter-rouge">unsigned</code> 修饰符可以将变量的范围扩大一倍。</li>
-</ul>
-
-<h3 id="3-short"><span style="color: rgb(32,178,170);"><strong>3. <code class="language-plaintext highlighter-rouge">short</code></strong></span></h3>
-<ul>
-  <li>表示变量的范围比 <code class="language-plaintext highlighter-rouge">int</code> 更小。</li>
-  <li><code class="language-plaintext highlighter-rouge">short int</code> 可以简写为 <code class="language-plaintext highlighter-rouge">short</code>。</li>
-</ul>
-
-<h3 id="4-long"><span style="color: rgb(32,178,170);"><strong>4. <code class="language-plaintext highlighter-rouge">long</code></strong></span></h3>
-<ul>
-  <li>表示变量的范围比 <code class="language-plaintext highlighter-rouge">int</code> 更大。</li>
-  <li><code class="language-plaintext highlighter-rouge">long int</code> 可以简写为 <code class="language-plaintext highlighter-rouge">long</code>。</li>
-</ul>
-
-<h3 id="5-long-long"><span style="color: rgb(32,178,170);"><strong>5. <code class="language-plaintext highlighter-rouge">long long</code></strong></span></h3>
-<ul>
-  <li>表示变量的范围比 <code class="language-plaintext highlighter-rouge">long</code> 更大。</li>
-  <li>这是 C++11 中新增的数据类型修饰符。</li>
-</ul>
-
-<h3 id="6-float"><span style="color: rgb(32,178,170);"><strong>6. <code class="language-plaintext highlighter-rouge">float</code></strong></span></h3>
-<ul>
-  <li>表示单精度浮点数。</li>
-</ul>
-
-<h3 id="7-double"><span style="color: rgb(32,178,170);"><strong>7. <code class="language-plaintext highlighter-rouge">double</code></strong></span></h3>
-<ul>
-  <li>表示双精度浮点数。</li>
-</ul>
-
-<h3 id="8-bool"><span style="color: rgb(32,178,170);"><strong>8. <code class="language-plaintext highlighter-rouge">bool</code></strong></span></h3>
-<ul>
-  <li>表示布尔类型，只有 <code class="language-plaintext highlighter-rouge">true</code> 和 <code class="language-plaintext highlighter-rouge">false</code> 两个值。</li>
-</ul>
-
-<h3 id="9-char"><span style="color: rgb(32,178,170);"><strong>9. <code class="language-plaintext highlighter-rouge">char</code></strong></span></h3>
-<ul>
-  <li>表示字符类型。</li>
-</ul>
-
-<h3 id="10-wchar_t"><span style="color: rgb(32,178,170);"><strong>10. <code class="language-plaintext highlighter-rouge">wchar_t</code></strong></span></h3>
-<ul>
-  <li>表示宽字符类型，可以存储 Unicode 字符。</li>
-</ul>
-
-<h3 id="修饰符的组合使用"><span style="color: rgb(0,191,255);"><strong>修饰符的组合使用</strong></span></h3>
-
-<ul>
-  <li><code class="language-plaintext highlighter-rouge">signed</code>、<code class="language-plaintext highlighter-rouge">unsigned</code>、<code class="language-plaintext highlighter-rouge">long</code> 和 <code class="language-plaintext highlighter-rouge">short</code> 可以组合使用，且适用于整型。</li>
-  <li><code class="language-plaintext highlighter-rouge">signed</code> 和 <code class="language-plaintext highlighter-rouge">unsigned</code> 可以应用于字符型（<code class="language-plaintext highlighter-rouge">char</code>）。</li>
-  <li><code class="language-plaintext highlighter-rouge">long</code> 可应用于双精度型（<code class="language-plaintext highlighter-rouge">double</code>）。</li>
-</ul>
-
-<p><span style="color: rgb(238,130,238);"><strong>例如：</strong></span></p>
-
-<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">unsigned</span> <span class="kt">long</span> <span class="kt">int</span> <span class="n">num</span><span class="p">;</span> <span class="c1">// 无符号长整型</span>
-</code></pre></div></div>
-
-<p>C++ 还支持速记符号，可以省略 <code class="language-plaintext highlighter-rouge">int</code>，只写 <code class="language-plaintext highlighter-rouge">unsigned</code>、<code class="language-plaintext highlighter-rouge">short</code> 或 <code class="language-plaintext highlighter-rouge">long</code>，<code class="language-plaintext highlighter-rouge">int</code> 是隐含的。以下是一些例子：</p>
-
-<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">signed</span> <span class="kt">int</span> <span class="n">num1</span> <span class="o">=</span> <span class="o">-</span><span class="mi">10</span><span class="p">;</span> <span class="c1">// 有符号整型</span>
-<span class="kt">unsigned</span> <span class="kt">int</span> <span class="n">num2</span> <span class="o">=</span> <span class="mi">20</span><span class="p">;</span> <span class="c1">// 无符号整型</span>
-
-<span class="kt">short</span> <span class="kt">int</span> <span class="n">num1</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span> <span class="c1">// 短整型</span>
-<span class="kt">long</span> <span class="kt">int</span> <span class="n">num2</span> <span class="o">=</span> <span class="mi">100000</span><span class="p">;</span> <span class="c1">// 长整型</span>
-
-<span class="kt">long</span> <span class="kt">long</span> <span class="kt">int</span> <span class="n">num1</span> <span class="o">=</span> <span class="mi">10000000000</span><span class="p">;</span> <span class="c1">// 长长整型</span>
-
-<span class="kt">float</span> <span class="n">num1</span> <span class="o">=</span> <span class="mf">3.14</span><span class="n">f</span><span class="p">;</span> <span class="c1">// 单精度浮点数</span>
-<span class="kt">double</span> <span class="n">num2</span> <span class="o">=</span> <span class="mf">2.71828</span><span class="p">;</span> <span class="c1">// 双精度浮点数</span>
-
-<span class="kt">bool</span> <span class="n">flag</span> <span class="o">=</span> <span class="nb">true</span><span class="p">;</span> <span class="c1">// 布尔类型</span>
-<span class="kt">char</span> <span class="n">ch1</span> <span class="o">=</span> <span class="sc">'a'</span><span class="p">;</span> <span class="c1">// 字符类型</span>
-<span class="kt">wchar_t</span> <span class="n">ch2</span> <span class="o">=</span> <span class="sc">L'你'</span><span class="p">;</span> <span class="c1">// 宽字符类型</span>
-</code></pre></div></div>
-
-<h3 id="有符号整数和无符号整数的差别"><span style="color: rgb(0,191,255);"><strong>有符号整数和无符号整数的差别</strong></span></h3>
-
-<p>为了更好地理解有符号整数和无符号整数之间的区别，我们来看一个简单的例子：</p>
+<h4 id="示例-1数字定义和输出"><span style="color: rgb(32,178,170);"><strong>示例 1：数字定义和输出</strong></span></h4>
 
 <div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
 </span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
-
-<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
-   <span class="kt">short</span> <span class="kt">int</span> <span class="n">i</span><span class="p">;</span>           <span class="c1">// 有符号短整数</span>
-   <span class="kt">short</span> <span class="kt">unsigned</span> <span class="kt">int</span> <span class="n">j</span><span class="p">;</span>  <span class="c1">// 无符号短整数</span>
-
-   <span class="n">j</span> <span class="o">=</span> <span class="mi">50000</span><span class="p">;</span>
-   <span class="n">i</span> <span class="o">=</span> <span class="n">j</span><span class="p">;</span>
-
-   <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">i</span> <span class="o">&lt;&lt;</span> <span class="s">" "</span> <span class="o">&lt;&lt;</span> <span class="n">j</span><span class="p">;</span>
-   <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre></div></div>
-
-<p><span style="color: rgb(238,130,238);"><strong>输出结果：</strong></span></p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>-15536 50000
-</code></pre></div></div>
-
-<p>在这个程序中，无符号短整数 <code class="language-plaintext highlighter-rouge">50000</code> 的位模式被解释为有符号短整数，导致输出为 <code class="language-plaintext highlighter-rouge">-15536</code>。</p>
-
-<h2 id="c-中的类型限定符"><span style="color: rgb(0,191,255);"><strong>C++ 中的类型限定符</strong></span></h2>
-
-<p>类型限定符提供了关于变量的附加信息，用于改变变量或函数的默认行为。常见的类型限定符如下：</p>
-
-<h3 id="1-const"><span style="color: rgb(32,178,170);"><strong>1. <code class="language-plaintext highlighter-rouge">const</code></strong></span></h3>
-
-<ul>
-  <li>用于定义常量，表示该变量的值不能被修改。</li>
-</ul>
-
-<p><span style="color: rgb(238,130,238);"><strong>示例：</strong></span></p>
-
-<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">const</span> <span class="kt">int</span> <span class="n">NUM</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span> <span class="c1">// NUM 是常量，值不能修改</span>
-<span class="k">const</span> <span class="kt">int</span><span class="o">*</span> <span class="n">ptr</span> <span class="o">=</span> <span class="o">&amp;</span><span class="n">NUM</span><span class="p">;</span> <span class="c1">// 指向常量的指针，指针指向的值不可修改</span>
-</code></pre></div></div>
-
-<h3 id="2-volatile"><span style="color: rgb(32,178,170);"><strong>2. <code class="language-plaintext highlighter-rouge">volatile</code></strong></span></h3>
-
-<ul>
-  <li>用于修饰变量，表示该变量的值可能会被程序外部的因素改变，如硬件或其他线程。</li>
-</ul>
-
-<p><span style="color: rgb(238,130,238);"><strong>示例：</strong></span></p>
-
-<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">volatile</span> <span class="kt">int</span> <span class="n">num</span> <span class="o">=</span> <span class="mi">20</span><span class="p">;</span> <span class="c1">// 变量 num 可能在任何时刻被外部修改</span>
-</code></pre></div></div>
-
-<h3 id="3-restrict"><span style="color: rgb(32,178,170);"><strong>3. <code class="language-plaintext highlighter-rouge">restrict</code></strong></span></h3>
-
-<ul>
-  <li>仅适用于指针，表示该指针是访问其所指对象的唯一方式。<code class="language-plaintext highlighter-rouge">restrict</code> 是 C99 中引入的限定符。</li>
-</ul>
-
-<h3 id="4-mutable"><span style="color: rgb(32,178,170);"><strong>4. <code class="language-plaintext highlighter-rouge">mutable</code></strong></span></h3>
-
-<ul>
-  <li>用于修饰类的成员变量，表示即使对象本身是 <code class="language-plaintext highlighter-rouge">const</code>，该成员变量仍然可以被修改。</li>
-</ul>
-
-<p><span style="color: rgb(238,130,238);"><strong>示例：</strong></span></p>
-
-<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">class</span> <span class="nc">Example</span> <span class="p">{</span>
-<span class="nl">public:</span>
-    <span class="kt">int</span> <span class="n">get_value</span><span class="p">()</span> <span class="k">const</span> <span class="p">{</span>
-        <span class="k">return</span> <span class="n">value_</span><span class="p">;</span> <span class="c1">// const 函数不能修改数据成员</span>
-    <span class="p">}</span>
-    <span class="kt">void</span> <span class="n">set_value</span><span class="p">(</span><span class="kt">int</span> <span class="n">value</span><span class="p">)</span> <span class="k">const</span> <span class="p">{</span>
-        <span class="n">value_</span> <span class="o">=</span> <span class="n">value</span><span class="p">;</span> <span class="c1">// mutable 允许在 const 成员函数中修改成员变量</span>
-    <span class="p">}</span>
-
-<span class="k">private</span><span class="o">:</span>
-    <span class="k">mutable</span> <span class="kt">int</span> <span class="n">value_</span><span class="p">;</span>
-<span class="p">};</span>
-</code></pre></div></div>
-
-<h3 id="5-static"><span style="color: rgb(32,178,170);"><strong>5. <code class="language-plaintext highlighter-rouge">static</code></strong></span></h3>
-
-<ul>
-  <li>用于定义静态变量，表示变量的作用域仅限于当前文件或当前函数内，不会被其他文件或函数访问。</li>
-</ul>
-
-<p><span style="color: rgb(238,130,238);"><strong>示例：</strong></span></p>
-
-<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">void</span> <span class="nf">example_function</span><span class="p">()</span>
+<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
 <span class="p">{</span>
-    <span class="k">static</span> <span class="kt">int</span> <span class="n">count</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="c1">// count 是静态变量，程序生命周期内都存在</span>
-    <span class="n">count</span><span class="o">++</span><span class="p">;</span>
+    <span class="c1">// 定义不同类型的数字</span>
+    <span class="kt">short</span> <span class="n">s</span><span class="p">;</span>
+    <span class="kt">int</span> <span class="n">i</span><span class="p">;</span>
+    <span class="kt">long</span> <span class="n">l</span><span class="p">;</span>
+    <span class="kt">float</span> <span class="n">f</span><span class="p">;</span>
+    <span class="kt">double</span> <span class="n">d</span><span class="p">;</span>
+    <span class="c1">// 给数字赋值</span>
+    <span class="n">s</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>      <span class="c1">// short 类型</span>
+    <span class="n">i</span> <span class="o">=</span> <span class="mi">1000</span><span class="p">;</span>    <span class="c1">// int 类型</span>
+    <span class="n">l</span> <span class="o">=</span> <span class="mi">1000000</span><span class="p">;</span> <span class="c1">// long 类型</span>
+    <span class="n">f</span> <span class="o">=</span> <span class="mf">230.47</span><span class="p">;</span>  <span class="c1">// float 类型</span>
+    <span class="n">d</span> <span class="o">=</span> <span class="mf">30949.374</span><span class="p">;</span> <span class="c1">// double 类型</span>
+    <span class="c1">// 输出数字值</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"short  s: "</span> <span class="o">&lt;&lt;</span> <span class="n">s</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"int    i: "</span> <span class="o">&lt;&lt;</span> <span class="n">i</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"long   l: "</span> <span class="o">&lt;&lt;</span> <span class="n">l</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"float  f: "</span> <span class="o">&lt;&lt;</span> <span class="n">f</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"double d: "</span> <span class="o">&lt;&lt;</span> <span class="n">d</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+<h4 id="输出"><span style="color: rgb(238,130,238);"><strong>输出：</strong></span></h4>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">short  s</span><span class="pi">:</span> <span class="m">10</span>
+<span class="na">int    i</span><span class="pi">:</span> <span class="m">1000</span>
+<span class="na">long   l</span><span class="pi">:</span> <span class="m">1000000</span>
+<span class="na">float  f</span><span class="pi">:</span> <span class="m">230.47</span>
+<span class="na">double d</span><span class="pi">:</span> <span class="m">30949.4</span>
+</code></pre></div></div>
+
+<p>解释：这段代码展示了如何定义不同类型的数字，并将它们输出。注意 <code class="language-plaintext highlighter-rouge">float</code> 和 <code class="language-plaintext highlighter-rouge">double</code> 类型的数字会有一定的精度损失，输出时显示为近似值。</p>
+
+<hr />
+
+<h3 id="c-数学运算"><span style="color: rgb(0,191,255);"><strong>C++ 数学运算</strong></span></h3>
+
+<p>C++ 提供了许多内置的数学函数，可以帮助我们对数字进行计算。为了使用这些函数，我们需要包含 <code class="language-plaintext highlighter-rouge">cmath</code> 头文件。</p>
+
+<h4 id="常用数学函数"><span style="color: rgb(32,178,170);"><strong>常用数学函数</strong></span></h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>函数</th>
+      <th>描述</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">cos(double)</code></td>
+      <td>返回弧度角的余弦值</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">sin(double)</code></td>
+      <td>返回弧度角的正弦值</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">tan(double)</code></td>
+      <td>返回弧度角的正切值</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">log(double)</code></td>
+      <td>返回参数的自然对数</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">pow(x, y)</code></td>
+      <td>返回 <code class="language-plaintext highlighter-rouge">x</code> 的 <code class="language-plaintext highlighter-rouge">y</code> 次方</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">hypot(x, y)</code></td>
+      <td>返回直角三角形斜边的长度（平方和的平方根）</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">sqrt(double)</code></td>
+      <td>返回参数的平方根</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">abs(int)</code></td>
+      <td>返回整数的绝对值</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">fabs(double)</code></td>
+      <td>返回浮点数的绝对值</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">floor(double)</code></td>
+      <td>返回小于或等于参数的最大整数</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="示例-2数学运算"><span style="color: rgb(0,191,255);"><strong>示例 2：数学运算</strong></span></h4>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
+#include</span> <span class="cpf">&lt;cmath&gt;</span><span class="cp">
+</span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
+<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
+<span class="p">{</span>
+    <span class="c1">// 定义不同类型的数字</span>
+    <span class="kt">short</span> <span class="n">s</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
+    <span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1000</span><span class="p">;</span>
+    <span class="kt">long</span> <span class="n">l</span> <span class="o">=</span> <span class="mi">100000</span><span class="p">;</span>
+    <span class="kt">float</span> <span class="n">f</span> <span class="o">=</span> <span class="mf">230.47</span><span class="p">;</span>
+    <span class="kt">double</span> <span class="n">d</span> <span class="o">=</span> <span class="mf">200.374</span><span class="p">;</span>
+    <span class="c1">// 使用数学函数进行运算</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"sin(d): "</span> <span class="o">&lt;&lt;</span> <span class="n">sin</span><span class="p">(</span><span class="n">d</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>        <span class="c1">// 正弦函数</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"abs(i): "</span> <span class="o">&lt;&lt;</span> <span class="n">abs</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>        <span class="c1">// 整数的绝对值</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"floor(d): "</span> <span class="o">&lt;&lt;</span> <span class="n">floor</span><span class="p">(</span><span class="n">d</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>    <span class="c1">// 向下取整</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"sqrt(f): "</span> <span class="o">&lt;&lt;</span> <span class="n">sqrt</span><span class="p">(</span><span class="n">f</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>      <span class="c1">// 平方根</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"pow(d, 2): "</span> <span class="o">&lt;&lt;</span> <span class="n">pow</span><span class="p">(</span><span class="n">d</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>  <span class="c1">// d 的平方</span>
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </code></pre></div></div>
 
-<h3 id="6-register"><span style="color: rgb(32,178,170);"><strong>6. <code class="language-plaintext highlighter-rouge">register</code></strong></span></h3>
+<h4 id="输出-1"><span style="color: rgb(238,130,238);"><strong>输出：</strong></span></h4>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">sin(d)</span><span class="pi">:</span> <span class="s">-0.634939</span>
+<span class="na">abs(i)</span><span class="pi">:</span> <span class="m">1000</span>
+<span class="na">floor(d)</span><span class="pi">:</span> <span class="m">200</span>
+<span class="na">sqrt(f)</span><span class="pi">:</span> <span class="m">15.1812</span>
+<span class="s">pow(d, 2)</span><span class="err">:</span> <span class="m">40149.7</span>
+</code></pre></div></div>
+
+<p>解释：</p>
 
 <ul>
-  <li>用于定义寄存器变量，表示该变量被频繁使用，可以存储在 CPU 的寄存器中，以提高程序的运行效率。但是否实际存储在寄存器中由编译器决定。</li>
+  <li><code class="language-plaintext highlighter-rouge">sin(d)</code> 计算了变量 <code class="language-plaintext highlighter-rouge">d</code>（200.374）的正弦值。</li>
+  <li><code class="language-plaintext highlighter-rouge">abs(i)</code> 返回了变量 <code class="language-plaintext highlighter-rouge">i</code> 的绝对值。</li>
+  <li><code class="language-plaintext highlighter-rouge">floor(d)</code> 返回了 <code class="language-plaintext highlighter-rouge">d</code> 的向下取整结果。</li>
+  <li><code class="language-plaintext highlighter-rouge">sqrt(f)</code> 计算了变量 <code class="language-plaintext highlighter-rouge">f</code>（230.47）的平方根。</li>
+  <li><code class="language-plaintext highlighter-rouge">pow(d, 2)</code> 计算了变量 <code class="language-plaintext highlighter-rouge">d</code> 的平方。</li>
 </ul>
 
-<p><span style="color: rgb(238,130,238);"><strong>示例：</strong></span></p>
+<hr />
 
-<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">void</span> <span class="nf">example_function</span><span class="p">(</span><span class="k">register</span> <span class="kt">int</span> <span class="n">num</span><span class="p">)</span>
+<h3 id="c-随机数"><span style="color: rgb(0,191,255);"><strong>C++ 随机数</strong></span></h3>
+
+<p>有时，我们需要在程序中生成随机数。C++ 提供了 <code class="language-plaintext highlighter-rouge">rand()</code> 函数来生成伪随机数，但需要先调用 <code class="language-plaintext highlighter-rouge">srand()</code> 来设置种子。通常，我们使用 <code class="language-plaintext highlighter-rouge">time()</code> 函数来获取系统当前时间作为种子。</p>
+
+<h4 id="示例-3生成随机数"><span style="color: rgb(32,178,170);"><strong>示例 3：生成随机数</strong></span></h4>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
+#include</span> <span class="cpf">&lt;ctime&gt;</span><span class="cp">
+#include</span> <span class="cpf">&lt;cstdlib&gt;</span><span class="cp">
+</span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
+<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
 <span class="p">{</span>
-    <span class="c1">// register 提示编译器将变量存储在寄存器中</span>
+    <span class="kt">int</span> <span class="n">i</span><span class="p">,</span> <span class="n">j</span><span class="p">;</span>
+    <span class="c1">// 设置随机数种子</span>
+    <span class="n">srand</span><span class="p">(</span><span class="k">static_cast</span><span class="o">&lt;</span><span class="kt">unsigned</span> <span class="kt">int</span><span class="o">&gt;</span><span class="p">(</span><span class="n">time</span><span class="p">(</span><span class="nb">NULL</span><span class="p">)));</span>
+    <span class="c1">// 生成并输出 10 个随机数</span>
+    <span class="k">for</span> <span class="p">(</span><span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="n">j</span> <span class="o">=</span> <span class="n">rand</span><span class="p">();</span>
+        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"随机数: "</span> <span class="o">&lt;&lt;</span> <span class="n">j</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
-</code></pre></div></div>]]></content><author><name>ZJM</name></author><category term="code/algorithm/basic-knowledge" /><category term="Code" /><summary type="html"><![CDATA[修饰符]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/code-cover-6.png" /><media:content medium="image" url="http://localhost:4000/code-cover-6.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">基本数据类型</title><link href="http://localhost:4000/code/algorithm/basic-knowledge/2025/01/05/Variable-Types/" rel="alternate" type="text/html" title="基本数据类型" /><published>2025-01-05T00:00:00-08:00</published><updated>2025-01-05T00:00:00-08:00</updated><id>http://localhost:4000/code/algorithm/basic-knowledge/2025/01/05/Variable%20Types</id><content type="html" xml:base="http://localhost:4000/code/algorithm/basic-knowledge/2025/01/05/Variable-Types/"><![CDATA[<h1 id="基本数据类型"><span style="color: rgb(255,127,80);"><strong>基本数据类型</strong></span></h1>
+</code></pre></div></div>
+<h4 id="输出示例"><span style="color: rgb(238,130,238);"><strong>输出（示例）：</strong></span></h4>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">随机数</span><span class="pi">:</span> <span class="m">1748144778</span>
+<span class="na">随机数</span><span class="pi">:</span> <span class="m">630873888</span>
+<span class="na">随机数</span><span class="pi">:</span> <span class="m">2134540646</span>
+<span class="na">随机数</span><span class="pi">:</span> <span class="m">219404170</span>
+<span class="na">随机数</span><span class="pi">:</span> <span class="m">902129458</span>
+<span class="na">随机数</span><span class="pi">:</span> <span class="m">920445370</span>
+<span class="na">随机数</span><span class="pi">:</span> <span class="m">1319072661</span>
+<span class="na">随机数</span><span class="pi">:</span> <span class="m">257938873</span>
+<span class="na">随机数</span><span class="pi">:</span> <span class="m">1256201101</span>
+<span class="na">随机数</span><span class="pi">:</span> <span class="m">580322989</span>
+</code></pre></div></div>
+
+<p>解释：每次运行时，输出的随机数会有所不同。<code class="language-plaintext highlighter-rouge">srand()</code> 用当前时间作为种子，确保每次生成的随机数序列不同。</p>
+
+<hr />
+
+<h3 id="c-数学常数"><span style="color: rgb(0,191,255);"><strong>C++ 数学常数</strong></span></h3>
+
+<p>从 C++20 开始，标准库中提供了几个常见的数学常数，如 π、e 和黄金比例等。它们定义在 <code class="language-plaintext highlighter-rouge">std::numbers</code> 命名空间下。</p>
+
+<h4 id="示例-4数学常数"><span style="color: rgb(32,178,170);"><strong>示例 4：数学常数</strong></span></h4>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
+#include</span> <span class="cpf">&lt;cmath&gt;</span><span class="cp">
+#include</span> <span class="cpf">&lt;numbers&gt;</span><span class="cp">
+</span><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
+<span class="p">{</span>
+    <span class="c1">// 输出数学常数</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"pi: "</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">numbers</span><span class="o">::</span><span class="n">pi</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"e: "</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">numbers</span><span class="o">::</span><span class="n">e</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"phi: "</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">numbers</span><span class="o">::</span><span class="n">phi</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+<h4 id="输出-2"><span style="color: rgb(238,130,238);"><strong>输出：</strong></span></h4>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">pi</span><span class="pi">:</span> <span class="m">3.14159</span>
+<span class="na">e</span><span class="pi">:</span> <span class="m">2.71828</span>
+<span class="na">phi</span><span class="pi">:</span> <span class="m">1.61803</span>
+</code></pre></div></div>]]></content><author><name>ZJM</name></author><category term="code/algorithm/basic-knowledge" /><category term="Code" /><summary type="html"><![CDATA[数字类型]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/code-cover-8.png" /><media:content medium="image" url="http://localhost:4000/code-cover-8.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">基本数据类型</title><link href="http://localhost:4000/code/algorithm/basic-knowledge/2025/01/05/Variable-Types/" rel="alternate" type="text/html" title="基本数据类型" /><published>2025-01-05T00:00:00-08:00</published><updated>2025-01-05T00:00:00-08:00</updated><id>http://localhost:4000/code/algorithm/basic-knowledge/2025/01/05/Variable%20Types</id><content type="html" xml:base="http://localhost:4000/code/algorithm/basic-knowledge/2025/01/05/Variable-Types/"><![CDATA[<h1 id="基本数据类型"><span style="color: rgb(255,127,80);"><strong>基本数据类型</strong></span></h1>
 
 <p>在 C++ 中，<strong>变量</strong>是程序中用于存储数据的命名存储区。每个变量都有一个指定的类型，类型决定了变量所占用的内存大小、数据布局及可以存储的数据值范围。</p>
 
@@ -982,7 +996,207 @@
 
 <hr />
 
-<p>通过合理使用存储类说明符，可以提升程序的可维护性和性能，帮助管理变量的生命周期、可见性和存储位置。</p>]]></content><author><name>ZJM</name></author><category term="code/algorithm/basic-knowledge" /><category term="Code" /><summary type="html"><![CDATA[存储类]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/code-cover-8.png" /><media:content medium="image" url="http://localhost:4000/code-cover-8.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">变量的作用域</title><link href="http://localhost:4000/code/algorithm/basic-knowledge/2025/01/05/Scope-of-variables/" rel="alternate" type="text/html" title="变量的作用域" /><published>2025-01-05T00:00:00-08:00</published><updated>2025-01-05T00:00:00-08:00</updated><id>http://localhost:4000/code/algorithm/basic-knowledge/2025/01/05/Scope%20of%20variables</id><content type="html" xml:base="http://localhost:4000/code/algorithm/basic-knowledge/2025/01/05/Scope-of-variables/"><![CDATA[<h1 id="变量的作用域"><span style="color: rgb(255,127,80);"><strong>变量的作用域</strong></span></h1>
+<p>通过合理使用存储类说明符，可以提升程序的可维护性和性能，帮助管理变量的生命周期、可见性和存储位置。</p>]]></content><author><name>ZJM</name></author><category term="code/algorithm/basic-knowledge" /><category term="Code" /><summary type="html"><![CDATA[存储类]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/code-cover-8.png" /><media:content medium="image" url="http://localhost:4000/code-cover-8.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">修饰符类型</title><link href="http://localhost:4000/code/algorithm/basic-knowledge/2025/01/05/Modifier-Types/" rel="alternate" type="text/html" title="修饰符类型" /><published>2025-01-05T00:00:00-08:00</published><updated>2025-01-05T00:00:00-08:00</updated><id>http://localhost:4000/code/algorithm/basic-knowledge/2025/01/05/Modifier%20Types</id><content type="html" xml:base="http://localhost:4000/code/algorithm/basic-knowledge/2025/01/05/Modifier-Types/"><![CDATA[<h1 id="修饰符"><span style="color: rgb(255,127,80);"><strong>修饰符</strong></span></h1>
+
+<p>C++ 允许在基本数据类型（如 <code class="language-plaintext highlighter-rouge">char</code>、<code class="language-plaintext highlighter-rouge">int</code> 和 <code class="language-plaintext highlighter-rouge">double</code>）前使用修饰符，这些修饰符用于改变变量的行为，以满足不同的需求。修饰符提供了更多的灵活性和可定制性。</p>
+
+<h2 id="常见的-c-数据类型修饰符"><span style="color: rgb(0,191,255);"><strong>常见的 C++ 数据类型修饰符</strong></span></h2>
+
+<h3 id="1-signed"><span style="color: rgb(32,178,170);"><strong>1. <code class="language-plaintext highlighter-rouge">signed</code></strong></span></h3>
+<ul>
+  <li>表示变量可以存储负数。</li>
+  <li>对于整型变量来说，<code class="language-plaintext highlighter-rouge">signed</code> 是默认值，因此通常可以省略。</li>
+</ul>
+
+<h3 id="2-unsigned"><span style="color: rgb(32,178,170);"><strong>2. <code class="language-plaintext highlighter-rouge">unsigned</code></strong></span></h3>
+<ul>
+  <li>表示变量不能存储负数。</li>
+  <li>对于整型变量，<code class="language-plaintext highlighter-rouge">unsigned</code> 修饰符可以将变量的范围扩大一倍。</li>
+</ul>
+
+<h3 id="3-short"><span style="color: rgb(32,178,170);"><strong>3. <code class="language-plaintext highlighter-rouge">short</code></strong></span></h3>
+<ul>
+  <li>表示变量的范围比 <code class="language-plaintext highlighter-rouge">int</code> 更小。</li>
+  <li><code class="language-plaintext highlighter-rouge">short int</code> 可以简写为 <code class="language-plaintext highlighter-rouge">short</code>。</li>
+</ul>
+
+<h3 id="4-long"><span style="color: rgb(32,178,170);"><strong>4. <code class="language-plaintext highlighter-rouge">long</code></strong></span></h3>
+<ul>
+  <li>表示变量的范围比 <code class="language-plaintext highlighter-rouge">int</code> 更大。</li>
+  <li><code class="language-plaintext highlighter-rouge">long int</code> 可以简写为 <code class="language-plaintext highlighter-rouge">long</code>。</li>
+</ul>
+
+<h3 id="5-long-long"><span style="color: rgb(32,178,170);"><strong>5. <code class="language-plaintext highlighter-rouge">long long</code></strong></span></h3>
+<ul>
+  <li>表示变量的范围比 <code class="language-plaintext highlighter-rouge">long</code> 更大。</li>
+  <li>这是 C++11 中新增的数据类型修饰符。</li>
+</ul>
+
+<h3 id="6-float"><span style="color: rgb(32,178,170);"><strong>6. <code class="language-plaintext highlighter-rouge">float</code></strong></span></h3>
+<ul>
+  <li>表示单精度浮点数。</li>
+</ul>
+
+<h3 id="7-double"><span style="color: rgb(32,178,170);"><strong>7. <code class="language-plaintext highlighter-rouge">double</code></strong></span></h3>
+<ul>
+  <li>表示双精度浮点数。</li>
+</ul>
+
+<h3 id="8-bool"><span style="color: rgb(32,178,170);"><strong>8. <code class="language-plaintext highlighter-rouge">bool</code></strong></span></h3>
+<ul>
+  <li>表示布尔类型，只有 <code class="language-plaintext highlighter-rouge">true</code> 和 <code class="language-plaintext highlighter-rouge">false</code> 两个值。</li>
+</ul>
+
+<h3 id="9-char"><span style="color: rgb(32,178,170);"><strong>9. <code class="language-plaintext highlighter-rouge">char</code></strong></span></h3>
+<ul>
+  <li>表示字符类型。</li>
+</ul>
+
+<h3 id="10-wchar_t"><span style="color: rgb(32,178,170);"><strong>10. <code class="language-plaintext highlighter-rouge">wchar_t</code></strong></span></h3>
+<ul>
+  <li>表示宽字符类型，可以存储 Unicode 字符。</li>
+</ul>
+
+<h3 id="修饰符的组合使用"><span style="color: rgb(0,191,255);"><strong>修饰符的组合使用</strong></span></h3>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">signed</code>、<code class="language-plaintext highlighter-rouge">unsigned</code>、<code class="language-plaintext highlighter-rouge">long</code> 和 <code class="language-plaintext highlighter-rouge">short</code> 可以组合使用，且适用于整型。</li>
+  <li><code class="language-plaintext highlighter-rouge">signed</code> 和 <code class="language-plaintext highlighter-rouge">unsigned</code> 可以应用于字符型（<code class="language-plaintext highlighter-rouge">char</code>）。</li>
+  <li><code class="language-plaintext highlighter-rouge">long</code> 可应用于双精度型（<code class="language-plaintext highlighter-rouge">double</code>）。</li>
+</ul>
+
+<p><span style="color: rgb(238,130,238);"><strong>例如：</strong></span></p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">unsigned</span> <span class="kt">long</span> <span class="kt">int</span> <span class="n">num</span><span class="p">;</span> <span class="c1">// 无符号长整型</span>
+</code></pre></div></div>
+
+<p>C++ 还支持速记符号，可以省略 <code class="language-plaintext highlighter-rouge">int</code>，只写 <code class="language-plaintext highlighter-rouge">unsigned</code>、<code class="language-plaintext highlighter-rouge">short</code> 或 <code class="language-plaintext highlighter-rouge">long</code>，<code class="language-plaintext highlighter-rouge">int</code> 是隐含的。以下是一些例子：</p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">signed</span> <span class="kt">int</span> <span class="n">num1</span> <span class="o">=</span> <span class="o">-</span><span class="mi">10</span><span class="p">;</span> <span class="c1">// 有符号整型</span>
+<span class="kt">unsigned</span> <span class="kt">int</span> <span class="n">num2</span> <span class="o">=</span> <span class="mi">20</span><span class="p">;</span> <span class="c1">// 无符号整型</span>
+
+<span class="kt">short</span> <span class="kt">int</span> <span class="n">num1</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span> <span class="c1">// 短整型</span>
+<span class="kt">long</span> <span class="kt">int</span> <span class="n">num2</span> <span class="o">=</span> <span class="mi">100000</span><span class="p">;</span> <span class="c1">// 长整型</span>
+
+<span class="kt">long</span> <span class="kt">long</span> <span class="kt">int</span> <span class="n">num1</span> <span class="o">=</span> <span class="mi">10000000000</span><span class="p">;</span> <span class="c1">// 长长整型</span>
+
+<span class="kt">float</span> <span class="n">num1</span> <span class="o">=</span> <span class="mf">3.14</span><span class="n">f</span><span class="p">;</span> <span class="c1">// 单精度浮点数</span>
+<span class="kt">double</span> <span class="n">num2</span> <span class="o">=</span> <span class="mf">2.71828</span><span class="p">;</span> <span class="c1">// 双精度浮点数</span>
+
+<span class="kt">bool</span> <span class="n">flag</span> <span class="o">=</span> <span class="nb">true</span><span class="p">;</span> <span class="c1">// 布尔类型</span>
+<span class="kt">char</span> <span class="n">ch1</span> <span class="o">=</span> <span class="sc">'a'</span><span class="p">;</span> <span class="c1">// 字符类型</span>
+<span class="kt">wchar_t</span> <span class="n">ch2</span> <span class="o">=</span> <span class="sc">L'你'</span><span class="p">;</span> <span class="c1">// 宽字符类型</span>
+</code></pre></div></div>
+
+<h3 id="有符号整数和无符号整数的差别"><span style="color: rgb(0,191,255);"><strong>有符号整数和无符号整数的差别</strong></span></h3>
+
+<p>为了更好地理解有符号整数和无符号整数之间的区别，我们来看一个简单的例子：</p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
+</span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
+
+<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+   <span class="kt">short</span> <span class="kt">int</span> <span class="n">i</span><span class="p">;</span>           <span class="c1">// 有符号短整数</span>
+   <span class="kt">short</span> <span class="kt">unsigned</span> <span class="kt">int</span> <span class="n">j</span><span class="p">;</span>  <span class="c1">// 无符号短整数</span>
+
+   <span class="n">j</span> <span class="o">=</span> <span class="mi">50000</span><span class="p">;</span>
+   <span class="n">i</span> <span class="o">=</span> <span class="n">j</span><span class="p">;</span>
+
+   <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">i</span> <span class="o">&lt;&lt;</span> <span class="s">" "</span> <span class="o">&lt;&lt;</span> <span class="n">j</span><span class="p">;</span>
+   <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p><span style="color: rgb(238,130,238);"><strong>输出结果：</strong></span></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>-15536 50000
+</code></pre></div></div>
+
+<p>在这个程序中，无符号短整数 <code class="language-plaintext highlighter-rouge">50000</code> 的位模式被解释为有符号短整数，导致输出为 <code class="language-plaintext highlighter-rouge">-15536</code>。</p>
+
+<h2 id="c-中的类型限定符"><span style="color: rgb(0,191,255);"><strong>C++ 中的类型限定符</strong></span></h2>
+
+<p>类型限定符提供了关于变量的附加信息，用于改变变量或函数的默认行为。常见的类型限定符如下：</p>
+
+<h3 id="1-const"><span style="color: rgb(32,178,170);"><strong>1. <code class="language-plaintext highlighter-rouge">const</code></strong></span></h3>
+
+<ul>
+  <li>用于定义常量，表示该变量的值不能被修改。</li>
+</ul>
+
+<p><span style="color: rgb(238,130,238);"><strong>示例：</strong></span></p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">const</span> <span class="kt">int</span> <span class="n">NUM</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span> <span class="c1">// NUM 是常量，值不能修改</span>
+<span class="k">const</span> <span class="kt">int</span><span class="o">*</span> <span class="n">ptr</span> <span class="o">=</span> <span class="o">&amp;</span><span class="n">NUM</span><span class="p">;</span> <span class="c1">// 指向常量的指针，指针指向的值不可修改</span>
+</code></pre></div></div>
+
+<h3 id="2-volatile"><span style="color: rgb(32,178,170);"><strong>2. <code class="language-plaintext highlighter-rouge">volatile</code></strong></span></h3>
+
+<ul>
+  <li>用于修饰变量，表示该变量的值可能会被程序外部的因素改变，如硬件或其他线程。</li>
+</ul>
+
+<p><span style="color: rgb(238,130,238);"><strong>示例：</strong></span></p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">volatile</span> <span class="kt">int</span> <span class="n">num</span> <span class="o">=</span> <span class="mi">20</span><span class="p">;</span> <span class="c1">// 变量 num 可能在任何时刻被外部修改</span>
+</code></pre></div></div>
+
+<h3 id="3-restrict"><span style="color: rgb(32,178,170);"><strong>3. <code class="language-plaintext highlighter-rouge">restrict</code></strong></span></h3>
+
+<ul>
+  <li>仅适用于指针，表示该指针是访问其所指对象的唯一方式。<code class="language-plaintext highlighter-rouge">restrict</code> 是 C99 中引入的限定符。</li>
+</ul>
+
+<h3 id="4-mutable"><span style="color: rgb(32,178,170);"><strong>4. <code class="language-plaintext highlighter-rouge">mutable</code></strong></span></h3>
+
+<ul>
+  <li>用于修饰类的成员变量，表示即使对象本身是 <code class="language-plaintext highlighter-rouge">const</code>，该成员变量仍然可以被修改。</li>
+</ul>
+
+<p><span style="color: rgb(238,130,238);"><strong>示例：</strong></span></p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">class</span> <span class="nc">Example</span> <span class="p">{</span>
+<span class="nl">public:</span>
+    <span class="kt">int</span> <span class="n">get_value</span><span class="p">()</span> <span class="k">const</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="n">value_</span><span class="p">;</span> <span class="c1">// const 函数不能修改数据成员</span>
+    <span class="p">}</span>
+    <span class="kt">void</span> <span class="n">set_value</span><span class="p">(</span><span class="kt">int</span> <span class="n">value</span><span class="p">)</span> <span class="k">const</span> <span class="p">{</span>
+        <span class="n">value_</span> <span class="o">=</span> <span class="n">value</span><span class="p">;</span> <span class="c1">// mutable 允许在 const 成员函数中修改成员变量</span>
+    <span class="p">}</span>
+
+<span class="k">private</span><span class="o">:</span>
+    <span class="k">mutable</span> <span class="kt">int</span> <span class="n">value_</span><span class="p">;</span>
+<span class="p">};</span>
+</code></pre></div></div>
+
+<h3 id="5-static"><span style="color: rgb(32,178,170);"><strong>5. <code class="language-plaintext highlighter-rouge">static</code></strong></span></h3>
+
+<ul>
+  <li>用于定义静态变量，表示变量的作用域仅限于当前文件或当前函数内，不会被其他文件或函数访问。</li>
+</ul>
+
+<p><span style="color: rgb(238,130,238);"><strong>示例：</strong></span></p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">void</span> <span class="nf">example_function</span><span class="p">()</span>
+<span class="p">{</span>
+    <span class="k">static</span> <span class="kt">int</span> <span class="n">count</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="c1">// count 是静态变量，程序生命周期内都存在</span>
+    <span class="n">count</span><span class="o">++</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h3 id="6-register"><span style="color: rgb(32,178,170);"><strong>6. <code class="language-plaintext highlighter-rouge">register</code></strong></span></h3>
+
+<ul>
+  <li>用于定义寄存器变量，表示该变量被频繁使用，可以存储在 CPU 的寄存器中，以提高程序的运行效率。但是否实际存储在寄存器中由编译器决定。</li>
+</ul>
+
+<p><span style="color: rgb(238,130,238);"><strong>示例：</strong></span></p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">void</span> <span class="nf">example_function</span><span class="p">(</span><span class="k">register</span> <span class="kt">int</span> <span class="n">num</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="c1">// register 提示编译器将变量存储在寄存器中</span>
+<span class="p">}</span>
+</code></pre></div></div>]]></content><author><name>ZJM</name></author><category term="code/algorithm/basic-knowledge" /><category term="Code" /><summary type="html"><![CDATA[修饰符]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/code-cover-6.png" /><media:content medium="image" url="http://localhost:4000/code-cover-6.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">变量的作用域</title><link href="http://localhost:4000/code/algorithm/basic-knowledge/2025/01/05/Scope-of-variables/" rel="alternate" type="text/html" title="变量的作用域" /><published>2025-01-05T00:00:00-08:00</published><updated>2025-01-05T00:00:00-08:00</updated><id>http://localhost:4000/code/algorithm/basic-knowledge/2025/01/05/Scope%20of%20variables</id><content type="html" xml:base="http://localhost:4000/code/algorithm/basic-knowledge/2025/01/05/Scope-of-variables/"><![CDATA[<h1 id="变量的作用域"><span style="color: rgb(255,127,80);"><strong>变量的作用域</strong></span></h1>
 <p>在 C++ 中，变量的作用域指的是变量可以被访问的范围。通常来说，变量的作用域可以分为以下几种类型：</p>
 
 <ul>
@@ -1197,7 +1411,497 @@
   </li>
 </ul>
 
-<p>理解这些作用域有助于更好地管理变量的生命周期和访问权限。</p>]]></content><author><name>ZJM</name></author><category term="code/algorithm/basic-knowledge" /><category term="Code" /><summary type="html"><![CDATA[变量的作用域 在 C++ 中，变量的作用域指的是变量可以被访问的范围。通常来说，变量的作用域可以分为以下几种类型：]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/code-cover-6.png" /><media:content medium="image" url="http://localhost:4000/code-cover-6.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">判断结构</title><link href="http://localhost:4000/code/algorithm/basic-knowledge/2025/01/05/IF-(copy)/" rel="alternate" type="text/html" title="判断结构" /><published>2025-01-05T00:00:00-08:00</published><updated>2025-01-05T00:00:00-08:00</updated><id>http://localhost:4000/code/algorithm/basic-knowledge/2025/01/05/IF%20(copy)</id><content type="html" xml:base="http://localhost:4000/code/algorithm/basic-knowledge/2025/01/05/IF-(copy)/"><![CDATA[<h1 id="判断结构"><span style="color: rgb(255,127,80);"><strong>判断结构</strong></span></h1>
+<p>理解这些作用域有助于更好地管理变量的生命周期和访问权限。</p>]]></content><author><name>ZJM</name></author><category term="code/algorithm/basic-knowledge" /><category term="Code" /><summary type="html"><![CDATA[变量的作用域 在 C++ 中，变量的作用域指的是变量可以被访问的范围。通常来说，变量的作用域可以分为以下几种类型：]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/code-cover-6.png" /><media:content medium="image" url="http://localhost:4000/code-cover-6.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">数组</title><link href="http://localhost:4000/code/algorithm/basic-knowledge/2025/01/05/Arrays/" rel="alternate" type="text/html" title="数组" /><published>2025-01-05T00:00:00-08:00</published><updated>2025-01-05T00:00:00-08:00</updated><id>http://localhost:4000/code/algorithm/basic-knowledge/2025/01/05/Arrays</id><content type="html" xml:base="http://localhost:4000/code/algorithm/basic-knowledge/2025/01/05/Arrays/"><![CDATA[<h1 id="数组简介"><span style="color: rgb(255,127,80);"><strong>数组简介</strong></span></h1>
+
+<p>C++ 支持数组数据结构，数组是存储一组固定大小且类型相同的元素的集合。你可以把数组看作是一个存放数据的容器，它实际上是多个变量的集合，但所有这些变量都具有相同的类型。</p>
+
+<p>数组不同于一一声明单独的变量（比如 <code class="language-plaintext highlighter-rouge">number0</code>, <code class="language-plaintext highlighter-rouge">number1</code>, …, <code class="language-plaintext highlighter-rouge">number99</code>）。而是通过声明一个数组变量（例如 <code class="language-plaintext highlighter-rouge">numbers</code>），然后使用索引（如 <code class="language-plaintext highlighter-rouge">numbers[0]</code>, <code class="language-plaintext highlighter-rouge">numbers[1]</code>, …, <code class="language-plaintext highlighter-rouge">numbers[99]</code>）来访问其中的每个元素。数组的所有元素都是存储在连续的内存位置中，数组中的第一个元素位于最小的内存地址，最后一个元素则位于最大的内存地址。</p>
+
+<h3 id="声明数组"><span style="color: rgb(0,191,255);"><strong>声明数组</strong></span></h3>
+
+<p>在 C++ 中，声明数组时需要指定元素的类型和数组的大小。格式如下：</p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">type</span> <span class="n">arrayName</span><span class="p">[</span><span class="n">arraySize</span><span class="p">];</span>
+</code></pre></div></div>
+
+<p>这里 <code class="language-plaintext highlighter-rouge">arraySize</code> 必须是一个大于零的整数常量，<code class="language-plaintext highlighter-rouge">type</code> 是数组元素的类型。例如，声明一个包含 10 个 <code class="language-plaintext highlighter-rouge">double</code> 类型元素的数组：</p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">double</span> <span class="n">balance</span><span class="p">[</span><span class="mi">10</span><span class="p">];</span>
+</code></pre></div></div>
+
+<p>此时，<code class="language-plaintext highlighter-rouge">balance</code> 数组能够存储 10 个 <code class="language-plaintext highlighter-rouge">double</code> 类型的数值。</p>
+
+<h3 id="初始化数组"><span style="color: rgb(0,191,255);"><strong>初始化数组</strong></span></h3>
+
+<p>你可以通过两种方式来初始化数组：</p>
+
+<p><span style="color: rgb(32,178,170);"><strong>1. 逐个初始化：</strong></span> 
+   通过指定每个元素的初始值来初始化数组。例如：</p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code>   <span class="kt">double</span> <span class="n">balance</span><span class="p">[</span><span class="mi">5</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="mf">1000.0</span><span class="p">,</span> <span class="mf">2.0</span><span class="p">,</span> <span class="mf">3.4</span><span class="p">,</span> <span class="mf">7.0</span><span class="p">,</span> <span class="mf">50.0</span><span class="p">};</span>
+</code></pre></div></div>
+
+<p><span style="color: rgb(32,178,170);"><strong>2. 省略数组大小：</strong></span> 
+   如果在初始化时省略了数组大小，C++ 会自动根据初始化列表的元素数量来确定数组的大小。例如：</p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code>   <span class="kt">double</span> <span class="n">balance</span><span class="p">[]</span> <span class="o">=</span> <span class="p">{</span><span class="mf">1000.0</span><span class="p">,</span> <span class="mf">2.0</span><span class="p">,</span> <span class="mf">3.4</span><span class="p">,</span> <span class="mf">7.0</span><span class="p">,</span> <span class="mf">50.0</span><span class="p">};</span>
+</code></pre></div></div>
+
+<p>这里 <code class="language-plaintext highlighter-rouge">balance</code> 数组的大小将是 5。</p>
+
+<p>你也可以通过索引为数组中的某个元素赋值：</p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">balance</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span> <span class="o">=</span> <span class="mf">50.0</span><span class="p">;</span>  <span class="c1">// 将数组中第 5 个元素的值设置为 50.0</span>
+</code></pre></div></div>
+
+<h3 id="访问数组元素"><span style="color: rgb(0,191,255);"><strong>访问数组元素</strong></span></h3>
+
+<p>你可以通过数组名称加上索引来访问数组中的元素。数组的索引从 0 开始，最后一个元素的索引是数组大小减去 1。例如，要访问 <code class="language-plaintext highlighter-rouge">balance</code> 数组中的第 10 个元素：</p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">double</span> <span class="n">salary</span> <span class="o">=</span> <span class="n">balance</span><span class="p">[</span><span class="mi">9</span><span class="p">];</span>  <span class="c1">// 访问 balance 数组的第 10 个元素</span>
+</code></pre></div></div>
+
+<h3 id="示例代码"><span style="color: rgb(238,130,238);"><strong>示例代码</strong></span></h3>
+
+<p>以下是一个完整的示例，展示了数组的声明、初始化、赋值和访问的过程：</p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
+#include</span> <span class="cpf">&lt;iomanip&gt;</span><span class="c1">  // 用于格式化输出</span><span class="cp">
+</span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
+<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> 
+<span class="p">{</span>
+    <span class="kt">int</span> <span class="n">n</span><span class="p">[</span><span class="mi">10</span><span class="p">];</span>  <span class="c1">// 声明一个包含 10 个整数的数组</span>
+    <span class="c1">// 初始化数组元素</span>
+    <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> 
+    <span class="p">{</span>
+        <span class="n">n</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">i</span> <span class="o">+</span> <span class="mi">100</span><span class="p">;</span>  <span class="c1">// 将第 i 个元素初始化为 i + 100</span>
+    <span class="p">}</span>
+    <span class="c1">// 输出数组的元素</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Element"</span> <span class="o">&lt;&lt;</span> <span class="n">setw</span><span class="p">(</span><span class="mi">13</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="s">"Value"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">j</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">j</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">;</span> <span class="n">j</span><span class="o">++</span><span class="p">)</span> 
+    <span class="p">{</span>
+        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">setw</span><span class="p">(</span><span class="mi">7</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="n">j</span> <span class="o">&lt;&lt;</span> <span class="n">setw</span><span class="p">(</span><span class="mi">13</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="n">n</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>  <span class="c1">// 输出每个元素的索引和值</span>
+    <span class="p">}</span>
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p><span style="color: rgb(238,130,238);"><strong>运行结果：</strong></span></p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="s">Element        Value</span>
+      <span class="s">0          </span><span class="m">100</span>
+      <span class="s">1          </span><span class="m">101</span>
+      <span class="s">2          </span><span class="m">102</span>
+      <span class="s">3          </span><span class="m">103</span>
+      <span class="s">4          </span><span class="m">104</span>
+      <span class="s">5          </span><span class="m">105</span>
+      <span class="s">6          </span><span class="m">106</span>
+      <span class="s">7          </span><span class="m">107</span>
+      <span class="s">8          </span><span class="m">108</span>
+      <span class="s">9          </span><span class="m">109</span>
+</code></pre></div></div>
+
+<h3 id="c-中数组的更多细节"><span style="color: rgb(0,191,255);"><strong>C++ 中数组的更多细节</strong></span></h3>
+
+<p>在 C++ 中，数组不仅仅是一个简单的集合。以下是一些更高级的数组概念，程序员需要了解：</p>
+
+<h4 id="1-多维数组"><span style="color: rgb(32,178,170);"><strong>1. 多维数组</strong></span></h4>
+
+<p>C++ 支持多维数组，其中最常见的是二维数组。二维数组可以看作是一个包含多个一维数组的数组。例如，声明一个 3x3 的二维数组：</p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">int</span> <span class="n">matrix</span><span class="p">[</span><span class="mi">3</span><span class="p">][</span><span class="mi">3</span><span class="p">];</span>  <span class="c1">// 声明一个 3 行 3 列的二维数组</span>
+</code></pre></div></div>
+
+<h4 id="2-指向数组的指针"><span style="color: rgb(32,178,170);"><strong>2. 指向数组的指针</strong></span></h4>
+
+<p>你可以通过不带索引的数组名称来生成一个指向数组首元素的指针。例如：</p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">int</span><span class="o">*</span> <span class="n">ptr</span> <span class="o">=</span> <span class="n">n</span><span class="p">;</span>  <span class="c1">// ptr 是指向数组 n 第一个元素的指针</span>
+</code></pre></div></div>
+
+<h4 id="3-传递数组给函数"><span style="color: rgb(32,178,170);"><strong>3. 传递数组给函数</strong></span></h4>
+
+<p>在 C++ 中，可以通过传递数组名称（即指向数组首元素的指针）来把数组传递给函数。例如：</p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">void</span> <span class="nf">printArray</span><span class="p">(</span><span class="kt">int</span> <span class="n">arr</span><span class="p">[],</span> <span class="kt">int</span> <span class="n">size</span><span class="p">)</span> 
+<span class="p">{</span>
+    <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">size</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> 
+    <span class="p">{</span>
+        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">arr</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&lt;&lt;</span> <span class="s">" "</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> 
+<span class="p">{</span>
+    <span class="kt">int</span> <span class="n">arr</span><span class="p">[</span><span class="mi">5</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">};</span>
+    <span class="n">printArray</span><span class="p">(</span><span class="n">arr</span><span class="p">,</span> <span class="mi">5</span><span class="p">);</span>  <span class="c1">// 传递数组 arr 给函数</span>
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h4 id="4-从函数返回数组"><span style="color: rgb(32,178,170);"><strong>4. 从函数返回数组</strong></span></h4>
+
+<p>C++ 不直接支持从函数返回数组，但可以通过返回指向数组的指针来间接实现：</p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">int</span><span class="o">*</span> <span class="nf">createArray</span><span class="p">()</span> 
+<span class="p">{</span>
+    <span class="k">static</span> <span class="kt">int</span> <span class="n">arr</span><span class="p">[</span><span class="mi">5</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">};</span>
+    <span class="k">return</span> <span class="n">arr</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>]]></content><author><name>ZJM</name></author><category term="code/algorithm/basic-knowledge" /><category term="Code" /><summary type="html"><![CDATA[数组简介]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/code-cover-10.png" /><media:content medium="image" url="http://localhost:4000/code-cover-10.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">字符串</title><link href="http://localhost:4000/code/algorithm/basic-knowledge/2025/01/05/Character-String/" rel="alternate" type="text/html" title="字符串" /><published>2025-01-05T00:00:00-08:00</published><updated>2025-01-05T00:00:00-08:00</updated><id>http://localhost:4000/code/algorithm/basic-knowledge/2025/01/05/Character%20String</id><content type="html" xml:base="http://localhost:4000/code/algorithm/basic-knowledge/2025/01/05/Character-String/"><![CDATA[<h1 id="字符串"><span style="color: rgb(255,127,80);"><strong>字符串</strong></span></h1>
+
+<p>C++ 提供了两种主要的字符串表示方式：</p>
+
+<ol>
+  <li><strong>C 风格字符串</strong></li>
+  <li><strong>C++ <code class="language-plaintext highlighter-rouge">string</code> 类</strong></li>
+</ol>
+
+<p>下面将分别介绍这两种方式。</p>
+
+<h3 id="c-风格字符串"><span style="color: rgb(0,191,255);"><strong>C 风格字符串</strong></span></h3>
+
+<p>C 风格字符串源自 C 语言，并且在 C++ 中也被广泛使用。它们实际上是以空字符 (<code class="language-plaintext highlighter-rouge">\0</code>) 终止的一维字符数组。因此，一个 C 风格的字符串包含了组成字符串的字符，最后由一个 <code class="language-plaintext highlighter-rouge">\0</code> 字符标记字符串的结束。</p>
+
+<h4 id="示例-1-定义-c-风格字符串"><span style="color: rgb(32,178,170);"><strong>示例 1: 定义 C 风格字符串</strong></span></h4>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
+</span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
+<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
+<span class="p">{</span>
+    <span class="c1">// 通过字符数组定义字符串</span>
+    <span class="kt">char</span> <span class="n">site</span><span class="p">[</span><span class="mi">7</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="sc">'R'</span><span class="p">,</span> <span class="sc">'U'</span><span class="p">,</span> <span class="sc">'N'</span><span class="p">,</span> <span class="sc">'O'</span><span class="p">,</span> <span class="sc">'O'</span><span class="p">,</span> <span class="sc">'B'</span><span class="p">,</span> <span class="sc">'\0'</span><span class="p">};</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"网站名称: "</span> <span class="o">&lt;&lt;</span> <span class="n">site</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>在这个示例中，我们定义了一个字符数组 <code class="language-plaintext highlighter-rouge">site</code>，包含了字符串 “RUNOOB”。由于 C 风格字符串的结束是由 <code class="language-plaintext highlighter-rouge">\0</code> 表示的，所以数组大小比字符串长度多一个字符。</p>
+
+<h4 id="更简洁的写法"><span style="color: rgb(32,178,170);"><strong>更简洁的写法</strong></span></h4>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
+</span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
+<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
+<span class="p">{</span>
+    <span class="c1">// 直接使用字符串常量定义</span>
+    <span class="kt">char</span> <span class="n">site</span><span class="p">[]</span> <span class="o">=</span> <span class="s">"RUNOOB"</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"网站名称: "</span> <span class="o">&lt;&lt;</span> <span class="n">site</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>C++ 编译器会自动在字符串的末尾加上 <code class="language-plaintext highlighter-rouge">\0</code>，因此我们不需要手动添加。</p>
+
+<h4 id="示例-2-使用字符串函数"><span style="color: rgb(32,178,170);"><strong>示例 2: 使用字符串函数</strong></span></h4>
+
+<p>C++ 提供了一些函数来操作 C 风格字符串。以下是几个常见函数及其用途：</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>函数</th>
+      <th>目的</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">strcpy(s1, s2)</code></td>
+      <td>将字符串 <code class="language-plaintext highlighter-rouge">s2</code> 复制到 <code class="language-plaintext highlighter-rouge">s1</code> 中。</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">strcat(s1, s2)</code></td>
+      <td>将字符串 <code class="language-plaintext highlighter-rouge">s2</code> 连接到 <code class="language-plaintext highlighter-rouge">s1</code> 的末尾。</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">strlen(s1)</code></td>
+      <td>返回字符串 <code class="language-plaintext highlighter-rouge">s1</code> 的长度（不包括 <code class="language-plaintext highlighter-rouge">\0</code>）。</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">strcmp(s1, s2)</code></td>
+      <td>比较 <code class="language-plaintext highlighter-rouge">s1</code> 和 <code class="language-plaintext highlighter-rouge">s2</code> 字符串，返回值小于0、等于0或大于0。</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">strchr(s1, ch)</code></td>
+      <td>返回 <code class="language-plaintext highlighter-rouge">s1</code> 中第一次出现字符 <code class="language-plaintext highlighter-rouge">ch</code> 的位置。</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">strstr(s1, s2)</code></td>
+      <td>返回 <code class="language-plaintext highlighter-rouge">s1</code> 中第一次出现字符串 <code class="language-plaintext highlighter-rouge">s2</code> 的位置。</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="示例-3-使用-c-风格字符串操作函数"><span style="color: rgb(32,178,170);"><strong>示例 3: 使用 C 风格字符串操作函数</strong></span></h4>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
+#include</span> <span class="cpf">&lt;cstring&gt;</span><span class="c1">  // 引入字符串处理库</span><span class="cp">
+</span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
+<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
+<span class="p">{</span>
+    <span class="kt">char</span> <span class="n">str1</span><span class="p">[</span><span class="mi">13</span><span class="p">]</span> <span class="o">=</span> <span class="s">"runoob"</span><span class="p">;</span>
+    <span class="kt">char</span> <span class="n">str2</span><span class="p">[</span><span class="mi">13</span><span class="p">]</span> <span class="o">=</span> <span class="s">"google"</span><span class="p">;</span>
+    <span class="kt">char</span> <span class="n">str3</span><span class="p">[</span><span class="mi">13</span><span class="p">];</span>
+    <span class="kt">int</span> <span class="n">len</span><span class="p">;</span>
+    <span class="c1">// 复制 str1 到 str3</span>
+    <span class="n">strcpy</span><span class="p">(</span><span class="n">str3</span><span class="p">,</span> <span class="n">str1</span><span class="p">);</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"strcpy(str3, str1): "</span> <span class="o">&lt;&lt;</span> <span class="n">str3</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="c1">// 连接 str1 和 str2</span>
+    <span class="n">strcat</span><span class="p">(</span><span class="n">str1</span><span class="p">,</span> <span class="n">str2</span><span class="p">);</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"strcat(str1, str2): "</span> <span class="o">&lt;&lt;</span> <span class="n">str1</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="c1">// 获取 str1 的长度</span>
+    <span class="n">len</span> <span class="o">=</span> <span class="n">strlen</span><span class="p">(</span><span class="n">str1</span><span class="p">);</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"strlen(str1): "</span> <span class="o">&lt;&lt;</span> <span class="n">len</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p><span style="color: rgb(238,130,238);"><strong>输出：</strong></span></p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="s">strcpy(str3, str1)</span><span class="err">:</span> <span class="s">runoob</span>
+<span class="s">strcat(str1, str2)</span><span class="err">:</span> <span class="s">runoobgoogle</span>
+<span class="na">strlen(str1)</span><span class="pi">:</span> <span class="m">12</span>
+</code></pre></div></div>
+
+<p>在这个例子中，<code class="language-plaintext highlighter-rouge">strcpy</code> 复制了字符串，<code class="language-plaintext highlighter-rouge">strcat</code> 将 <code class="language-plaintext highlighter-rouge">str2</code> 连接到 <code class="language-plaintext highlighter-rouge">str1</code>，而 <code class="language-plaintext highlighter-rouge">strlen</code> 返回了字符串的长度。</p>
+
+<h3 id="c-中的-string-类"><span style="color: rgb(0,191,255);"><strong>C++ 中的 <code class="language-plaintext highlighter-rouge">string</code> 类</strong></span></h3>
+
+<p>C++ 标准库提供了一个更加现代的字符串类——<code class="language-plaintext highlighter-rouge">string</code> 类。它不仅支持 C 风格字符串的常见操作，还提供了更多灵活和高效的方法。这里我们通过一个简单的例子来展示 <code class="language-plaintext highlighter-rouge">string</code> 类的基本用法。</p>
+
+<h4 id="示例-4-使用-string-类"><span style="color: rgb(32,178,170);"><strong>示例 4: 使用 <code class="language-plaintext highlighter-rouge">string</code> 类</strong></span></h4>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
+#include</span> <span class="cpf">&lt;string&gt;</span><span class="c1">  // 引入 string 库</span><span class="cp">
+</span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
+<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
+<span class="p">{</span>
+    <span class="n">string</span> <span class="n">str1</span> <span class="o">=</span> <span class="s">"runoob"</span><span class="p">;</span>
+    <span class="n">string</span> <span class="n">str2</span> <span class="o">=</span> <span class="s">"google"</span><span class="p">;</span>
+    <span class="n">string</span> <span class="n">str3</span><span class="p">;</span>
+    <span class="kt">int</span> <span class="n">len</span><span class="p">;</span>
+    <span class="c1">// 复制 str1 到 str3</span>
+    <span class="n">str3</span> <span class="o">=</span> <span class="n">str1</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"str3: "</span> <span class="o">&lt;&lt;</span> <span class="n">str3</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="c1">// 连接 str1 和 str2</span>
+    <span class="n">str3</span> <span class="o">=</span> <span class="n">str1</span> <span class="o">+</span> <span class="n">str2</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"str1 + str2: "</span> <span class="o">&lt;&lt;</span> <span class="n">str3</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="c1">// 获取 str3 的长度</span>
+    <span class="n">len</span> <span class="o">=</span> <span class="n">str3</span><span class="p">.</span><span class="n">size</span><span class="p">();</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"str3.size(): "</span> <span class="o">&lt;&lt;</span> <span class="n">len</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p><span style="color: rgb(238,130,238);"><strong>输出：</strong></span></p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">str3</span><span class="pi">:</span> <span class="s">runoob</span>
+<span class="na">str1 + str2</span><span class="pi">:</span> <span class="s">runoobgoogle</span>
+<span class="na">str3.size()</span><span class="pi">:</span> <span class="m">12</span>
+</code></pre></div></div>
+
+<p>与 C 风格字符串不同，C++ <code class="language-plaintext highlighter-rouge">string</code> 类会自动处理内存管理和字符数组的大小，因此操作更加方便和安全。</p>]]></content><author><name>ZJM</name></author><category term="code/algorithm/basic-knowledge" /><category term="Code" /><summary type="html"><![CDATA[字符串]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/code-cover-8.png" /><media:content medium="image" url="http://localhost:4000/code-cover-8.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">函数</title><link href="http://localhost:4000/code/algorithm/basic-knowledge/2025/01/05/Function/" rel="alternate" type="text/html" title="函数" /><published>2025-01-05T00:00:00-08:00</published><updated>2025-01-05T00:00:00-08:00</updated><id>http://localhost:4000/code/algorithm/basic-knowledge/2025/01/05/Function</id><content type="html" xml:base="http://localhost:4000/code/algorithm/basic-knowledge/2025/01/05/Function/"><![CDATA[<h1 id="函数"><span style="color: rgb(255,127,80);"><strong>函数</strong></span></h1>
+
+<p>函数是执行特定任务的一组语句。每个 C++ 程序都至少有一个函数，即 <code class="language-plaintext highlighter-rouge">main()</code> 函数。除了 <code class="language-plaintext highlighter-rouge">main()</code> 函数，您还可以根据需要定义其他函数。</p>
+
+<p>将代码划分成多个函数有助于提高程序的结构性和可读性。通常，我们会根据每个函数执行的特定任务来划分代码。</p>
+
+<h3 id="函数声明与定义"><span style="color: rgb(0,191,255);"><strong>函数声明与定义</strong></span></h3>
+
+<p>在 C++ 中，函数由 <strong>声明</strong> 和 <strong>定义</strong> 两部分组成。</p>
+
+<ul>
+  <li><strong>函数声明</strong> 告诉编译器函数的名称、返回类型和参数列表。</li>
+  <li><strong>函数定义</strong> 提供了函数的实际实现，包含函数主体。</li>
+</ul>
+
+<h3 id="函数定义的一般形式"><span style="color: rgb(0,191,255);"><strong>函数定义的一般形式</strong></span></h3>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">return_type</span> <span class="nf">function_name</span><span class="p">(</span><span class="n">parameter</span> <span class="n">list</span><span class="p">)</span>
+<span class="p">{</span>
+   <span class="c1">// 函数主体</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>其中的组成部分包括：</p>
+
+<ul>
+  <li><strong>返回类型</strong>：指定函数返回值的数据类型。如果函数不返回值，使用 <code class="language-plaintext highlighter-rouge">void</code>。</li>
+  <li><strong>函数名称</strong>：函数的名字，和参数列表一起构成函数签名。</li>
+  <li><strong>参数列表</strong>：定义函数接受的参数，可以是零个或多个。每个参数由类型和名称组成。</li>
+  <li><strong>函数主体</strong>：函数的实际操作逻辑，包含一组语句。</li>
+</ul>
+
+<h3 id="示例最大值函数"><span style="color: rgb(238,130,238);"><strong>示例：最大值函数</strong></span></h3>
+
+<p>以下是一个求两个整数中较大值的函数 <code class="language-plaintext highlighter-rouge">max()</code>：</p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// 函数返回两个数中较大的那个数</span>
+<span class="kt">int</span> <span class="nf">max</span><span class="p">(</span><span class="kt">int</span> <span class="n">num1</span><span class="p">,</span> <span class="kt">int</span> <span class="n">num2</span><span class="p">)</span> 
+<span class="p">{</span>
+   <span class="c1">// 局部变量声明</span>
+   <span class="kt">int</span> <span class="n">result</span><span class="p">;</span>
+   <span class="k">if</span> <span class="p">(</span><span class="n">num1</span> <span class="o">&gt;</span> <span class="n">num2</span><span class="p">)</span>
+      <span class="n">result</span> <span class="o">=</span> <span class="n">num1</span><span class="p">;</span>
+   <span class="k">else</span>
+      <span class="n">result</span> <span class="o">=</span> <span class="n">num2</span><span class="p">;</span>
+   <span class="k">return</span> <span class="n">result</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>该函数接受两个整数参数 <code class="language-plaintext highlighter-rouge">num1</code> 和 <code class="language-plaintext highlighter-rouge">num2</code>，并返回较大的数。</p>
+
+<h3 id="函数声明"><span style="color: rgb(0,191,255);"><strong>函数声明</strong></span></h3>
+
+<p>函数声明用于告诉编译器如何调用一个函数，包括函数名和参数类型，而不涉及函数的具体实现。函数声明的一般形式为：</p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">return_type</span> <span class="nf">function_name</span><span class="p">(</span><span class="n">parameter</span> <span class="n">list</span><span class="p">);</span>
+</code></pre></div></div>
+
+<p>对于 <code class="language-plaintext highlighter-rouge">max()</code> 函数，声明如下：</p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">int</span> <span class="nf">max</span><span class="p">(</span><span class="kt">int</span> <span class="n">num1</span><span class="p">,</span> <span class="kt">int</span> <span class="n">num2</span><span class="p">);</span>
+</code></pre></div></div>
+
+<p><strong>注意</strong>：在函数声明中，参数的名称并非必须，只有参数的类型是必要的。例如，下面的声明也是有效的：</p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">int</span> <span class="nf">max</span><span class="p">(</span><span class="kt">int</span><span class="p">,</span> <span class="kt">int</span><span class="p">);</span>
+</code></pre></div></div>
+
+<p>如果您在一个文件中定义了函数，并在另一个文件中调用它，那么需要在调用前声明该函数。</p>
+
+<h3 id="调用函数"><span style="color: rgb(0,191,255);"><strong>调用函数</strong></span></h3>
+
+<p>在程序中，我们通过调用函数来执行已定义的任务。当函数被调用时，程序的控制权转移到被调用的函数。当函数完成任务后，控制权会返回给主程序。</p>
+
+<p>例如，下面的代码展示了如何调用 <code class="language-plaintext highlighter-rouge">max()</code> 函数：</p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
+</span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
+<span class="c1">// 函数声明</span>
+<span class="kt">int</span> <span class="nf">max</span><span class="p">(</span><span class="kt">int</span> <span class="n">num1</span><span class="p">,</span> <span class="kt">int</span> <span class="n">num2</span><span class="p">);</span>
+<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
+<span class="p">{</span>
+   <span class="kt">int</span> <span class="n">a</span> <span class="o">=</span> <span class="mi">100</span><span class="p">;</span>
+   <span class="kt">int</span> <span class="n">b</span> <span class="o">=</span> <span class="mi">200</span><span class="p">;</span>
+   <span class="kt">int</span> <span class="n">ret</span><span class="p">;</span>
+   <span class="c1">// 调用函数来获取最大值</span>
+   <span class="n">ret</span> <span class="o">=</span> <span class="n">max</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">);</span>
+   <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Max value is : "</span> <span class="o">&lt;&lt;</span> <span class="n">ret</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+   <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="c1">// 函数定义</span>
+<span class="kt">int</span> <span class="nf">max</span><span class="p">(</span><span class="kt">int</span> <span class="n">num1</span><span class="p">,</span> <span class="kt">int</span> <span class="n">num2</span><span class="p">)</span>
+<span class="p">{</span>
+   <span class="kt">int</span> <span class="n">result</span><span class="p">;</span>
+   <span class="k">if</span> <span class="p">(</span><span class="n">num1</span> <span class="o">&gt;</span> <span class="n">num2</span><span class="p">)</span>
+      <span class="n">result</span> <span class="o">=</span> <span class="n">num1</span><span class="p">;</span>
+   <span class="k">else</span>
+      <span class="n">result</span> <span class="o">=</span> <span class="n">num2</span><span class="p">;</span>
+   <span class="k">return</span> <span class="n">result</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p><span style="color: rgb(238,130,238);"><strong>输出结果：</strong></span></p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">Max value is </span><span class="pi">:</span> <span class="m">200</span>
+</code></pre></div></div>
+
+<h3 id="函数参数"><span style="color: rgb(0,191,255);"><strong>函数参数</strong></span></h3>
+
+<p>函数可以使用参数进行灵活操作。参数可以通过三种方式传递给函数：</p>
+
+<ol>
+  <li><strong>传值调用</strong>：将实际值传递给形式参数。函数内修改形式参数不会影响实际参数。</li>
+  <li><strong>指针调用</strong>：将参数的地址传递给函数，函数通过指针修改实际参数。</li>
+  <li><strong>引用调用</strong>：将参数的引用传递给函数，函数修改引用会直接影响实际参数。</li>
+</ol>
+
+<h3 id="参数的默认值"><span style="color: rgb(0,191,255);"><strong>参数的默认值</strong></span></h3>
+
+<p>C++ 允许为函数参数指定默认值。若调用函数时未提供某个参数，则会使用默认值。</p>
+
+<p>例如，下面的 <code class="language-plaintext highlighter-rouge">sum()</code> 函数为第二个参数指定了默认值：</p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
+</span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
+
+<span class="kt">int</span> <span class="nf">sum</span><span class="p">(</span><span class="kt">int</span> <span class="n">a</span><span class="p">,</span> <span class="kt">int</span> <span class="n">b</span> <span class="o">=</span> <span class="mi">20</span><span class="p">)</span>
+<span class="p">{</span>
+  <span class="k">return</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
+<span class="p">{</span>
+   <span class="kt">int</span> <span class="n">a</span> <span class="o">=</span> <span class="mi">100</span><span class="p">;</span>
+   <span class="kt">int</span> <span class="n">b</span> <span class="o">=</span> <span class="mi">200</span><span class="p">;</span>
+   <span class="kt">int</span> <span class="n">result</span><span class="p">;</span>
+
+   <span class="c1">// 调用函数，传入两个参数</span>
+   <span class="n">result</span> <span class="o">=</span> <span class="n">sum</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">);</span>
+   <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Total value is : "</span> <span class="o">&lt;&lt;</span> <span class="n">result</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+
+   <span class="c1">// 调用函数，只传入一个参数</span>
+   <span class="n">result</span> <span class="o">=</span> <span class="n">sum</span><span class="p">(</span><span class="n">a</span><span class="p">);</span>
+   <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Total value is : "</span> <span class="o">&lt;&lt;</span> <span class="n">result</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+
+   <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p><span style="color: rgb(238,130,238);"><strong>输出结果：</strong></span></p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">Total value is </span><span class="pi">:</span> <span class="m">300</span>
+<span class="na">Total value is </span><span class="pi">:</span> <span class="m">120</span>
+</code></pre></div></div>
+
+<h3 id="lambda-函数与表达式"><span style="color: rgb(0,191,255);"><strong>Lambda 函数与表达式</strong></span></h3>
+
+<p>C++11 引入了 Lambda 函数（也叫 Lambda 表达式），它可以在不定义完整函数的情况下，直接在代码中定义并执行功能。</p>
+
+<p>Lambda 表达式的基本形式如下：</p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">[</span><span class="n">capture</span><span class="p">](</span><span class="n">parameters</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">return_type</span> <span class="p">{</span> <span class="n">body</span> <span class="p">}</span>
+</code></pre></div></div>
+
+<ul>
+  <li><strong>capture</strong>：指定外部变量的访问方式（按值传递或按引用传递）。</li>
+  <li><strong>parameters</strong>：函数参数（可选）。</li>
+  <li><strong>return_type</strong>：返回类型（可选）。</li>
+  <li><strong>body</strong>：函数体。</li>
+</ul>
+
+<h4 id="示例-1简单-lambda-表达式"><span style="color: rgb(32,178,170);"><strong>示例 1：简单 Lambda 表达式</strong></span></h4>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">auto</span> <span class="n">lambda</span> <span class="o">=</span> <span class="p">[](</span><span class="kt">int</span> <span class="n">x</span><span class="p">,</span> <span class="kt">int</span> <span class="n">y</span><span class="p">)</span> <span class="p">{</span> <span class="k">return</span> <span class="n">x</span> <span class="o">+</span> <span class="n">y</span><span class="p">;</span> <span class="p">};</span>
+<span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">lambda</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span> <span class="c1">// 输出 15</span>
+</code></pre></div></div>
+
+<h4 id="示例-2带默认值的-lambda-表达式"><span style="color: rgb(32,178,170);"><strong>示例 2：带默认值的 Lambda 表达式</strong></span></h4>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">int</span> <span class="n">x</span> <span class="o">=</span> <span class="mi">10</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="mi">20</span><span class="p">;</span>
+<span class="k">auto</span> <span class="n">lambda</span> <span class="o">=</span> <span class="p">[</span><span class="n">x</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">y</span><span class="p">]()</span> <span class="p">{</span> <span class="n">y</span> <span class="o">=</span> <span class="n">x</span> <span class="o">+</span> <span class="n">y</span><span class="p">;</span> <span class="p">};</span>
+<span class="n">lambda</span><span class="p">();</span>
+<span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">y</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span> <span class="c1">// 输出 30</span>
+</code></pre></div></div>
+
+<p>在 Lambda 表达式中，<code class="language-plaintext highlighter-rouge">[]</code> 部分用来捕获外部变量。如果没有捕获任何外部变量，可以写成 <code class="language-plaintext highlighter-rouge">[]</code>，如果需要捕获外部变量，则可以指定捕获方式（按值传递 <code class="language-plaintext highlighter-rouge">=</code>，按引用传递 <code class="language-plaintext highlighter-rouge">&amp;</code>）。</p>
+
+<h4 id="示例-3使用-this-指针的-lambda-表达式"><span style="color: rgb(32,178,170);"><strong>示例 3：使用 <code class="language-plaintext highlighter-rouge">this</code> 指针的 Lambda 表达式</strong></span></h4>
+
+<p>如果 Lambda 表达式要访问类中的成员函数或变量，可以显式传入 <code class="language-plaintext highlighter-rouge">this</code> 指针：</p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">class</span> <span class="nc">Example</span> <span class="p">{</span>
+<span class="nl">public:</span>
+    <span class="kt">void</span> <span class="n">show</span><span class="p">()</span> <span class="p">{</span>
+        <span class="k">auto</span> <span class="n">lambda</span> <span class="o">=</span> <span class="p">[</span><span class="k">this</span><span class="p">]()</span> <span class="p">{</span> <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="k">this</span><span class="o">-&gt;</span><span class="n">x</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span> <span class="p">};</span>
+        <span class="n">lambda</span><span class="p">();</span>
+    <span class="p">}</span>
+
+<span class="k">private</span><span class="o">:</span>
+    <span class="kt">int</span> <span class="n">x</span> <span class="o">=</span> <span class="mi">100</span><span class="p">;</span>
+<span class="p">};</span>
+</code></pre></div></div>]]></content><author><name>ZJM</name></author><category term="code/algorithm/basic-knowledge" /><category term="Code" /><summary type="html"><![CDATA[函数]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/code-cover-8.png" /><media:content medium="image" url="http://localhost:4000/code-cover-8.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">判断结构</title><link href="http://localhost:4000/code/algorithm/basic-knowledge/2025/01/05/Judgment-Structure/" rel="alternate" type="text/html" title="判断结构" /><published>2025-01-05T00:00:00-08:00</published><updated>2025-01-05T00:00:00-08:00</updated><id>http://localhost:4000/code/algorithm/basic-knowledge/2025/01/05/Judgment%20Structure</id><content type="html" xml:base="http://localhost:4000/code/algorithm/basic-knowledge/2025/01/05/Judgment-Structure/"><![CDATA[<h1 id="判断结构"><span style="color: rgb(255,127,80);"><strong>判断结构</strong></span></h1>
 
 <p>在 C++ 中，判断结构用于评估一个或多个条件，并根据条件的结果来决定执行哪些语句。常见的判断结构有多种形式，每种形式适用于不同的情况。以下是 C++ 中常见的判断结构以及示例：</p>
 
@@ -1368,1075 +2072,4 @@
 <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">result</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
 </code></pre></div></div>
 
-<p>在这个例子中，三目运算符判断 <code class="language-plaintext highlighter-rouge">age</code> 是否大于或等于 18。如果条件成立，返回 <code class="language-plaintext highlighter-rouge">"你已经成年了。"</code>，否则返回 <code class="language-plaintext highlighter-rouge">"你还未成年。" </code>。</p>]]></content><author><name>ZJM</name></author><category term="code/algorithm/basic-knowledge" /><category term="Code" /><summary type="html"><![CDATA[判断结构]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/code-cover-8.png" /><media:content medium="image" url="http://localhost:4000/code-cover-8.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">判断结构</title><link href="http://localhost:4000/code/algorithm/basic-knowledge/2025/01/05/Judgment-Structure/" rel="alternate" type="text/html" title="判断结构" /><published>2025-01-05T00:00:00-08:00</published><updated>2025-01-05T00:00:00-08:00</updated><id>http://localhost:4000/code/algorithm/basic-knowledge/2025/01/05/Judgment%20Structure</id><content type="html" xml:base="http://localhost:4000/code/algorithm/basic-knowledge/2025/01/05/Judgment-Structure/"><![CDATA[<h1 id="判断结构"><span style="color: rgb(255,127,80);"><strong>判断结构</strong></span></h1>
-
-<p>在 C++ 中，判断结构用于评估一个或多个条件，并根据条件的结果来决定执行哪些语句。常见的判断结构有多种形式，每种形式适用于不同的情况。以下是 C++ 中常见的判断结构以及示例：</p>
-
-<h3 id="1-if-语句"><span style="color: rgb(0,191,255);"><strong>1. <code class="language-plaintext highlighter-rouge">if</code> 语句</strong></span></h3>
-
-<p><code class="language-plaintext highlighter-rouge">if</code> 语句用于判断一个条件是否为真。如果条件为真，执行相应的代码块。</p>
-
-<h4 id="语法"><span style="color: rgb(238,130,238);"><strong>语法：</strong></span></h4>
-
-<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">if</span> <span class="p">(</span><span class="n">condition</span><span class="p">)</span>
-<span class="p">{</span>
-    <span class="c1">// 如果 condition 为真，执行此语句块</span>
-<span class="p">}</span>
-</code></pre></div></div>
-
-<h4 id="示例"><span style="color: rgb(238,130,238);"><strong>示例：</strong></span></h4>
-
-<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">int</span> <span class="n">age</span> <span class="o">=</span> <span class="mi">20</span><span class="p">;</span>
-<span class="k">if</span> <span class="p">(</span><span class="n">age</span> <span class="o">&gt;=</span> <span class="mi">18</span><span class="p">)</span>
-<span class="p">{</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"你已经成年了。"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre></div></div>
-
-<p>在这个例子中，<code class="language-plaintext highlighter-rouge">if</code> 语句判断变量 <code class="language-plaintext highlighter-rouge">age</code> 是否大于或等于 18。如果条件成立（<code class="language-plaintext highlighter-rouge">age</code> &gt;= 18），则输出 <code class="language-plaintext highlighter-rouge">"你已经成年了。"</code>。</p>
-
-<h3 id="2-ifelse-语句"><span style="color: rgb(0,191,255);"><strong>2. <code class="language-plaintext highlighter-rouge">if...else</code> 语句</strong></span></h3>
-
-<p><code class="language-plaintext highlighter-rouge">if...else</code> 语句在 <code class="language-plaintext highlighter-rouge">if</code> 条件为假时，执行 <code class="language-plaintext highlighter-rouge">else</code> 后面的代码块。</p>
-
-<h4 id="语法-1"><span style="color: rgb(238,130,238);"><strong>语法：</strong></span></h4>
-
-<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">if</span> <span class="p">(</span><span class="n">condition</span><span class="p">)</span> 
-<span class="p">{</span>
-    <span class="c1">// 如果 condition 为真，执行此语句块</span>
-<span class="p">}</span> 
-<span class="k">else</span>
-<span class="p">{</span>
-    <span class="c1">// 如果 condition 为假，执行此语句块</span>
-<span class="p">}</span>
-</code></pre></div></div>
-
-<h4 id="示例-1"><span style="color: rgb(238,130,238);"><strong>示例：</strong></span></h4>
-
-<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">int</span> <span class="n">age</span> <span class="o">=</span> <span class="mi">16</span><span class="p">;</span>
-<span class="k">if</span> <span class="p">(</span><span class="n">age</span> <span class="o">&gt;=</span> <span class="mi">18</span><span class="p">)</span> 
-<span class="p">{</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"你已经成年了。"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-<span class="p">}</span> 
-<span class="k">else</span> 
-<span class="p">{</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"你还未成年。"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre></div></div>
-
-<p>在这个例子中，如果 <code class="language-plaintext highlighter-rouge">age</code> 大于或等于 18，则输出 <code class="language-plaintext highlighter-rouge">"你已经成年了。"</code>；否则，输出 <code class="language-plaintext highlighter-rouge">"你还未成年。" </code>。</p>
-
-<h3 id="3-嵌套-if-语句"><span style="color: rgb(0,191,255);"><strong>3. 嵌套 <code class="language-plaintext highlighter-rouge">if</code> 语句</strong></span></h3>
-
-<p>可以在 <code class="language-plaintext highlighter-rouge">if</code> 或 <code class="language-plaintext highlighter-rouge">else</code> 语句内嵌套其他的 <code class="language-plaintext highlighter-rouge">if</code> 或 <code class="language-plaintext highlighter-rouge">else</code> 语句，以处理更复杂的条件判断。</p>
-
-<h4 id="示例-2"><span style="color: rgb(238,130,238);"><strong>示例：</strong></span></h4>
-
-<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">int</span> <span class="n">age</span> <span class="o">=</span> <span class="mi">25</span><span class="p">;</span>
-<span class="k">if</span> <span class="p">(</span><span class="n">age</span> <span class="o">&gt;=</span> <span class="mi">18</span><span class="p">)</span>
-<span class="p">{</span>
-    <span class="k">if</span> <span class="p">(</span><span class="n">age</span> <span class="o">&gt;=</span> <span class="mi">21</span><span class="p">)</span>
-    <span class="p">{</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"你已经成年且可以合法饮酒。"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="p">}</span>
-    <span class="k">else</span>
-    <span class="p">{</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"你已经成年，但不能合法饮酒。"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="p">}</span>
-<span class="p">}</span>
-<span class="k">else</span>
-<span class="p">{</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"你还未成年。"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre></div></div>
-
-<p>这里，首先判断是否成年，然后在成年基础上判断是否可以合法饮酒。</p>
-
-<h3 id="4-switch-语句"><span style="color: rgb(0,191,255);"><strong>4. <code class="language-plaintext highlighter-rouge">switch</code> 语句</strong></span></h3>
-
-<p><code class="language-plaintext highlighter-rouge">switch</code> 语句用于测试一个变量是否等于多个值中的某一个。它适用于多个条件的判断。</p>
-
-<h4 id="语法-2"><span style="color: rgb(238,130,238);"><strong>语法：</strong></span></h4>
-
-<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">switch</span> <span class="p">(</span><span class="n">variable</span><span class="p">)</span>
-<span class="p">{</span>
-    <span class="k">case</span> <span class="n">value1</span><span class="p">:</span>
-        <span class="c1">// 如果 variable == value1，执行此语句块</span>
-        <span class="k">break</span><span class="p">;</span>
-    <span class="k">case</span> <span class="n">value2</span><span class="p">:</span>
-        <span class="c1">// 如果 variable == value2，执行此语句块</span>
-        <span class="k">break</span><span class="p">;</span>
-    <span class="nl">default:</span>
-        <span class="c1">// 如果 variable 不等于任何 case，执行此语句块</span>
-        <span class="k">break</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre></div></div>
-
-<h4 id="示例-3"><span style="color: rgb(238,130,238);"><strong>示例：</strong></span></h4>
-
-<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">int</span> <span class="n">day</span> <span class="o">=</span> <span class="mi">3</span><span class="p">;</span>
-<span class="k">switch</span> <span class="p">(</span><span class="n">day</span><span class="p">)</span>
-<span class="p">{</span>
-    <span class="k">case</span> <span class="mi">1</span><span class="p">:</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"今天是星期一。"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-        <span class="k">break</span><span class="p">;</span>
-    <span class="k">case</span> <span class="mi">2</span><span class="p">:</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"今天是星期二。"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-        <span class="k">break</span><span class="p">;</span>
-    <span class="k">case</span> <span class="mi">3</span><span class="p">:</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"今天是星期三。"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-        <span class="k">break</span><span class="p">;</span>
-    <span class="nl">default:</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"输入无效。"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre></div></div>
-<p>在这个例子中，<code class="language-plaintext highlighter-rouge">switch</code> 语句根据变量 <code class="language-plaintext highlighter-rouge">day</code> 的值选择匹配的 <code class="language-plaintext highlighter-rouge">case</code>，并执行相应的代码块。</p>
-
-<h3 id="5-嵌套-switch-语句"><span style="color: rgb(0,191,255);"><strong>5. 嵌套 <code class="language-plaintext highlighter-rouge">switch</code> 语句</strong></span></h3>
-
-<p><code class="language-plaintext highlighter-rouge">switch</code> 语句也可以嵌套，即在一个 <code class="language-plaintext highlighter-rouge">case</code> 或 <code class="language-plaintext highlighter-rouge">default</code> 分支内使用另一个 <code class="language-plaintext highlighter-rouge">switch</code> 语句。</p>
-
-<h4 id="示例-4"><span style="color: rgb(238,130,238);"><strong>示例：</strong></span></h4>
-
-<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">int</span> <span class="n">choice</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
-<span class="kt">int</span> <span class="n">subChoice</span> <span class="o">=</span> <span class="mi">2</span><span class="p">;</span>
-<span class="k">switch</span> <span class="p">(</span><span class="n">choice</span><span class="p">)</span>
-<span class="p">{</span>
-    <span class="k">case</span> <span class="mi">1</span><span class="p">:</span>
-        <span class="k">switch</span> <span class="p">(</span><span class="n">subChoice</span><span class="p">)</span>
-        <span class="p">{</span>
-            <span class="k">case</span> <span class="mi">1</span><span class="p">:</span>
-                <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"选择了选项1的子选项1。"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-                <span class="k">break</span><span class="p">;</span>
-            <span class="k">case</span> <span class="mi">2</span><span class="p">:</span>
-                <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"选择了选项1的子选项2。"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-                <span class="k">break</span><span class="p">;</span>
-        <span class="p">}</span>
-        <span class="k">break</span><span class="p">;</span>
-    <span class="k">case</span> <span class="mi">2</span><span class="p">:</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"选择了选项2。"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-        <span class="k">break</span><span class="p">;</span>
-    <span class="k">default</span><span class="o">:</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"无效选择。"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre></div></div>
-
-<p>这个例子展示了在 <code class="language-plaintext highlighter-rouge">switch</code> 语句中的 <code class="language-plaintext highlighter-rouge">case</code> 选项内嵌套另一个 <code class="language-plaintext highlighter-rouge">switch</code> 语句。</p>
-
-<h3 id="6-条件运算符--"><span style="color: rgb(0,191,255);"><strong>6. 条件运算符 <code class="language-plaintext highlighter-rouge">? :</code></strong></span></h3>
-
-<p>条件运算符 <code class="language-plaintext highlighter-rouge">? :</code>，又称三目运算符，是一种简洁的方式来替代 <code class="language-plaintext highlighter-rouge">if...else</code> 语句。它的形式如下：</p>
-
-<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">condition</span> <span class="o">?</span> <span class="n">expression1</span> <span class="o">:</span> <span class="n">expression2</span><span class="p">;</span>
-</code></pre></div></div>
-
-<p>如果 <code class="language-plaintext highlighter-rouge">condition</code> 为真，则计算并返回 <code class="language-plaintext highlighter-rouge">expression1</code>，否则计算并返回 <code class="language-plaintext highlighter-rouge">expression2</code>。</p>
-
-<h4 id="示例-5"><span style="color: rgb(238,130,238);"><strong>示例：</strong></span></h4>
-
-<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">int</span> <span class="n">age</span> <span class="o">=</span> <span class="mi">18</span><span class="p">;</span>
-<span class="n">string</span> <span class="n">result</span> <span class="o">=</span> <span class="p">(</span><span class="n">age</span> <span class="o">&gt;=</span> <span class="mi">18</span><span class="p">)</span> <span class="o">?</span> <span class="s">"你已经成年了。"</span> <span class="o">:</span> <span class="s">"你还未成年。"</span><span class="p">;</span>
-<span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">result</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-</code></pre></div></div>
-
-<p>在这个例子中，三目运算符判断 <code class="language-plaintext highlighter-rouge">age</code> 是否大于或等于 18。如果条件成立，返回 <code class="language-plaintext highlighter-rouge">"你已经成年了。"</code>，否则返回 <code class="language-plaintext highlighter-rouge">"你还未成年。" </code>。</p>]]></content><author><name>ZJM</name></author><category term="code/algorithm/basic-knowledge" /><category term="Code" /><summary type="html"><![CDATA[判断结构]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/code-cover-8.png" /><media:content medium="image" url="http://localhost:4000/code-cover-8.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">循环</title><link href="http://localhost:4000/code/algorithm/basic-knowledge/2025/01/05/Loop/" rel="alternate" type="text/html" title="循环" /><published>2025-01-05T00:00:00-08:00</published><updated>2025-01-05T00:00:00-08:00</updated><id>http://localhost:4000/code/algorithm/basic-knowledge/2025/01/05/Loop</id><content type="html" xml:base="http://localhost:4000/code/algorithm/basic-knowledge/2025/01/05/Loop/"><![CDATA[<h1 id="循环详解"><span style="color: rgb(255,127,80);"><strong>循环详解</strong></span></h1>
-
-<p>在编程中，有时我们需要多次执行相同的代码块。通常，代码按照从上到下的顺序执行，但通过循环结构，我们可以更高效地处理重复操作。</p>
-
-<p>C++ 提供了多种循环类型及控制语句，以下是详细的介绍与示例。</p>
-
-<h3 id="循环结构"><span style="color: rgb(0,191,255);"><strong>循环结构</strong></span></h3>
-
-<p>循环语句允许多次执行代码块。以下是 C++ 中的主要循环类型：</p>
-
-<h4 id="1-while-循环"><span style="color: rgb(32,178,170);"><strong>1. while 循环</strong></span></h4>
-
-<p><code class="language-plaintext highlighter-rouge">while</code> 循环在每次执行循环主体前检查条件是否为真。</p>
-
-<p><span style="color: rgb(238,130,238);"><strong>语法：</strong></span></p>
-
-<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">while</span> <span class="p">(</span><span class="n">condition</span><span class="p">)</span>
-<span class="p">{</span>
-    <span class="c1">// 循环体</span>
-<span class="p">}</span>
-</code></pre></div></div>
-
-<p><span style="color: rgb(238,130,238);"><strong>示例：</strong></span></p>
-
-<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
-</span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
-
-<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
-    <span class="k">while</span> <span class="p">(</span><span class="n">i</span> <span class="o">&lt;=</span> <span class="mi">5</span><span class="p">)</span> <span class="p">{</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Iteration: "</span> <span class="o">&lt;&lt;</span> <span class="n">i</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-        <span class="n">i</span><span class="o">++</span><span class="p">;</span>
-    <span class="p">}</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre></div></div>
-
-<p><span style="color: rgb(238,130,238);"><strong>输出：</strong></span></p>
-
-<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">Iteration</span><span class="pi">:</span> <span class="m">1</span>
-<span class="na">Iteration</span><span class="pi">:</span> <span class="m">2</span>
-<span class="na">Iteration</span><span class="pi">:</span> <span class="m">3</span>
-<span class="na">Iteration</span><span class="pi">:</span> <span class="m">4</span>
-<span class="na">Iteration</span><span class="pi">:</span> <span class="m">5</span>
-</code></pre></div></div>
-
-<h4 id="2-for-循环"><span style="color: rgb(32,178,170);"><strong>2. for 循环</strong></span></h4>
-
-<p><code class="language-plaintext highlighter-rouge">for</code> 循环适用于已知循环次数的情况，可以简化循环变量的管理。</p>
-
-<p><span style="color: rgb(238,130,238);"><strong>语法：</strong></span></p>
-
-<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">for</span> <span class="p">(</span><span class="n">initialization</span><span class="p">;</span> <span class="n">condition</span><span class="p">;</span> <span class="n">increment</span><span class="p">)</span>
-<span class="p">{</span>
-    <span class="c1">// 循环体</span>
-<span class="p">}</span>
-</code></pre></div></div>
-<p><span style="color: rgb(238,130,238);"><strong>示例：</strong></span></p>
-
-<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
-</span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
-<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
-<span class="p">{</span>
-    <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="mi">5</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span>
-    <span class="p">{</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Iteration: "</span> <span class="o">&lt;&lt;</span> <span class="n">i</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="p">}</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre></div></div>
-
-<p><span style="color: rgb(238,130,238);"><strong>输出：</strong></span></p>
-
-<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">Iteration</span><span class="pi">:</span> <span class="m">1</span>
-<span class="na">Iteration</span><span class="pi">:</span> <span class="m">2</span>
-<span class="na">Iteration</span><span class="pi">:</span> <span class="m">3</span>
-<span class="na">Iteration</span><span class="pi">:</span> <span class="m">4</span>
-<span class="na">Iteration</span><span class="pi">:</span> <span class="m">5</span>
-</code></pre></div></div>
-
-<h4 id="3-dowhile-循环"><span style="color: rgb(32,178,170);"><strong>3. do…while 循环</strong></span></h4>
-
-<p>与 <code class="language-plaintext highlighter-rouge">while</code> 类似，但循环条件在循环体之后检查，因此循环体至少执行一次。</p>
-
-<p><span style="color: rgb(238,130,238);"><strong>语法：</strong></span></p>
-
-<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">do</span> <span class="p">{</span>
-    <span class="c1">// 循环体</span>
-<span class="p">}</span> <span class="k">while</span> <span class="p">(</span><span class="n">condition</span><span class="p">);</span>
-</code></pre></div></div>
-
-<p><span style="color: rgb(238,130,238);"><strong>示例：</strong></span></p>
-
-<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
-</span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
-<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
-<span class="p">{</span>
-    <span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
-    <span class="k">do</span> <span class="p">{</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Iteration: "</span> <span class="o">&lt;&lt;</span> <span class="n">i</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-        <span class="n">i</span><span class="o">++</span><span class="p">;</span>
-    <span class="p">}</span> <span class="k">while</span> <span class="p">(</span><span class="n">i</span> <span class="o">&lt;=</span> <span class="mi">5</span><span class="p">);</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre></div></div>
-
-<p><span style="color: rgb(238,130,238);"><strong>输出：</strong></span></p>
-
-<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">Iteration</span><span class="pi">:</span> <span class="m">1</span>
-<span class="na">Iteration</span><span class="pi">:</span> <span class="m">2</span>
-<span class="na">Iteration</span><span class="pi">:</span> <span class="m">3</span>
-<span class="na">Iteration</span><span class="pi">:</span> <span class="m">4</span>
-<span class="na">Iteration</span><span class="pi">:</span> <span class="m">5</span>
-</code></pre></div></div>
-
-<h4 id="4-嵌套循环"><span style="color: rgb(32,178,170);"><strong>4. 嵌套循环</strong></span></h4>
-
-<p>可以在一个循环内部嵌套另一个循环。</p>
-
-<p><span style="color: rgb(238,130,238);"><strong>示例：</strong></span></p>
-
-<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
-</span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
-<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> 
-<span class="p">{</span>
-    <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="mi">3</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span>
-    <span class="p">{</span>
-        <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">j</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="n">j</span> <span class="o">&lt;=</span> <span class="mi">2</span><span class="p">;</span> <span class="n">j</span><span class="o">++</span><span class="p">)</span>
-        <span class="p">{</span>
-            <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Outer loop: "</span> <span class="o">&lt;&lt;</span> <span class="n">i</span> <span class="o">&lt;&lt;</span> <span class="s">", Inner loop: "</span> <span class="o">&lt;&lt;</span> <span class="n">j</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-        <span class="p">}</span>
-    <span class="p">}</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre></div></div>
-
-<p><span style="color: rgb(238,130,238);"><strong>输出：</strong></span></p>
-
-<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">Outer loop</span><span class="pi">:</span> <span class="s">1, Inner loop</span><span class="err">:</span> <span class="m">1</span>
-<span class="na">Outer loop</span><span class="pi">:</span> <span class="s">1, Inner loop</span><span class="err">:</span> <span class="m">2</span>
-<span class="na">Outer loop</span><span class="pi">:</span> <span class="s">2, Inner loop</span><span class="err">:</span> <span class="m">1</span>
-<span class="na">Outer loop</span><span class="pi">:</span> <span class="s">2, Inner loop</span><span class="err">:</span> <span class="m">2</span>
-<span class="na">Outer loop</span><span class="pi">:</span> <span class="s">3, Inner loop</span><span class="err">:</span> <span class="m">1</span>
-<span class="na">Outer loop</span><span class="pi">:</span> <span class="s">3, Inner loop</span><span class="err">:</span> <span class="m">2</span>
-</code></pre></div></div>
-
-<h3 id="循环控制语句"><span style="color: rgb(0,191,255);"><strong>循环控制语句</strong></span></h3>
-
-<p>C++ 提供以下控制语句，用于修改循环的正常执行顺序：</p>
-
-<h4 id="-1-break-语句"><span style="color: rgb(32,178,170);">** 1. break 语句**</span></h4>
-
-<p>终止整个循环。</p>
-
-<p><span style="color: rgb(238,130,238);"><strong>示例：</strong></span></p>
-
-<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
-</span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
-<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
-<span class="p">{</span>
-    <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="mi">5</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span>
-    <span class="p">{</span>
-        <span class="k">if</span> <span class="p">(</span><span class="n">i</span> <span class="o">==</span> <span class="mi">3</span><span class="p">)</span>
-        <span class="p">{</span>
-            <span class="k">break</span><span class="p">;</span>
-        <span class="p">}</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Iteration: "</span> <span class="o">&lt;&lt;</span> <span class="n">i</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="p">}</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre></div></div>
-
-<p><span style="color: rgb(238,130,238);"><strong>输出：</strong></span></p>
-
-<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">Iteration</span><span class="pi">:</span> <span class="m">1</span>
-<span class="na">Iteration</span><span class="pi">:</span> <span class="m">2</span>
-</code></pre></div></div>
-
-<h4 id="2-continue-语句"><span style="color: rgb(32,178,170);"><strong>2. continue 语句</strong></span></h4>
-
-<p>跳过本次循环的剩余部分，直接开始下一次循环。</p>
-
-<p><span style="color: rgb(238,130,238);"><strong>示例：</strong></span></p>
-
-<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
-</span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
-<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
-<span class="p">{</span>
-    <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="mi">5</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span>
-    <span class="p">{</span>
-        <span class="k">if</span> <span class="p">(</span><span class="n">i</span> <span class="o">==</span> <span class="mi">3</span><span class="p">)</span>
-        <span class="p">{</span>
-            <span class="k">continue</span><span class="p">;</span>
-        <span class="p">}</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Iteration: "</span> <span class="o">&lt;&lt;</span> <span class="n">i</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="p">}</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre></div></div>
-
-<p><span style="color: rgb(238,130,238);"><strong>输出：</strong></span></p>
-
-<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">Iteration</span><span class="pi">:</span> <span class="m">1</span>
-<span class="na">Iteration</span><span class="pi">:</span> <span class="m">2</span>
-<span class="na">Iteration</span><span class="pi">:</span> <span class="m">4</span>
-<span class="na">Iteration</span><span class="pi">:</span> <span class="m">5</span>
-</code></pre></div></div>
-
-<h4 id="3-goto-语句"><span style="color: rgb(32,178,170);"><strong>3. goto 语句</strong></span></h4>
-
-<p>将控制转移到指定标签处，不建议使用。</p>
-
-<p><span style="color: rgb(238,130,238);"><strong>示例：</strong></span></p>
-
-<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
-</span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
-<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
-<span class="p">{</span>
-    <span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
-<span class="nl">label:</span>
-    <span class="k">if</span> <span class="p">(</span><span class="n">i</span> <span class="o">&lt;=</span> <span class="mi">5</span><span class="p">)</span>
-    <span class="p">{</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Iteration: "</span> <span class="o">&lt;&lt;</span> <span class="n">i</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-        <span class="n">i</span><span class="o">++</span><span class="p">;</span>
-        <span class="k">goto</span> <span class="n">label</span><span class="p">;</span>
-    <span class="p">}</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre></div></div>
-
-<p><span style="color: rgb(238,130,238);"><strong>输出：</strong></span></p>
-
-<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">Iteration</span><span class="pi">:</span> <span class="m">1</span>
-<span class="na">Iteration</span><span class="pi">:</span> <span class="m">2</span>
-<span class="na">Iteration</span><span class="pi">:</span> <span class="m">3</span>
-<span class="na">Iteration</span><span class="pi">:</span> <span class="m">4</span>
-<span class="na">Iteration</span><span class="pi">:</span> <span class="m">5</span>
-</code></pre></div></div>
-
-<h4 id="4-switch-语句"><span style="color: rgb(32,178,170);"><strong>4. switch 语句</strong></span></h4>
-
-<p>根据变量的值执行不同的分支语句。程序流将继续执行紧接着 <code class="language-plaintext highlighter-rouge">switch</code> 的下一条语句。</p>
-
-<p><span style="color: rgb(238,130,238);"><strong>语法：</strong></span></p>
-
-<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">switch</span> <span class="p">(</span><span class="n">variable</span><span class="p">)</span>
-<span class="p">{</span>
-    <span class="k">case</span> <span class="n">value1</span><span class="p">:</span>
-        <span class="c1">// 语句</span>
-        <span class="k">break</span><span class="p">;</span>
-    <span class="k">case</span> <span class="n">value2</span><span class="p">:</span>
-        <span class="c1">// 语句</span>
-        <span class="k">break</span><span class="p">;</span>
-    <span class="nl">default:</span>
-        <span class="c1">// 默认语句</span>
-<span class="p">}</span>
-</code></pre></div></div>
-
-<p><span style="color: rgb(238,130,238);"><strong>示例：</strong></span></p>
-
-<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
-</span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
-<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
-<span class="p">{</span>
-    <span class="kt">int</span> <span class="n">num</span> <span class="o">=</span> <span class="mi">2</span><span class="p">;</span>
-    <span class="k">switch</span> <span class="p">(</span><span class="n">num</span><span class="p">)</span>
-    <span class="p">{</span>
-        <span class="k">case</span> <span class="mi">1</span><span class="p">:</span>
-            <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Number is 1"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-            <span class="k">break</span><span class="p">;</span>
-        <span class="k">case</span> <span class="mi">2</span><span class="p">:</span>
-            <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Number is 2"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-            <span class="k">break</span><span class="p">;</span>
-        <span class="k">case</span> <span class="mi">3</span><span class="p">:</span>
-            <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Number is 3"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-            <span class="k">break</span><span class="p">;</span>
-        <span class="nl">default:</span>
-            <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Number is unknown"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="p">}</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre></div></div>
-
-<p><span style="color: rgb(238,130,238);"><strong>输出：</strong></span></p>
-
-<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="s">Number is </span><span class="m">2</span>
-</code></pre></div></div>
-
-<h3 id="无限循环"><span style="color: rgb(0,191,255);"><strong>无限循环</strong></span></h3>
-
-<p>如果循环条件始终为真，则循环不会终止。</p>
-
-<p><span style="color: rgb(238,130,238);"><strong>示例：</strong></span></p>
-
-<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
-</span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
-<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> 
-<span class="p">{</span>
-    <span class="k">for</span> <span class="p">(;;)</span>
-    <span class="p">{</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"This loop runs forever."</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="p">}</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre></div></div>
-
-<p><strong>提示：</strong> 按 <code class="language-plaintext highlighter-rouge">Ctrl + C</code> 终止无限循环。</p>]]></content><author><name>ZJM</name></author><category term="code/algorithm/basic-knowledge" /><category term="Code" /><summary type="html"><![CDATA[循环详解]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/code-cover-8.png" /><media:content medium="image" url="http://localhost:4000/code-cover-8.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">运算符</title><link href="http://localhost:4000/code/algorithm/basic-knowledge/2025/01/05/Operator/" rel="alternate" type="text/html" title="运算符" /><published>2025-01-05T00:00:00-08:00</published><updated>2025-01-05T00:00:00-08:00</updated><id>http://localhost:4000/code/algorithm/basic-knowledge/2025/01/05/Operator</id><content type="html" xml:base="http://localhost:4000/code/algorithm/basic-knowledge/2025/01/05/Operator/"><![CDATA[<h1 id="运算符"><span style="color: rgb(255,127,80);"><strong>运算符</strong></span></h1>
-
-<p>运算符是告诉编译器执行特定数学或逻辑操作的符号。C++ 提供了以下类型的运算符：</p>
-
-<ul>
-  <li>算术运算符</li>
-  <li>关系运算符</li>
-  <li>逻辑运算符</li>
-  <li>位运算符</li>
-  <li>赋值运算符</li>
-  <li>杂项运算符</li>
-</ul>
-
-<h3 id="算术运算符"><span style="color: rgb(32,178,170);"><strong>算术运算符</strong></span></h3>
-
-<p>以下为 C++ 支持的算术运算符（假设 <code class="language-plaintext highlighter-rouge">A = 10</code>，<code class="language-plaintext highlighter-rouge">B = 20</code>）：</p>
-
-<table>
-  <thead>
-    <tr>
-      <th>运算符</th>
-      <th>描述</th>
-      <th>示例</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><code class="language-plaintext highlighter-rouge">+</code></td>
-      <td>把两个操作数相加</td>
-      <td><code class="language-plaintext highlighter-rouge">A + B = 30</code></td>
-    </tr>
-    <tr>
-      <td><code class="language-plaintext highlighter-rouge">-</code></td>
-      <td>从第一个操作数中减去第二个操作数</td>
-      <td><code class="language-plaintext highlighter-rouge">A - B = -10</code></td>
-    </tr>
-    <tr>
-      <td><code class="language-plaintext highlighter-rouge">*</code></td>
-      <td>把两个操作数相乘</td>
-      <td><code class="language-plaintext highlighter-rouge">A * B = 200</code></td>
-    </tr>
-    <tr>
-      <td><code class="language-plaintext highlighter-rouge">/</code></td>
-      <td>分子除以分母</td>
-      <td><code class="language-plaintext highlighter-rouge">B / A = 2</code></td>
-    </tr>
-    <tr>
-      <td><code class="language-plaintext highlighter-rouge">%</code></td>
-      <td>取模运算符，整除后的余数</td>
-      <td><code class="language-plaintext highlighter-rouge">B % A = 0</code></td>
-    </tr>
-    <tr>
-      <td><code class="language-plaintext highlighter-rouge">++</code></td>
-      <td>自增运算符，整数值增加 1</td>
-      <td><code class="language-plaintext highlighter-rouge">A++ = 11</code></td>
-    </tr>
-    <tr>
-      <td><code class="language-plaintext highlighter-rouge">--</code></td>
-      <td>自减运算符，整数值减少 1</td>
-      <td><code class="language-plaintext highlighter-rouge">A-- = 9</code></td>
-    </tr>
-  </tbody>
-</table>
-
-<h4 id="示例代码"><span style="color: rgb(238,130,238);"><strong>示例代码：</strong></span></h4>
-<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
-</span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
-<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
-<span class="p">{</span>
-    <span class="kt">int</span> <span class="n">a</span> <span class="o">=</span> <span class="mi">21</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="mi">10</span><span class="p">,</span> <span class="n">c</span><span class="p">;</span>
-    <span class="n">c</span> <span class="o">=</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span><span class="p">;</span> 
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"c = "</span> <span class="o">&lt;&lt;</span> <span class="n">c</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="n">c</span> <span class="o">=</span> <span class="n">a</span> <span class="o">-</span> <span class="n">b</span><span class="p">;</span> 
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"c = "</span> <span class="o">&lt;&lt;</span> <span class="n">c</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="n">c</span> <span class="o">=</span> <span class="n">a</span> <span class="o">*</span> <span class="n">b</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"c = "</span> <span class="o">&lt;&lt;</span> <span class="n">c</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="n">c</span> <span class="o">=</span> <span class="n">a</span> <span class="o">/</span> <span class="n">b</span><span class="p">;</span> 
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"c = "</span> <span class="o">&lt;&lt;</span> <span class="n">c</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="n">c</span> <span class="o">=</span> <span class="n">a</span> <span class="o">%</span> <span class="n">b</span><span class="p">;</span> 
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"c = "</span> <span class="o">&lt;&lt;</span> <span class="n">c</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="kt">int</span> <span class="n">d</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
-    <span class="n">c</span> <span class="o">=</span> <span class="n">d</span><span class="o">++</span><span class="p">;</span> 
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"c = "</span> <span class="o">&lt;&lt;</span> <span class="n">c</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="n">d</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span> 
-    <span class="n">c</span> <span class="o">=</span> <span class="n">d</span><span class="o">--</span><span class="p">;</span> 
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"c = "</span> <span class="o">&lt;&lt;</span> <span class="n">c</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre></div></div>
-
-<h4 id="输出结果"><span style="color: rgb(238,130,238);"><strong>输出结果：</strong></span></h4>
-<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="s">c = </span><span class="m">31</span>
-<span class="s">c = </span><span class="m">11</span>
-<span class="s">c = </span><span class="m">210</span>
-<span class="s">c = </span><span class="m">2</span>
-<span class="s">c = </span><span class="m">1</span>
-<span class="s">c = </span><span class="m">10</span>
-<span class="s">c = </span><span class="m">10</span>
-</code></pre></div></div>
-
-<h3 id="关系运算符"><span style="color: rgb(32,178,170);"><strong>关系运算符</strong></span></h3>
-
-<p>以下为 C++ 支持的关系运算符（假设 <code class="language-plaintext highlighter-rouge">A = 10</code>，<code class="language-plaintext highlighter-rouge">B = 20</code>）：</p>
-
-<table>
-  <thead>
-    <tr>
-      <th>运算符</th>
-      <th>描述</th>
-      <th>示例</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><code class="language-plaintext highlighter-rouge">==</code></td>
-      <td>检查两个操作数是否相等，如果相等条件为真</td>
-      <td><code class="language-plaintext highlighter-rouge">(A == B)</code> 假</td>
-    </tr>
-    <tr>
-      <td><code class="language-plaintext highlighter-rouge">!=</code></td>
-      <td>检查两个操作数是否不相等，如果不相等条件为真</td>
-      <td><code class="language-plaintext highlighter-rouge">(A != B)</code> 真</td>
-    </tr>
-    <tr>
-      <td><code class="language-plaintext highlighter-rouge">&gt;</code></td>
-      <td>检查左操作数是否大于右操作数，如果是条件为真</td>
-      <td><code class="language-plaintext highlighter-rouge">(A &gt; B)</code> 假</td>
-    </tr>
-    <tr>
-      <td><code class="language-plaintext highlighter-rouge">&lt;</code></td>
-      <td>检查左操作数是否小于右操作数，如果是条件为真</td>
-      <td><code class="language-plaintext highlighter-rouge">(A &lt; B)</code> 真</td>
-    </tr>
-    <tr>
-      <td><code class="language-plaintext highlighter-rouge">&gt;=</code></td>
-      <td>检查左操作数是否大于或等于右操作数，如果是条件为真</td>
-      <td><code class="language-plaintext highlighter-rouge">(A &gt;= B)</code> 假</td>
-    </tr>
-    <tr>
-      <td><code class="language-plaintext highlighter-rouge">&lt;=</code></td>
-      <td>检查左操作数是否小于或等于右操作数，如果是条件为真</td>
-      <td><code class="language-plaintext highlighter-rouge">(A &lt;= B)</code> 真</td>
-    </tr>
-  </tbody>
-</table>
-
-<h4 id="示例代码-1"><span style="color: rgb(238,130,238);"><strong>示例代码：</strong></span></h4>
-<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
-</span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
-<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> 
-<span class="p">{</span>
-    <span class="kt">int</span> <span class="n">a</span> <span class="o">=</span> <span class="mi">20</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
-    <span class="k">if</span> <span class="p">(</span><span class="n">a</span> <span class="o">==</span> <span class="n">b</span><span class="p">)</span> 
-    	<span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"a == b"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="k">else</span> 
-    	<span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"a != b"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="k">if</span> <span class="p">(</span><span class="n">a</span> <span class="o">&lt;</span> <span class="n">b</span><span class="p">)</span> 
-    	<span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"a &lt; b"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="k">else</span> 
-    	<span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"a &gt;= b"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre></div></div>
-
-<h4 id="输出结果-1"><span style="color: rgb(238,130,238);"><strong>输出结果：</strong></span></h4>
-<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="s">a != b</span>
-<span class="s">a &gt;= b</span>
-</code></pre></div></div>
-
-<h3 id="逻辑运算符"><span style="color: rgb(32,178,170);"><strong>逻辑运算符</strong></span></h3>
-
-<p>以下为 C++ 支持的逻辑运算符（假设 <code class="language-plaintext highlighter-rouge">A = 1</code>，<code class="language-plaintext highlighter-rouge">B = 0</code>）：</p>
-
-<table>
-  <tbody>
-    <tr>
-      <td> </td>
-      <td>称为逻辑或运算符。如果两个操作数中有任意一个 true，则条件为 true。	(A</td>
-      <td> </td>
-      <td>B) 为 true。</td>
-    </tr>
-  </tbody>
-</table>
-
-<table>
-  <thead>
-    <tr>
-      <th>运算符</th>
-      <th>描述</th>
-      <th>示例</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><code class="language-plaintext highlighter-rouge">&amp;&amp;</code></td>
-      <td>称为逻辑与运算符。如果两个操作数都为 <code class="language-plaintext highlighter-rouge">true</code>，则条件为 <code class="language-plaintext highlighter-rouge">true</code>。</td>
-      <td><code class="language-plaintext highlighter-rouge">(A &amp;&amp; B)</code> 为 <code class="language-plaintext highlighter-rouge">false</code></td>
-    </tr>
-    <tr>
-      <td><code class="language-plaintext highlighter-rouge">||</code></td>
-      <td>称为逻辑或运算符。如果两个操作数中有任意一个 true，则条件为 true。</td>
-      <td><code class="language-plaintext highlighter-rouge">(A||B)</code> 为　<code class="language-plaintext highlighter-rouge">true</code></td>
-    </tr>
-    <tr>
-      <td><code class="language-plaintext highlighter-rouge">!</code></td>
-      <td>称为逻辑非运算符。用来逆转操作数的逻辑状态。如果条件为 <code class="language-plaintext highlighter-rouge">true</code>，则逻辑非运算符将使其为 <code class="language-plaintext highlighter-rouge">false</code>。</td>
-      <td><code class="language-plaintext highlighter-rouge">!(A &amp;&amp; B)</code> 为 <code class="language-plaintext highlighter-rouge">true</code></td>
-    </tr>
-  </tbody>
-</table>
-
-<h4 id="示例代码-2"><span style="color: rgb(238,130,238);"><strong>示例代码：</strong></span></h4>
-<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
-</span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
-<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
-<span class="p">{</span>
-    <span class="kt">int</span> <span class="n">a</span> <span class="o">=</span> <span class="mi">5</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="mi">20</span><span class="p">;</span>
-    <span class="k">if</span> <span class="p">(</span><span class="n">a</span> <span class="o">&amp;&amp;</span> <span class="n">b</span><span class="p">)</span> 
-      <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"条件为真"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="k">if</span> <span class="p">(</span><span class="n">a</span> <span class="o">||</span> <span class="n">b</span><span class="p">)</span> 
-      <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"条件为真"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="n">a</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-    <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="p">(</span><span class="n">a</span> <span class="o">&amp;&amp;</span> <span class="n">b</span><span class="p">))</span> 
-      <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"条件为真"</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre></div></div>
-
-<h4 id="输出结果-2"><span style="color: rgb(238,130,238);"><strong>输出结果：</strong></span></h4>
-<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="s">条件为真</span>
-<span class="s">条件为真</span>
-<span class="s">条件为真</span>
-</code></pre></div></div>
-
-<h3 id="位运算符"><span style="color: rgb(32,178,170);"><strong>位运算符</strong></span></h3>
-
-<p>位运算符作用于位，并逐位执行操作。以下为 C++ 支持的位运算符（假设 <code class="language-plaintext highlighter-rouge">A = 60</code>，<code class="language-plaintext highlighter-rouge">B = 13</code>）：</p>
-
-<table>
-  <thead>
-    <tr>
-      <th>运算符</th>
-      <th>描述</th>
-      <th>示例</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><code class="language-plaintext highlighter-rouge">&amp;</code></td>
-      <td>按位与操作，对应位都为 <code class="language-plaintext highlighter-rouge">1</code> 时结果为 <code class="language-plaintext highlighter-rouge">1</code>，否则为 <code class="language-plaintext highlighter-rouge">0</code></td>
-      <td><code class="language-plaintext highlighter-rouge">A &amp; B = 12</code></td>
-    </tr>
-    <tr>
-      <td><code class="language-plaintext highlighter-rouge">|</code></td>
-      <td>按位或操作，对应位只要有一个为 <code class="language-plaintext highlighter-rouge">1</code>，结果即为 <code class="language-plaintext highlighter-rouge">1</code></td>
-      <td><code class="language-plaintext highlighter-rouge">A | B = 61</code></td>
-    </tr>
-    <tr>
-      <td><code class="language-plaintext highlighter-rouge">^</code></td>
-      <td>按位异或操作，对应位相同为 <code class="language-plaintext highlighter-rouge">0</code>，不同为 <code class="language-plaintext highlighter-rouge">1</code></td>
-      <td><code class="language-plaintext highlighter-rouge">A ^ B = 49</code></td>
-    </tr>
-    <tr>
-      <td><code class="language-plaintext highlighter-rouge">~</code></td>
-      <td>按位取反操作，将每个位取反，即 <code class="language-plaintext highlighter-rouge">0</code> 变为 <code class="language-plaintext highlighter-rouge">1</code>，<code class="language-plaintext highlighter-rouge">1</code> 变为 <code class="language-plaintext highlighter-rouge">0</code></td>
-      <td><code class="language-plaintext highlighter-rouge">~A = -61</code></td>
-    </tr>
-    <tr>
-      <td><code class="language-plaintext highlighter-rouge">&lt;&lt;</code></td>
-      <td>左移操作符，将操作数的位左移指定的次数，右边用 <code class="language-plaintext highlighter-rouge">0</code> 填补</td>
-      <td><code class="language-plaintext highlighter-rouge">A &lt;&lt; 2 = 240</code></td>
-    </tr>
-    <tr>
-      <td><code class="language-plaintext highlighter-rouge">&gt;&gt;</code></td>
-      <td>右移操作符，将操作数的位右移指定的次数，左边根据数值符号填补 <code class="language-plaintext highlighter-rouge">0</code> 或 <code class="language-plaintext highlighter-rouge">1</code></td>
-      <td><code class="language-plaintext highlighter-rouge">A &gt;&gt; 2 = 15</code></td>
-    </tr>
-  </tbody>
-</table>
-
-<h4 id="示例代码-3"><span style="color: rgb(238,130,238);"><strong>示例代码：</strong></span></h4>
-<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
-</span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
-<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
-<span class="p">{</span>
-    <span class="kt">unsigned</span> <span class="kt">int</span> <span class="n">a</span> <span class="o">=</span> <span class="mi">60</span><span class="p">;</span>  <span class="c1">// 60 = 0011 1100  </span>
-    <span class="kt">unsigned</span> <span class="kt">int</span> <span class="n">b</span> <span class="o">=</span> <span class="mi">13</span><span class="p">;</span>  <span class="c1">// 13 = 0000 1101</span>
-    <span class="kt">int</span> <span class="n">c</span><span class="p">;</span>
-    <span class="n">c</span> <span class="o">=</span> <span class="n">a</span> <span class="o">&amp;</span> <span class="n">b</span><span class="p">;</span>  <span class="c1">// 按位与</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"a &amp; b = "</span> <span class="o">&lt;&lt;</span> <span class="n">c</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="n">c</span> <span class="o">=</span> <span class="n">a</span> <span class="o">|</span> <span class="n">b</span><span class="p">;</span>  <span class="c1">// 按位或</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"a | b = "</span> <span class="o">&lt;&lt;</span> <span class="n">c</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="n">c</span> <span class="o">=</span> <span class="n">a</span> <span class="o">^</span> <span class="n">b</span><span class="p">;</span>  <span class="c1">// 按位异或</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"a ^ b = "</span> <span class="o">&lt;&lt;</span> <span class="n">c</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="n">c</span> <span class="o">=</span> <span class="o">~</span><span class="n">a</span><span class="p">;</span>     <span class="c1">// 按位取反</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"~a = "</span> <span class="o">&lt;&lt;</span> <span class="n">c</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="n">c</span> <span class="o">=</span> <span class="n">a</span> <span class="o">&lt;&lt;</span> <span class="mi">2</span><span class="p">;</span> <span class="c1">// 左移</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"a &lt;&lt; 2 = "</span> <span class="o">&lt;&lt;</span> <span class="n">c</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="n">c</span> <span class="o">=</span> <span class="n">a</span> <span class="o">&gt;&gt;</span> <span class="mi">2</span><span class="p">;</span> <span class="c1">// 右移</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"a &gt;&gt; 2 = "</span> <span class="o">&lt;&lt;</span> <span class="n">c</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre></div></div>
-
-<h4 id="输出结果-3"><span style="color: rgb(238,130,238);"><strong>输出结果：</strong></span></h4>
-
-<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="s">a &amp; b = </span><span class="m">12</span>
-<span class="s">a | b = </span><span class="m">61</span>
-<span class="s">a ^ b = </span><span class="m">49</span>
-<span class="s">~a = -61</span>
-<span class="s">a &lt;&lt; 2 = </span><span class="m">240</span>
-<span class="s">a &gt;&gt; 2 = </span><span class="m">15</span>
-</code></pre></div></div>
-
-<h3 id="赋值运算符"><span style="color: rgb(32,178,170);"><strong>赋值运算符</strong></span></h3>
-
-<p>赋值运算符用于将值赋给变量。以下为 C++ 支持的赋值运算符：</p>
-
-<table>
-  <thead>
-    <tr>
-      <th>运算符</th>
-      <th>描述</th>
-      <th>示例</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><code class="language-plaintext highlighter-rouge">=</code></td>
-      <td>简单赋值，将右操作数赋值给左操作数</td>
-      <td><code class="language-plaintext highlighter-rouge">C = A + B</code></td>
-    </tr>
-    <tr>
-      <td><code class="language-plaintext highlighter-rouge">+=</code></td>
-      <td>加且赋值，相当于 <code class="language-plaintext highlighter-rouge">C = C + A</code></td>
-      <td><code class="language-plaintext highlighter-rouge">C += A</code></td>
-    </tr>
-    <tr>
-      <td><code class="language-plaintext highlighter-rouge">-=</code></td>
-      <td>减且赋值，相当于 <code class="language-plaintext highlighter-rouge">C = C - A</code></td>
-      <td><code class="language-plaintext highlighter-rouge">C -= A</code></td>
-    </tr>
-    <tr>
-      <td><code class="language-plaintext highlighter-rouge">*=</code></td>
-      <td>乘且赋值，相当于 <code class="language-plaintext highlighter-rouge">C = C * A</code></td>
-      <td><code class="language-plaintext highlighter-rouge">C *= A</code></td>
-    </tr>
-    <tr>
-      <td><code class="language-plaintext highlighter-rouge">/=</code></td>
-      <td>除且赋值，相当于 <code class="language-plaintext highlighter-rouge">C = C / A</code></td>
-      <td><code class="language-plaintext highlighter-rouge">C /= A</code></td>
-    </tr>
-    <tr>
-      <td><code class="language-plaintext highlighter-rouge">%=</code></td>
-      <td>求模且赋值，相当于 <code class="language-plaintext highlighter-rouge">C = C % A</code></td>
-      <td><code class="language-plaintext highlighter-rouge">C %= A</code></td>
-    </tr>
-    <tr>
-      <td><code class="language-plaintext highlighter-rouge">&lt;&lt;=</code></td>
-      <td>左移且赋值，相当于 <code class="language-plaintext highlighter-rouge">C = C &lt;&lt; 2</code></td>
-      <td><code class="language-plaintext highlighter-rouge">C &lt;&lt;= 2</code></td>
-    </tr>
-    <tr>
-      <td><code class="language-plaintext highlighter-rouge">&gt;&gt;=</code></td>
-      <td>右移且赋值，相当于 <code class="language-plaintext highlighter-rouge">C = C &gt;&gt; 2</code></td>
-      <td><code class="language-plaintext highlighter-rouge">C &gt;&gt;= 2</code></td>
-    </tr>
-    <tr>
-      <td><code class="language-plaintext highlighter-rouge">&amp;=</code></td>
-      <td>按位与且赋值，相当于 <code class="language-plaintext highlighter-rouge">C = C &amp; 2</code></td>
-      <td><code class="language-plaintext highlighter-rouge">C &amp;= 2</code></td>
-    </tr>
-    <tr>
-      <td><code class="language-plaintext highlighter-rouge">^=</code></td>
-      <td>按位异或且赋值，相当于 <code class="language-plaintext highlighter-rouge">C = C ^ 2</code></td>
-      <td><code class="language-plaintext highlighter-rouge">C ^= 2</code></td>
-    </tr>
-    <tr>
-      <td><code class="language-plaintext highlighter-rouge">|=</code></td>
-      <td>按位或且赋值，相当于 <code class="language-plaintext highlighter-rouge">C = C | 2</code></td>
-      <td><code class="language-plaintext highlighter-rouge">C |= 2</code></td>
-    </tr>
-  </tbody>
-</table>
-
-<h4 id="示例代码-4"><span style="color: rgb(238,130,238);"><strong>示例代码：</strong></span></h4>
-<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
-</span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
-<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
-<span class="p">{</span>
-    <span class="kt">int</span> <span class="n">a</span> <span class="o">=</span> <span class="mi">21</span><span class="p">,</span> <span class="n">c</span><span class="p">;</span>
-    <span class="n">c</span> <span class="o">=</span> <span class="n">a</span><span class="p">;</span> 
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"c = "</span> <span class="o">&lt;&lt;</span> <span class="n">c</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="n">c</span> <span class="o">+=</span> <span class="n">a</span><span class="p">;</span> 
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"c += a -&gt; c = "</span> <span class="o">&lt;&lt;</span> <span class="n">c</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="n">c</span> <span class="o">-=</span> <span class="n">a</span><span class="p">;</span> 
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"c -= a -&gt; c = "</span> <span class="o">&lt;&lt;</span> <span class="n">c</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="n">c</span> <span class="o">*=</span> <span class="n">a</span><span class="p">;</span> 
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"c *= a -&gt; c = "</span> <span class="o">&lt;&lt;</span> <span class="n">c</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="n">c</span> <span class="o">/=</span> <span class="n">a</span><span class="p">;</span> 
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"c /= a -&gt; c = "</span> <span class="o">&lt;&lt;</span> <span class="n">c</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="n">c</span> <span class="o">=</span> <span class="mi">200</span><span class="p">;</span>
-    <span class="n">c</span> <span class="o">%=</span> <span class="n">a</span><span class="p">;</span> 
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"c %= a -&gt; c = "</span> <span class="o">&lt;&lt;</span> <span class="n">c</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="n">c</span> <span class="o">&lt;&lt;=</span> <span class="mi">2</span><span class="p">;</span> 
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"c &lt;&lt;= 2 -&gt; c = "</span> <span class="o">&lt;&lt;</span> <span class="n">c</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="n">c</span> <span class="o">&gt;&gt;=</span> <span class="mi">2</span><span class="p">;</span> 
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"c &gt;&gt;= 2 -&gt; c = "</span> <span class="o">&lt;&lt;</span> <span class="n">c</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="n">c</span> <span class="o">&amp;=</span> <span class="mi">2</span><span class="p">;</span> 
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"c &amp;= 2 -&gt; c = "</span> <span class="o">&lt;&lt;</span> <span class="n">c</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="n">c</span> <span class="o">^=</span> <span class="mi">2</span><span class="p">;</span> 
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"c ^= 2 -&gt; c = "</span> <span class="o">&lt;&lt;</span> <span class="n">c</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="n">c</span> <span class="o">|=</span> <span class="mi">2</span><span class="p">;</span> 
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"c |= 2 -&gt; c = "</span> <span class="o">&lt;&lt;</span> <span class="n">c</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre></div></div>
-<h4 id="输出结果-4"><span style="color: rgb(238,130,238);"><strong>输出结果：</strong></span></h4>
-
-<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="s">c = </span><span class="m">21</span>
-<span class="s">c += a -&gt; c = </span><span class="m">42</span>
-<span class="s">c -= a -&gt; c = </span><span class="m">21</span>
-<span class="s">c *= a -&gt; c = </span><span class="m">441</span>
-<span class="s">c /= a -&gt; c = </span><span class="m">21</span>
-<span class="s">c %= a -&gt; c = </span><span class="m">11</span>
-<span class="s">c &lt;&lt;= 2 -&gt; c = </span><span class="m">44</span>
-<span class="s">c &gt;&gt;= 2 -&gt; c = </span><span class="m">11</span>
-<span class="s">c &amp;= 2 -&gt; c = </span><span class="m">2</span>
-<span class="s">c ^= 2 -&gt; c = </span><span class="m">0</span>
-<span class="s">c |= 2 -&gt; c = </span><span class="m">2</span>
-</code></pre></div></div>
-
-<h3 id="杂项运算符"><span style="color: rgb(32,178,170);"><strong>杂项运算符</strong></span></h3>
-
-<p>以下为 C++ 支持的杂项运算符：</p>
-
-<table>
-  <thead>
-    <tr>
-      <th>运算符</th>
-      <th>描述</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><code class="language-plaintext highlighter-rouge">sizeof</code></td>
-      <td>返回变量的大小，例如 <code class="language-plaintext highlighter-rouge">sizeof(a)</code> 返回变量 <code class="language-plaintext highlighter-rouge">a</code> 的字节数。</td>
-    </tr>
-    <tr>
-      <td><code class="language-plaintext highlighter-rouge">?:</code></td>
-      <td>条件运算符，<code class="language-plaintext highlighter-rouge">Condition ? X : Y</code> 如果条件为真返回 <code class="language-plaintext highlighter-rouge">X</code>，否则返回 <code class="language-plaintext highlighter-rouge">Y</code>。</td>
-    </tr>
-    <tr>
-      <td><code class="language-plaintext highlighter-rouge">,</code></td>
-      <td>逗号运算符，顺序执行多个操作，返回最后一个表达式的值。</td>
-    </tr>
-    <tr>
-      <td><code class="language-plaintext highlighter-rouge">.</code> 和 <code class="language-plaintext highlighter-rouge">-&gt;</code></td>
-      <td>成员运算符，用于访问类、结构或联合的成员。</td>
-    </tr>
-    <tr>
-      <td><code class="language-plaintext highlighter-rouge">(type)</code></td>
-      <td>强制类型转换运算符，将一种数据类型转换为另一种数据类型，例如 <code class="language-plaintext highlighter-rouge">(int)3.14</code>。</td>
-    </tr>
-    <tr>
-      <td><code class="language-plaintext highlighter-rouge">&amp;</code></td>
-      <td>返回变量地址，例如 <code class="language-plaintext highlighter-rouge">&amp;a</code> 返回变量 <code class="language-plaintext highlighter-rouge">a</code> 的地址。</td>
-    </tr>
-    <tr>
-      <td><code class="language-plaintext highlighter-rouge">*</code></td>
-      <td>指针运算符，解引用指针，例如 <code class="language-plaintext highlighter-rouge">*p</code> 返回指针 <code class="language-plaintext highlighter-rouge">p</code> 指向的值。</td>
-    </tr>
-  </tbody>
-</table>
-
-<hr />
-
-<h3 id="运算符优先级"><span style="color: rgb(0,191,255);"><strong>运算符优先级</strong></span></h3>
-
-<p>运算符的优先级决定了表达式的计算顺序。以下为运算符的优先级表：</p>
-
-<p>| 类别   | 运算符                                          | 结合性   |
-| —— | ———————————————– | ——– |
-| 后缀   | <code class="language-plaintext highlighter-rouge">()</code> <code class="language-plaintext highlighter-rouge">[]</code> <code class="language-plaintext highlighter-rouge">-&gt;</code> <code class="language-plaintext highlighter-rouge">.</code> <code class="language-plaintext highlighter-rouge">++</code> <code class="language-plaintext highlighter-rouge">--</code>                    | 从左到右 |
-| 一元   | <code class="language-plaintext highlighter-rouge">+</code> <code class="language-plaintext highlighter-rouge">-</code> <code class="language-plaintext highlighter-rouge">!</code> <code class="language-plaintext highlighter-rouge">~</code> <code class="language-plaintext highlighter-rouge">++</code> <code class="language-plaintext highlighter-rouge">--</code> <code class="language-plaintext highlighter-rouge">(type)</code> <code class="language-plaintext highlighter-rouge">&amp;</code> <code class="language-plaintext highlighter-rouge">sizeof</code> | 从右到左 |
-| 乘除   | <code class="language-plaintext highlighter-rouge">*</code> <code class="language-plaintext highlighter-rouge">/</code> <code class="language-plaintext highlighter-rouge">%</code>                                     | 从左到右 |
-| 加减   | <code class="language-plaintext highlighter-rouge">+</code> <code class="language-plaintext highlighter-rouge">-</code>                                         | 从左到右 |
-|  移位  | <code class="language-plaintext highlighter-rouge">&lt;&lt;</code> ` »<code class="language-plaintext highlighter-rouge">                                      | 从左到右 | 
-| 关系   | </code>&lt;<code class="language-plaintext highlighter-rouge"> </code>&lt;=<code class="language-plaintext highlighter-rouge"> </code>&gt;<code class="language-plaintext highlighter-rouge"> </code>&gt;=<code class="language-plaintext highlighter-rouge">                               | 从左到右 |
-| 相等   | </code>==<code class="language-plaintext highlighter-rouge"> </code>!=<code class="language-plaintext highlighter-rouge">                                       | 从左到右 |
-| 位与 AND | 	</code>&amp;<code class="language-plaintext highlighter-rouge">                                          | 从左到右 |
-|位异或 XOR| 	</code>^<code class="language-plaintext highlighter-rouge"> 	       																| 从左到右 |
-|位或 OR |	</code>|<code class="language-plaintext highlighter-rouge"> 	                                         | 从左到右 | 
-| 逻辑与 | </code>&amp;&amp;<code class="language-plaintext highlighter-rouge">                                            | 从左到右 |
-| 逻辑或 | </code>||<code class="language-plaintext highlighter-rouge">                                            | 从左到右 |
-| 条件   | </code>?:<code class="language-plaintext highlighter-rouge">                                            | 从右到左 |
-| 赋值   | </code>=<code class="language-plaintext highlighter-rouge"> </code>+=<code class="language-plaintext highlighter-rouge"> </code>-=<code class="language-plaintext highlighter-rouge"> </code>*=<code class="language-plaintext highlighter-rouge"> </code>/=<code class="language-plaintext highlighter-rouge"> </code>%=<code class="language-plaintext highlighter-rouge"> </code>»=<code class="language-plaintext highlighter-rouge"> </code>«=<code class="language-plaintext highlighter-rouge"> </code>&amp;=<code class="language-plaintext highlighter-rouge"> </code>^=<code class="language-plaintext highlighter-rouge"> </code>|=<code class="language-plaintext highlighter-rouge">  | 从右到左 |
-| 逗号   | </code>,`                                             | 从左到右 |</p>
-
-<h4 id="示例代码-5"><span style="color: rgb(238,130,238);"><strong>示例代码：</strong></span></h4>
-<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
-</span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
-<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> 
-<span class="p">{</span>
-    <span class="kt">int</span> <span class="n">a</span> <span class="o">=</span> <span class="mi">20</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="mi">10</span><span class="p">,</span> <span class="n">c</span> <span class="o">=</span> <span class="mi">15</span><span class="p">,</span> <span class="n">d</span> <span class="o">=</span> <span class="mi">5</span><span class="p">,</span> <span class="n">e</span><span class="p">;</span>
-    <span class="n">e</span> <span class="o">=</span> <span class="p">(</span><span class="n">a</span> <span class="o">+</span> <span class="n">b</span><span class="p">)</span> <span class="o">*</span> <span class="n">c</span> <span class="o">/</span> <span class="n">d</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Result: "</span> <span class="o">&lt;&lt;</span> <span class="n">e</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-<span class="p">}</span>
-
-</code></pre></div></div>
-<h4 id="输出结果-5"><span style="color: rgb(238,130,238);"><strong>输出结果：</strong></span></h4>
-
-<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">Result</span><span class="pi">:</span> <span class="m">90</span>
-</code></pre></div></div>]]></content><author><name>ZJM</name></author><category term="code/algorithm/basic-knowledge" /><category term="Code" /><summary type="html"><![CDATA[运算符]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/code-cover-8.png" /><media:content medium="image" url="http://localhost:4000/code-cover-8.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">注释</title><link href="http://localhost:4000/code/algorithm/basic-knowledge/2025/01/03/Annotation/" rel="alternate" type="text/html" title="注释" /><published>2025-01-03T00:00:00-08:00</published><updated>2025-01-03T00:00:00-08:00</updated><id>http://localhost:4000/code/algorithm/basic-knowledge/2025/01/03/Annotation</id><content type="html" xml:base="http://localhost:4000/code/algorithm/basic-knowledge/2025/01/03/Annotation/"><![CDATA[<h1 id="注释"><span style="color: rgb(255,127,80);"><strong>注释</strong></span></h1>
-<p>程序中的注释是用于解释代码的语句，可以帮助提高源代码的可读性。所有编程语言都支持某种形式的注释，以便开发者更容易理解代码的意图和功能。</p>
-
-<p>C++ 支持两种类型的注释：单行注释和多行注释。在 C++ 中，注释中的内容会被编译器忽略，不会对程序的执行产生任何影响。</p>
-
-<hr />
-
-<h3 id="c-注释的两种形式"><span style="color: rgb(0,191,255);"><strong>C++ 注释的两种形式：</strong></span></h3>
-
-<ul>
-  <li>
-    <p><strong>单行注释</strong>： 使用 <code class="language-plaintext highlighter-rouge">//</code> 开始，注释从 <code class="language-plaintext highlighter-rouge">//</code> 后开始直到行末。例如：</p>
-
-    <div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// 这是一个单行注释</span>
-<span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Hello World!"</span><span class="p">;</span>
-</code></pre></div>    </div>
-  </li>
-  <li>
-    <p><strong>多行注释</strong>： 使用 <code class="language-plaintext highlighter-rouge">/*</code> 开始，以 <code class="language-plaintext highlighter-rouge">*/</code> 结束，可以注释多行文本。例如：</p>
-
-    <div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cm">/* 这是一个多行注释
-   可以跨越多行
-*/</span>
-<span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Hello World!"</span><span class="p">;</span>
-</code></pre></div>    </div>
-  </li>
-</ul>
-
-<h3 id="示例代码"><span style="color: rgb(0,191,255);"><strong>示例代码</strong></span></h3>
-<ul>
-  <li><strong>单行注释</strong>
-    <div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
-</span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
-<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> 
-<span class="p">{</span>
-  <span class="c1">// 这是一个单行注释</span>
-  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Hello World!"</span><span class="p">;</span>  <span class="c1">// 语句后面的注释</span>
-  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre></div>    </div>
-  </li>
-</ul>
-
-<p>在上面的代码中，编译器会忽略 // 这是一个注释 和 // 语句后面的注释，输出结果为：</p>
-<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="s">Hello World!</span>
-</code></pre></div></div>
-<ul>
-  <li><strong>多行注释</strong>
-    <div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
-</span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
-<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> 
-<span class="p">{</span>
-  <span class="cm">/* 这是一个多行注释
-     可以跨越多行 */</span>
-  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Hello World!"</span><span class="p">;</span>
-  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre></div>    </div>
-  </li>
-</ul>
-
-<p>在这段代码中，/* 这是一个多行注释 */ 会被编译器忽略，输出结果为：</p>
-<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="s">Hello World!</span>
-</code></pre></div></div>
-
-<h3 id="注释嵌套"><span style="color: rgb(0,191,255);"><strong>注释嵌套</strong></span></h3>
-
-<p>虽然注释可以嵌套使用，但有一些注意事项：</p>
-
-<p><span style="color: rgb(238,130,238);"><strong>在 /* 和 */ 注释内，// 字符没有特殊的含义。</strong></span></p>
-
-<p><span style="color: rgb(238,130,238);"><strong>在 // 注释内，/* 和 */ 字符也没有特殊的含义。</strong></span></p>
-
-<p>因此，您可以在一种注释类型内使用另一种注释类型。例如：</p>
-<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cm">/* 用于输出 Hello World 的注释
-
-cout &lt;&lt; "Hello World"; // 输出 Hello World
-
-*/</span>
-</code></pre></div></div>
-<p>这种嵌套的注释方式是允许的。</p>]]></content><author><name>ZJM</name></author><category term="code/algorithm/basic-knowledge" /><category term="Code" /><summary type="html"><![CDATA[注释 程序中的注释是用于解释代码的语句，可以帮助提高源代码的可读性。所有编程语言都支持某种形式的注释，以便开发者更容易理解代码的意图和功能。]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/code-cover-1.png" /><media:content medium="image" url="http://localhost:4000/code-cover-1.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
+<p>在这个例子中，三目运算符判断 <code class="language-plaintext highlighter-rouge">age</code> 是否大于或等于 18。如果条件成立，返回 <code class="language-plaintext highlighter-rouge">"你已经成年了。"</code>，否则返回 <code class="language-plaintext highlighter-rouge">"你还未成年。" </code>。</p>]]></content><author><name>ZJM</name></author><category term="code/algorithm/basic-knowledge" /><category term="Code" /><summary type="html"><![CDATA[判断结构]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/code-cover-8.png" /><media:content medium="image" url="http://localhost:4000/code-cover-8.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
