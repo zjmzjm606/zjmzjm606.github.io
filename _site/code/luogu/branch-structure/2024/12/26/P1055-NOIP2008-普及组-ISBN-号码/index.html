@@ -44,12 +44,12 @@
 <meta property="og:site_name" content="Tomorrow’s Blog" />
 <meta property="og:image" content="http://localhost:4000/code-cover-1.png" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2024-12-26T00:00:00-08:00" />
+<meta property="article:published_time" content="2024-12-26T00:00:00+08:00" />
 <meta name="twitter:card" content="summary_large_image" />
 <meta property="twitter:image" content="http://localhost:4000/code-cover-1.png" />
 <meta property="twitter:title" content="P1055 [NOIP2008 普及组] ISBN 号码" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"ZJM"},"dateModified":"2024-12-26T00:00:00-08:00","datePublished":"2024-12-26T00:00:00-08:00","description":"#include&lt;iostream&gt; #include&lt;string&gt; using namespace std; int main() { string isbncode; int mathcode[13]={0},realcode=0; long int mycode=0; cin&gt;&gt;isbncode;//输入ISBN号 for(int i=0;i&lt;=12;i++)//转换为数字 { mathcode[i]=isbncode[i]-&#39;0&#39;; //字符转换为数字 } mycode=mathcode[0]*1+mathcode[2]*2+mathcode[3]*3+mathcode[4]*4+mathcode[6]*5+mathcode[7]*6+mathcode[8]*7+mathcode[9]*8+mathcode[10]*9; mycode=mycode%11;//求出正确的识别码 if (mycode==10) { mycode=&#39;X&#39;-&#39;0&#39;; } if(mycode==mathcode[12])//如果正确 cout&lt;&lt;&quot;Right&quot;;//注意第一个字母大写，和题目要求一致 else { //用一一对应的方式输出 cout&lt;&lt;mathcode[0]&lt;&lt;&#39;-&#39; &lt;&lt;mathcode[2]&lt;&lt;mathcode[3]&lt;&lt;mathcode[4]&lt;&lt;&#39;-&#39; &lt;&lt;mathcode[6]&lt;&lt;mathcode[7]&lt;&lt;mathcode[8]&lt;&lt;mathcode[9]&lt;&lt;mathcode[10] &lt;&lt;&#39;-&#39;&lt;&lt;char(mycode+&#39;0&#39;);//用char函数强制转换为字符类型 } return 0; }","headline":"P1055 [NOIP2008 普及组] ISBN 号码","image":"http://localhost:4000/code-cover-1.png","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/code/luogu/branch-structure/2024/12/26/P1055-NOIP2008-%E6%99%AE%E5%8F%8A%E7%BB%84-ISBN-%E5%8F%B7%E7%A0%81/"},"url":"http://localhost:4000/code/luogu/branch-structure/2024/12/26/P1055-NOIP2008-%E6%99%AE%E5%8F%8A%E7%BB%84-ISBN-%E5%8F%B7%E7%A0%81/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"ZJM"},"dateModified":"2024-12-26T00:00:00+08:00","datePublished":"2024-12-26T00:00:00+08:00","description":"#include&lt;iostream&gt; #include&lt;string&gt; using namespace std; int main() { string isbncode; int mathcode[13]={0},realcode=0; long int mycode=0; cin&gt;&gt;isbncode;//输入ISBN号 for(int i=0;i&lt;=12;i++)//转换为数字 { mathcode[i]=isbncode[i]-&#39;0&#39;; //字符转换为数字 } mycode=mathcode[0]*1+mathcode[2]*2+mathcode[3]*3+mathcode[4]*4+mathcode[6]*5+mathcode[7]*6+mathcode[8]*7+mathcode[9]*8+mathcode[10]*9; mycode=mycode%11;//求出正确的识别码 if (mycode==10) { mycode=&#39;X&#39;-&#39;0&#39;; } if(mycode==mathcode[12])//如果正确 cout&lt;&lt;&quot;Right&quot;;//注意第一个字母大写，和题目要求一致 else { //用一一对应的方式输出 cout&lt;&lt;mathcode[0]&lt;&lt;&#39;-&#39; &lt;&lt;mathcode[2]&lt;&lt;mathcode[3]&lt;&lt;mathcode[4]&lt;&lt;&#39;-&#39; &lt;&lt;mathcode[6]&lt;&lt;mathcode[7]&lt;&lt;mathcode[8]&lt;&lt;mathcode[9]&lt;&lt;mathcode[10] &lt;&lt;&#39;-&#39;&lt;&lt;char(mycode+&#39;0&#39;);//用char函数强制转换为字符类型 } return 0; }","headline":"P1055 [NOIP2008 普及组] ISBN 号码","image":"http://localhost:4000/code-cover-1.png","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/code/luogu/branch-structure/2024/12/26/P1055-NOIP2008-%E6%99%AE%E5%8F%8A%E7%BB%84-ISBN-%E5%8F%B7%E7%A0%81/"},"url":"http://localhost:4000/code/luogu/branch-structure/2024/12/26/P1055-NOIP2008-%E6%99%AE%E5%8F%8A%E7%BB%84-ISBN-%E5%8F%B7%E7%A0%81/"}</script>
 <!-- End Jekyll SEO tag -->
 
 </head>
@@ -192,16 +192,16 @@
         
           <li>
             <h3>
-              <a href="/code/algorithm/basic-knowledge/2025/01/06/Constant/">
+              <a href="/code/algorithm/basic-knowledge/2025/01/07/Reference/">
                 <div class="related-thumbnail">
                   
-                    <img src="http://localhost:4000/assets/img/code-cover-10.png">
+                    <img src="http://localhost:4000/assets/img/code-cover-8.png">
                   
                 </div>
                 <div class="related-title">
-                  常量
+                  引用
                 </div>
-                <!--<small>January 6, 2025</small>-->
+                <!--<small>January 7, 2025</small>-->
               </a>
             </h3>
           </li>
@@ -211,16 +211,16 @@
         
           <li>
             <h3>
-              <a href="/code/algorithm/basic-knowledge/2025/01/05/Variable-Types/">
+              <a href="/code/algorithm/basic-knowledge/2025/01/07/Pointers/">
                 <div class="related-thumbnail">
                   
-                    <img src="http://localhost:4000/assets/img/code-cover-3.png">
+                    <img src="http://localhost:4000/assets/img/code-cover-8.png">
                   
                 </div>
                 <div class="related-title">
-                  基本数据类型
+                  指针
                 </div>
-                <!--<small>January 5, 2025</small>-->
+                <!--<small>January 7, 2025</small>-->
               </a>
             </h3>
           </li>

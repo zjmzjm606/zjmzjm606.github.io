@@ -7,6 +7,34 @@
 		<atom:link href="/rss-feed.xml" rel="self" type="application/rss+xml" />
 		
 			<item>
+				<title>引用</title>
+				
+					<dc:creator>ZJM</dc:creator>
+				
+				
+					<description>&lt;h1 id=&quot;引用&quot;&gt;&lt;span style=&quot;color: rgb(255,127,80);&quot;&gt;&lt;strong&gt;引用&lt;/strong&gt;&lt;/span&gt;&lt;/h1&gt;
+</description>
+				
+				<pubDate>Tue, 07 Jan 2025 00:00:00 +0800</pubDate>
+				<link>http://localhost:4000/code/algorithm/basic-knowledge/2025/01/07/Reference/</link>
+				<guid isPermaLink="true">http://localhost:4000/code/algorithm/basic-knowledge/2025/01/07/Reference/</guid>
+			</item>
+		
+			<item>
+				<title>指针</title>
+				
+					<dc:creator>ZJM</dc:creator>
+				
+				
+					<description>&lt;h1 id=&quot;指针教程&quot;&gt;&lt;span style=&quot;color: rgb(255,127,80);&quot;&gt;&lt;strong&gt;指针教程&lt;/strong&gt;&lt;/span&gt;&lt;/h1&gt;
+</description>
+				
+				<pubDate>Tue, 07 Jan 2025 00:00:00 +0800</pubDate>
+				<link>http://localhost:4000/code/algorithm/basic-knowledge/2025/01/07/Pointers/</link>
+				<guid isPermaLink="true">http://localhost:4000/code/algorithm/basic-knowledge/2025/01/07/Pointers/</guid>
+			</item>
+		
+			<item>
 				<title>常量</title>
 				
 					<dc:creator>ZJM</dc:creator>
@@ -15,7 +43,7 @@
 					<description>&lt;h1 id=&quot;常量&quot;&gt;&lt;span style=&quot;color: rgb(255,127,80);&quot;&gt;&lt;strong&gt;常量&lt;/strong&gt;&lt;/span&gt;&lt;/h1&gt;
 </description>
 				
-				<pubDate>Mon, 06 Jan 2025 00:00:00 -0800</pubDate>
+				<pubDate>Mon, 06 Jan 2025 00:00:00 +0800</pubDate>
 				<link>http://localhost:4000/code/algorithm/basic-knowledge/2025/01/06/Constant/</link>
 				<guid isPermaLink="true">http://localhost:4000/code/algorithm/basic-knowledge/2025/01/06/Constant/</guid>
 			</item>
@@ -29,7 +57,7 @@
 					<description>&lt;h1 id=&quot;基本数据类型&quot;&gt;&lt;span style=&quot;color: rgb(255,127,80);&quot;&gt;&lt;strong&gt;基本数据类型&lt;/strong&gt;&lt;/span&gt;&lt;/h1&gt;
 </description>
 				
-				<pubDate>Sun, 05 Jan 2025 00:00:00 -0800</pubDate>
+				<pubDate>Sun, 05 Jan 2025 00:00:00 +0800</pubDate>
 				<link>http://localhost:4000/code/algorithm/basic-knowledge/2025/01/05/Variable-Types/</link>
 				<guid isPermaLink="true">http://localhost:4000/code/algorithm/basic-knowledge/2025/01/05/Variable-Types/</guid>
 			</item>
@@ -43,7 +71,7 @@
 					<description>&lt;h1 id=&quot;存储类&quot;&gt;&lt;span style=&quot;color: rgb(255,127,80);&quot;&gt;&lt;strong&gt;存储类&lt;/strong&gt;&lt;/span&gt;&lt;/h1&gt;
 </description>
 				
-				<pubDate>Sun, 05 Jan 2025 00:00:00 -0800</pubDate>
+				<pubDate>Sun, 05 Jan 2025 00:00:00 +0800</pubDate>
 				<link>http://localhost:4000/code/algorithm/basic-knowledge/2025/01/05/Storage-Class/</link>
 				<guid isPermaLink="true">http://localhost:4000/code/algorithm/basic-knowledge/2025/01/05/Storage-Class/</guid>
 			</item>
@@ -58,7 +86,7 @@
 &lt;p&gt;在 C++ 中，变量的作用域指的是变量可以被访问的范围。通常来说，变量的作用域可以分为以下几种类型：&lt;/p&gt;
 </description>
 				
-				<pubDate>Sun, 05 Jan 2025 00:00:00 -0800</pubDate>
+				<pubDate>Sun, 05 Jan 2025 00:00:00 +0800</pubDate>
 				<link>http://localhost:4000/code/algorithm/basic-knowledge/2025/01/05/Scope-of-variables/</link>
 				<guid isPermaLink="true">http://localhost:4000/code/algorithm/basic-knowledge/2025/01/05/Scope-of-variables/</guid>
 			</item>
@@ -72,7 +100,7 @@
 					<description>&lt;h1 id=&quot;运算符&quot;&gt;&lt;span style=&quot;color: rgb(255,127,80);&quot;&gt;&lt;strong&gt;运算符&lt;/strong&gt;&lt;/span&gt;&lt;/h1&gt;
 </description>
 				
-				<pubDate>Sun, 05 Jan 2025 00:00:00 -0800</pubDate>
+				<pubDate>Sun, 05 Jan 2025 00:00:00 +0800</pubDate>
 				<link>http://localhost:4000/code/algorithm/basic-knowledge/2025/01/05/Operator/</link>
 				<guid isPermaLink="true">http://localhost:4000/code/algorithm/basic-knowledge/2025/01/05/Operator/</guid>
 			</item>
@@ -86,7 +114,7 @@
 					<description>&lt;h1 id=&quot;数字类型&quot;&gt;&lt;span style=&quot;color: rgb(255,127,80);&quot;&gt;&lt;strong&gt;数字类型&lt;/strong&gt;&lt;/span&gt;&lt;/h1&gt;
 </description>
 				
-				<pubDate>Sun, 05 Jan 2025 00:00:00 -0800</pubDate>
+				<pubDate>Sun, 05 Jan 2025 00:00:00 +0800</pubDate>
 				<link>http://localhost:4000/code/algorithm/basic-knowledge/2025/01/05/Number-Type/</link>
 				<guid isPermaLink="true">http://localhost:4000/code/algorithm/basic-knowledge/2025/01/05/Number-Type/</guid>
 			</item>
@@ -100,7 +128,7 @@
 					<description>&lt;h1 id=&quot;修饰符&quot;&gt;&lt;span style=&quot;color: rgb(255,127,80);&quot;&gt;&lt;strong&gt;修饰符&lt;/strong&gt;&lt;/span&gt;&lt;/h1&gt;
 </description>
 				
-				<pubDate>Sun, 05 Jan 2025 00:00:00 -0800</pubDate>
+				<pubDate>Sun, 05 Jan 2025 00:00:00 +0800</pubDate>
 				<link>http://localhost:4000/code/algorithm/basic-knowledge/2025/01/05/Modifier-Types/</link>
 				<guid isPermaLink="true">http://localhost:4000/code/algorithm/basic-knowledge/2025/01/05/Modifier-Types/</guid>
 			</item>
@@ -114,37 +142,9 @@
 					<description>&lt;h1 id=&quot;循环详解&quot;&gt;&lt;span style=&quot;color: rgb(255,127,80);&quot;&gt;&lt;strong&gt;循环详解&lt;/strong&gt;&lt;/span&gt;&lt;/h1&gt;
 </description>
 				
-				<pubDate>Sun, 05 Jan 2025 00:00:00 -0800</pubDate>
+				<pubDate>Sun, 05 Jan 2025 00:00:00 +0800</pubDate>
 				<link>http://localhost:4000/code/algorithm/basic-knowledge/2025/01/05/Loop/</link>
 				<guid isPermaLink="true">http://localhost:4000/code/algorithm/basic-knowledge/2025/01/05/Loop/</guid>
-			</item>
-		
-			<item>
-				<title>判断结构</title>
-				
-					<dc:creator>ZJM</dc:creator>
-				
-				
-					<description>&lt;h1 id=&quot;判断结构&quot;&gt;&lt;span style=&quot;color: rgb(255,127,80);&quot;&gt;&lt;strong&gt;判断结构&lt;/strong&gt;&lt;/span&gt;&lt;/h1&gt;
-</description>
-				
-				<pubDate>Sun, 05 Jan 2025 00:00:00 -0800</pubDate>
-				<link>http://localhost:4000/code/algorithm/basic-knowledge/2025/01/05/Judgment-Structure/</link>
-				<guid isPermaLink="true">http://localhost:4000/code/algorithm/basic-knowledge/2025/01/05/Judgment-Structure/</guid>
-			</item>
-		
-			<item>
-				<title>函数</title>
-				
-					<dc:creator>ZJM</dc:creator>
-				
-				
-					<description>&lt;h1 id=&quot;函数&quot;&gt;&lt;span style=&quot;color: rgb(255,127,80);&quot;&gt;&lt;strong&gt;函数&lt;/strong&gt;&lt;/span&gt;&lt;/h1&gt;
-</description>
-				
-				<pubDate>Sun, 05 Jan 2025 00:00:00 -0800</pubDate>
-				<link>http://localhost:4000/code/algorithm/basic-knowledge/2025/01/05/Function/</link>
-				<guid isPermaLink="true">http://localhost:4000/code/algorithm/basic-knowledge/2025/01/05/Function/</guid>
 			</item>
 		
 	</channel>
