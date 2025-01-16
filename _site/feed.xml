@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-01-15T15:00:43+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Tomorrow’s Blog</title><entry><title type="html">引用</title><link href="http://localhost:4000/code/algorithm/basic-knowledge/2025/01/07/Reference/" rel="alternate" type="text/html" title="引用" /><published>2025-01-07T00:00:00+08:00</published><updated>2025-01-07T00:00:00+08:00</updated><id>http://localhost:4000/code/algorithm/basic-knowledge/2025/01/07/Reference</id><content type="html" xml:base="http://localhost:4000/code/algorithm/basic-knowledge/2025/01/07/Reference/"><![CDATA[<h1 id="引用"><span style="color: rgb(255,127,80);"><strong>引用</strong></span></h1>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-01-15T15:13:05+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Tomorrow’s Blog</title><entry><title type="html">引用</title><link href="http://localhost:4000/code/algorithm/basic-knowledge/2025/01/07/Reference/" rel="alternate" type="text/html" title="引用" /><published>2025-01-07T00:00:00+08:00</published><updated>2025-01-07T00:00:00+08:00</updated><id>http://localhost:4000/code/algorithm/basic-knowledge/2025/01/07/Reference</id><content type="html" xml:base="http://localhost:4000/code/algorithm/basic-knowledge/2025/01/07/Reference/"><![CDATA[<h1 id="引用"><span style="color: rgb(255,127,80);"><strong>引用</strong></span></h1>
 
 <p>在 C++ 中，<strong>引用</strong>是一种为变量提供别名的机制。引用不仅可以用来传递参数，还可以作为返回值。引用通常比指针更容易理解和使用，它使得代码更加简洁，并减少了指针的复杂性。本文将详细介绍 C++ 中引用的基本概念、作为函数参数和返回值的应用以及使用引用时的注意事项。</p>
 
@@ -1062,146 +1062,7 @@
   <li><strong>避免返回局部变量的指针</strong>：不要返回指向局部非静态变量的指针，因为这些变量会在函数返回后被销毁，导致悬空指针问题。</li>
 </ul>
 
-<p>这种方式在需要从函数中返回多个值或者处理动态生成的数据时非常有用。</p>]]></content><author><name>ZJM</name></author><category term="code/algorithm/basic-knowledge" /><category term="Code" /><summary type="html"><![CDATA[指针教程]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/code-cover-8.png" /><media:content medium="image" url="http://localhost:4000/code-cover-8.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">日期与时间</title><link href="http://localhost:4000/code/algorithm/basic-knowledge/2025/01/07/Date-and-Time/" rel="alternate" type="text/html" title="日期与时间" /><published>2025-01-07T00:00:00+08:00</published><updated>2025-01-07T00:00:00+08:00</updated><id>http://localhost:4000/code/algorithm/basic-knowledge/2025/01/07/Date%20and%20Time</id><content type="html" xml:base="http://localhost:4000/code/algorithm/basic-knowledge/2025/01/07/Date-and-Time/"><![CDATA[<h1 id="日期与时间"><span style="color: rgb(255,127,80);"><strong>日期与时间</strong></span></h1>
-
-<p>在 C++ 中，没有直接的日期类型，标准库主要依赖于 C 语言中的日期和时间处理方式。因此，为了操作日期和时间，你需要在程序中引入 <code class="language-plaintext highlighter-rouge">&lt;ctime&gt;</code> 头文件。</p>
-
-<p>C++ 提供了四种与时间相关的类型：<code class="language-plaintext highlighter-rouge">clock_t</code>、<code class="language-plaintext highlighter-rouge">time_t</code>、<code class="language-plaintext highlighter-rouge">size_t</code> 和 <code class="language-plaintext highlighter-rouge">tm</code>。其中，<code class="language-plaintext highlighter-rouge">clock_t</code>、<code class="language-plaintext highlighter-rouge">size_t</code> 和 <code class="language-plaintext highlighter-rouge">time_t</code> 用整数来表示系统时间和日期，而 <code class="language-plaintext highlighter-rouge">tm</code> 结构则以更为直观的方式存储日期和时间的各个组成部分。</p>
-
-<h3 id="tm-结构"><span style="color: rgb(0,191,255);"><strong><code class="language-plaintext highlighter-rouge">tm</code> 结构</strong></span></h3>
-
-<p><code class="language-plaintext highlighter-rouge">tm</code> 结构是 C/C++ 中用于存储日期和时间的结构体，其定义如下：</p>
-
-<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">struct</span> <span class="nc">tm</span>
-<span class="p">{</span>
-  <span class="kt">int</span> <span class="n">tm_sec</span><span class="p">;</span>   <span class="c1">// 秒，范围 0 到 59（但有时允许到 61）</span>
-  <span class="kt">int</span> <span class="n">tm_min</span><span class="p">;</span>   <span class="c1">// 分钟，范围 0 到 59</span>
-  <span class="kt">int</span> <span class="n">tm_hour</span><span class="p">;</span>  <span class="c1">// 小时，范围 0 到 23</span>
-  <span class="kt">int</span> <span class="n">tm_mday</span><span class="p">;</span>  <span class="c1">// 日，范围 1 到 31</span>
-  <span class="kt">int</span> <span class="n">tm_mon</span><span class="p">;</span>   <span class="c1">// 月，范围 0 到 11（0 代表 1 月，11 代表 12 月）</span>
-  <span class="kt">int</span> <span class="n">tm_year</span><span class="p">;</span>  <span class="c1">// 年，从 1900 年起算</span>
-  <span class="kt">int</span> <span class="n">tm_wday</span><span class="p">;</span>  <span class="c1">// 星期几，范围 0 到 6（0 代表星期天）</span>
-  <span class="kt">int</span> <span class="n">tm_yday</span><span class="p">;</span>  <span class="c1">// 一年中的第几天，范围 0 到 365</span>
-  <span class="kt">int</span> <span class="n">tm_isdst</span><span class="p">;</span> <span class="c1">// 夏令时标识（非零表示启用夏令时）</span>
-<span class="p">};</span>
-</code></pre></div></div>
-
-<h3 id="常用的时间函数"><span style="color: rgb(0,191,255);"><strong>常用的时间函数</strong></span></h3>
-
-<p>C++ 标准库提供了一些与时间相关的函数，使用时可以参考下表：</p>
-
-<table>
-  <thead>
-    <tr>
-      <th>函数</th>
-      <th>描述</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><code class="language-plaintext highlighter-rouge">time_t time(time_t *time);</code></td>
-      <td>返回当前日历时间，自 1970 年 1 月 1 日以来的秒数。</td>
-    </tr>
-    <tr>
-      <td><code class="language-plaintext highlighter-rouge">char* ctime(const time_t *time);</code></td>
-      <td>将 <code class="language-plaintext highlighter-rouge">time_t</code> 类型的时间转换为字符串表示，格式为：<code class="language-plaintext highlighter-rouge">day month date hours:minutes:seconds year\n\0</code>。</td>
-    </tr>
-    <tr>
-      <td><code class="language-plaintext highlighter-rouge">struct tm* localtime(const time_t *time);</code></td>
-      <td>返回本地时间的 <code class="language-plaintext highlighter-rouge">tm</code> 结构指针。</td>
-    </tr>
-    <tr>
-      <td><code class="language-plaintext highlighter-rouge">clock_t clock(void);</code></td>
-      <td>返回程序运行时的处理器时间。</td>
-    </tr>
-    <tr>
-      <td><code class="language-plaintext highlighter-rouge">char* asctime(const struct tm *time);</code></td>
-      <td>将 <code class="language-plaintext highlighter-rouge">tm</code> 结构转换为字符串，格式为：<code class="language-plaintext highlighter-rouge">day month date hours:minutes:seconds year\n\0</code>。</td>
-    </tr>
-    <tr>
-      <td><code class="language-plaintext highlighter-rouge">struct tm* gmtime(const time_t *time);</code></td>
-      <td>返回与 UTC（格林尼治标准时间）相关的 <code class="language-plaintext highlighter-rouge">tm</code> 结构指针。</td>
-    </tr>
-    <tr>
-      <td><code class="language-plaintext highlighter-rouge">time_t mktime(struct tm *time);</code></td>
-      <td>将 <code class="language-plaintext highlighter-rouge">tm</code> 结构转换为 <code class="language-plaintext highlighter-rouge">time_t</code> 类型的日历时间。</td>
-    </tr>
-    <tr>
-      <td><code class="language-plaintext highlighter-rouge">double difftime(time_t time2, time_t time1);</code></td>
-      <td>返回两个时间点之间的秒数差。</td>
-    </tr>
-    <tr>
-      <td><code class="language-plaintext highlighter-rouge">size_t strftime();</code></td>
-      <td>用指定格式输出日期和时间。</td>
-    </tr>
-  </tbody>
-</table>
-
-<h3 id="获取当前日期和时间"><span style="color: rgb(0,191,255);"><strong>获取当前日期和时间</strong></span></h3>
-
-<p>以下是一个示例程序，展示如何获取当前日期和时间，包括本地时间和协调世界时（UTC）。</p>
-
-<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
-#include</span> <span class="cpf">&lt;ctime&gt;</span><span class="cp">
-</span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
-<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
-<span class="p">{</span>
-    <span class="c1">// 获取当前时间（自1970年1月1日以来的秒数）</span>
-    <span class="kt">time_t</span> <span class="n">now</span> <span class="o">=</span> <span class="n">time</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
-    <span class="c1">// 将当前时间转换为字符串形式</span>
-    <span class="kt">char</span><span class="o">*</span> <span class="n">dt</span> <span class="o">=</span> <span class="n">ctime</span><span class="p">(</span><span class="o">&amp;</span><span class="n">now</span><span class="p">);</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"本地日期和时间："</span> <span class="o">&lt;&lt;</span> <span class="n">dt</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="c1">// 获取UTC时间</span>
-    <span class="n">tm</span><span class="o">*</span> <span class="n">gmtm</span> <span class="o">=</span> <span class="n">gmtime</span><span class="p">(</span><span class="o">&amp;</span><span class="n">now</span><span class="p">);</span>
-    <span class="n">dt</span> <span class="o">=</span> <span class="n">asctime</span><span class="p">(</span><span class="n">gmtm</span><span class="p">);</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"UTC 日期和时间："</span> <span class="o">&lt;&lt;</span> <span class="n">dt</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre></div></div>
-
-<p><span style="color: rgb(238,130,238);"><strong>输出示例</strong>：</span></p>
-
-<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="s">本地日期和时间：Sat Jan  8 20:07:41 </span><span class="m">2011</span>
-<span class="s">UTC 日期和时间：Sun Jan  9 03:07:41 </span><span class="m">2011</span>
-</code></pre></div></div>
-
-<h3 id="使用-tm-结构格式化时间"><span style="color: rgb(0,191,255);"><strong>使用 <code class="language-plaintext highlighter-rouge">tm</code> 结构格式化时间</strong></span></h3>
-
-<p><code class="language-plaintext highlighter-rouge">tm</code> 结构在 C/C++ 中处理日期和时间时非常有用。你可以访问结构中的各个成员来获取时间的详细信息。下面是一个使用 <code class="language-plaintext highlighter-rouge">tm</code> 结构的示例：</p>
-
-<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
-#include</span> <span class="cpf">&lt;ctime&gt;</span><span class="cp">
-</span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
-<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
-<span class="p">{</span>
-    <span class="c1">// 获取当前时间</span>
-    <span class="kt">time_t</span> <span class="n">now</span> <span class="o">=</span> <span class="n">time</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"1970 到目前经过的秒数: "</span> <span class="o">&lt;&lt;</span> <span class="n">now</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="c1">// 将时间转换为本地时间（tm结构）</span>
-    <span class="n">tm</span><span class="o">*</span> <span class="n">ltm</span> <span class="o">=</span> <span class="n">localtime</span><span class="p">(</span><span class="o">&amp;</span><span class="n">now</span><span class="p">);</span>
-    <span class="c1">// 输出 tm 结构的各个组成部分</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"年: "</span> <span class="o">&lt;&lt;</span> <span class="mi">1900</span> <span class="o">+</span> <span class="n">ltm</span><span class="o">-&gt;</span><span class="n">tm_year</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"月: "</span> <span class="o">&lt;&lt;</span> <span class="mi">1</span> <span class="o">+</span> <span class="n">ltm</span><span class="o">-&gt;</span><span class="n">tm_mon</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"日: "</span> <span class="o">&lt;&lt;</span> <span class="n">ltm</span><span class="o">-&gt;</span><span class="n">tm_mday</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"时间: "</span> <span class="o">&lt;&lt;</span> <span class="n">ltm</span><span class="o">-&gt;</span><span class="n">tm_hour</span> <span class="o">&lt;&lt;</span> <span class="s">":"</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">ltm</span><span class="o">-&gt;</span><span class="n">tm_min</span> <span class="o">&lt;&lt;</span> <span class="s">":"</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">ltm</span><span class="o">-&gt;</span><span class="n">tm_sec</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre></div></div>
-
-<p><span style="color: rgb(238,130,238);"><strong>**输出示例</strong>：**</span></p>
-
-<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">1970 到目前经过的秒数</span><span class="pi">:</span> <span class="m">1503564157</span>
-<span class="na">年</span><span class="pi">:</span> <span class="m">2017</span>
-<span class="na">月</span><span class="pi">:</span> <span class="m">8</span>
-<span class="na">日</span><span class="pi">:</span> <span class="m">24</span>
-<span class="na">时间</span><span class="pi">:</span> <span class="s">16:42:37</span>
-</code></pre></div></div>
-
-<p>在上面的代码中，我们用 <code class="language-plaintext highlighter-rouge">1900 + ltm-&gt;tm_year</code> 来获取实际的年份，因为 <code class="language-plaintext highlighter-rouge">tm_year</code> 存储的是从 1900 年起的年份偏移量。同样地，用 <code class="language-plaintext highlighter-rouge">1 + ltm-&gt;tm_mon</code> 来计算实际月份，因为 <code class="language-plaintext highlighter-rouge">tm_mon</code> 的范围是从 0 到 11，表示从 1 月到 12 月。</p>
-
-<h3 id="总结"><span style="color: rgb(0,191,255);"><strong>总结</strong></span></h3>
-
-<p>在 C++ 中，处理日期和时间主要依赖于 <code class="language-plaintext highlighter-rouge">&lt;ctime&gt;</code> 头文件，使用 <code class="language-plaintext highlighter-rouge">time_t</code> 和 <code class="language-plaintext highlighter-rouge">tm</code> 等类型进行时间的表示和操作。通过相关函数，你可以轻松获取和格式化当前时间，以及进行日期与时间的计算。这些基础操作对于开发中需要时间功能的程序是非常常见的。</p>]]></content><author><name>ZJM</name></author><category term="code/algorithm/basic-knowledge" /><category term="Code" /><summary type="html"><![CDATA[日期与时间]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/code-cover-8.png" /><media:content medium="image" url="http://localhost:4000/code-cover-8.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">基本的输入输出</title><link href="http://localhost:4000/code/algorithm/basic-knowledge/2025/01/07/" rel="alternate" type="text/html" title="基本的输入输出" /><published>2025-01-07T00:00:00+08:00</published><updated>2025-01-07T00:00:00+08:00</updated><id>http://localhost:4000/code/algorithm/basic-knowledge/2025/01/</id><content type="html" xml:base="http://localhost:4000/code/algorithm/basic-knowledge/2025/01/07/"><![CDATA[<h1 id="基本的输入输出"><span style="color: rgb(255,127,80);"><strong>基本的输入输出</strong></span></h1>
+<p>这种方式在需要从函数中返回多个值或者处理动态生成的数据时非常有用。</p>]]></content><author><name>ZJM</name></author><category term="code/algorithm/basic-knowledge" /><category term="Code" /><summary type="html"><![CDATA[指针教程]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/code-cover-8.png" /><media:content medium="image" url="http://localhost:4000/code-cover-8.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">基本的输入输出</title><link href="http://localhost:4000/code/algorithm/basic-knowledge/2025/01/07/Input&Output/" rel="alternate" type="text/html" title="基本的输入输出" /><published>2025-01-07T00:00:00+08:00</published><updated>2025-01-07T00:00:00+08:00</updated><id>http://localhost:4000/code/algorithm/basic-knowledge/2025/01/07/Input&amp;Output</id><content type="html" xml:base="http://localhost:4000/code/algorithm/basic-knowledge/2025/01/07/Input&amp;Output/"><![CDATA[<h1 id="基本的输入输出"><span style="color: rgb(255,127,80);"><strong>基本的输入输出</strong></span></h1>
 
 <p>C++ 标准库提供了强大的输入/输出（I/O）功能，本章将介绍 C++ 中最基本和最常用的 I/O 操作。</p>
 
@@ -1365,7 +1226,146 @@
 
 <hr />
 
-<p>这个版本增加了详细的示例，解释了每个流的用途，并且通过多个代码实例帮助用户更好地理解各个流的不同特性。如果你有任何进一步的问题或需要更多的例子，可以告诉我！</p>]]></content><author><name>ZJM</name></author><category term="code/algorithm/basic-knowledge" /><category term="Code" /><summary type="html"><![CDATA[基本的输入输出]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/code-cover-8.png" /><media:content medium="image" url="http://localhost:4000/code-cover-8.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">常量</title><link href="http://localhost:4000/code/algorithm/basic-knowledge/2025/01/06/Constant/" rel="alternate" type="text/html" title="常量" /><published>2025-01-06T00:00:00+08:00</published><updated>2025-01-06T00:00:00+08:00</updated><id>http://localhost:4000/code/algorithm/basic-knowledge/2025/01/06/Constant</id><content type="html" xml:base="http://localhost:4000/code/algorithm/basic-knowledge/2025/01/06/Constant/"><![CDATA[<h1 id="常量"><span style="color: rgb(255,127,80);"><strong>常量</strong></span></h1>
+<p>这个版本增加了详细的示例，解释了每个流的用途，并且通过多个代码实例帮助用户更好地理解各个流的不同特性。如果你有任何进一步的问题或需要更多的例子，可以告诉我！</p>]]></content><author><name>ZJM</name></author><category term="code/algorithm/basic-knowledge" /><category term="Code" /><summary type="html"><![CDATA[基本的输入输出]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/code-cover-8.png" /><media:content medium="image" url="http://localhost:4000/code-cover-8.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">日期与时间</title><link href="http://localhost:4000/code/algorithm/basic-knowledge/2025/01/07/Date-and-Time/" rel="alternate" type="text/html" title="日期与时间" /><published>2025-01-07T00:00:00+08:00</published><updated>2025-01-07T00:00:00+08:00</updated><id>http://localhost:4000/code/algorithm/basic-knowledge/2025/01/07/Date%20and%20Time</id><content type="html" xml:base="http://localhost:4000/code/algorithm/basic-knowledge/2025/01/07/Date-and-Time/"><![CDATA[<h1 id="日期与时间"><span style="color: rgb(255,127,80);"><strong>日期与时间</strong></span></h1>
+
+<p>在 C++ 中，没有直接的日期类型，标准库主要依赖于 C 语言中的日期和时间处理方式。因此，为了操作日期和时间，你需要在程序中引入 <code class="language-plaintext highlighter-rouge">&lt;ctime&gt;</code> 头文件。</p>
+
+<p>C++ 提供了四种与时间相关的类型：<code class="language-plaintext highlighter-rouge">clock_t</code>、<code class="language-plaintext highlighter-rouge">time_t</code>、<code class="language-plaintext highlighter-rouge">size_t</code> 和 <code class="language-plaintext highlighter-rouge">tm</code>。其中，<code class="language-plaintext highlighter-rouge">clock_t</code>、<code class="language-plaintext highlighter-rouge">size_t</code> 和 <code class="language-plaintext highlighter-rouge">time_t</code> 用整数来表示系统时间和日期，而 <code class="language-plaintext highlighter-rouge">tm</code> 结构则以更为直观的方式存储日期和时间的各个组成部分。</p>
+
+<h3 id="tm-结构"><span style="color: rgb(0,191,255);"><strong><code class="language-plaintext highlighter-rouge">tm</code> 结构</strong></span></h3>
+
+<p><code class="language-plaintext highlighter-rouge">tm</code> 结构是 C/C++ 中用于存储日期和时间的结构体，其定义如下：</p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">struct</span> <span class="nc">tm</span>
+<span class="p">{</span>
+  <span class="kt">int</span> <span class="n">tm_sec</span><span class="p">;</span>   <span class="c1">// 秒，范围 0 到 59（但有时允许到 61）</span>
+  <span class="kt">int</span> <span class="n">tm_min</span><span class="p">;</span>   <span class="c1">// 分钟，范围 0 到 59</span>
+  <span class="kt">int</span> <span class="n">tm_hour</span><span class="p">;</span>  <span class="c1">// 小时，范围 0 到 23</span>
+  <span class="kt">int</span> <span class="n">tm_mday</span><span class="p">;</span>  <span class="c1">// 日，范围 1 到 31</span>
+  <span class="kt">int</span> <span class="n">tm_mon</span><span class="p">;</span>   <span class="c1">// 月，范围 0 到 11（0 代表 1 月，11 代表 12 月）</span>
+  <span class="kt">int</span> <span class="n">tm_year</span><span class="p">;</span>  <span class="c1">// 年，从 1900 年起算</span>
+  <span class="kt">int</span> <span class="n">tm_wday</span><span class="p">;</span>  <span class="c1">// 星期几，范围 0 到 6（0 代表星期天）</span>
+  <span class="kt">int</span> <span class="n">tm_yday</span><span class="p">;</span>  <span class="c1">// 一年中的第几天，范围 0 到 365</span>
+  <span class="kt">int</span> <span class="n">tm_isdst</span><span class="p">;</span> <span class="c1">// 夏令时标识（非零表示启用夏令时）</span>
+<span class="p">};</span>
+</code></pre></div></div>
+
+<h3 id="常用的时间函数"><span style="color: rgb(0,191,255);"><strong>常用的时间函数</strong></span></h3>
+
+<p>C++ 标准库提供了一些与时间相关的函数，使用时可以参考下表：</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>函数</th>
+      <th>描述</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">time_t time(time_t *time);</code></td>
+      <td>返回当前日历时间，自 1970 年 1 月 1 日以来的秒数。</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">char* ctime(const time_t *time);</code></td>
+      <td>将 <code class="language-plaintext highlighter-rouge">time_t</code> 类型的时间转换为字符串表示，格式为：<code class="language-plaintext highlighter-rouge">day month date hours:minutes:seconds year\n\0</code>。</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">struct tm* localtime(const time_t *time);</code></td>
+      <td>返回本地时间的 <code class="language-plaintext highlighter-rouge">tm</code> 结构指针。</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">clock_t clock(void);</code></td>
+      <td>返回程序运行时的处理器时间。</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">char* asctime(const struct tm *time);</code></td>
+      <td>将 <code class="language-plaintext highlighter-rouge">tm</code> 结构转换为字符串，格式为：<code class="language-plaintext highlighter-rouge">day month date hours:minutes:seconds year\n\0</code>。</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">struct tm* gmtime(const time_t *time);</code></td>
+      <td>返回与 UTC（格林尼治标准时间）相关的 <code class="language-plaintext highlighter-rouge">tm</code> 结构指针。</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">time_t mktime(struct tm *time);</code></td>
+      <td>将 <code class="language-plaintext highlighter-rouge">tm</code> 结构转换为 <code class="language-plaintext highlighter-rouge">time_t</code> 类型的日历时间。</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">double difftime(time_t time2, time_t time1);</code></td>
+      <td>返回两个时间点之间的秒数差。</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">size_t strftime();</code></td>
+      <td>用指定格式输出日期和时间。</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="获取当前日期和时间"><span style="color: rgb(0,191,255);"><strong>获取当前日期和时间</strong></span></h3>
+
+<p>以下是一个示例程序，展示如何获取当前日期和时间，包括本地时间和协调世界时（UTC）。</p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
+#include</span> <span class="cpf">&lt;ctime&gt;</span><span class="cp">
+</span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
+<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
+<span class="p">{</span>
+    <span class="c1">// 获取当前时间（自1970年1月1日以来的秒数）</span>
+    <span class="kt">time_t</span> <span class="n">now</span> <span class="o">=</span> <span class="n">time</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
+    <span class="c1">// 将当前时间转换为字符串形式</span>
+    <span class="kt">char</span><span class="o">*</span> <span class="n">dt</span> <span class="o">=</span> <span class="n">ctime</span><span class="p">(</span><span class="o">&amp;</span><span class="n">now</span><span class="p">);</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"本地日期和时间："</span> <span class="o">&lt;&lt;</span> <span class="n">dt</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="c1">// 获取UTC时间</span>
+    <span class="n">tm</span><span class="o">*</span> <span class="n">gmtm</span> <span class="o">=</span> <span class="n">gmtime</span><span class="p">(</span><span class="o">&amp;</span><span class="n">now</span><span class="p">);</span>
+    <span class="n">dt</span> <span class="o">=</span> <span class="n">asctime</span><span class="p">(</span><span class="n">gmtm</span><span class="p">);</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"UTC 日期和时间："</span> <span class="o">&lt;&lt;</span> <span class="n">dt</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p><span style="color: rgb(238,130,238);"><strong>输出示例</strong>：</span></p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="s">本地日期和时间：Sat Jan  8 20:07:41 </span><span class="m">2011</span>
+<span class="s">UTC 日期和时间：Sun Jan  9 03:07:41 </span><span class="m">2011</span>
+</code></pre></div></div>
+
+<h3 id="使用-tm-结构格式化时间"><span style="color: rgb(0,191,255);"><strong>使用 <code class="language-plaintext highlighter-rouge">tm</code> 结构格式化时间</strong></span></h3>
+
+<p><code class="language-plaintext highlighter-rouge">tm</code> 结构在 C/C++ 中处理日期和时间时非常有用。你可以访问结构中的各个成员来获取时间的详细信息。下面是一个使用 <code class="language-plaintext highlighter-rouge">tm</code> 结构的示例：</p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
+#include</span> <span class="cpf">&lt;ctime&gt;</span><span class="cp">
+</span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
+<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
+<span class="p">{</span>
+    <span class="c1">// 获取当前时间</span>
+    <span class="kt">time_t</span> <span class="n">now</span> <span class="o">=</span> <span class="n">time</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"1970 到目前经过的秒数: "</span> <span class="o">&lt;&lt;</span> <span class="n">now</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="c1">// 将时间转换为本地时间（tm结构）</span>
+    <span class="n">tm</span><span class="o">*</span> <span class="n">ltm</span> <span class="o">=</span> <span class="n">localtime</span><span class="p">(</span><span class="o">&amp;</span><span class="n">now</span><span class="p">);</span>
+    <span class="c1">// 输出 tm 结构的各个组成部分</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"年: "</span> <span class="o">&lt;&lt;</span> <span class="mi">1900</span> <span class="o">+</span> <span class="n">ltm</span><span class="o">-&gt;</span><span class="n">tm_year</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"月: "</span> <span class="o">&lt;&lt;</span> <span class="mi">1</span> <span class="o">+</span> <span class="n">ltm</span><span class="o">-&gt;</span><span class="n">tm_mon</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"日: "</span> <span class="o">&lt;&lt;</span> <span class="n">ltm</span><span class="o">-&gt;</span><span class="n">tm_mday</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"时间: "</span> <span class="o">&lt;&lt;</span> <span class="n">ltm</span><span class="o">-&gt;</span><span class="n">tm_hour</span> <span class="o">&lt;&lt;</span> <span class="s">":"</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">ltm</span><span class="o">-&gt;</span><span class="n">tm_min</span> <span class="o">&lt;&lt;</span> <span class="s">":"</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">ltm</span><span class="o">-&gt;</span><span class="n">tm_sec</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p><span style="color: rgb(238,130,238);"><strong>**输出示例</strong>：**</span></p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">1970 到目前经过的秒数</span><span class="pi">:</span> <span class="m">1503564157</span>
+<span class="na">年</span><span class="pi">:</span> <span class="m">2017</span>
+<span class="na">月</span><span class="pi">:</span> <span class="m">8</span>
+<span class="na">日</span><span class="pi">:</span> <span class="m">24</span>
+<span class="na">时间</span><span class="pi">:</span> <span class="s">16:42:37</span>
+</code></pre></div></div>
+
+<p>在上面的代码中，我们用 <code class="language-plaintext highlighter-rouge">1900 + ltm-&gt;tm_year</code> 来获取实际的年份，因为 <code class="language-plaintext highlighter-rouge">tm_year</code> 存储的是从 1900 年起的年份偏移量。同样地，用 <code class="language-plaintext highlighter-rouge">1 + ltm-&gt;tm_mon</code> 来计算实际月份，因为 <code class="language-plaintext highlighter-rouge">tm_mon</code> 的范围是从 0 到 11，表示从 1 月到 12 月。</p>
+
+<h3 id="总结"><span style="color: rgb(0,191,255);"><strong>总结</strong></span></h3>
+
+<p>在 C++ 中，处理日期和时间主要依赖于 <code class="language-plaintext highlighter-rouge">&lt;ctime&gt;</code> 头文件，使用 <code class="language-plaintext highlighter-rouge">time_t</code> 和 <code class="language-plaintext highlighter-rouge">tm</code> 等类型进行时间的表示和操作。通过相关函数，你可以轻松获取和格式化当前时间，以及进行日期与时间的计算。这些基础操作对于开发中需要时间功能的程序是非常常见的。</p>]]></content><author><name>ZJM</name></author><category term="code/algorithm/basic-knowledge" /><category term="Code" /><summary type="html"><![CDATA[日期与时间]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/code-cover-8.png" /><media:content medium="image" url="http://localhost:4000/code-cover-8.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">常量</title><link href="http://localhost:4000/code/algorithm/basic-knowledge/2025/01/06/Constant/" rel="alternate" type="text/html" title="常量" /><published>2025-01-06T00:00:00+08:00</published><updated>2025-01-06T00:00:00+08:00</updated><id>http://localhost:4000/code/algorithm/basic-knowledge/2025/01/06/Constant</id><content type="html" xml:base="http://localhost:4000/code/algorithm/basic-knowledge/2025/01/06/Constant/"><![CDATA[<h1 id="常量"><span style="color: rgb(255,127,80);"><strong>常量</strong></span></h1>
 
 <p>常量是指在程序执行期间固定不变的值。常量也称为字面量，其值在定义后不能修改。常量可以是任何基本数据类型，如整数、浮点数、字符、字符串和布尔值。常量与变量类似，只是其值在定义后不可改变。</p>
 
