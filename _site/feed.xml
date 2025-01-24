@@ -1,363 +1,220 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="http://localhost:4000/myblog/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/myblog/" rel="alternate" type="text/html" /><updated>2025-01-24T10:50:12+08:00</updated><id>http://localhost:4000/myblog/feed.xml</id><title type="html">Tomorrow’s Blog</title><entry><title type="html">【PRD】MBA运营平台</title><link href="http://localhost:4000/myblog/internship/2025/01/23/PRD-MBA%E8%BF%90%E8%90%A5%E5%B9%B3%E5%8F%B0/" rel="alternate" type="text/html" title="【PRD】MBA运营平台" /><published>2025-01-23T00:00:00+08:00</published><updated>2025-01-23T00:00:00+08:00</updated><id>http://localhost:4000/myblog/internship/2025/01/23/%E3%80%90PRD%E3%80%91MBA%E8%BF%90%E8%90%A5%E5%B9%B3%E5%8F%B0</id><content type="html" xml:base="http://localhost:4000/myblog/internship/2025/01/23/PRD-MBA%E8%BF%90%E8%90%A5%E5%B9%B3%E5%8F%B0/"><![CDATA[<ol>
-  <li>
-    <h3 id="需求背景">需求背景：</h3>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-01-24T15:39:23+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Tomorrow’s Blog</title><entry><title type="html"></title><link href="http://localhost:4000/2025/01/24/2025-1-23-PRD-%E6%80%9D%E8%B7%AF%E6%A8%A1%E7%89%88%E9%85%8D%E7%BD%AE/" rel="alternate" type="text/html" title="" /><published>2025-01-24T15:39:23+08:00</published><updated>2025-01-24T15:39:23+08:00</updated><id>http://localhost:4000/2025/01/24/2025-1-23-%E3%80%90PRD%E3%80%91%E6%80%9D%E8%B7%AF%E6%A8%A1%E7%89%88%E9%85%8D%E7%BD%AE</id><content type="html" xml:base="http://localhost:4000/2025/01/24/2025-1-23-PRD-%E6%80%9D%E8%B7%AF%E6%A8%A1%E7%89%88%E9%85%8D%E7%BD%AE/"><![CDATA[<h2 id="1-变更记录">1 变更记录</h2>
 
-    <p>当前BA Copilot能力一览中的场景化服务Modules大多是合作共建的分析主题，推测其主要是以预置固定数据源和预置Prompt为主构建和交付的相对独立的服务模块。当前Module的建设形式更接近于一个个独立项目形式在运作，其更多资源投入可能是在跨部门跨职能沟通协同、数据准备、大模型服务和提示工程的开发实现、效果评测和验收、试点和推广等。</p>
+<table>
+  <thead>
+    <tr>
+      <th><strong>序号</strong></th>
+      <th><strong>日期</strong></th>
+      <th><strong>变更人</strong></th>
+      <th><strong>修改内容</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td> </td>
+      <td>2025/01/15</td>
+      <td>何心</td>
+      <td>新建文档</td>
+    </tr>
+  </tbody>
+</table>
 
-    <p>这种模式的工作重心是面向交付来实现，而不是打造一套平台运营机制来赋能各类UGC创新者，无法支持用户自助建设所需Module并发布使用，该模式下Module生产的边际成本会维持在一个相对较高的水位。为此，有必要审视年度OP中提到的UGC创新者模式，需要建设并沉淀一套平台运营能力和UGC机制，在此基础上再推进各类Module的平台共建或用户自建，预设创新者主页（mba.sankuai.com）为运营平台，对核心链路绘制如下</p>
+<h2 id="2-需求背景"><strong>2 需求背景</strong></h2>
 
-    <p><img src="/myblog/assets/Post Image/Internship/【PRD】MBA运营平台/1.svg" alt="" /></p>
-  </li>
-  <li>
-    <h3 id="需求目标">需求目标：</h3>
-
-    <p>建设一个支持更多岗位同学使用（门槛低）、能够快速开发module需求、生成结果质量有保证的平台。主要包括数据收集、Prompt调试、测试验收、上线部署发布、评估反馈。</p>
-
-    <ol>
-      <li>
-        <p>MBA运营平台上有2个角色，分别是创新者和平台运营。整体流程如下：</p>
-
-        <p><img src="/myblog/assets/Post Image/Internship/【PRD】MBA运营平台/2.svg" alt="" /></p>
-      </li>
-      <li>
-        <p>核心功能：</p>
-
-        <ol>
-          <li>创建Module：配置prompt、Databox、知识库、思路模板</li>
-          <li>测试Module：自测Module效果</li>
-          <li>发布Module：发布到本地，自己使用；也可以选择发布到BA Copilot上，让其他人使用</li>
-          <li>审批Module：如果发布到BA Copilot，平台运营会审批，审批通过后上线；</li>
-          <li>Module管理：创新者和平台运营管理Module</li>
-        </ol>
-      </li>
-      <li>
-        <p>MBA运营平台下挂2个二级菜单，分别是Module管理、MBA实验室。</p>
-
-        <ol>
-          <li>Module管理：对在MBA生成的Module进行内容管理、权限管理、上下线管理；</li>
-          <li>MBA实验室：在实验室配置调试prompt、收集数据、配置知识库，调试Module效果等；</li>
-        </ol>
-      </li>
-    </ol>
-  </li>
-  <li>
-    <h3 id="变更记录">变更记录</h3>
-
-    <table>
-      <thead>
-        <tr>
-          <th><strong>序号</strong></th>
-          <th><strong>日期</strong></th>
-          <th><strong>变更人</strong></th>
-          <th><strong>修改内容</strong></th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td> </td>
-          <td>2025/01/20</td>
-          <td>孙广城</td>
-          <td>新建</td>
-        </tr>
-        <tr>
-          <td> </td>
-          <td>2025/01/23</td>
-          <td>孙广城</td>
-          <td>修改，见紫色字</td>
-        </tr>
-      </tbody>
-    </table>
-  </li>
-  <li>
-    <h3 id="产品方案">产品方案：</h3>
-
-    <p>产品设计UI：<a href="https://www.figma.com/design/gVu5Y18N3SYDR742ReKJ5O/MBA运营平台?node-id=85-1220&amp;p=f">https://www.figma.com/design/gVu5Y18N3SYDR742ReKJ5O/MBA%E8%BF%90%E8%90%A5%E5%B9%B3%E5%8F%B0?node-id=85-1220&amp;p=f</a></p>
-  </li>
+<ol>
+  <li>准确意图下获取数据的准确率提升至90%是BA Copilot2025年的OP</li>
+  <li>围绕UGC创新者模式，BA Copilot计划构建Data Box，即数据接入与语义化模块，对于接入的数据也需要保证90%的准确率</li>
+  <li>产研对于意图识别Agent的目标达成一致，暂时只将思路模板配置开放给用户</li>
 </ol>
 
-<p>&lt;!DOCTYPE html&gt;</p>
-<html lang="zh">
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Module管理</title>
-    <style>
-        table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-        th, td {
-            padding: 10px;
-            border: 1px solid #ccc;
-            text-align: left;
-        }
-        th {
-            background-color: #f4f4f4;
-        }
-        tr:nth-child(even) {
-            background-color: #f9f9f9;
-        }
-    </style>
-</head>
-<body>
-    <table>
-        <thead>
-            <tr>
-                <th>核心功能</th>
-                <th>描述</th>
-                <th>原型</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>创建Module</td>
-                <td>基础信息：欢迎语用富文本，其他使用纯文本，都是必填项<br />a.静态图标：给一个默认的图标，用户可点击+按钮上传本地图片；<br />名称：输入框内文字提示“给Module取个名字”，手动输入，最多10个字符；<br />分类标签：点击【添加】，弹出【分类标签】弹窗，可选择1个分类，自定义标签最多可配置3个；添加完成后，分类和标签回显展示。按钮btn名字变更为“编辑”<br />分类的枚举值：软硬件、食杂零售、医药健康、下沉市场、外卖、商增、闪购、美图平台、酒店旅行、到综、到餐、履约、点评、HR、财务。<br />自定义标签：用户输入，最多可输入3个标签。每个标签最多输入5个字符<br />描述：输入框内文字提示“请填写Module的属性用途，比如”基于...数据“，”提供...分析洞察“等”，手动输入，最多200个字符；<br />欢迎语：输入框内文字提示“请输入Module给用户的第一句话”，手动输入，最多50个字符；<br />提问示例：输入框内文字提示“请输入对用户的提问建议，多条提问示例需用“/”分隔”，手动输入，最多200个字符<br />一键清空按钮：点击清空所有信息<br />保存按钮：点击保存信息；<br />下一步按钮：点击自动保存信息，进入【组装编排】。</td>
-              <td><img src="/myblog/assets/Post Image/Internship/【PRD】MBA运营平台/3.svg" /></td>
-            </tr>
-            <tr>
-                <td>/td&gt;
-                <td>组装编排
+<h2 id="3-需求目标">3 需求目标</h2>
 
-数据洞察提示词：
+<p>思路模板配置：提升智能服务水平的一项必要能力，服务于不同模块的定制化分析思路配置。</p>
 
-输入框内和鼠标移动到？上，展示默认的提示词：
+<h2 id="4-功能列表">4 功能列表</h2>
 
-默认提示词
+<table>
+  <thead>
+    <tr>
+      <th>模块</th>
+      <th>优先级</th>
+      <th>子模块</th>
+      <th>主要功能</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>思路模板展示</td>
+      <td>P0</td>
+      <td>模板列表</td>
+      <td>展示配置的模板，可新增、修改、删除</td>
+    </tr>
+    <tr>
+      <td>思路模板工作流配置</td>
+      <td>P0</td>
+      <td>默认画布展示内容</td>
+      <td>画布初始化展示信息</td>
+    </tr>
+    <tr>
+      <td>P0</td>
+      <td>节点页面</td>
+      <td>可创建节点展示页面，点击节点后在画布中添加节点</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>P0</td>
+      <td>配置模板工作流</td>
+      <td>在画布中配置工作流，包括触发规则及对应工作流</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>P0</td>
+      <td>流程预览</td>
+      <td>试运行时会按配置规则进行配置校验，若无错误可进行效果预览</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>P0</td>
+      <td>模板发布</td>
+      <td>发布配置成功的模板，回写模板信息至MBA</td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
 
-你是一名专业的数据分析师，分析逻辑严谨，语言表达精炼，能够使用商业分析术语对数据信息进行概括。你需要根据我给你提供的数据进行分析和洞察，需要参考知识库中的内容信息，根据提问给出分析结论。
+<h2 id="5-产品方案">5 产品方案</h2>
 
-我的要求必须严格遵守，一些要求如下：
+<h3 id="51-产品方案">5.1 产品方案</h3>
 
-根据以下提问内容，结合数据进行分析和反馈； 
+<table>
+  <thead>
+    <tr>
+      <th><strong>页面</strong></th>
+      <th><strong>功能说明</strong></th>
+      <th><strong>原型图</strong></th>
+      <th><strong>UI</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>思路模板展示页面</td>
+      <td>该页面为思路模板配置、管理页面，可新增、修改、删除规则。（图1）页面权限：展示用户具有<strong>模块管理权限</strong>的思路模板展示规则：默认展示用户拥有<strong>模块管理权限</strong>的全部模板可通过下拉框选中模块筛选模板，可多选，可全选，可搜索（图2）按照修改时间倒序展示字段说明：Module编号：如Module101、Module108Module名称：如场景化工序匹配、业务Cross分析模板编号：新建后会创建模板编号，唯一值模板名称：新建时用户会输入模板名称，10字以内模板描述：新建时用户会输入模板描述，50字以内，超长部分省略展示模板状态：分为草稿、已发布、已失效（databox指标维度变更后会触发）规则优先级：模板的优先级配置，当同时满足时确认执行优先级，数字越小优先级越高更新时间：模板创建/修改的最新时间更新人：模板创建/修改的更新人MISIDModule和规则的关系：同一个模块可配置多个模板，已发布的模板会在MBA中回写至模块配置中增删改新建：点击【新建思路模板】后，弹窗新建模板页面（图3），点击确定后，进入进入此工作流配置页面删除：点击【删除】后，展示弹窗提示是否确认删除此工作流，确认后才可删除，弹窗内容：（图4）删除并跳转至模板配置：点击后删除此模板并且跳转至MBA思路模板配置页删除后不会对线上在行模板有影响，需重新发布线上才会生效MBA思路模板配置页中已删除的模板右上角展示提示icon，需要解除绑定后才可以重新发布修改：点击【修改】后，进入此工作流配置页面</td>
+      <td>图1：<img src="https://km.sankuai.com/api/file/cdn/2702355196/146803256485?contentType=1&amp;isNewContent=false" alt="image.jpeg" />图2：<img src="https://km.sankuai.com/api/file/cdn/2702355196/146672695062?contentType=1&amp;isNewContent=false" alt="image.jpeg" />图3：<img src="https://km.sankuai.com/api/file/cdn/2702355196/146801897078?contentType=1&amp;isNewContent=false" alt="image.jpeg" />图4：<img src="https://km.sankuai.com/api/file/cdn/2702355196/146931992372?contentType=1&amp;isNewContent=false" alt="image.jpeg" /></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>默认画布</td>
+      <td>该页面为思路模板的规则及工作流配置页面，可通过画布的形式自定义节点及单个节点中的配置。展示内容：（图1）模块、模板信息：注：需要Module管理员在MBA平台新建并保存模块相关基础信息、关联databox相关数据后此处新建后才能获取对应模块信息。MBA获取的模板是此处发布过的模板当前模板的模版名称：点击可修改模块名称：模板关联的模块id+名称模块对应的模板名称：下拉框，可单选，切换后会弹窗是否确认切换至其他模板，切换后当前模板自动保存开始节点：开始节点是工作流的起始节点，需要包含if条件信息作为触发条件结束节点：结束节点是工作流的末尾节点，用于返回工作流的运行结果添加节点：点击可以展开弹窗页面（图2），页面展示可添加的节点，可点击或拖拽至画布（图3）放大、缩小、展开画布：点击【+】放大10%，点击【-】缩小10%，点击展开全屏画布，按ESC返回撤回：撤销上一步配置重置：可清空当前页面的所有配置，点击后弹窗确认是否确认重置，确认后才可重置试运行：点击后校验当前页面是否有配置错误，若有则弹窗节点配置检查页面（图4），当前配置均无问题后，点击试运行可弹窗预览页面（图5），预览页面可折叠发布：点击后校验当前页面是否有配置错误，若有则弹窗节点配置检查页面（图4），当前配置均无问题后，点击发布可发布此模板，发布过的模板会回写至MBA中的模板关联页面其他组件能力：如按住拖动等保存逻辑：当用户切换模板/退出配置时，会保存当前全部配置内容</td>
+      <td>图1：<img src="https://km.sankuai.com/api/file/cdn/2702355196/146790394041?contentType=1&amp;isNewContent=false" alt="image.jpeg" />图2：<img src="https://km.sankuai.com/api/file/cdn/2702355196/146802403699?contentType=1&amp;isNewContent=false" alt="image.jpeg" />图3：<img src="https://km.sankuai.com/api/file/cdn/2702355196/146818228837?contentType=1&amp;isNewContent=false" alt="image.jpeg" />图4：<img src="https://km.sankuai.com/api/file/cdn/2702355196/146808832982?contentType=1" alt="image.jpeg" />图5：<img src="https://km.sankuai.com/api/file/cdn/2702355196/146811548652?contentType=1&amp;isNewContent=false" alt="image.jpeg" /></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>节点页面</td>
+      <td>该页面为点击【添加节点】按钮后弹窗展示的页面，包含所有节点内容及简介。点击或拖拽任意节点可添加节点至画布，右侧弹窗展示、配置节点相关信息。节点介绍可参考【5.2节点介绍】节点分类及简介：（图1）开始节点：工作流的起始节点，需要包含if条件信息作为触发条件结束节点：工作流的末尾节点，用于返回工作流的运行结果条件节点：根据输入scheme结果判断是否满足条件文本节点：前端直接展示文本内容SQL节点：可配置SQL取数逻辑Python节点：可通过文本输入的形式输入分析思路洞察分析节点：对截至到目前节点的数据的洞察分析绘图节点：可通过文本输入/勾选前端组件的形式说明需要输出的图表要求节点依赖：在页面配置不满足节点相关的依赖条件时，点击试运行、发布时，试运行会弹窗报错条件分支：必须有if条件，且if、else两条分支都有下游节点文本节点：无依赖项SQL取数：无依赖项Python分析：依赖SQL取数和分析节点，若上游无SQL取数，则提示不可新建Python分析节点洞察分析：依赖SQL取数、Python分析、洞察分析节点，若上游无相关节点，则提示不可新建洞察分析节点绘图：依赖SQL取数或Python分析节点，若上游无SQL取数或Python分析节点，则提示不可新建绘图节点其他说明：流程首尾不可相连，避免流程进入循环无法停止</td>
+      <td>图1：<img src="https://km.sankuai.com/api/file/cdn/2702355196/146815663682?contentType=1&amp;isNewContent=false" alt="image.jpeg" /></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>流程预览</td>
+      <td>预览规则：当页面配置无错误时，点击试运行可以对当前配置进行调试，否则展示节点配置检查页面，试运行按钮置灰调试过程：输入query后会按照左侧配置展示返回流程编排结果展示内容：模板信息调试过程信息输入框、发送按钮发布按钮</td>
+      <td><img src="https://km.sankuai.com/api/file/cdn/2702355196/146808505777?contentType=1&amp;isNewContent=false" alt="image.jpeg" /></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>模板发布</td>
+      <td>发布规则：当页面配置无错误时，点击发布可以对当前配置进行发布，否则展示节点配置检查页面，发布按钮置灰当模板试运行成功后才可发布，未试运行时按钮置灰发布后：模板创建后发布：回写信息至MBA模板配置List中，草稿状态的模板不会展示。模板更新后发布：识别模板无节点错误后，点击发布对线上生效数据集变更的时候databox提示影响的模板信息，如果造成节点错误直接置为失效，如果节点没错就不会失效</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
 
-2. 需要以"基于数据分析可以得出以下洞察："作为开头，解读数据中的信息；
+<h3 id="52-节点介绍">5.2 节点介绍</h3>
 
-3. 输出内容字数限制在200字以内，超量时注意进行信息简化，不要截断输出； 
+<p>工作流配置由多个节点构成，节点是组成工作流的基本单元。例如，SQL、Python、文本等节点。</p>
 
-4. 不要编造数据中没有提及信息; 
+<p>工作流默认包含了<strong>开始</strong>节点和<strong>结束</strong>节点。</p>
 
-5. 请注意输入数据是根据你的问题返回的，尽可能从中分析出有价值信息; 
+<p>明细可随组件功能有所调整，但需保持基础功能</p>
 
-6. Bullet Point形式作答； 
-
-7. 人称代词均使用第二人称；
-
-8.不要输出任何代码和sql；
-
-鼠标点击输入框，光标默认在“8.不要输出任何代码和sql；”的下面
-
-输入框内最多字数限制为1000字
-
-可以为空，如果用户不填写，系统就会使用默认的提示词。
-
-数据源：
-
-文字提示：可上传Databox数据源构建数据库，用户询问数值类问题时，应用能够查询、计算和分析数据并答复，每个Module可关联多个数据源。
-
-➕btn：点击弹窗展示用户可配置的Databox数据，可配置的标准是：配置人mis有数据源权限且数据源是发布的状态。可绑定多个数据源，不限制数量。二次点击➕btn，弹窗内展示逻辑不变，即展示该用户可配置的数据源，已选择的数据源前面的打✅。
-
-多人编辑场景：新编辑人进入页面，展示上次保存的的Databox数据源，无论新编辑人是否有数据源权限，都可以对已保存的数据源进行删除；
-
-新编辑人，点击➕btn，弹窗内展示新编辑人可配置的数据源，即：有数据源权限且数据源是发布的状态。可绑定多个数据源。
-
-弹窗内数据源展示的内容：数据源名称、数据源id、数据源描述、负责人、状态。
-
-如果没有数据源信息，展示为空。点击右上角【创建数据源】，进入Databox系统。
-
-思路模板：
-
-文字提示：可上传思路模板，Module会严格按照人工编排的工作流进行对话，每个Module可关联多个思路模板
-
-➕btn：点击弹窗展示用户可配置的思路模板，可配置的标准是：绑定该Module且是发布状态的思路模板。可添加多个思路模板，不限制数量。二次点击➕btn，弹窗内展示逻辑不变，即绑定该Module且是发布状态的思路模板，已选择的思路模板前面的打✅。
-
-多人编辑场景：新编辑人进入页面，展示上次保存的的思路模板，可以对已保存的思路模板进行删除；
-
-新编辑人，点击➕btn，弹窗内展示Module可配置的思路模板，即：绑定该Module且是发布状态的思路模板。可绑定多个思路模板。
-
-如果Module没有配置数据源，点击➕btn，思路模板的弹窗不弹出，toast提示“请先配置数据源”
-
-弹窗内思路模板的展示内容：模板名称、模板编号、模板描述、绑定的Module名称和状态。
-
-如果没有思路模板信息，展示为空。点击右上角【创建思路模板】，进入思路模板系统。
-
-配置知识库：
-
-文字提示：可上传学城的文字知识构建知识库，用户发送消息时，Module能够引用知识库答复，每个Module仅可关联1个知识库（最多含5个学城文档）
-
-➕btn：点击弹窗展示配置人mis上所有的知识库内容（知识库跟mis号绑定），只能添加一个知识库（每个知识库可下挂最多5个学城wiki，同线上逻辑【PRD】BA Copilot Lab-学城知识库引入）。二次点击➕btn，弹窗内展示逻辑不变，即配置人mis上所有的知识库内容，已选择的知识库前面的打✅。
-
-多人编辑场景：新编辑人进入页面，展示上次保存的的知识库，可以对已保存的思路模板进行删除；
-
-新编辑人，点击➕btn，弹窗内展示配置人mis上所有的知识库内容。
-
-弹窗内知识库的展示内容和交互逻辑，与线上逻辑保持一致。
-
-数据源、思路模板和知识库配置完成的展示：
-
-数据源：数据源名称、数据源id和回收键
-
-思路模板：思路模板名称、模板id和回收键
-
-知识库：知识库名称和回收键
-
-点击【保存】或【下一步】：校验逻辑如下：
-
-取这个Module所有有编辑权限的mis，取所有mis有权限的数据源（数据源是生效状态）、所有mis的知识库和该Module所有的思路模板（思路模板是生效状态）；
-
-保存的数据源、知识库和思路模板，与第一步的全集进行匹配：
-
-如果是上一步的子集，则能够保存成功。进入【安全配置】。
-
-如果不是上一步的子集，则不能保存成功，toast提示如下，如果命中多个问题toast文案合并。
-
-问题分类
-
-toast提示内容
-
-数据源权限问题
-
-xxx数据源无权限
-
-知识库权限问题
-
-xxx知识库无权限
-
-思路模板权限问题
-
-xxx思路模板未绑定该Module
-
-Databox的数据源不能为空。如果为空，无法保存成功。toast提示“保存失败，数据源不能为空”
-
-只有保存了数据源，右侧的调试页面才可以进行query输入。
-
-如果没有配置数据源，右侧的输入框无法输入内容，用户点击给toast提示“请配置数据源，保存后再进行提问”
-
-上一步btn：点击返回上一页面（前端缓存已配置的内容）
-
-</td>
-            &lt;/tr&gt;
-            <tr>
-                <td>名称</td>
-                <td>为Module取名，最多10个字符。</td>
-            </tr>
-            <tr>
-                <td>分类标签</td>
-                <td>用户可以选择1个分类标签，并自定义最多3个标签。</td>
-            </tr>
-            <tr>
-                <td>描述</td>
-                <td>描述Module的用途，最多200个字符。</td>
-            </tr>
-            <tr>
-                <td>欢迎语</td>
-                <td>可设置Module的欢迎语，最多50个字符。</td>
-            </tr>
-            <tr>
-                <td>提问示例</td>
-                <td>提供对用户的提问建议，最多200个字符，多个示例用“/”分隔。</td>
-            </tr>
-            <tr>
-                <td>一键清空按钮</td>
-                <td>用户可以清空所有输入的配置信息。</td>
-            </tr>
-            <tr>
-                <td>保存按钮</td>
-                <td>保存Module配置信息。</td>
-            </tr>
-            <tr>
-                <td>下一步按钮</td>
-                <td>自动保存配置并进入组装编排。</td>
-            </tr>
-            <tr>
-                <td colspan="2"><strong>组装编排</strong></td>
-            </tr>
-            <tr>
-                <td>数据洞察提示词</td>
-                <td>展示默认提示词，帮助用户分析和洞察数据。</td>
-            </tr>
-            <tr>
-                <td>数据源</td>
-                <td>Module可关联多个数据源，支持绑定发布状态的数据源。</td>
-            </tr>
-            <tr>
-                <td>思路模板</td>
-                <td>Module可关联多个思路模板，支持选择和绑定模板。</td>
-            </tr>
-            <tr>
-                <td>知识库配置</td>
-                <td>Module可关联知识库，帮助提供相关的文档和信息。</td>
-            </tr>
-            <tr>
-                <td colspan="2"><strong>安全配置</strong></td>
-            </tr>
-            <tr>
-                <td>可见范围</td>
-                <td>设置Module的可见范围，包括公开、私密、无权限不可见。</td>
-            </tr>
-            <tr>
-                <td>同时提问数量</td>
-                <td>选择允许的最大提问人数（1、2、5、10、15、20、25、30）。</td>
-            </tr>
-            <tr>
-                <td>提问时间周期</td>
-                <td>设置提问的最大时间范围，固定为1个月。</td>
-            </tr>
-            <tr>
-                <td>保存按钮</td>
-                <td>保存安全配置的设置。</td>
-            </tr>
-            <tr>
-                <td>发布按钮</td>
-                <td>触发审批流程，将Module发布到BA Copilot。</td>
-            </tr>
-            <tr>
-                <td colspan="2"><strong>Module管理</strong></td>
-            </tr>
-            <tr>
-                <td>搜索框</td>
-                <td>支持通过Module名称、ID、标签等条件搜索Module。</td>
-            </tr>
-            <tr>
-                <td>Module列表</td>
-                <td>展示所有Module的信息，包括状态、分类、标签等。</td>
-            </tr>
-            <tr>
-                <td>编辑权限</td>
-                <td>支持对Module的编辑、编辑授权、访问授权、下线等操作。</td>
-            </tr>
-            <tr>
-                <td>审批状态</td>
-                <td>显示Module的审批状态，并支持查看审批详情。</td>
-            </tr>
-            <tr>
-                <td>下线操作</td>
-                <td>对已发布的Module执行下线操作，状态变更为未发布。</td>
-            </tr>
-            <tr>
-                <td colspan="2"><strong>平台运营的Module管理</strong></td>
-            </tr>
-            <tr>
-                <td>Module管理页面</td>
-                <td>展示所有Module的基本信息、状态、分类等。</td>
-            </tr>
-            <tr>
-                <td>下线按钮</td>
-                <td>对已发布的Module执行下线操作。</td>
-            </tr>
-            <tr>
-                <td>审批按钮</td>
-                <td>进入Module的审批详情页面，进行审批。</td>
-            </tr>
-            <tr>
-                <td>查看按钮</td>
-                <td>查看Module的详细信息。</td>
-            </tr>
-        &lt;/tbody&gt;
-    &lt;/table&gt;
-&lt;/body&gt;
-&lt;/html&gt;
-
-</td></tr></tbody></table></body></html>]]></content><author><name>孙广城</name></author><category term="internship" /><category term="confidential" /><summary type="html"><![CDATA[需求背景：]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/myblog/internship-cover-3.png" /><media:content medium="image" url="http://localhost:4000/myblog/internship-cover-3.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">日期与时间</title><link href="http://localhost:4000/myblog/code/algorithm/basic-knowledge/2025/01/07/Date-and-Time/" rel="alternate" type="text/html" title="日期与时间" /><published>2025-01-07T00:00:00+08:00</published><updated>2025-01-07T00:00:00+08:00</updated><id>http://localhost:4000/myblog/code/algorithm/basic-knowledge/2025/01/07/Date%20and%20Time</id><content type="html" xml:base="http://localhost:4000/myblog/code/algorithm/basic-knowledge/2025/01/07/Date-and-Time/"><![CDATA[<h1 id="日期与时间"><span style="color: rgb(255,127,80);"><strong>日期与时间</strong></span></h1>
+<table>
+  <thead>
+    <tr>
+      <th> </th>
+      <th>模块</th>
+      <th>节点名称</th>
+      <th>示意图</th>
+      <th>节点描述</th>
+      <th>节点明细</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td> </td>
+      <td>默认节点</td>
+      <td>开始节点</td>
+      <td><img src="https://km.sankuai.com/api/file/cdn/2702355196/146819644484?contentType=1&amp;isNewContent=false" alt="image.jpeg" /></td>
+      <td>开始节点是工作流的起始节点，包含触发条件</td>
+      <td>符合任意/所有条件时执行条件参数：下拉框可单选用户query指标维度条件关系：包含、不包含、开始是、结束是、是、不是、为空、不为空比较值：下拉框可单选文本内容，选中后比较值为输入框指标维度</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>结束节点</td>
+      <td><img src="https://km.sankuai.com/api/file/cdn/2702355196/146819024181?contentType=1&amp;isNewContent=false" alt="image.jpeg" /></td>
+      <td>结束节点是工作流的终止节点，可对输出结果排序或删除</td>
+      <td>输出参数注释：输出参数和回复内容至少填写其一（推荐填写回复内容）可拖拽展示顺序回复内容注释：最多可配置3条回复内容，每次会随意一条进行回复输出参数和回复内容至少填写其一（推荐填写回复内容）</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>基础节点</td>
+      <td>条件节点</td>
+      <td><img src="https://km.sankuai.com/api/file/cdn/2702355196/146819350385?contentType=1&amp;isNewContent=false" alt="image.jpeg" /></td>
+      <td>根据输入scheme结果判断是否满足条件</td>
+      <td>IF和ELS下游E有两个节点，对应两个工作流参数：下拉框可单选用户query指标维度条件关系：包含、不包含、开始是、结束是、是、不是、为空、不为空比较值：下拉框可单选文本内容，选中后比较值为输入框指标维度</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>文本节点</td>
+      <td><img src="https://km.sankuai.com/api/file/cdn/2702355196/146814868722?contentType=1&amp;isNewContent=false" alt="image.jpeg" /></td>
+      <td>前端直接展示文本内容，主要是为了加title</td>
+      <td>沿用文字相关配置组件即可</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>取数节点</td>
+      <td>图1：<img src="https://km.sankuai.com/api/file/cdn/2702355196/146983072371?contentType=1&amp;isNewContent=false" alt="image.jpeg" />图2：<img src="https://km.sankuai.com/api/file/cdn/2702355196/146992696228?contentType=1&amp;isNewContent=false" alt="image.jpeg" />图3：<img src="https://km.sankuai.com/api/file/cdn/2702355196/146995064400?contentType=1&amp;isNewContent=false" alt="image.jpeg" /></td>
+      <td>可配置取数内容，如时间、指标、维度、维值，其中指标维度维值从databox数据源获取。可以自定义输入SQL，可选择是否输出scheme、该节点在前端是否展示</td>
+      <td>自定义sql：输入sql后点击预览仅校验语法错误SQL涉及表权限提示（图2）预览功能：预览出sql执行结果（图3）配置sql：可通过添加要素新增行，切换要素的指标、维度、指标等</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>分析节点</td>
+      <td><img src="https://km.sankuai.com/api/file/cdn/2702355196/146964251324?contentType=1&amp;isNewContent=false" alt="image.jpeg" /></td>
+      <td>可通过文本输入的形式输入分析思路如：以上每个指标在每个维度的占比</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>洞察节点</td>
+      <td><img src="https://km.sankuai.com/api/file/cdn/2702355196/146955147173?contentType=1&amp;isNewContent=false" alt="image.jpeg" /></td>
+      <td>对截至到目前节点的数据的洞察分析，可对配洞察总结提示词配置</td>
+      <td>模板：点击可以选中预设的模板并复制至输入框中</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>绘图节点</td>
+      <td><img src="https://km.sankuai.com/api/file/cdn/2702355196/146821353878?contentType=1&amp;isNewContent=false" alt="image.jpeg" /></td>
+      <td>可通过文本输入/勾选前端组件的形式说明需要输出的图表要求，如：根据cross指数画堆叠图，横轴为业务，纵轴为cross指数</td>
+      <td>描述或选择，补充一个即可</td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>]]></content><author><name></name></author></entry><entry><title type="html">日期与时间</title><link href="http://localhost:4000/code/algorithm/basic-knowledge/2025/01/07/Date-and-Time/" rel="alternate" type="text/html" title="日期与时间" /><published>2025-01-07T00:00:00+08:00</published><updated>2025-01-07T00:00:00+08:00</updated><id>http://localhost:4000/code/algorithm/basic-knowledge/2025/01/07/Date%20and%20Time</id><content type="html" xml:base="http://localhost:4000/code/algorithm/basic-knowledge/2025/01/07/Date-and-Time/"><![CDATA[<h1 id="日期与时间"><span style="color: rgb(255,127,80);"><strong>日期与时间</strong></span></h1>
 
 <p>在 C++ 中，没有直接的日期类型，标准库主要依赖于 C 语言中的日期和时间处理方式。因此，为了操作日期和时间，你需要在程序中引入 <code class="language-plaintext highlighter-rouge">&lt;ctime&gt;</code> 头文件。</p>
 
@@ -496,7 +353,7 @@ Databox的数据源不能为空。如果为空，无法保存成功。toast提�
 
 <h3 id="总结"><span style="color: rgb(0,191,255);"><strong>总结</strong></span></h3>
 
-<p>在 C++ 中，处理日期和时间主要依赖于 <code class="language-plaintext highlighter-rouge">&lt;ctime&gt;</code> 头文件，使用 <code class="language-plaintext highlighter-rouge">time_t</code> 和 <code class="language-plaintext highlighter-rouge">tm</code> 等类型进行时间的表示和操作。通过相关函数，你可以轻松获取和格式化当前时间，以及进行日期与时间的计算。这些基础操作对于开发中需要时间功能的程序是非常常见的。</p>]]></content><author><name>ZJM</name></author><category term="code/algorithm/basic-knowledge" /><category term="Code" /><summary type="html"><![CDATA[日期与时间]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/myblog/code-cover-8.png" /><media:content medium="image" url="http://localhost:4000/myblog/code-cover-8.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">引用</title><link href="http://localhost:4000/myblog/code/algorithm/basic-knowledge/2025/01/07/Reference/" rel="alternate" type="text/html" title="引用" /><published>2025-01-07T00:00:00+08:00</published><updated>2025-01-07T00:00:00+08:00</updated><id>http://localhost:4000/myblog/code/algorithm/basic-knowledge/2025/01/07/Reference</id><content type="html" xml:base="http://localhost:4000/myblog/code/algorithm/basic-knowledge/2025/01/07/Reference/"><![CDATA[<h1 id="引用"><span style="color: rgb(255,127,80);"><strong>引用</strong></span></h1>
+<p>在 C++ 中，处理日期和时间主要依赖于 <code class="language-plaintext highlighter-rouge">&lt;ctime&gt;</code> 头文件，使用 <code class="language-plaintext highlighter-rouge">time_t</code> 和 <code class="language-plaintext highlighter-rouge">tm</code> 等类型进行时间的表示和操作。通过相关函数，你可以轻松获取和格式化当前时间，以及进行日期与时间的计算。这些基础操作对于开发中需要时间功能的程序是非常常见的。</p>]]></content><author><name>ZJM</name></author><category term="code/algorithm/basic-knowledge" /><category term="Code" /><summary type="html"><![CDATA[日期与时间]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/code-cover-8.png" /><media:content medium="image" url="http://localhost:4000/code-cover-8.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">引用</title><link href="http://localhost:4000/code/algorithm/basic-knowledge/2025/01/07/Reference/" rel="alternate" type="text/html" title="引用" /><published>2025-01-07T00:00:00+08:00</published><updated>2025-01-07T00:00:00+08:00</updated><id>http://localhost:4000/code/algorithm/basic-knowledge/2025/01/07/Reference</id><content type="html" xml:base="http://localhost:4000/code/algorithm/basic-knowledge/2025/01/07/Reference/"><![CDATA[<h1 id="引用"><span style="color: rgb(255,127,80);"><strong>引用</strong></span></h1>
 
 <p>在 C++ 中，<strong>引用</strong>是一种为变量提供别名的机制。引用不仅可以用来传递参数，还可以作为返回值。引用通常比指针更容易理解和使用，它使得代码更加简洁，并减少了指针的复杂性。本文将详细介绍 C++ 中引用的基本概念、作为函数参数和返回值的应用以及使用引用时的注意事项。</p>
 
@@ -663,7 +520,7 @@ Databox的数据源不能为空。如果为空，无法保存成功。toast提�
   <li><strong>引用作为返回值</strong>：函数返回引用可以让我们直接修改返回值对应的对象。需要注意，不能返回局部变量的引用，但可以返回静态变量的引用。</li>
 </ul>
 
-<p>通过灵活使用引用，C++ 编程可以变得更加简洁、高效，同时提高代码的可读性和可维护性。</p>]]></content><author><name>ZJM</name></author><category term="code/algorithm/basic-knowledge" /><category term="Code" /><summary type="html"><![CDATA[引用]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/myblog/code-cover-8.png" /><media:content medium="image" url="http://localhost:4000/myblog/code-cover-8.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">指针</title><link href="http://localhost:4000/myblog/code/algorithm/basic-knowledge/2025/01/07/Pointers/" rel="alternate" type="text/html" title="指针" /><published>2025-01-07T00:00:00+08:00</published><updated>2025-01-07T00:00:00+08:00</updated><id>http://localhost:4000/myblog/code/algorithm/basic-knowledge/2025/01/07/Pointers</id><content type="html" xml:base="http://localhost:4000/myblog/code/algorithm/basic-knowledge/2025/01/07/Pointers/"><![CDATA[<h1 id="指针教程"><span style="color: rgb(255,127,80);"><strong>指针教程</strong></span></h1>
+<p>通过灵活使用引用，C++ 编程可以变得更加简洁、高效，同时提高代码的可读性和可维护性。</p>]]></content><author><name>ZJM</name></author><category term="code/algorithm/basic-knowledge" /><category term="Code" /><summary type="html"><![CDATA[引用]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/code-cover-8.png" /><media:content medium="image" url="http://localhost:4000/code-cover-8.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">指针</title><link href="http://localhost:4000/code/algorithm/basic-knowledge/2025/01/07/Pointers/" rel="alternate" type="text/html" title="指针" /><published>2025-01-07T00:00:00+08:00</published><updated>2025-01-07T00:00:00+08:00</updated><id>http://localhost:4000/code/algorithm/basic-knowledge/2025/01/07/Pointers</id><content type="html" xml:base="http://localhost:4000/code/algorithm/basic-knowledge/2025/01/07/Pointers/"><![CDATA[<h1 id="指针教程"><span style="color: rgb(255,127,80);"><strong>指针教程</strong></span></h1>
 
 <p>学习 C++ 中的指针既简单又有趣。通过指针，可以简化一些编程任务，例如动态内存分配，而这些任务没有指针是无法完成的。因此，掌握指针是成为优秀 C++ 程序员的重要一步。</p>
 
@@ -1560,7 +1417,7 @@ Databox的数据源不能为空。如果为空，无法保存成功。toast提�
   <li><strong>避免返回局部变量的指针</strong>：不要返回指向局部非静态变量的指针，因为这些变量会在函数返回后被销毁，导致悬空指针问题。</li>
 </ul>
 
-<p>这种方式在需要从函数中返回多个值或者处理动态生成的数据时非常有用。</p>]]></content><author><name>ZJM</name></author><category term="code/algorithm/basic-knowledge" /><category term="Code" /><summary type="html"><![CDATA[指针教程]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/myblog/code-cover-8.png" /><media:content medium="image" url="http://localhost:4000/myblog/code-cover-8.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">基本的输入输出</title><link href="http://localhost:4000/myblog/code/algorithm/basic-knowledge/2025/01/07/Input&Output/" rel="alternate" type="text/html" title="基本的输入输出" /><published>2025-01-07T00:00:00+08:00</published><updated>2025-01-07T00:00:00+08:00</updated><id>http://localhost:4000/myblog/code/algorithm/basic-knowledge/2025/01/07/Input&amp;Output</id><content type="html" xml:base="http://localhost:4000/myblog/code/algorithm/basic-knowledge/2025/01/07/Input&amp;Output/"><![CDATA[<h1 id="基本的输入输出"><span style="color: rgb(255,127,80);"><strong>基本的输入输出</strong></span></h1>
+<p>这种方式在需要从函数中返回多个值或者处理动态生成的数据时非常有用。</p>]]></content><author><name>ZJM</name></author><category term="code/algorithm/basic-knowledge" /><category term="Code" /><summary type="html"><![CDATA[指针教程]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/code-cover-8.png" /><media:content medium="image" url="http://localhost:4000/code-cover-8.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">基本的输入输出</title><link href="http://localhost:4000/code/algorithm/basic-knowledge/2025/01/07/Input&Output/" rel="alternate" type="text/html" title="基本的输入输出" /><published>2025-01-07T00:00:00+08:00</published><updated>2025-01-07T00:00:00+08:00</updated><id>http://localhost:4000/code/algorithm/basic-knowledge/2025/01/07/Input&amp;Output</id><content type="html" xml:base="http://localhost:4000/code/algorithm/basic-knowledge/2025/01/07/Input&amp;Output/"><![CDATA[<h1 id="基本的输入输出"><span style="color: rgb(255,127,80);"><strong>基本的输入输出</strong></span></h1>
 
 <p>C++ 标准库提供了强大的输入/输出（I/O）功能，本章将介绍 C++ 中最基本和最常用的 I/O 操作。</p>
 
@@ -1724,7 +1581,7 @@ Databox的数据源不能为空。如果为空，无法保存成功。toast提�
 
 <hr />
 
-<p>这个版本增加了详细的示例，解释了每个流的用途，并且通过多个代码实例帮助用户更好地理解各个流的不同特性。如果你有任何进一步的问题或需要更多的例子，可以告诉我！</p>]]></content><author><name>ZJM</name></author><category term="code/algorithm/basic-knowledge" /><category term="Code" /><summary type="html"><![CDATA[基本的输入输出]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/myblog/code-cover-8.png" /><media:content medium="image" url="http://localhost:4000/myblog/code-cover-8.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">常量</title><link href="http://localhost:4000/myblog/code/algorithm/basic-knowledge/2025/01/06/Constant/" rel="alternate" type="text/html" title="常量" /><published>2025-01-06T00:00:00+08:00</published><updated>2025-01-06T00:00:00+08:00</updated><id>http://localhost:4000/myblog/code/algorithm/basic-knowledge/2025/01/06/Constant</id><content type="html" xml:base="http://localhost:4000/myblog/code/algorithm/basic-knowledge/2025/01/06/Constant/"><![CDATA[<h1 id="常量"><span style="color: rgb(255,127,80);"><strong>常量</strong></span></h1>
+<p>这个版本增加了详细的示例，解释了每个流的用途，并且通过多个代码实例帮助用户更好地理解各个流的不同特性。如果你有任何进一步的问题或需要更多的例子，可以告诉我！</p>]]></content><author><name>ZJM</name></author><category term="code/algorithm/basic-knowledge" /><category term="Code" /><summary type="html"><![CDATA[基本的输入输出]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/code-cover-8.png" /><media:content medium="image" url="http://localhost:4000/code-cover-8.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">常量</title><link href="http://localhost:4000/code/algorithm/basic-knowledge/2025/01/06/Constant/" rel="alternate" type="text/html" title="常量" /><published>2025-01-06T00:00:00+08:00</published><updated>2025-01-06T00:00:00+08:00</updated><id>http://localhost:4000/code/algorithm/basic-knowledge/2025/01/06/Constant</id><content type="html" xml:base="http://localhost:4000/code/algorithm/basic-knowledge/2025/01/06/Constant/"><![CDATA[<h1 id="常量"><span style="color: rgb(255,127,80);"><strong>常量</strong></span></h1>
 
 <p>常量是指在程序执行期间固定不变的值。常量也称为字面量，其值在定义后不能修改。常量可以是任何基本数据类型，如整数、浮点数、字符、字符串和布尔值。常量与变量类似，只是其值在定义后不可改变。</p>
 
@@ -1958,7 +1815,7 @@ Databox的数据源不能为空。如果为空，无法保存成功。toast提�
 
 <h4 id="输出-3"><span style="color: rgb(238,130,238);"><strong>输出：</strong></span></h4>
 <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="m">50</span>
-</code></pre></div></div>]]></content><author><name>ZJM</name></author><category term="code/algorithm/basic-knowledge" /><category term="Code" /><summary type="html"><![CDATA[常量]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/myblog/code-cover-10.png" /><media:content medium="image" url="http://localhost:4000/myblog/code-cover-10.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">基本数据类型</title><link href="http://localhost:4000/myblog/code/algorithm/basic-knowledge/2025/01/05/Variable-Types/" rel="alternate" type="text/html" title="基本数据类型" /><published>2025-01-05T00:00:00+08:00</published><updated>2025-01-05T00:00:00+08:00</updated><id>http://localhost:4000/myblog/code/algorithm/basic-knowledge/2025/01/05/Variable%20Types</id><content type="html" xml:base="http://localhost:4000/myblog/code/algorithm/basic-knowledge/2025/01/05/Variable-Types/"><![CDATA[<h1 id="基本数据类型"><span style="color: rgb(255,127,80);"><strong>基本数据类型</strong></span></h1>
+</code></pre></div></div>]]></content><author><name>ZJM</name></author><category term="code/algorithm/basic-knowledge" /><category term="Code" /><summary type="html"><![CDATA[常量]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/code-cover-10.png" /><media:content medium="image" url="http://localhost:4000/code-cover-10.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">基本数据类型</title><link href="http://localhost:4000/code/algorithm/basic-knowledge/2025/01/05/Variable-Types/" rel="alternate" type="text/html" title="基本数据类型" /><published>2025-01-05T00:00:00+08:00</published><updated>2025-01-05T00:00:00+08:00</updated><id>http://localhost:4000/code/algorithm/basic-knowledge/2025/01/05/Variable%20Types</id><content type="html" xml:base="http://localhost:4000/code/algorithm/basic-knowledge/2025/01/05/Variable-Types/"><![CDATA[<h1 id="基本数据类型"><span style="color: rgb(255,127,80);"><strong>基本数据类型</strong></span></h1>
 
 <p>在 C++ 中，<strong>变量</strong>是程序中用于存储数据的命名存储区。每个变量都有一个指定的类型，类型决定了变量所占用的内存大小、数据布局及可以存储的数据值范围。</p>
 
@@ -2240,7 +2097,7 @@ Databox的数据源不能为空。如果为空，无法保存成功。toast提�
 <p>输出：</p>
 
 <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">x</span><span class="pi">:</span> <span class="s">20, y</span><span class="err">:</span> <span class="m">20</span>
-</code></pre></div></div>]]></content><author><name>ZJM</name></author><category term="code/algorithm/basic-knowledge" /><category term="Code" /><summary type="html"><![CDATA[基本数据类型]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/myblog/code-cover-3.png" /><media:content medium="image" url="http://localhost:4000/myblog/code-cover-3.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">字符串</title><link href="http://localhost:4000/myblog/code/algorithm/basic-knowledge/2025/01/05/Character-String/" rel="alternate" type="text/html" title="字符串" /><published>2025-01-05T00:00:00+08:00</published><updated>2025-01-05T00:00:00+08:00</updated><id>http://localhost:4000/myblog/code/algorithm/basic-knowledge/2025/01/05/Character%20String</id><content type="html" xml:base="http://localhost:4000/myblog/code/algorithm/basic-knowledge/2025/01/05/Character-String/"><![CDATA[<h1 id="字符串"><span style="color: rgb(255,127,80);"><strong>字符串</strong></span></h1>
+</code></pre></div></div>]]></content><author><name>ZJM</name></author><category term="code/algorithm/basic-knowledge" /><category term="Code" /><summary type="html"><![CDATA[基本数据类型]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/code-cover-3.png" /><media:content medium="image" url="http://localhost:4000/code-cover-3.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">字符串</title><link href="http://localhost:4000/code/algorithm/basic-knowledge/2025/01/05/Character-String/" rel="alternate" type="text/html" title="字符串" /><published>2025-01-05T00:00:00+08:00</published><updated>2025-01-05T00:00:00+08:00</updated><id>http://localhost:4000/code/algorithm/basic-knowledge/2025/01/05/Character%20String</id><content type="html" xml:base="http://localhost:4000/code/algorithm/basic-knowledge/2025/01/05/Character-String/"><![CDATA[<h1 id="字符串"><span style="color: rgb(255,127,80);"><strong>字符串</strong></span></h1>
 
 <p>C++ 提供了两种主要的字符串表示方式：</p>
 
@@ -2392,7 +2249,7 @@ Databox的数据源不能为空。如果为空，无法保存成功。toast提�
 <span class="na">str3.size()</span><span class="pi">:</span> <span class="m">12</span>
 </code></pre></div></div>
 
-<p>与 C 风格字符串不同，C++ <code class="language-plaintext highlighter-rouge">string</code> 类会自动处理内存管理和字符数组的大小，因此操作更加方便和安全。</p>]]></content><author><name>ZJM</name></author><category term="code/algorithm/basic-knowledge" /><category term="Code" /><summary type="html"><![CDATA[字符串]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/myblog/code-cover-8.png" /><media:content medium="image" url="http://localhost:4000/myblog/code-cover-8.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">函数</title><link href="http://localhost:4000/myblog/code/algorithm/basic-knowledge/2025/01/05/Function/" rel="alternate" type="text/html" title="函数" /><published>2025-01-05T00:00:00+08:00</published><updated>2025-01-05T00:00:00+08:00</updated><id>http://localhost:4000/myblog/code/algorithm/basic-knowledge/2025/01/05/Function</id><content type="html" xml:base="http://localhost:4000/myblog/code/algorithm/basic-knowledge/2025/01/05/Function/"><![CDATA[<h1 id="函数"><span style="color: rgb(255,127,80);"><strong>函数</strong></span></h1>
+<p>与 C 风格字符串不同，C++ <code class="language-plaintext highlighter-rouge">string</code> 类会自动处理内存管理和字符数组的大小，因此操作更加方便和安全。</p>]]></content><author><name>ZJM</name></author><category term="code/algorithm/basic-knowledge" /><category term="Code" /><summary type="html"><![CDATA[字符串]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/code-cover-8.png" /><media:content medium="image" url="http://localhost:4000/code-cover-8.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">函数</title><link href="http://localhost:4000/code/algorithm/basic-knowledge/2025/01/05/Function/" rel="alternate" type="text/html" title="函数" /><published>2025-01-05T00:00:00+08:00</published><updated>2025-01-05T00:00:00+08:00</updated><id>http://localhost:4000/code/algorithm/basic-knowledge/2025/01/05/Function</id><content type="html" xml:base="http://localhost:4000/code/algorithm/basic-knowledge/2025/01/05/Function/"><![CDATA[<h1 id="函数"><span style="color: rgb(255,127,80);"><strong>函数</strong></span></h1>
 
 <p>函数是执行特定任务的一组语句。每个 C++ 程序都至少有一个函数，即 <code class="language-plaintext highlighter-rouge">main()</code> 函数。除了 <code class="language-plaintext highlighter-rouge">main()</code> 函数，您还可以根据需要定义其他函数。</p>
 
@@ -2593,7 +2450,7 @@ Databox的数据源不能为空。如果为空，无法保存成功。toast提�
 <span class="k">private</span><span class="o">:</span>
     <span class="kt">int</span> <span class="n">x</span> <span class="o">=</span> <span class="mi">100</span><span class="p">;</span>
 <span class="p">};</span>
-</code></pre></div></div>]]></content><author><name>ZJM</name></author><category term="code/algorithm/basic-knowledge" /><category term="Code" /><summary type="html"><![CDATA[函数]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/myblog/code-cover-8.png" /><media:content medium="image" url="http://localhost:4000/myblog/code-cover-8.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">判断结构</title><link href="http://localhost:4000/myblog/code/algorithm/basic-knowledge/2025/01/05/Judgment-Structure/" rel="alternate" type="text/html" title="判断结构" /><published>2025-01-05T00:00:00+08:00</published><updated>2025-01-05T00:00:00+08:00</updated><id>http://localhost:4000/myblog/code/algorithm/basic-knowledge/2025/01/05/Judgment%20Structure</id><content type="html" xml:base="http://localhost:4000/myblog/code/algorithm/basic-knowledge/2025/01/05/Judgment-Structure/"><![CDATA[<h1 id="判断结构"><span style="color: rgb(255,127,80);"><strong>判断结构</strong></span></h1>
+</code></pre></div></div>]]></content><author><name>ZJM</name></author><category term="code/algorithm/basic-knowledge" /><category term="Code" /><summary type="html"><![CDATA[函数]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/code-cover-8.png" /><media:content medium="image" url="http://localhost:4000/code-cover-8.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">判断结构</title><link href="http://localhost:4000/code/algorithm/basic-knowledge/2025/01/05/Judgment-Structure/" rel="alternate" type="text/html" title="判断结构" /><published>2025-01-05T00:00:00+08:00</published><updated>2025-01-05T00:00:00+08:00</updated><id>http://localhost:4000/code/algorithm/basic-knowledge/2025/01/05/Judgment%20Structure</id><content type="html" xml:base="http://localhost:4000/code/algorithm/basic-knowledge/2025/01/05/Judgment-Structure/"><![CDATA[<h1 id="判断结构"><span style="color: rgb(255,127,80);"><strong>判断结构</strong></span></h1>
 
 <p>在 C++ 中，判断结构用于评估一个或多个条件，并根据条件的结果来决定执行哪些语句。常见的判断结构有多种形式，每种形式适用于不同的情况。以下是 C++ 中常见的判断结构以及示例：</p>
 
@@ -2764,4 +2621,4 @@ Databox的数据源不能为空。如果为空，无法保存成功。toast提�
 <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">result</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
 </code></pre></div></div>
 
-<p>在这个例子中，三目运算符判断 <code class="language-plaintext highlighter-rouge">age</code> 是否大于或等于 18。如果条件成立，返回 <code class="language-plaintext highlighter-rouge">"你已经成年了。"</code>，否则返回 <code class="language-plaintext highlighter-rouge">"你还未成年。" </code>。</p>]]></content><author><name>ZJM</name></author><category term="code/algorithm/basic-knowledge" /><category term="Code" /><summary type="html"><![CDATA[判断结构]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/myblog/code-cover-8.png" /><media:content medium="image" url="http://localhost:4000/myblog/code-cover-8.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
+<p>在这个例子中，三目运算符判断 <code class="language-plaintext highlighter-rouge">age</code> 是否大于或等于 18。如果条件成立，返回 <code class="language-plaintext highlighter-rouge">"你已经成年了。"</code>，否则返回 <code class="language-plaintext highlighter-rouge">"你还未成年。" </code>。</p>]]></content><author><name>ZJM</name></author><category term="code/algorithm/basic-knowledge" /><category term="Code" /><summary type="html"><![CDATA[判断结构]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/code-cover-8.png" /><media:content medium="image" url="http://localhost:4000/code-cover-8.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>

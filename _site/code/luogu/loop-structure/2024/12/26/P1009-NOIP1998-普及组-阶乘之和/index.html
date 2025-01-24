@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="/assets/css/main.css">
   <link rel="stylesheet" href="/assets/css/syntax.css">
   <!-- Use Atom -->
-  <link type="application/atom+xml" rel="alternate" href="http://localhost:4000/myblog/feed.xml" title="Tomorrow&apos;s Blog" />
+  <link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Tomorrow&apos;s Blog" />
   <!-- RSS-v2.0
   <link href="/rss-feed.xml" type="application/rss+xml" rel="alternate" title="Tomorrow's Blog | "/>
   //-->
@@ -39,17 +39,17 @@
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="#include&lt;iostream&gt; #include&lt;cstring&gt; #include&lt;cstdio&gt; #include&lt;cmath&gt; using namespace std; struct fantastic { int len,s[9999]; fantastic() { memset(s,0,sizeof(s)); len=1; } fantastic operator=(const char*num) { len=strlen(num); for(int i=0;i&lt;len;++i) s[i]=num[len-i-1]-&#39;0&#39;; return *this; } fantastic operator=(const int num) { char a[9999]; sprintf(a,&quot;%d&quot;,num); *this=a; return *this; } fantastic (const int num) { *this=num; } fantastic (const char * num) { *this=num; } fantastic operator+(const fantastic &amp;a) { fantastic c; c.len=max(len,a.len)+1; for(int i=0,x=0;i&lt;c.len;++i) { c.s[i]=s[i]+a.s[i]+x; x=c.s[i]/10; c.s[i]=c.s[i]%10; } if(c.s[c.len-1]==0) --c.len; return c; } fantastic operator * (const fantastic &amp;x) { fantastic c; c.len=len+x.len; for(int i=0;i&lt;len;++i) for(int j=0;j&lt;x.len;++j) { c.s[i+j]+=s[i]*x.s[j]; c.s[i+j+1]+=c.s[i+j]/10; c.s[i+j]%=10; } if(c.s[c.len-1]==0) --c.len; return c; } }; ostream&amp; operator&lt;&lt;(ostream &amp;out,const fantastic&amp; x) { for(int i=x.len-1;i&gt;=0;--i) cout&lt;&lt;x.s[i]; return out; } istream&amp; operator&gt;&gt;(istream &amp;in,fantastic &amp;x) { char num[9999]; in&gt;&gt;num; x=num; return in; } int main() { int n; fantastic ans=0,num=1; cin&gt;&gt;n; for(int i=1;i&lt;=n;i++) { num=num*i; ans=ans+num; } cout&lt;&lt;ans&lt;&lt;endl; }" />
 <meta property="og:description" content="#include&lt;iostream&gt; #include&lt;cstring&gt; #include&lt;cstdio&gt; #include&lt;cmath&gt; using namespace std; struct fantastic { int len,s[9999]; fantastic() { memset(s,0,sizeof(s)); len=1; } fantastic operator=(const char*num) { len=strlen(num); for(int i=0;i&lt;len;++i) s[i]=num[len-i-1]-&#39;0&#39;; return *this; } fantastic operator=(const int num) { char a[9999]; sprintf(a,&quot;%d&quot;,num); *this=a; return *this; } fantastic (const int num) { *this=num; } fantastic (const char * num) { *this=num; } fantastic operator+(const fantastic &amp;a) { fantastic c; c.len=max(len,a.len)+1; for(int i=0,x=0;i&lt;c.len;++i) { c.s[i]=s[i]+a.s[i]+x; x=c.s[i]/10; c.s[i]=c.s[i]%10; } if(c.s[c.len-1]==0) --c.len; return c; } fantastic operator * (const fantastic &amp;x) { fantastic c; c.len=len+x.len; for(int i=0;i&lt;len;++i) for(int j=0;j&lt;x.len;++j) { c.s[i+j]+=s[i]*x.s[j]; c.s[i+j+1]+=c.s[i+j]/10; c.s[i+j]%=10; } if(c.s[c.len-1]==0) --c.len; return c; } }; ostream&amp; operator&lt;&lt;(ostream &amp;out,const fantastic&amp; x) { for(int i=x.len-1;i&gt;=0;--i) cout&lt;&lt;x.s[i]; return out; } istream&amp; operator&gt;&gt;(istream &amp;in,fantastic &amp;x) { char num[9999]; in&gt;&gt;num; x=num; return in; } int main() { int n; fantastic ans=0,num=1; cin&gt;&gt;n; for(int i=1;i&lt;=n;i++) { num=num*i; ans=ans+num; } cout&lt;&lt;ans&lt;&lt;endl; }" />
-<link rel="canonical" href="http://localhost:4000/myblog/code/luogu/loop-structure/2024/12/26/P1009-NOIP1998-%E6%99%AE%E5%8F%8A%E7%BB%84-%E9%98%B6%E4%B9%98%E4%B9%8B%E5%92%8C/" />
-<meta property="og:url" content="http://localhost:4000/myblog/code/luogu/loop-structure/2024/12/26/P1009-NOIP1998-%E6%99%AE%E5%8F%8A%E7%BB%84-%E9%98%B6%E4%B9%98%E4%B9%8B%E5%92%8C/" />
+<link rel="canonical" href="http://localhost:4000/code/luogu/loop-structure/2024/12/26/P1009-NOIP1998-%E6%99%AE%E5%8F%8A%E7%BB%84-%E9%98%B6%E4%B9%98%E4%B9%8B%E5%92%8C/" />
+<meta property="og:url" content="http://localhost:4000/code/luogu/loop-structure/2024/12/26/P1009-NOIP1998-%E6%99%AE%E5%8F%8A%E7%BB%84-%E9%98%B6%E4%B9%98%E4%B9%8B%E5%92%8C/" />
 <meta property="og:site_name" content="Tomorrow’s Blog" />
-<meta property="og:image" content="http://localhost:4000/myblog/code-cover-5.png" />
+<meta property="og:image" content="http://localhost:4000/code-cover-5.png" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2024-12-26T00:00:00+08:00" />
 <meta name="twitter:card" content="summary_large_image" />
-<meta property="twitter:image" content="http://localhost:4000/myblog/code-cover-5.png" />
+<meta property="twitter:image" content="http://localhost:4000/code-cover-5.png" />
 <meta property="twitter:title" content="P1009 [NOIP1998 普及组] 阶乘之和" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"ZJM"},"dateModified":"2024-12-26T00:00:00+08:00","datePublished":"2024-12-26T00:00:00+08:00","description":"#include&lt;iostream&gt; #include&lt;cstring&gt; #include&lt;cstdio&gt; #include&lt;cmath&gt; using namespace std; struct fantastic { int len,s[9999]; fantastic() { memset(s,0,sizeof(s)); len=1; } fantastic operator=(const char*num) { len=strlen(num); for(int i=0;i&lt;len;++i) s[i]=num[len-i-1]-&#39;0&#39;; return *this; } fantastic operator=(const int num) { char a[9999]; sprintf(a,&quot;%d&quot;,num); *this=a; return *this; } fantastic (const int num) { *this=num; } fantastic (const char * num) { *this=num; } fantastic operator+(const fantastic &amp;a) { fantastic c; c.len=max(len,a.len)+1; for(int i=0,x=0;i&lt;c.len;++i) { c.s[i]=s[i]+a.s[i]+x; x=c.s[i]/10; c.s[i]=c.s[i]%10; } if(c.s[c.len-1]==0) --c.len; return c; } fantastic operator * (const fantastic &amp;x) { fantastic c; c.len=len+x.len; for(int i=0;i&lt;len;++i) for(int j=0;j&lt;x.len;++j) { c.s[i+j]+=s[i]*x.s[j]; c.s[i+j+1]+=c.s[i+j]/10; c.s[i+j]%=10; } if(c.s[c.len-1]==0) --c.len; return c; } }; ostream&amp; operator&lt;&lt;(ostream &amp;out,const fantastic&amp; x) { for(int i=x.len-1;i&gt;=0;--i) cout&lt;&lt;x.s[i]; return out; } istream&amp; operator&gt;&gt;(istream &amp;in,fantastic &amp;x) { char num[9999]; in&gt;&gt;num; x=num; return in; } int main() { int n; fantastic ans=0,num=1; cin&gt;&gt;n; for(int i=1;i&lt;=n;i++) { num=num*i; ans=ans+num; } cout&lt;&lt;ans&lt;&lt;endl; }","headline":"P1009 [NOIP1998 普及组] 阶乘之和","image":"http://localhost:4000/myblog/code-cover-5.png","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/myblog/code/luogu/loop-structure/2024/12/26/P1009-NOIP1998-%E6%99%AE%E5%8F%8A%E7%BB%84-%E9%98%B6%E4%B9%98%E4%B9%8B%E5%92%8C/"},"url":"http://localhost:4000/myblog/code/luogu/loop-structure/2024/12/26/P1009-NOIP1998-%E6%99%AE%E5%8F%8A%E7%BB%84-%E9%98%B6%E4%B9%98%E4%B9%8B%E5%92%8C/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"ZJM"},"dateModified":"2024-12-26T00:00:00+08:00","datePublished":"2024-12-26T00:00:00+08:00","description":"#include&lt;iostream&gt; #include&lt;cstring&gt; #include&lt;cstdio&gt; #include&lt;cmath&gt; using namespace std; struct fantastic { int len,s[9999]; fantastic() { memset(s,0,sizeof(s)); len=1; } fantastic operator=(const char*num) { len=strlen(num); for(int i=0;i&lt;len;++i) s[i]=num[len-i-1]-&#39;0&#39;; return *this; } fantastic operator=(const int num) { char a[9999]; sprintf(a,&quot;%d&quot;,num); *this=a; return *this; } fantastic (const int num) { *this=num; } fantastic (const char * num) { *this=num; } fantastic operator+(const fantastic &amp;a) { fantastic c; c.len=max(len,a.len)+1; for(int i=0,x=0;i&lt;c.len;++i) { c.s[i]=s[i]+a.s[i]+x; x=c.s[i]/10; c.s[i]=c.s[i]%10; } if(c.s[c.len-1]==0) --c.len; return c; } fantastic operator * (const fantastic &amp;x) { fantastic c; c.len=len+x.len; for(int i=0;i&lt;len;++i) for(int j=0;j&lt;x.len;++j) { c.s[i+j]+=s[i]*x.s[j]; c.s[i+j+1]+=c.s[i+j]/10; c.s[i+j]%=10; } if(c.s[c.len-1]==0) --c.len; return c; } }; ostream&amp; operator&lt;&lt;(ostream &amp;out,const fantastic&amp; x) { for(int i=x.len-1;i&gt;=0;--i) cout&lt;&lt;x.s[i]; return out; } istream&amp; operator&gt;&gt;(istream &amp;in,fantastic &amp;x) { char num[9999]; in&gt;&gt;num; x=num; return in; } int main() { int n; fantastic ans=0,num=1; cin&gt;&gt;n; for(int i=1;i&lt;=n;i++) { num=num*i; ans=ans+num; } cout&lt;&lt;ans&lt;&lt;endl; }","headline":"P1009 [NOIP1998 普及组] 阶乘之和","image":"http://localhost:4000/code-cover-5.png","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/code/luogu/loop-structure/2024/12/26/P1009-NOIP1998-%E6%99%AE%E5%8F%8A%E7%BB%84-%E9%98%B6%E4%B9%98%E4%B9%8B%E5%92%8C/"},"url":"http://localhost:4000/code/luogu/loop-structure/2024/12/26/P1009-NOIP1998-%E6%99%AE%E5%8F%8A%E7%BB%84-%E9%98%B6%E4%B9%98%E4%B9%8B%E5%92%8C/"}</script>
 <!-- End Jekyll SEO tag -->
 
 </head>
@@ -254,7 +254,7 @@
               <a href="/code/algorithm/basic-knowledge/2025/01/07/Reference/">
                 <div class="related-thumbnail">
                   
-                    <img src="http://localhost:4000/myblog/assets/img/code-cover-8.png">
+                    <img src="http://localhost:4000/assets/img/code-cover-8.png">
                   
                 </div>
                 <div class="related-title">
@@ -273,7 +273,7 @@
               <a href="/code/algorithm/basic-knowledge/2025/01/07/Pointers/">
                 <div class="related-thumbnail">
                   
-                    <img src="http://localhost:4000/myblog/assets/img/code-cover-8.png">
+                    <img src="http://localhost:4000/assets/img/code-cover-8.png">
                   
                 </div>
                 <div class="related-title">

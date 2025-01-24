@@ -7,21 +7,14 @@
 		<atom:link href="/rss-feed.xml" rel="self" type="application/rss+xml" />
 		
 			<item>
-				<title>【PRD】MBA运营平台</title>
-				
-					<dc:creator>孙广城</dc:creator>
+				<title></title>
 				
 				
-					<description>&lt;ol&gt;
-  &lt;li&gt;
-    &lt;h3 id=&quot;需求背景&quot;&gt;需求背景：&lt;/h3&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-</description>
+					<description></description>
 				
-				<pubDate>Thu, 23 Jan 2025 00:00:00 +0800</pubDate>
-				<link>http://localhost:4000/internship/2025/01/23/PRD-MBA%E8%BF%90%E8%90%A5%E5%B9%B3%E5%8F%B0/</link>
-				<guid isPermaLink="true">http://localhost:4000/internship/2025/01/23/PRD-MBA%E8%BF%90%E8%90%A5%E5%B9%B3%E5%8F%B0/</guid>
+				<pubDate>Fri, 24 Jan 2025 15:39:23 +0800</pubDate>
+				<link>http://localhost:4000/2025/01/24/2025-1-23-PRD-%E6%80%9D%E8%B7%AF%E6%A8%A1%E7%89%88%E9%85%8D%E7%BD%AE/</link>
+				<guid isPermaLink="true">http://localhost:4000/2025/01/24/2025-1-23-PRD-%E6%80%9D%E8%B7%AF%E6%A8%A1%E7%89%88%E9%85%8D%E7%BD%AE/</guid>
 			</item>
 		
 			<item>
