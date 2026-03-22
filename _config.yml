@@ -10,20 +10,18 @@ markdown:            kramdown
 highlighter:         rouge
 permalink:           /:categories/:year/:month/:day/:title/
 plugins:             [jekyll-paginate, jekyll-sitemap, jekyll-feed, jekyll-seo-tag]
-theme:                jekyll-theme-minimal
+# theme: millennial (loaded via gemspec)
 
 
 # Customise atom feed settings (this is where Jekyll-Feed gets configuration information)
 title:		           "Tomorrow's Blog"
-email: "zjmzjm606@gmail.com, zjmzjm66@connect.hku.hk"
+description:         "Jiaming's personal blog — code, algorithms, and internship notes."
+email:               "zjmzjm606@gmail.com"
 url:                 "https://zjmzjm606.github.io"
-baseurl: ""
-
+baseurl:             ""
 
 social_links:
-  twitter: "https://twitter.com/your_username"
-  github: "https://github.com/your_username"
-  linkedin: "https://www.linkedin.com/in/your_profile"
+  github: "https://github.com/zjmzjm606"
 
 # RSS 2.0 can be used instead of Atom by uncommenting following two lines
 #feed:
