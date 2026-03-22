@@ -72,7 +72,7 @@
     document.body.appendChild(switcher);
 
     // Apply saved theme
-    var saved = localStorage.getItem('blog-theme') || 'default';
+    var saved = localStorage.getItem('blog-theme') || 'aurora';
     applyTheme(saved);
   }
 
