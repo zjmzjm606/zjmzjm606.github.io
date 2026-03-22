@@ -1,0 +1,115 @@
+/* Background Themes */
+.bg-default {
+  background: url('/assets/img/background.gif') no-repeat center center fixed !important;
+  background-size: cover !important;
+}
+.bg-gradient-ocean {
+  background: linear-gradient(135deg, #0c1445 0%, #1a3a6b 30%, #1e6f8a 60%, #2db5a0 100%) !important;
+  background-attachment: fixed !important;
+}
+.bg-gradient-sunset {
+  background: linear-gradient(135deg, #1a0533 0%, #4a1942 25%, #c84b31 60%, #f4a261 100%) !important;
+  background-attachment: fixed !important;
+}
+.bg-gradient-forest {
+  background: linear-gradient(135deg, #0b0f0a 0%, #1a2f1a 30%, #2d5a27 60%, #4a7c59 100%) !important;
+  background-attachment: fixed !important;
+}
+.bg-gradient-aurora {
+  background: linear-gradient(135deg, #0d0b21 0%, #1b1464 25%, #6b2fa0 50%, #18d4a8 75%, #a8ff78 100%) !important;
+  background-attachment: fixed !important;
+}
+.bg-dark {
+  background: #1a1a2e !important;
+}
+
+/* Theme Switcher Button */
+.theme-switcher {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+}
+.theme-switcher-btn {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 2px solid rgba(255,255,255,0.3);
+  background: rgba(0,0,0,0.5);
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s;
+  backdrop-filter: blur(10px);
+}
+.theme-switcher-btn:hover {
+  background: rgba(0,0,0,0.7);
+  border-color: rgba(255,255,255,0.6);
+  transform: scale(1.1);
+}
+
+/* Theme Panel */
+.theme-panel {
+  position: absolute;
+  bottom: 54px;
+  right: 0;
+  background: rgba(20, 20, 35, 0.95);
+  backdrop-filter: blur(20px);
+  border-radius: 12px;
+  padding: 12px;
+  display: none;
+  gap: 8px;
+  flex-wrap: wrap;
+  width: 180px;
+  border: 1px solid rgba(255,255,255,0.1);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.4);
+}
+.theme-panel.active {
+  display: flex;
+}
+.theme-panel-label {
+  width: 100%;
+  color: rgba(255,255,255,0.6);
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 4px;
+  font-family: 'Roboto', sans-serif;
+}
+.theme-dot {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 2px solid rgba(255,255,255,0.15);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.theme-dot:hover {
+  transform: scale(1.15);
+  border-color: rgba(255,255,255,0.5);
+}
+.theme-dot.active {
+  border-color: white;
+  box-shadow: 0 0 8px rgba(255,255,255,0.3);
+}
+.theme-dot-default {
+  background: url('/assets/img/background.gif') center/cover;
+}
+.theme-dot-ocean {
+  background: linear-gradient(135deg, #0c1445, #2db5a0);
+}
+.theme-dot-sunset {
+  background: linear-gradient(135deg, #4a1942, #f4a261);
+}
+.theme-dot-forest {
+  background: linear-gradient(135deg, #1a2f1a, #4a7c59);
+}
+.theme-dot-aurora {
+  background: linear-gradient(135deg, #1b1464, #a8ff78);
+}
+.theme-dot-dark {
+  background: #1a1a2e;
+}
