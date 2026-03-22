@@ -1,0 +1,255 @@
+/* ============================================
+   UI Overhaul - Dark-friendly theme overrides
+   ============================================ */
+
+/* --- Global Text & Links --- */
+body {
+  color: #e8e8f0;
+}
+body a {
+  color: #7eb8ff;
+}
+body a:hover {
+  color: #a8d4ff;
+}
+.container a {
+  text-decoration: none;
+}
+
+/* --- Header / Navbar --- */
+.site-header {
+  background: rgba(10, 10, 25, 0.75) !important;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 1px 20px rgba(0,0,0,0.3) !important;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+.site-title {
+  color: #e8e8f0 !important;
+  font-weight: 500;
+}
+.menu-link {
+  color: #c0c0d0 !important;
+  transition: color 0.2s;
+}
+.menu-link:hover {
+  color: #ffffff !important;
+}
+
+/* Mobile header */
+@media (max-width: 1100px) {
+  .site-header {
+    background: rgba(10, 10, 25, 0.92) !important;
+  }
+  .dropbtn {
+    background-color: transparent !important;
+    color: #e8e8f0 !important;
+  }
+  .dropdown-content {
+    background-color: rgba(15, 15, 30, 0.95) !important;
+    border: 1px solid rgba(255,255,255,0.08);
+  }
+  .dropdown-content a {
+    color: #c0c0d0 !important;
+  }
+  .dropdown-content a:hover {
+    background-color: rgba(255,255,255,0.08) !important;
+    color: #ffffff !important;
+  }
+  .dropdown:hover .dropbtn {
+    background-color: rgba(255,255,255,0.05) !important;
+  }
+}
+
+/* --- Post Cards (Home Page) --- */
+.featured-post {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.3);
+  transition: transform 0.25s, box-shadow 0.25s;
+}
+.featured-post:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.4);
+}
+.featured-post h2 span {
+  background: rgba(10, 10, 30, 0.8) !important;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-radius: 8px;
+}
+
+/* --- Post Content --- */
+.post-content {
+  background: rgba(15, 15, 30, 0.7) !important;
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.06);
+  box-shadow: 0 4px 24px rgba(0,0,0,0.2);
+  padding: 20px 50px;
+  color: #dcdce8;
+}
+.post-content h1, .post-content h2, .post-content h3,
+.post-content h4, .post-content h5, .post-content h6 {
+  color: #f0f0ff;
+}
+.post-content a {
+  color: #7eb8ff;
+}
+.post-content a:hover {
+  color: #a8d4ff;
+}
+.post-date {
+  color: #8888aa !important;
+}
+
+/* --- Page Content --- */
+.page-content {
+  color: #dcdce8;
+}
+
+/* --- Code Blocks --- */
+code, pre {
+  background: rgba(20, 20, 40, 0.7) !important;
+  color: #d4d4e8;
+  border: 1px solid rgba(255,255,255,0.06);
+}
+pre {
+  border-radius: 8px;
+}
+code {
+  border-radius: 4px;
+}
+pre code {
+  background-color: transparent !important;
+  border: none;
+}
+
+/* --- Blockquote --- */
+blockquote {
+  border-left-color: rgba(126, 184, 255, 0.4);
+  color: #a0a0be;
+  background: rgba(255,255,255,0.03);
+  border-radius: 0 8px 8px 0;
+  padding: 10px 20px;
+}
+
+/* --- Tables --- */
+table, th, td {
+  border-color: rgba(255,255,255,0.1) !important;
+}
+th {
+  background: rgba(255,255,255,0.05);
+  color: #e0e0f0;
+}
+td {
+  color: #c8c8d8;
+}
+
+/* --- Footer --- */
+.footer {
+  background: rgba(10, 10, 25, 0.6) !important;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-top: 1px solid rgba(255,255,255,0.06);
+}
+.footer a {
+  color: #c0c0d0 !important;
+  transition: color 0.3s;
+}
+.footer a:hover {
+  color: #ffffff !important;
+}
+.footer-description {
+  color: #7a7a96 !important;
+}
+.footer-description a {
+  color: #7a7a96 !important;
+}
+
+/* --- Social Icons --- */
+.fa-envelope,
+.fa-github, .fa-brands.fa-github,
+.fa-instagram, .fa-brands.fa-instagram,
+.fa-facebook, .fa-brands.fa-facebook,
+.fa-twitter, .fa-brands.fa-twitter,
+.fa-linkedin, .fa-brands.fa-linkedin,
+.fa-wechat, .fa-brands.fa-weixin {
+  color: #b0b0c8;
+  transition: color 0.3s, transform 0.3s;
+}
+.fa-envelope:hover { color: #f39c12; transform: scale(1.2); }
+.fa-github:hover, .fa-brands.fa-github:hover { color: #ffffff; transform: scale(1.2); }
+.fa-instagram:hover, .fa-brands.fa-instagram:hover { color: #e1306c; transform: scale(1.2); }
+.fa-facebook:hover, .fa-brands.fa-facebook:hover { color: #4267b2; transform: scale(1.2); }
+
+/* --- Pagination --- */
+.pagination-button {
+  color: #b0b0c8 !important;
+  border-color: rgba(255,255,255,0.15) !important;
+  background: rgba(15, 15, 30, 0.5);
+  border-radius: 8px;
+  transition: all 0.2s;
+}
+.pagination-button:hover {
+  background: rgba(255,255,255,0.08);
+  border-color: rgba(255,255,255,0.3) !important;
+  color: #ffffff !important;
+}
+.pagination-active {
+  color: #7eb8ff !important;
+}
+
+/* --- Content Wrapper --- */
+.content-wrapper {
+  color: #dcdce8;
+}
+.content-wrapper h1 {
+  color: #f0f0ff;
+}
+
+/* --- Headings global --- */
+h1, h2, h3, h4, h5, h6 {
+  color: #f0f0ff;
+}
+
+/* --- Post Share --- */
+.sharing-icons a {
+  color: #b0b0c8;
+  transition: color 0.3s;
+}
+.sharing-icons a:hover {
+  color: #7eb8ff;
+}
+
+/* --- Related Posts --- */
+.related {
+  color: #c0c0d0;
+}
+
+/* --- Scrollbar --- */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(10, 10, 25, 0.4);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(255,255,255,0.15);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255,255,255,0.25);
+}
+
+/* --- Selection --- */
+::selection {
+  background: rgba(126, 184, 255, 0.3);
+  color: #ffffff;
+}
+
+/* --- Smooth transitions for theme switching --- */
+body, .site-header, .footer, .post-content, code, pre, blockquote {
+  transition: background 0.4s ease, color 0.3s ease;
+}
