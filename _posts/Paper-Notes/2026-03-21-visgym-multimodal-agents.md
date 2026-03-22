@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "VisGym - Diverse, Customizable, Scalable Environments for Multimodal Agents"
+image: papers/visgym.jpg
 categories: paper-notes
 ---
 

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Masked Autoencoders Are Scalable Vision Learners (MAE)"
+image: papers/mae.jpg
 categories: paper-notes
 ---
 

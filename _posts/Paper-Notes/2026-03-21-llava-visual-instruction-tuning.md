@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "LLaVA - Visual Instruction Tuning"
+image: papers/llava.jpg
 categories: paper-notes
 ---
 

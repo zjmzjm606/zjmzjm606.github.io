@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "DeepSeekMath"
+image: papers/deepseekmath.jpg
 categories: paper-notes
 ---
 
